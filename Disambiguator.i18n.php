@@ -11,7 +11,7 @@ $messages = array();
 /** English
  */
 $messages['en'] = array(
-	'disambig-desc' => 'Adds the tag <code><nowiki>__DISAMBIG__</nowiki></code> to mark [[Special:DisambiguationPages|disambiguation pages]].',
+	'disambig-desc' => 'Adds the tag <code><nowiki>__DISAMBIG__</nowiki></code> to mark [[Special:DisambiguationPages|disambiguation pages]]',
 	# Special:DisambiguationPages
 	'disambiguationpages' => 'Disambiguation pages',
 	'disambiguationpages-summary' => "The following is a list of all disambiguation pages on {{SITENAME}}.<br />

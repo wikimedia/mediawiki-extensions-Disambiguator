@@ -10,6 +10,7 @@ $specialPageAliases = array();
 
 /** English (English) */
 $specialPageAliases['en'] = array(
+	'DisambiguationPages' => array( 'DisambiguationPages' ),
 	'DisambiguationPageLinks' => array( 'DisambiguationPageLinks' ),
 );
 
