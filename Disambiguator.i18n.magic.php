@@ -10,5 +10,5 @@ $magicWords = array();
 
 /** English (English) */
 $magicWords['en'] = array(
-	'disambiguation' => array( 1, '__DISAMBIG__' ),
+	'disambiguation' => array( '1', '__DISAMBIG__' ),
 );

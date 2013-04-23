@@ -12,3 +12,8 @@ $specialPageAliases = array();
 $specialPageAliases['en'] = array(
 	'DisambiguationPageLinks' => array( 'DisambiguationPageLinks' ),
 );
+
+/** German (Deutsch) */
+$specialPageAliases['de'] = array(
+	'DisambiguationPageLinks' => array( 'Begriffsklärungslinks' ),
+);
