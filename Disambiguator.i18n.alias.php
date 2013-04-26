@@ -18,3 +18,8 @@ $specialPageAliases['en'] = array(
 $specialPageAliases['de'] = array(
 	'DisambiguationPageLinks' => array( 'Begriffsklärungslinks' ),
 );
+
+/** Macedonian (македонски) */
+$specialPageAliases['mk'] = array(
+	'DisambiguationPageLinks' => array( 'ВрскиДоПојаснување' ),
+);

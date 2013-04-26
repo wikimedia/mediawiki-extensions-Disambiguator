@@ -78,6 +78,20 @@ $messages['fr'] = array(
 	'disambiguationpagelinks-summary' => 'Les pages suivantes contiennent au moins un lien vers une page d’ambiguïté. Elles peuvent devoir plutôt être liées à une page plus appropriée.<br />Une page est traitée comme page d’ambiguïté si la page contient la balise <code><nowiki>__DISAMBIG__</nowiki></code> (ou un alias équivalent).',
 );
 
+/** Galician (galego)
+ * @author Toliño
+ */
+$messages['gl'] = array(
+	'disambig-desc' => 'Engade a etiqueta <code><nowiki>__DISAMBIG__</nowiki></code> para marcar as [[Special:DisambiguationPages|páxinas de homónimos]].',
+	'disambiguationpages' => 'Páxinas de homónimos',
+	'disambiguationpages-summary' => 'A seguinte é unha lista de todas as páxinas de homónimos de {{SITENAME}}.<br />
+Unha páxina considérase de homónimos se contén a etiqueta <code><nowiki>__DISAMBIG__</nowiki></code> (ou un pseudónimo equivalente).',
+	'disambiguationpagelinks' => 'Páxinas que ligan con páxinas de homónimos',
+	'disambiguationpagelinks-summary' => 'As seguintes páxina conteñen, polo menos, unha ligazón a unha páxina de homónimos.
+Se cadra, deberían ligar cunha páxina máis axeitada.<br />
+Unha páxina considérase de homónimos se contén a etiqueta <code><nowiki>__DISAMBIG__</nowiki></code> (ou un pseudónimo equivalente).',
+);
+
 /** Italian (italiano)
  * @author Beta16
  */
@@ -126,6 +140,8 @@ $messages['mk'] = array(
 $messages['roa-tara'] = array(
 	'disambig-desc' => "Aggiugne 'u tag <code><nowiki>__DISAMBIG__</nowiki></code> pe signà le [[Special:DisambiguationPages|pàggende de disambbiguazione]].",
 	'disambiguationpages' => 'Pàggene de disambbiguazione',
+	'disambiguationpages-summary' => "'u seguende jè 'n'elenghe de tutte le pàggene de disambbiguazione de {{SITENAME}}.<br />
+'Na pàgene jè trattate cumme 'na pàgene de disambbiguazione ce 'a pàgene tène 'u tag <code><nowiki>__DISAMBIG__</nowiki></code> (o une equivalende).",
 	'disambiguationpagelinks' => 'Pàggene collegate a le pàggene de disambbiguazione',
 	'disambiguationpagelinks-summary' => "Le pàggene seguende tènene almene 'na pàgene de disambbiguazione.
 Lore ponne avè abbesogne de collegarse a cchiù pàggene appropriate.<br />
@@ -138,4 +154,11 @@ Lore ponne avè abbesogne de collegarse a cchiù pàggene appropriate.<br />
 $messages['te'] = array(
 	'disambiguationpages' => 'అయోమయ నివృత్తి పేజీలు',
 	'disambiguationpagelinks' => 'అయోమయ నివృత్తి పుటలకు లంకెలున్న పుటలు',
+);
+
+/** Simplified Chinese (中文（简体）‎)
+ * @author Cwek
+ */
+$messages['zh-hans'] = array(
+	'disambiguationpages' => '消歧义页',
 );
