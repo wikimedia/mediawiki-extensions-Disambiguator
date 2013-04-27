@@ -156,9 +156,32 @@ $messages['te'] = array(
 	'disambiguationpagelinks' => 'అయోమయ నివృత్తి పుటలకు లంకెలున్న పుటలు',
 );
 
+/** Ukrainian (українська)
+ * @author Ата
+ */
+$messages['uk'] = array(
+	'disambiguationpages' => 'Сторінки виправлення неоднозначності',
+	'disambiguationpagelinks' => 'Сторінки, що посилаються на сторінки неоднозначності.',
+);
+
+/** Urdu (اردو)
+ * @author Noor2020
+ */
+$messages['ur'] = array(
+	'disambig-desc' => 'ٹیگ کا اضافہ کرتا ہے <code><nowiki>__واضح رہے__</nowiki></code> [[Special:DisambiguationPages|صفحات کو واضح]] کے نشان زد کرنا',
+);
+
 /** Simplified Chinese (中文（简体）‎)
  * @author Cwek
  */
 $messages['zh-hans'] = array(
 	'disambiguationpages' => '消歧义页',
+);
+
+/** Traditional Chinese (中文（繁體）‎)
+ * @author Simon Shek
+ */
+$messages['zh-hant'] = array(
+	'disambiguationpages' => '消歧義頁',
+	'disambiguationpagelinks' => '鏈接到消歧義頁的頁面',
 );
