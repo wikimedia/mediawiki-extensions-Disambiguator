@@ -42,6 +42,20 @@ See also:
 * {{msg-mw|Disambiguationpages-summary}}',
 );
 
+/** Asturian (asturianu)
+ * @author Xuacu
+ */
+$messages['ast'] = array(
+	'disambig-desc' => 'Amiesta la etiqueta <code><nowiki>__DISAMBIG__</nowiki></code> pa marcar les [[Special:DisambiguationPages|páxines de dixebra]].',
+	'disambiguationpages' => 'Páxines de dixebra',
+	'disambiguationpages-summary' => 'La siguiente ye una llista de toles páxines de dixebra de {{SITENAME}}.<br />
+Una páxina tratase como páxina de dixebra si contién la etiqueta <code><nowiki>__DISAMBIG__</nowiki></code> (o un alcuñu equivalente).',
+	'disambiguationpagelinks' => "Páxines qu'enllacen con páxines de dixebra",
+	'disambiguationpagelinks-summary' => 'Les siguientes páxines contienen, polo menos, un enllaz a una páxina de dixebra.
+Seique, necesiten enllazar con una páxina más axeitada.<br />
+Una páxina tratase como de dixebra si contién la etiqueta <code><nowiki>__DISAMBIG__</nowiki></code> (o un alcuñu equivalente).',
+);
+
 /** Czech (česky)
  * @author Mormegil
  */
@@ -120,6 +134,14 @@ $messages['ja'] = array(
 タグ <code><nowiki>__DISAMBIG__</nowiki></code> (または同等の別名) を含むページを、曖昧さ回避ページと見なしています。',
 );
 
+/** Luxembourgish (Lëtzebuergesch)
+ * @author Robby
+ */
+$messages['lb'] = array(
+	'disambiguationpages' => 'Homonymie-Säiten',
+	'disambiguationpagelinks' => 'Säiten déi op Homonymie-Säite linken',
+);
+
 /** Macedonian (македонски)
  * @author Bjankuloski06
  */
@@ -132,6 +154,21 @@ $messages['mk'] = array(
 	'disambiguationpagelinks-summary' => 'Следниве страници содржат барем по една врска до појаснителна страница.
 Веројатно ќе треба да ставите врска до посоодветна (поконкретна) страница.<br />
 Една страница се смета за појаснителна доколку ја содржи ознаката <code><nowiki>__DISAMBIG__</nowiki></code> (или нејзин алијас).',
+);
+
+/** Dutch (Nederlands)
+ * @author Siebrand
+ */
+$messages['nl'] = array(
+	'disambig-desc' => "Voegt de tag <code><nowiki>__DISAMBIG__</nowiki></code> toe om [[Special:DisambiguationPages|doorverwijspagina's]] te markeren",
+	'disambiguationpages' => "Doorverwijspagina's",
+);
+
+/** Polish (polski)
+ * @author Chrumps
+ */
+$messages['pl'] = array(
+	'disambiguationpages' => 'Strony ujednoznaczniające',
 );
 
 /** tarandíne (tarandíne)

@@ -21,5 +21,6 @@ $specialPageAliases['de'] = array(
 
 /** Macedonian (македонски) */
 $specialPageAliases['mk'] = array(
+	'DisambiguationPages' => array( 'ПојаснителниСтраници' ),
 	'DisambiguationPageLinks' => array( 'ВрскиДоПојаснување' ),
 );
