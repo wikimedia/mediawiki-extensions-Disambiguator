@@ -162,6 +162,12 @@ $messages['mk'] = array(
 $messages['nl'] = array(
 	'disambig-desc' => "Voegt de tag <code><nowiki>__DISAMBIG__</nowiki></code> toe om [[Special:DisambiguationPages|doorverwijspagina's]] te markeren",
 	'disambiguationpages' => "Doorverwijspagina's",
+	'disambiguationpages-summary' => "Hier volgt een lijst met alle doorverwijspagina's op de site {{SITENAME}}.<br />
+Een pagina wordt gezien als doorverwijspagina als deze de tag <code><nowiki>__DISAMBIG__</nowiki></code> bevat (of een equivalent alias).",
+	'disambiguationpagelinks' => "Pagina's die een koppeling hebben naar doorverwijspagina's",
+	'disambiguationpagelinks-summary' => "De volgende pagina's bevatten tenminste één koppeling naar een doorverwijspagina.
+Wellicht moeten ze koppelen naar een meer passende pagina.<br />
+Een pagina wordt gezien als doorverwijspagina als deze de tag <code><nowiki>__DISAMBIG__</nowiki></code> bevat (of een equivalent alias).",
 );
 
 /** Polish (polski)
