@@ -134,6 +134,16 @@ $messages['ja'] = array(
 タグ <code><nowiki>__DISAMBIG__</nowiki></code> (または同等の別名) を含むページを、曖昧さ回避ページと見なしています。',
 );
 
+/** Colognian (Ripoarisch)
+ * @author Purodha
+ */
+$messages['ksh'] = array(
+	'disambig-desc' => 'Brängk dä Befähl <code><nowiki>__DISAMBIG__</nowiki></code> en et Wiki, öm [[Special:DisambiguationPages|„Watt eß dat?“ Sigge]] ze beschtemme.',
+	'disambiguationpages' => '„Watt eß dat?“ Sigge',
+	'disambiguationpages-summary' => 'Heh küdd en Leß met alle „Watt eß dat?“ Sigge {{GRAMMAR:em Dativ|{{ucfirst:{{SITENAME}}}}}}, dat sin Sigge, woh <code><nowiki>__DISAMBIG__</nowiki></code> dren schteiht, udder jät zom sällve Efäk.',
+	'disambiguationpagelinks' => 'Sigge, di op „Watt eß dat?“ Sigge verlengke donn',
+);
+
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
  */
