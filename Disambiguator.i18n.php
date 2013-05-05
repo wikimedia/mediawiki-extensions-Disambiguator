@@ -81,6 +81,15 @@ Sie sollten stattdessen auf eine passendere Seite verlinken.<br />
 Eine Seite wird als Begriffsklärungsseite behandelt, wenn sie das Tag <code><nowiki>__DISAMBIG__</nowiki></code> oder einen entsprechenden Alias enthält.',
 );
 
+/** Spanish (español)
+ * @author Fitoschido
+ */
+$messages['es'] = array(
+	'disambig-desc' => 'Añade la etiqueta <code><nowiki>__DISAMBIG__</nowiki></code> para marcar las [[Special:DisambiguationPages|páginas de desambiguación]]',
+	'disambiguationpages' => 'Páginas de desambiguación',
+	'disambiguationpagelinks' => 'Páginas que enlazan a páginas de desambiguación',
+);
+
 /** French (français)
  * @author Gomoko
  */
