@@ -157,6 +157,7 @@ $messages['ksh'] = array(
  * @author Robby
  */
 $messages['lb'] = array(
+	'disambig-desc' => 'Setzt den Tag <code><nowiki>__DISAMBIG__</nowiki></code> derbäi fir [[Special:DisambiguationPages|Homonynie-Säiten]] ze markéieren',
 	'disambiguationpages' => 'Homonymie-Säiten',
 	'disambiguationpagelinks' => 'Säiten déi op Homonymie-Säite linken',
 );
