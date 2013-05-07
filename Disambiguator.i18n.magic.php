@@ -13,6 +13,11 @@ $magicWords['en'] = array(
 	'disambiguation' => array( '1', '__DISAMBIG__' ),
 );
 
+/** Korean (한국어) */
+$magicWords['ko'] = array(
+	'disambiguation' => array( '__동음이의__' ),
+);
+
 /** Macedonian (македонски) */
 $magicWords['mk'] = array(
 	'disambiguation' => array( '__ПОЈАСНУВАЊЕ__' ),

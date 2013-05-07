@@ -20,6 +20,12 @@ $specialPageAliases['de'] = array(
 	'DisambiguationPageLinks' => array( 'Begriffsklärungslinks' ),
 );
 
+/** Korean (한국어) */
+$specialPageAliases['ko'] = array(
+	'DisambiguationPages' => array( '동음이의어문서' ),
+	'DisambiguationPageLinks' => array( '동음이의어문서링크' ),
+);
+
 /** Macedonian (македонски) */
 $specialPageAliases['mk'] = array(
 	'DisambiguationPages' => array( 'ПојаснителниСтраници' ),
