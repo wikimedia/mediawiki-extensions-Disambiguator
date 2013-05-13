@@ -159,6 +159,8 @@ $messages['ksh'] = array(
 $messages['lb'] = array(
 	'disambig-desc' => 'Setzt den Tag <code><nowiki>__DISAMBIG__</nowiki></code> derbäi fir [[Special:DisambiguationPages|Homonynie-Säiten]] ze markéieren',
 	'disambiguationpages' => 'Homonymie-Säiten',
+	'disambiguationpages-summary' => "Hei ass d'Lëscht vun allen Homonymiesäiten op {{SITENAME}}.<br />
+Eng Säit gëtt als Homonymiesäit betruecht wann op der Säit den Tag<code><nowiki>__DISAMBIG__</nowiki></code> (oder en equivalenten Alias) drop steet.",
 	'disambiguationpagelinks' => 'Säiten déi op Homonymie-Säite linken',
 );
 

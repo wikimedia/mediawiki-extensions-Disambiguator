@@ -26,6 +26,12 @@ $specialPageAliases['ko'] = array(
 	'DisambiguationPageLinks' => array( '동음이의어문서링크' ),
 );
 
+/** Luxembourgish (Lëtzebuergesch) */
+$specialPageAliases['lb'] = array(
+	'DisambiguationPages' => array( 'HomonymieSäiten' ),
+	'DisambiguationPageLinks' => array( 'HomonymieSäitLinken' ),
+);
+
 /** Macedonian (македонски) */
 $specialPageAliases['mk'] = array(
 	'DisambiguationPages' => array( 'ПојаснителниСтраници' ),
