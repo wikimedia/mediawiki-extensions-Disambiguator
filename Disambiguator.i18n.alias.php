@@ -37,3 +37,9 @@ $specialPageAliases['mk'] = array(
 	'DisambiguationPages' => array( 'ПојаснителниСтраници' ),
 	'DisambiguationPageLinks' => array( 'ВрскиДоПојаснување' ),
 );
+
+/** Dutch (Nederlands) */
+$specialPageAliases['nl'] = array(
+	'DisambiguationPages' => array( 'Doorverwijspaginas', 'Doorverwijspagina\'s' ),
+	'DisambiguationPageLinks' => array( 'Doorverwijspaginakoppelingen' ),
+);
