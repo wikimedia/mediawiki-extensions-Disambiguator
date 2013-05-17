@@ -13,6 +13,11 @@ $magicWords['en'] = array(
 	'disambiguation' => array( '1', '__DISAMBIG__' ),
 );
 
+/** Galician (galego) */
+$magicWords['gl'] = array(
+	'disambiguation' => array( '__HOMÓNIMOS__' ),
+);
+
 /** Korean (한국어) */
 $magicWords['ko'] = array(
 	'disambiguation' => array( '__동음이의__' ),
@@ -26,4 +31,9 @@ $magicWords['mk'] = array(
 /** Malayalam (മലയാളം) */
 $magicWords['ml'] = array(
 	'disambiguation' => array( '_വിവക്ഷിതം_' ),
+);
+
+/** Marathi (मराठी) */
+$magicWords['mr'] = array(
+	'disambiguation' => array( '__निःसंदिग्ध__' ),
 );
