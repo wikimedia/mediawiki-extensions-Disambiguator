@@ -56,6 +56,15 @@ Seique, necesiten enllazar con una páxina más axeitada.<br />
 Una páxina tratase como de dixebra si contién la etiqueta <code><nowiki>__DISAMBIG__</nowiki></code> (o un alcuñu equivalente).',
 );
 
+/** Breton (brezhoneg)
+ * @author Y-M D
+ */
+$messages['br'] = array(
+	'disambig-desc' => 'Ouzhpennañ ar balizenn <code><nowiki>__DISAMBIG__</nowiki></code> evit merkañ [[Special:DisambiguationPages|ar pajennoù disheñvelout]].',
+	'disambiguationpages' => 'Pajennoù disheñvelout',
+	'disambiguationpagelinks' => 'Pajennoù enno liammoù war-zu pajennoù disheñvelout',
+);
+
 /** Czech (česky)
  * @author Mormegil
  */
@@ -151,6 +160,10 @@ $messages['ksh'] = array(
 	'disambiguationpages' => '„Watt eß dat?“ Sigge',
 	'disambiguationpages-summary' => 'Heh küdd en Leß met alle „Watt eß dat?“ Sigge {{GRAMMAR:em Dativ|{{ucfirst:{{SITENAME}}}}}}, dat sin Sigge, woh <code><nowiki>__DISAMBIG__</nowiki></code> dren schteiht, udder jät zom sällve Efäk.',
 	'disambiguationpagelinks' => 'Sigge, di op „Watt eß dat?“ Sigge verlengke donn',
+	'disambiguationpagelinks-summary' => 'Di Sigge en heh dä Leß han alle winneschsdens eine Lenk ob_en „Watt eß dat?“ Sigg.
+Et künnt sin, dat se bäßer ob_en Sigg lenke dähte, di mieh zopaß kütt.
+
+En Sigg med_enem <code><nowiki>__DISAMBIG__</nowiki></code> Befähl dren, udder jät, wad_et sellve bedügg udder enföösch, zällt als en  „Watt eß dat?“ Sigg.',
 );
 
 /** Luxembourgish (Lëtzebuergesch)
@@ -162,6 +175,9 @@ $messages['lb'] = array(
 	'disambiguationpages-summary' => "Hei ass d'Lëscht vun allen Homonymiesäiten op {{SITENAME}}.<br />
 Eng Säit gëtt als Homonymiesäit betruecht wann op der Säit den Tag<code><nowiki>__DISAMBIG__</nowiki></code> (oder en equivalenten Alias) drop steet.",
 	'disambiguationpagelinks' => 'Säiten déi op Homonymie-Säite linken',
+	'disambiguationpagelinks-summary' => 'Op dëse Säiten ass mindestens ee Link op eng Homonymie Säit.
+Déi sollten op eng Säit déi besser passt verlinkt ginn.<br />
+Eng Säit gëtt als Homonynie-Säit behandelt wann den Tag <code><nowiki>__DISAMBIG__</nowiki></code> (oder en equivalenten Alias) dran ass.',
 );
 
 /** Macedonian (македонски)
@@ -218,6 +234,15 @@ $messages['roa-tara'] = array(
 	'disambiguationpagelinks-summary' => "Le pàggene seguende tènene almene 'na pàgene de disambbiguazione.
 Lore ponne avè abbesogne de collegarse a cchiù pàggene appropriate.<br />
 'Na pàgene jè trattate cumme a 'na pàgene de disambbiguazione ce 'a pàgene tène 'u tag <code><nowiki>__DISAMBIG__</nowiki></code> (o 'nu nome equivalende).",
+);
+
+/** Serbian (Cyrillic script) (српски (ћирилица)‎)
+ * @author Милан Јелисавчић
+ */
+$messages['sr-ec'] = array(
+	'disambig-desc' => 'Додаје ознаку <code><nowiki>__DISAMBIG__</nowiki></code> за обележавање [[Special:DisambiguationPages|вишезначних одредница]]',
+	'disambiguationpages' => 'Вишезначне одреднице',
+	'disambiguationpagelinks' => 'Странице до вишезначних одредница',
 );
 
 /** Telugu (తెలుగు)
