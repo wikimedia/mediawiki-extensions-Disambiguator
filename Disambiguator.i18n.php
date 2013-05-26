@@ -218,8 +218,8 @@ $messages['pl'] = array(
 	'disambiguationpages-summary' => 'Poniżej znajduje się lista wszystkich stron ujednoznaczniających na {{grammar:6sg|{{SITENAME}}}}.<br />Strona jest uważana za ujednoznaczniającą gdy zawiera wyrażenie <code><nowiki>__DISAMBIG__</nowiki></code> (bądź równoważny alias).',
 	'disambiguationpagelinks' => 'Stron linkujące do stron ujednoznaczniających',
 	'disambiguationpagelinks-summary' => 'Poniższe strony zawierają co najmniej jeden link prowadzący do jakiejś strony ujednoznaczniającej.
-Najprawdopodobniej powinny linkować do bardziej konkretnej strony docelowej.<br>
-Strona jest uważana za ujednoznaczniającą gdy zawiera wyrażenie <code><nowiki>__DISAMBIG__</nowiki></code> (bądź równoważny alias).', # Fuzzy
+Najprawdopodobniej powinny linkować do bardziej konkretnej strony docelowej.<br />
+Strona jest uważana za ujednoznaczniającą gdy zawiera wyrażenie <code><nowiki>__DISAMBIG__</nowiki></code> (bądź równoważny alias).',
 );
 
 /** tarandíne (tarandíne)
