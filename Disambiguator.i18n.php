@@ -270,9 +270,10 @@ $messages['ur'] = array(
 
 /** Simplified Chinese (中文（简体）‎)
  * @author Cwek
+ * @author Xiaomingyan
  */
 $messages['zh-hans'] = array(
-	'disambiguationpages' => '消歧义页',
+	'disambiguationpages' => '消歧义页面',
 );
 
 /** Traditional Chinese (中文（繁體）‎)
