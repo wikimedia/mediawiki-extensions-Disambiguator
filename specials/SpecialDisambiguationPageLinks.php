@@ -32,11 +32,12 @@ class SpecialDisambiguationPageLinks extends QueryPage {
 				'pagelinks',
 				'page_props'
 			),
+			// The fields we are selecting correspond with fields in the
+			// querycachetwo table so that the results are cachable.
 			'fields' => array(
 				'value' => 'pl_from',
 				'namespace' => 'p2.page_namespace',
 				'title' => 'p2.page_title',
-				'to_id' => 'pp_page',
 				'to_namespace' => 'p1.page_namespace',
 				'to_title' => 'p1.page_title',
 			),
@@ -52,11 +53,14 @@ class SpecialDisambiguationPageLinks extends QueryPage {
 	}
 
 	/**
-	 * Order the results by namespace, title, and ID of linked page (to_id).
+	 * Order the results by ID of the linking page (value), namespace of the
+	 * linked page, and title of the linked page. This function only affects
+	 * ordering when not using $wgMiserMode.
+	 *
 	 * @return array
 	 */
 	function getOrderFields() {
-		return array( 'namespace', 'title', 'to_id' );
+		return array( 'value', 'to_namespace', 'to_title' );
 	}
 
 	function sortDescending() {
@@ -65,7 +69,7 @@ class SpecialDisambiguationPageLinks extends QueryPage {
 
 	function formatResult( $skin, $result ) {
 		$fromTitle = Title::newFromID( $result->value );
-		$toTitle = Title::newFromID( $result->to_id );
+		$toTitle = Title::newFromText( $result->to_title, $result->to_namespace );
 
 		$from = Linker::linkKnown( $fromTitle );
 		$edit = Linker::link(
@@ -83,4 +87,116 @@ class SpecialDisambiguationPageLinks extends QueryPage {
 	protected function getGroupName() {
 		return 'pages';
 	}
+
+	/**
+	 * Clear the cache and save new results
+	 *
+	 * @param int|bool $limit Limit for SQL statement
+	 * @param bool $ignoreErrors Whether to ignore database errors
+	 * @throws DBError|Exception
+	 * @return bool|int
+	 */
+	function recache( $limit, $ignoreErrors = true ) {
+		if ( !$this->isCacheable() ) {
+			return 0;
+		}
+
+		$fname = get_class( $this ) . '::recache';
+		$dbw = wfGetDB( DB_MASTER );
+		$dbr = wfGetDB( DB_SLAVE, array( $this->getName(), __METHOD__, 'vslow' ) );
+		if ( !$dbw || !$dbr ) {
+			return false;
+		}
+
+		try {
+			// Clear out any old cached data
+			$dbw->delete( 'querycachetwo', array( 'qcc_type' => $this->getName() ), $fname );
+			// Do query
+			$res = $this->reallyDoQuery( $limit, false );
+			$num = false;
+			if ( $res ) {
+				$num = $res->numRows();
+				// Fetch results
+				$vals = array();
+				while ( $res && $row = $dbr->fetchObject( $res ) ) {
+					if ( isset( $row->value ) ) {
+						if ( $this->usesTimestamps() ) {
+							$value = wfTimestamp( TS_UNIX, $row->value );
+						} else {
+							$value = intval( $row->value );
+						}
+					} else {
+						$value = 0;
+					}
+
+					$vals[] = array(
+						'qcc_type' => $this->getName(),
+						'qcc_value' => $value,
+						'qcc_namespace' => $row->namespace,
+						'qcc_title' => $row->title,
+						'qcc_namespacetwo' => $row->to_namespace,
+						'qcc_titletwo' => $row->to_title,
+					);
+				}
+
+				// Save results into the querycachetwo table on the master
+				if ( count( $vals ) ) {
+					$dbw->insert( 'querycachetwo', $vals, __METHOD__ );
+				}
+				// Update the querycache_info record for the page
+				$dbw->delete( 'querycache_info', array( 'qci_type' => $this->getName() ), $fname );
+				$dbw->insert(
+					'querycache_info',
+					array( 'qci_type' => $this->getName(), 'qci_timestamp' => $dbw->timestamp() ),
+					$fname
+				);
+			}
+		} catch ( DBError $e ) {
+			if ( !$ignoreErrors ) {
+				throw $e; // Report query error
+			}
+			$num = false; // Set result to false to indicate error
+		}
+
+		return $num;
+	}
+
+	/**
+	 * Fetch the query results from the query cache
+	 *
+	 * @param int|bool $limit Numerical limit or false for no limit
+	 * @param int|bool $offset Numerical offset or false for no offset
+	 * @return ResultWrapper
+	 */
+	function fetchFromCache( $limit, $offset = false ) {
+		$dbr = wfGetDB( DB_SLAVE );
+		$options = array();
+		if ( $limit !== false ) {
+			$options['LIMIT'] = intval( $limit );
+		}
+		if ( $offset !== false ) {
+			$options['OFFSET'] = intval( $offset );
+		}
+		// Set sort order. This should match the ordering in getOrderFields().
+		if ( $this->sortDescending() ) {
+			$options['ORDER BY'] = 'qcc_value, qcc_namespacetwo, qcc_titletwo DESC';
+		} else {
+			$options['ORDER BY'] = 'qcc_value, qcc_namespacetwo, qcc_titletwo ASC';
+		}
+		$res = $dbr->select(
+			'querycachetwo',
+			array(
+				'value' => 'qcc_value',
+				'namespace' => 'qcc_namespace',
+				'title' => 'qcc_title',
+				'to_namespace' => 'qcc_namespacetwo',
+				'to_title' => 'qcc_titletwo',
+			),
+			array( 'qcc_type' => $this->getName() ),
+			__METHOD__,
+			$options
+		);
+		return $dbr->resultObject( $res );
+	}
+
 }
