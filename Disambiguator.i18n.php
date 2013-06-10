@@ -277,9 +277,17 @@ $messages['zh-hans'] = array(
 );
 
 /** Traditional Chinese (中文（繁體）‎)
+ * @author Justincheng12345
  * @author Simon Shek
  */
 $messages['zh-hant'] = array(
+	'disambig-desc' => '加入<code><nowiki>__DISAMBIG__</nowiki></code>標記以標示[[Special:DisambiguationPages|消歧義頁]]',
 	'disambiguationpages' => '消歧義頁',
+	'disambiguationpages-summary' => '以下是{{SITENAME}}上所以消歧義頁的列表。
+
+若頁面含有<code><nowiki>__DISAMBIG__</nowiki></code>或相同標記則視為消歧義頁。',
 	'disambiguationpagelinks' => '鏈接到消歧義頁的頁面',
+	'disambiguationpagelinks-summary' => '下列頁面含有最下一個連往消歧義頁的連結，他們或應連至更準確的頁面。
+
+若頁面含有<code><nowiki>__DISAMBIG__</nowiki></code>或相同標記則視為消歧義頁。',
 );
