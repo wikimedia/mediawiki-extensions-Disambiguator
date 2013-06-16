@@ -268,6 +268,20 @@ $messages['ur'] = array(
 	'disambig-desc' => 'ٹیگ کا اضافہ کرتا ہے <code><nowiki>__واضح رہے__</nowiki></code> [[Special:DisambiguationPages|صفحات کو واضح]] کے نشان زد کرنا',
 );
 
+/** Vietnamese (Tiếng Việt)
+ * @author Minh Nguyen
+ */
+$messages['vi'] = array(
+	'disambig-desc' => 'Thêm từ khóa <code><nowiki>__DISAMBIG__</nowiki></code> để đánh dấu các [[Special:DisambiguationPages|trang định hướng]]',
+	'disambiguationpages' => 'Trang định hướng',
+	'disambiguationpages-summary' => 'Đây là danh sách các trang định hướng trên {{SITENAME}}.<br />
+Các trang định hướng có từ khóa <code><nowiki>__DISAMBIG__</nowiki></code> (hoặc một từ khóa tương tự).',
+	'disambiguationpagelinks' => 'Trang liên kết đến trang định hướng',
+	'disambiguationpagelinks-summary' => 'Các trang bên dưới chứa ít nhất một liên kết đến một trang định hướng.
+Chúng có thể cần liên kết đến một trang dứt khoát hơn.<br />
+Các trang định hướng có từ khóa <code><nowiki>__DISAMBIG__</nowiki></code> (hoặc một từ khóa tương tự).',
+);
+
 /** Simplified Chinese (中文（简体）‎)
  * @author Cwek
  * @author Xiaomingyan
