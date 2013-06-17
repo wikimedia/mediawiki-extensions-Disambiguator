@@ -245,6 +245,13 @@ $messages['sr-ec'] = array(
 	'disambiguationpagelinks' => 'Странице до вишезначних одредница',
 );
 
+/** Swedish (svenska)
+ * @author Jopparn
+ */
+$messages['sv'] = array(
+	'disambiguationpages' => 'Särskiljningssidor',
+);
+
 /** Telugu (తెలుగు)
  * @author Veeven
  */
