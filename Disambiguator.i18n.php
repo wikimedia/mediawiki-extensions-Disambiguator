@@ -194,6 +194,17 @@ $messages['mk'] = array(
 Една страница се смета за појаснителна доколку ја содржи ознаката <code><nowiki>__DISAMBIG__</nowiki></code> (или нејзин алијас).',
 );
 
+/** Malayalam (മലയാളം)
+ * @author Praveenp
+ */
+$messages['ml'] = array(
+	'disambig-desc' => ' [[Special:DisambiguationPages|വിവക്ഷിതങ്ങൾ താളുകൾ]]  അടയാളപ്പെടുത്തുന്നതിനായി താളുകളിൽ <code><nowiki>__DISAMBIG__</nowiki></code> എന്ന് ചേർക്കുന്നു',
+	'disambiguationpages' => 'വിവക്ഷിത താളുകൾ',
+	'disambiguationpages-summary' => 'താഴെ {{SITENAME}} സംരംഭത്തിലെ വിവക്ഷിതങ്ങൾ താളുകളുടെ പട്ടിക കൊടുത്തിരിക്കുന്നു.<br /> ഒരു താൾ വിവക്ഷിതങ്ങൾ താളായി കണക്കാക്കണമെങ്കിൽ ആ താളിൽ <code><nowiki>__DISAMBIG__</nowiki></code> എന്ന ടാഗ് (അല്ലെങ്കിൽ സമാനമായവ) ഉണ്ടായിരിക്കണം.',
+	'disambiguationpagelinks' => 'വിവക്ഷിത താളുകളിലേയ്ക്ക് കണ്ണിചേർത്തിരിക്കുന്ന താളുകൾ',
+	'disambiguationpagelinks-summary' => 'താഴെക്കൊടുത്തിരിക്കുന്ന താളുകളിൽ നിന്ന് വിവക്ഷിതങ്ങൾ താളിലേയ്ക്ക് ഒരു കണ്ണിയെങ്കിലുമുണ്ട്. അവ കൂടുതൽ അനുയോജ്യമായ താളിലേയ്ക്ക് മാറ്റേണ്ടതാവശ്യമായിരിക്കാം.<br /> ഒരുതാൾ വിവക്ഷിതങ്ങൾ താളായി കണക്കാക്കണമെങ്കിൽ ആ താളിൽ <code><nowiki>__DISAMBIG__</nowiki></code> എന്ന ടാഗ് (അല്ലെങ്കിൽ സമാനമായവ) ഉണ്ടായിരിക്കണം.',
+);
+
 /** Dutch (Nederlands)
  * @author Siebrand
  */

@@ -20,6 +20,12 @@ $specialPageAliases['de'] = array(
 	'DisambiguationPageLinks' => array( 'Begriffsklärungslinks' ),
 );
 
+/** Persian (فارسی) */
+$specialPageAliases['fa'] = array(
+	'DisambiguationPages' => array( 'صفحات_ابهام‌زدایی' ),
+	'DisambiguationPageLinks' => array( 'پیوندهای_صفحات_ابهام‌زدایی' ),
+);
+
 /** Japanese (日本語) */
 $specialPageAliases['ja'] = array(
 	'DisambiguationPages' => array( '曖昧さ回避ページ' ),
