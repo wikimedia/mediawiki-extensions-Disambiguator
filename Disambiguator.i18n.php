@@ -205,6 +205,17 @@ $messages['ml'] = array(
 	'disambiguationpagelinks-summary' => 'താഴെക്കൊടുത്തിരിക്കുന്ന താളുകളിൽ നിന്ന് വിവക്ഷിതങ്ങൾ താളിലേയ്ക്ക് ഒരു കണ്ണിയെങ്കിലുമുണ്ട്. അവ കൂടുതൽ അനുയോജ്യമായ താളിലേയ്ക്ക് മാറ്റേണ്ടതാവശ്യമായിരിക്കാം.<br /> ഒരുതാൾ വിവക്ഷിതങ്ങൾ താളായി കണക്കാക്കണമെങ്കിൽ ആ താളിൽ <code><nowiki>__DISAMBIG__</nowiki></code> എന്ന ടാഗ് (അല്ലെങ്കിൽ സമാനമായവ) ഉണ്ടായിരിക്കണം.',
 );
 
+/** Malay (Bahasa Melayu)
+ * @author Anakmalaysia
+ */
+$messages['ms'] = array(
+	'disambig-desc' => 'Membubuh teg <code><nowiki>__DISAMBIG__</nowiki></code> untuk menandakan [[Special:DisambiguationPages|halaman nyahkekaburan]]',
+	'disambiguationpages' => 'Halaman nyahkekaburan',
+	'disambiguationpages-summary' => 'Yang berikut merupakan senarai semua halaman nyahkekaburan di {{SITENAME}}.<br />Sesebuah halaman yang mengandungi teg <code><nowiki>__DISAMBIG__</nowiki></code> (atau alias yang seumpamanya) dianggap sebagai halaman nyahkekaburan.',
+	'disambiguationpagelinks' => 'Halaman yang berpautan dengan halaman nyahkekaburan',
+	'disambiguationpagelinks-summary' => 'Halaman-halaman yang berikut mengandungi sekurang-kurangnya satu pautan ke halaman nyahkekaburan, tetapi seharusnya berpautan dengan halaman yang lebih sesuai.<br />Sesebuah halaman yang mengandungi teg <code><nowiki>__DISAMBIG__</nowiki></code> (atau alias yang seumpamanya) dianggap sebagai halaman nyahkekaburan.',
+);
+
 /** Dutch (Nederlands)
  * @author Siebrand
  */
@@ -231,6 +242,20 @@ $messages['pl'] = array(
 	'disambiguationpagelinks-summary' => 'Poniższe strony zawierają co najmniej jeden link prowadzący do jakiejś strony ujednoznaczniającej.
 Najprawdopodobniej powinny linkować do bardziej konkretnej strony docelowej.<br />
 Strona jest uważana za ujednoznaczniającą gdy zawiera wyrażenie <code><nowiki>__DISAMBIG__</nowiki></code> (bądź równoważny alias).',
+);
+
+/** Romanian (română)
+ * @author Minisarm
+ */
+$messages['ro'] = array(
+	'disambig-desc' => 'Adaugă eticheta <code><nowiki>__DISAMBIG__</nowiki></code> pentru a marca [[Special:DisambiguationPages|paginile de dezambiguizare]]',
+	'disambiguationpages' => 'Pagini de dezambiguizare',
+	'disambiguationpages-summary' => 'Următoarea este o listă a tuturor paginilor de dezambiguizare de la {{SITENAME}}.<br />
+O pagină este socotită drept pagină de dezambiguizare dacă conține eticheta <code><nowiki>__DISAMBIG__</nowiki></code> (sau un alias echivalent).',
+	'disambiguationpagelinks' => 'Pagini care trimit către pagini de dezambiguizare',
+	'disambiguationpagelinks-summary' => 'Următoarele pagini conțin cel puțin o legătură către o pagină de dezambiguizare.
+Ar putea fi necesar ca, în schimb, acestea să conțină legături către pagini mai potrivite.<br />
+O pagină este socotită drept pagină de dezambiguizare dacă conține eticheta <code><nowiki>__DISAMBIG__</nowiki></code> (sau un alias echivalent).',
 );
 
 /** tarandíne (tarandíne)
