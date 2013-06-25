@@ -56,6 +56,20 @@ Seique, necesiten enllazar con una páxina más axeitada.<br />
 Una páxina tratase como de dixebra si contién la etiqueta <code><nowiki>__DISAMBIG__</nowiki></code> (o un alcuñu equivalente).',
 );
 
+/** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
+ * @author Wizardist
+ */
+$messages['be-tarask'] = array(
+	'disambig-desc' => 'Дадае тэг <code><nowiki>__DISAMBIG__</nowiki></code>, каб пазначыць [[Special:DisambiguationPages|старонкі-неадназначнасьці]]',
+	'disambiguationpages' => 'Старонкі-неадназначнасьці',
+	'disambiguationpages-summary' => 'Ніжэй пададзены сьпіс усіх старонак-неадназначнасьцяў у {{GRAMMAR:месны|{{SITENAME}}}}.<br />
+Старонка лічыцца неадназначнай, калі яна ўтрымлівае тэг <code><nowiki>__DISAMBIG__</nowiki></code> (або адпаведны сынонім).',
+	'disambiguationpagelinks' => 'Старонкі, якія спасылаюцца на старонкі-неадназначнасьці',
+	'disambiguationpagelinks-summary' => 'Наступныя старонкі ўтрымліваюць прынамсі адну спасылку на старонку-неадназначнасьць.
+Магчыма, патрабуецца ўдакладненьне спасылак.<br />
+Старонка лічыцца неадназначнай, калі яна ўтрымлівае тэг <code><nowiki>__DISAMBIG__</nowiki></code> (або адпаведны сынонім).',
+);
+
 /** Breton (brezhoneg)
  * @author Y-M D
  */
