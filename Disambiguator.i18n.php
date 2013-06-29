@@ -124,6 +124,19 @@ $messages['fr'] = array(
 	'disambiguationpagelinks-summary' => 'Les pages suivantes contiennent au moins un lien vers une page d’ambiguïté. Elles peuvent devoir plutôt être liées à une page plus appropriée.<br />Une page est traitée comme page d’ambiguïté si la page contient la balise <code><nowiki>__DISAMBIG__</nowiki></code> (ou un alias équivalent).',
 );
 
+/** Northern Frisian (Nordfriisk)
+ * @author Murma174
+ */
+$messages['frr'] = array(
+	'disambig-desc' => "Saat det ''tag'' <code><nowiki>__DISAMBIG__</nowiki></code> iin, am [[Special:DisambiguationPages|muardüüdag artiikler]] tu kääntiaknin.",
+	'disambiguationpages' => 'Muardüüdag artiikler',
+	'disambiguationpages-summary' => "Diar stun aal a ''muardüüdag artiikler'' faan {{SITENAME}}.<br />
+En sidj woort üs ''muardüüdag artiikel'' unsen, wan diar di ''tag'' <code><nowiki>__DISAMBIG__</nowiki></code> (of en likwäärdagen ''alias'') uun brükt woort.",
+	'disambiguationpagelinks' => 'Sidjen, diar üüb muardüüdag artiikler ferwise',
+	'disambiguationpagelinks-summary' => "Jodiar sidjen ferwise üüb tumanst ään ''muardüüdagen artiikel''. Jo skul beeder direkt üüb en paasin sidj ferwise.<br />
+En sidj woort üs ''muardüüdag artiikel'' uunsen, wan diar det ''tag'' <code><nowiki>__DISAMBIG__</nowiki></code> (of en likwäärdagen ''alias'') uun föörkomt.",
+);
+
 /** Galician (galego)
  * @author Toliño
  */
@@ -319,9 +332,11 @@ $messages['te'] = array(
 );
 
 /** Ukrainian (українська)
+ * @author Base
  * @author Ата
  */
 $messages['uk'] = array(
+	'disambig-desc' => 'Додає теґ <code><nowiki>__DISAMBIG__</nowiki></code> для помітки [[Special:DisambiguationPages|сторінок неоднозначностей]]',
 	'disambiguationpages' => 'Сторінки виправлення неоднозначності',
 	'disambiguationpagelinks' => 'Сторінки, що посилаються на сторінки неоднозначності.',
 );
