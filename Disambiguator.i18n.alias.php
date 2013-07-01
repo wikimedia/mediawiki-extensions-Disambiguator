@@ -20,6 +20,12 @@ $specialPageAliases['de'] = array(
 	'DisambiguationPageLinks' => array( 'Begriffsklärungslinks' ),
 );
 
+/** Zazaki (Zazaki) */
+$specialPageAliases['diq'] = array(
+	'DisambiguationPages' => array( 'PeréManedébini' ),
+	'DisambiguationPageLinks' => array( 'GreyéPeréManedébini' ),
+);
+
 /** Persian (فارسی) */
 $specialPageAliases['fa'] = array(
 	'DisambiguationPages' => array( 'صفحات_ابهام‌زدایی' ),
