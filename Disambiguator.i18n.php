@@ -15,12 +15,12 @@ $messages['en'] = array(
 	# Special:DisambiguationPages
 	'disambiguationpages' => 'Disambiguation pages',
 	'disambiguationpages-summary' => "The following is a list of all disambiguation pages on {{SITENAME}}.<br />
-A page is treated as a disambiguation page if the page contains the tag <code><nowiki>__DISAMBIG__</nowiki></code> (or an equivalent alias).",
+A page is treated as a disambiguation page if it contains the tag <code><nowiki>__DISAMBIG__</nowiki></code> (or an equivalent alias).",
 	# Special:DisambiguationPageLinks
 	'disambiguationpagelinks' => 'Pages linking to disambiguation pages',
 	'disambiguationpagelinks-summary'  => "The following pages contain at least one link to a disambiguation page.
 They may need to link to a more appropriate page instead.<br />
-A page is treated as a disambiguation page if the page contains the tag <code><nowiki>__DISAMBIG__</nowiki></code> (or an equivalent alias).",
+A page is treated as a disambiguation page if it contains the tag <code><nowiki>__DISAMBIG__</nowiki></code> (or an equivalent alias).",
 );
 
 /** Message documentation (Message documentation)
