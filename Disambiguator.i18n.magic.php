@@ -13,6 +13,11 @@ $magicWords['en'] = array(
 	'disambiguation' => array( '1', '__DISAMBIG__' ),
 );
 
+/** German (Deutsch) */
+$magicWords['de'] = array(
+	'disambiguation' => array( '__BEGRIFFSKLÄRUNG__' ),
+);
+
 /** Galician (galego) */
 $magicWords['gl'] = array(
 	'disambiguation' => array( '__HOMÓNIMOS__' ),
