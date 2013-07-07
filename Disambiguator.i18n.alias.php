@@ -56,6 +56,12 @@ $specialPageAliases['mk'] = array(
 	'DisambiguationPageLinks' => array( 'ВрскиДоПојаснување' ),
 );
 
+/** Low Saxon (Netherlands) (Nedersaksies) */
+$specialPageAliases['nds-nl'] = array(
+	'DisambiguationPages' => array( 'Deurverwiesziejen' ),
+	'DisambiguationPageLinks' => array( 'Deurverwieskoppelingen' ),
+);
+
 /** Dutch (Nederlands) */
 $specialPageAliases['nl'] = array(
 	'DisambiguationPages' => array( 'Doorverwijspaginas', 'Doorverwijspagina\'s' ),
