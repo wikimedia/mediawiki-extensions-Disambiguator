@@ -47,7 +47,8 @@ class SpecialDisambiguationPageLinks extends QueryPage {
 				'pl_namespace = p1.page_namespace',
 				'pl_title = p1.page_title',
 				'p2.page_id = pl_from',
-				'p2.page_namespace' => MWNamespace::getContentNamespaces()
+				'p2.page_namespace' => MWNamespace::getContentNamespaces(),
+				'p2.page_is_redirect != 1'
 			)
 		);
 	}
