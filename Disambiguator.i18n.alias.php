@@ -67,3 +67,9 @@ $specialPageAliases['nl'] = array(
 	'DisambiguationPages' => array( 'Doorverwijspaginas', 'Doorverwijspagina\'s' ),
 	'DisambiguationPageLinks' => array( 'Doorverwijspaginakoppelingen' ),
 );
+
+/** Ukrainian (українська) */
+$specialPageAliases['uk'] = array(
+	'DisambiguationPages' => array( 'Сторінки_тлумачення_неоднозначності' ),
+	'DisambiguationPageLinks' => array( 'Посилання_на_сторінки_тлумачення_неоднозначності' ),
+);

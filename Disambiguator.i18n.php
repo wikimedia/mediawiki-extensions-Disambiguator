@@ -333,12 +333,18 @@ $messages['te'] = array(
 
 /** Ukrainian (українська)
  * @author Base
+ * @author DixonD
  * @author Ата
  */
 $messages['uk'] = array(
-	'disambig-desc' => 'Додає теґ <code><nowiki>__DISAMBIG__</nowiki></code> для помітки [[Special:DisambiguationPages|сторінок неоднозначностей]]',
-	'disambiguationpages' => 'Сторінки виправлення неоднозначності',
-	'disambiguationpagelinks' => 'Сторінки, що посилаються на сторінки неоднозначності.',
+	'disambig-desc' => 'Додає магічне слово <code><nowiki>__DISAMBIG__</nowiki></code> для позначення [[Special:DisambiguationPages|сторінок тлумачення неоднозначності]]',
+	'disambiguationpages' => 'Сторінки тлумачення неоднозначності',
+	'disambiguationpages-summary' => 'Далі наводиться список всіх сторінок тлумачення неоднозначності у {{grammar:locative|{{SITENAME}}}}.<br />
+Сторінка вважається сторінкою тлумачення неоднозначності, якщо вона містить магічне слово <code><nowiki>__DISAMBIG__</nowiki></code> (або його відповідний псевдонім).',
+	'disambiguationpagelinks' => 'Сторінки, що посилаються на сторінки тлумачення неоднозначності',
+	'disambiguationpagelinks-summary' => 'Далі наводиться список сторінок, що містять щонайменше одне посилання на сторінку тлумачення неоднозначності.
+Ці сторінки можуть потребувати натомість посилання на сторінку, що підходить більше.<br />
+Сторінка вважається сторінкою тлумачення неоднозначності, якщо вона містить магічне слово <code><nowiki>__DISAMBIG__</nowiki></code> (або його відповідний псевдонім).',
 );
 
 /** Urdu (اردو)
@@ -364,10 +370,18 @@ Các trang định hướng có từ khóa <code><nowiki>__DISAMBIG__</nowiki></
 
 /** Simplified Chinese (中文（简体）‎)
  * @author Cwek
+ * @author Shizhao
  * @author Xiaomingyan
  */
 $messages['zh-hans'] = array(
-	'disambiguationpages' => '消歧义页面',
+	'disambig-desc' => '将添加标记<code><nowiki>__DISAMBIG__</nowiki></code>用以标识[[Special:DisambiguationPages|消歧义页]]',
+	'disambiguationpages' => '消歧义页',
+	'disambiguationpages-summary' => '下面列出了{{SITENAME}}上所有的消歧义页。<br />
+如果一个页面包含标记<code><nowiki>__DISAMBIG__</nowiki></code>（或等效的别名），则被视为一个消歧义页。',
+	'disambiguationpagelinks' => '链接到消歧义页的页面',
+	'disambiguationpagelinks-summary' => '下列页面包含至少一个到消歧义页的链接。
+这些链接可能需要修改，以便链接到更恰当的页面。<br />
+如果一个页面包含标记<code><nowiki>__DISAMBIG__</nowiki></code>（或等效的别名），则被视为一个消歧义页。',
 );
 
 /** Traditional Chinese (中文（繁體）‎)
