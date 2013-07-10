@@ -17,7 +17,7 @@ class SpecialDisambiguationPages extends QueryPage {
 	}
 
 	function isExpensive() {
-		return true;
+		return false;
 	}
 
 	function isSyndicated() {
@@ -31,7 +31,7 @@ class SpecialDisambiguationPages extends QueryPage {
 				'page_props'
 			),
 			'fields' => array(
-				'value' => 'page.page_id',
+				'value' => 'page_props.pp_page',
 				'namespace' => 'page.page_namespace',
 				'title' => 'page.page_title',
 			),
@@ -45,11 +45,12 @@ class SpecialDisambiguationPages extends QueryPage {
 	}
 
 	/**
-	 * Order the results by namespace and title.
+	 * Order the results by page ID.
+	 * We don't sort by namespace and title since this would trigger a filesort.
 	 * @return array
 	 */
 	function getOrderFields() {
-		return array( 'namespace', 'title' );
+		return array( 'value' );
 	}
 
 	function sortDescending() {
