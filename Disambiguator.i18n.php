@@ -113,6 +113,34 @@ $messages['es'] = array(
 	'disambiguationpagelinks' => 'Páginas que enlazan a páginas de desambiguación',
 );
 
+/** Estonian (eesti)
+ * @author Pikne
+ */
+$messages['et'] = array(
+	'disambig-desc' => 'Lisab [[Special:DisambiguationPages|täpsustuslehekülgede]] märgistamiseks sildi <code><nowiki>__DISAMBIG__</nowiki></code>.',
+	'disambiguationpages' => 'Täpsustusleheküljed',
+	'disambiguationpages-summary' => 'See on {{GRAMMAR:genitive|{{SITENAME}}}} täpsustuslehekülgede loend.<br />
+Lehekülg arvatakse täpsustusleheküljeks, kui see sisaldab märgist <code><nowiki>__DISAMBIG__</nowiki></code> või vastavat rööpkuju.',
+	'disambiguationpagelinks' => 'Täpsustuslehekülgedele linkivad leheküljed',
+	'disambiguationpagelinks-summary' => 'Järgmised leheküljed sisaldavad vähemalt üht linki, mis viitab täpsustusleheküljele.
+Võimalik, et nad peaks viitama sobivamale lehekülje.<br />
+Lehekülg arvatakse täpsustusleheküljeks, kui see sisaldab märgist <code><nowiki>__DISAMBIG__</nowiki></code> või vastavat rööpkuju.',
+);
+
+/** Persian (فارسی)
+ * @author Reza1615
+ */
+$messages['fa'] = array(
+	'disambig-desc' => 'افزودن برچسب <code><nowiki>__DISAMBIG__</nowiki></code> برای مشخص کردن [[Special:DisambiguationPages|صفحات ابهام‌زدائی]]',
+	'disambiguationpages' => 'صفحه‌های ابهام‌زدایی',
+	'disambiguationpages-summary' => 'در زیر فهرستی از همه صفحات ابهام‌زدایی {{SITENAME}} موجود است.<br />
+اگر صفحه حاوی برچسب <code><nowiki>__DISAMBIG__</nowiki></code> (یا نام مستعار معادل) باشد به عنوان صفحهٔ ابهام‌زدایی در نظر گرفته می‌شود.',
+	'disambiguationpagelinks' => 'صفحه‌های دارای پیوند به صفحه‌های ابهام‌زدایی',
+	'disambiguationpagelinks-summary' => 'صفحه های زیر شامل حداقل یک لینک به یک صفحه ابهام زدایی است.
+بهتر است آنها به پیوندهای دقیق‌تری پیوند داشته باشند.<br />
+اگر صفحه حاوی برچسب <code><nowiki>__DISAMBIG__</nowiki></code> (یا نام مستعار معادل) باشد به عنوان صفحهٔ ابهام‌زدایی در نظر گرفته می‌شود.',
+);
+
 /** French (français)
  * @author Gomoko
  */
@@ -177,6 +205,13 @@ $messages['ja'] = array(
 	'disambiguationpagelinks-summary' => '以下のページには、曖昧さ回避ページへのリンクが 1 つ以上あります。
 これらのページでは、より適切なページにリンクする必要がある可能性があります。<br />
 タグ <code><nowiki>__DISAMBIG__</nowiki></code> (または同等の別名) を含むページを、曖昧さ回避ページと見なしています。',
+);
+
+/** Georgian (ქართული)
+ * @author David1010
+ */
+$messages['ka'] = array(
+	'disambiguationpages' => 'მრავალმნიშვნელოვანი გვერდები',
 );
 
 /** Colognian (Ripoarisch)

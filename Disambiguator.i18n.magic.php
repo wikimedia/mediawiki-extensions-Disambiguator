@@ -18,6 +18,16 @@ $magicWords['de'] = array(
 	'disambiguation' => array( '__BEGRIFFSKLÄRUNG__' ),
 );
 
+/** Estonian (eesti) */
+$magicWords['et'] = array(
+	'disambiguation' => array( '__TÄPSUSTUS__' ),
+);
+
+/** Persian (فارسی) */
+$magicWords['fa'] = array(
+	'disambiguation' => array( '__ابهام‌زدایی__' ),
+);
+
 /** Galician (galego) */
 $magicWords['gl'] = array(
 	'disambiguation' => array( '__HOMÓNIMOS__' ),
