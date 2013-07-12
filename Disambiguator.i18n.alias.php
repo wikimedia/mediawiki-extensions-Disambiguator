@@ -73,3 +73,9 @@ $specialPageAliases['uk'] = array(
 	'DisambiguationPages' => array( 'Сторінки_тлумачення_неоднозначності' ),
 	'DisambiguationPageLinks' => array( 'Посилання_на_сторінки_тлумачення_неоднозначності' ),
 );
+
+/** Vietnamese (Tiếng Việt) */
+$specialPageAliases['vi'] = array(
+	'DisambiguationPages' => array( 'Trang_định_hướng' ),
+	'DisambiguationPageLinks' => array( 'Liên_kết_đến_trang_định_hướng' ),
+);
