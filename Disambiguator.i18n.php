@@ -179,6 +179,20 @@ Se cadra, deberían ligar cunha páxina máis axeitada.<br />
 Unha páxina considérase de homónimos se contén a etiqueta <code><nowiki>__DISAMBIG__</nowiki></code> (ou un pseudónimo equivalente).',
 );
 
+/** Iloko (Ilokano)
+ * @author Lam-ang
+ */
+$messages['ilo'] = array(
+	'disambig-desc' => 'Agnayon ti etiketa ti <code><nowiki>__DISAMBIG__</nowiki></code> tapno mamarkaan dagiti [[Special:DisambiguationPages|panangilawlawag a pampanid]]',
+	'disambiguationpages' => 'Panangilawlawag a pampanid',
+	'disambiguationpages-summary' => 'Ti sumaganad a listaan ket ilistana amin a panangilawlawag a pampanid iti {{SITENAME}}.<br />
+Ti panid ket matrato a kas panangilawlawag a panid no aglaon ti etiketa ti <code><nowiki>__DISAMBIG__</nowiki></code> (wenno maysa a kapadpada a parbo a nagan).',
+	'disambiguationpagelinks' => 'Dagiti panid a nakasilpo kadagiti panangilawlawag a panid',
+	'disambiguationpagelinks-summary' => 'Dagiti sumaganad a panid ketaglaon ti ti saan a basbassit ngem maysa a silpo iti panangilawlawag a panid.
+Mabalin a dagitoy ket embes nasken a maisilpo ti nasaysayaat a panid.<br />
+Ti panid ket matrato a kas panangilawlawag a panid no aglaon ti etiketa ti <code><nowiki>__DISAMBIG__</nowiki></code> (wenno maysa a kapadpada a parbo a nagan).',
+);
+
 /** Italian (italiano)
  * @author Beta16
  */
@@ -216,15 +230,16 @@ $messages['ka'] = array(
 
 /** Korean (한국어)
  * @author Kwj2772
+ * @author 아라
  */
 $messages['ko'] = array(
-	'disambig-desc' => '[[Special:DisambiguationPages|동음이의 문서]]로 취급하도록 하는 <code><nowiki>__DISAMBIG__</nowiki></code> 태그를 추가',
+	'disambig-desc' => '[[Special:DisambiguationPages|동음이의 문서]]로 취급하도록 하는 <code><nowiki>__DISAMBIG__</nowiki></code> 태그를 추가합니다',
 	'disambiguationpages' => '동음이의 문서',
 	'disambiguationpages-summary' => '다음은 {{SITENAME}}에서 동음이의 문서의 목록입니다.<br />
-<code><nowiki>__DISAMBIG__</nowiki></code> 태그 (혹은 다른 이름의 태그)가 포함된 문서는 동음이의 문서로 취급됩니다.',
+<code><nowiki>__DISAMBIG__</nowiki></code> 태그(혹은 다른 이름의 태그)가 포함된 문서는 동음이의 문서로 취급됩니다.',
 	'disambiguationpagelinks' => '동음이의 문서를 가리키는 문서',
 	'disambiguationpagelinks-summary' => '다음 문서는 동음이의 문서를 가리키는 링크가 적어도 하나가 있는 문서입니다. 보다 적절한 문서로 다시 링크를 할 필요가 있습니다.<br />
-<code><nowiki>__DISAMBIG__</nowiki></code> 태그 (혹은 다른 이름의 태그)가 포함된 문서는 동음이의 문서로 취급됩니다.',
+<code><nowiki>__DISAMBIG__</nowiki></code> 태그(혹은 다른 이름의 태그)가 포함된 문서는 동음이의 문서로 취급됩니다.',
 );
 
 /** Colognian (Ripoarisch)

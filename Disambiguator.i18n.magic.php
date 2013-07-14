@@ -28,6 +28,11 @@ $magicWords['fa'] = array(
 	'disambiguation' => array( '__ابهام‌زدایی__' ),
 );
 
+/** French (français) */
+$magicWords['fr'] = array(
+	'disambiguation' => array( '__HOMONYMIE__' ),
+);
+
 /** Galician (galego) */
 $magicWords['gl'] = array(
 	'disambiguation' => array( '__HOMÓNIMOS__' ),
