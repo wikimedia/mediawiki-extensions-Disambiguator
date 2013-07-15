@@ -79,3 +79,9 @@ $specialPageAliases['vi'] = array(
 	'DisambiguationPages' => array( 'Trang_định_hướng' ),
 	'DisambiguationPageLinks' => array( 'Liên_kết_đến_trang_định_hướng' ),
 );
+
+/** Simplified Chinese (中文（简体）‎) */
+$specialPageAliases['zh-hans'] = array(
+	'DisambiguationPages' => array( '消歧义页' ),
+	'DisambiguationPageLinks' => array( '链接到消歧义页的页面' ),
+);
