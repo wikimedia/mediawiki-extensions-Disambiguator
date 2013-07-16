@@ -29,7 +29,8 @@ A page is treated as a disambiguation page if it contains the tag <code><nowiki>
 $messages['qqq'] = array(
 	'disambig-desc' => '{{desc}}',
 	'disambiguationpages' => '{{doc-special|DisambiguationPages}}
-The special page shows all disambiguation pages.',
+The special page shows all disambiguation pages.
+{{Identical|Disambiguation page}}',
 	'disambiguationpages-summary' => 'Header text explaining the purpose of the [[Special:DisambiguationPages]] page. It is not necessary to translate "<nowiki>__DISAMBIG__</nowiki>".
 
 See also:
@@ -106,11 +107,14 @@ Eine Seite wird als Begriffsklärungsseite behandelt, wenn sie das Tag <code><no
 
 /** Spanish (español)
  * @author Fitoschido
+ * @author Luis Felipe Schenone
  */
 $messages['es'] = array(
 	'disambig-desc' => 'Añade la etiqueta <code><nowiki>__DISAMBIG__</nowiki></code> para marcar las [[Special:DisambiguationPages|páginas de desambiguación]]',
 	'disambiguationpages' => 'Páginas de desambiguación',
+	'disambiguationpages-summary' => 'La siguiente es una lista de todas las páginas de desambiguación en {{SITENAME}}.<br />Una página se considera de desambiguación si contiene la etiqueta <code><nowiki>__DISAMBIG__</nowiki></code> (o un alias equivalente).',
 	'disambiguationpagelinks' => 'Páginas que enlazan a páginas de desambiguación',
+	'disambiguationpagelinks-summary' => 'Las siguientes páginas contienen al menos un enlace a una página de desambiguación. Es posible que necesiten enlazar a una página más apropiada.<br />Una página se considera de desambiguación si contiene la etiqueta <code><nowiki>__DISAMBIG__</nowiki></code> (o un alias equivalente).',
 );
 
 /** Estonian (eesti)
