@@ -183,6 +183,13 @@ Se cadra, deberían ligar cunha páxina máis axeitada.<br />
 Unha páxina considérase de homónimos se contén a etiqueta <code><nowiki>__DISAMBIG__</nowiki></code> (ou un pseudónimo equivalente).',
 );
 
+/** Hebrew (עברית)
+ * @author ערן
+ */
+$messages['he'] = array(
+	'disambiguationpages' => 'דפי פירושונים',
+);
+
 /** Iloko (Ilokano)
  * @author Lam-ang
  */
