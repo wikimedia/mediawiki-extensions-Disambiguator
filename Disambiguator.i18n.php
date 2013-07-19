@@ -188,6 +188,12 @@ Unha páxina considérase de homónimos se contén a etiqueta <code><nowiki>__DI
  */
 $messages['he'] = array(
 	'disambiguationpages' => 'דפי פירושונים',
+	'disambiguationpages-summary' => 'רשימת דפי הפירושונים ב{{SITENAME}}.<br />
+דף מוגדר כדף פירושוניםאם הוא מכיל את הסימון <code><nowiki>__DISAMBIG__</nowiki></code>.',
+	'disambiguationpagelinks' => 'דפים המקשרים לדפי פירושונים',
+	'disambiguationpagelinks-summary' => 'הדפים הבאים מכילים לפחות קישור אחד לדף פירושונים.
+לרוב רצוי לתקן את הקישור לדף עם הפירוש המתאים.<br />
+דף מוגדר כדף פירושונים הם הוא מכיל את השימוש <code><nowiki>__DISAMBIG__</nowiki></code>.',
 );
 
 /** Iloko (Ilokano)
@@ -268,6 +274,7 @@ En Sigg med_enem <code><nowiki>__DISAMBIG__</nowiki></code> Befähl dren, udder 
 );
 
 /** Luxembourgish (Lëtzebuergesch)
+ * @author Les Meloures
  * @author Robby
  */
 $messages['lb'] = array(
@@ -275,7 +282,7 @@ $messages['lb'] = array(
 	'disambiguationpages' => 'Homonymie-Säiten',
 	'disambiguationpages-summary' => "Hei ass d'Lëscht vun allen Homonymiesäiten op {{SITENAME}}.<br />
 Eng Säit gëtt als Homonymiesäit betruecht wann op der Säit den Tag<code><nowiki>__DISAMBIG__</nowiki></code> (oder en equivalenten Alias) drop steet.",
-	'disambiguationpagelinks' => 'Säiten déi op Homonymie-Säite linken',
+	'disambiguationpagelinks' => 'Säiten déi op Homonymiesäite linken',
 	'disambiguationpagelinks-summary' => 'Op dëse Säiten ass mindestens ee Link op eng Homonymie Säit.
 Déi sollten op eng Säit déi besser passt verlinkt ginn.<br />
 Eng Säit gëtt als Homonynie-Säit behandelt wann den Tag <code><nowiki>__DISAMBIG__</nowiki></code> (oder en equivalenten Alias) dran ass.',
