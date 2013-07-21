@@ -196,6 +196,20 @@ $messages['he'] = array(
 דף מוגדר כדף פירושונים הם הוא מכיל את השימוש <code><nowiki>__DISAMBIG__</nowiki></code>.',
 );
 
+/** Indonesian (Bahasa Indonesia)
+ * @author Iwan Novirion
+ */
+$messages['id'] = array(
+	'disambig-desc' => 'Tambahkan tag <code><nowiki>__DISAMBIG__</nowiki></code> untuk menandai sebagai [[Special:DisambiguationPages|halaman disambiguasi]]',
+	'disambiguationpages' => 'Halaman disambiguasi',
+	'disambiguationpages-summary' => "Berikut ini adalah daftar semua '''halaman disambiguasi''' pada {{SITENAME}}.<br />
+Suatu halaman dianggap sebagai halaman disambiguasi apabila halaman tersebut berisi tag <code><nowiki>__DISAMBIG__</nowiki></code> (atau nama lain yang sesuai).",
+	'disambiguationpagelinks' => 'Halaman yang terhubung ke halaman disambiguasi',
+	'disambiguationpagelinks-summary' => "Halaman-halaman berikut memiliki pranala ke suatu '''halaman disambiguasi'''.
+Halaman-halaman tersebut seharusnya terpaut ke topik-topik yang sesuai.<br />
+Suatu halaman dianggap sebagai halaman disambiguasi apabila halaman tersebut berisi tag <code><nowiki>__DISAMBIG__</nowiki></code> (atau nama lain yang sesuai).",
+);
+
 /** Iloko (Ilokano)
  * @author Lam-ang
  */
@@ -286,6 +300,20 @@ Eng Säit gëtt als Homonymiesäit betruecht wann op der Säit den Tag<code><now
 	'disambiguationpagelinks-summary' => 'Op dëse Säiten ass mindestens ee Link op eng Homonymie Säit.
 Déi sollten op eng Säit déi besser passt verlinkt ginn.<br />
 Eng Säit gëtt als Homonynie-Säit behandelt wann den Tag <code><nowiki>__DISAMBIG__</nowiki></code> (oder en equivalenten Alias) dran ass.',
+);
+
+/** Minangkabau (Baso Minangkabau)
+ * @author Iwan Novirion
+ */
+$messages['min'] = array(
+	'disambig-desc' => 'Tambahkan tag <code><nowiki>__DISAMBIG__</nowiki></code> untuak manandoi sabagai [[Special:DisambiguationPages|laman disambiguasi]]',
+	'disambiguationpages' => 'Laman disambiguasi',
+	'disambiguationpages-summary' => "Barikuik ko adolah dafta sado '''laman disambiguasi''' pado {{SITENAME}}.<br />
+Suatu laman dianggap sabagai laman disambiguasi bilo laman tasabuik barisi tag <code><nowiki>__DISAMBIG__</nowiki></code> (atau namo lain nan sasuai).",
+	'disambiguationpagelinks' => 'Laman nan tahubuang ka laman disambiguasi',
+	'disambiguationpagelinks-summary' => "Laman-laman barikuik ado pautan ka suatu '''laman disambiguasi'''.
+Laman-laman tasabuik saharuihnyo tapauik ka topik-topik nan sesuai.<br />
+Suatu laman dianggap sabagai laman disambiguasi bilo laman tasabuik barisi tag <code><nowiki>__DISAMBIG__</nowiki></code> (atau namo lain nan sasuai).",
 );
 
 /** Macedonian (македонски)
