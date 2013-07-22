@@ -145,6 +145,20 @@ $messages['fa'] = array(
 اگر صفحه حاوی برچسب <code><nowiki>__DISAMBIG__</nowiki></code> (یا نام مستعار معادل) باشد به عنوان صفحهٔ ابهام‌زدایی در نظر گرفته می‌شود.',
 );
 
+/** Finnish (suomi)
+ * @author Stryn
+ */
+$messages['fi'] = array(
+	'disambig-desc' => 'Lisää merkinnän <code><nowiki>__DISAMBIG__</nowiki></code> merkitäkseen [[Special:DisambiguationPages|täsmennyssivut]]',
+	'disambiguationpages' => 'Täsmennyssivut',
+	'disambiguationpages-summary' => 'Seuraavassa on luettelo kaikista täsmennyssivuista sivustossa {{SITENAME}}.<br />
+Sivu katsotaan täsmennyssivuksi, jos se sisältää merkinnän <code><nowiki>__DISAMBIG__</nowiki></code> (tai vastaavan aliaksen).',
+	'disambiguationpagelinks' => 'Sivut, jotka linkittävät täsmennyssivuihin',
+	'disambiguationpagelinks-summary' => 'Seuraavat sivut sisältävät vähintään yhden linkin täsmennyssivulle.
+Ne täytyy ehkä linkittää sopivampaan sivuun.<br />
+Sivu katsotaan täsmennyssivuksi, jos se sisältää merkinnän <code><nowiki>__DISAMBIG__</nowiki></code> (tai vastaavan aliaksen).',
+);
+
 /** French (français)
  * @author Gomoko
  */
