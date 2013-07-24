@@ -422,6 +422,14 @@ Lore ponne avè abbesogne de collegarse a cchiù pàggene appropriate.<br />
 'Na pàgene jè trattate cumme a 'na pàgene de disambbiguazione ce 'a pàgene tène 'u tag <code><nowiki>__DISAMBIG__</nowiki></code> (o 'nu nome equivalende).",
 );
 
+/** Russian (русский)
+ * @author KPu3uC B Poccuu
+ */
+$messages['ru'] = array(
+	'disambiguationpages' => 'Страницы разрешения неоднозначностей',
+	'disambiguationpagelinks' => 'Страницы, ссылающиеся на страницы разрешения неоднозначности',
+);
+
 /** Serbian (Cyrillic script) (српски (ћирилица)‎)
  * @author Милан Јелисавчић
  */
