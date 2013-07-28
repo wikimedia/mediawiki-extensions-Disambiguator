@@ -509,7 +509,7 @@ $messages['zh-hans'] = array(
 	'disambiguationpages' => '消歧义页',
 	'disambiguationpages-summary' => '下面列出了{{SITENAME}}上所有的消歧义页。<br />
 如果一个页面包含标记<code><nowiki>__DISAMBIG__</nowiki></code>（或等效的别名），则被视为一个消歧义页。',
-	'disambiguationpagelinks' => '链接到消歧义页的页面',
+	'disambiguationpagelinks' => '链接至消歧义页面的页面',
 	'disambiguationpagelinks-summary' => '下列页面包含至少一个到消歧义页的链接。
 这些链接可能需要修改，以便链接到更恰当的页面。<br />
 如果一个页面包含标记<code><nowiki>__DISAMBIG__</nowiki></code>（或等效的别名），则被视为一个消歧义页。',
