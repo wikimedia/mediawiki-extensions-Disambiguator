@@ -50,6 +50,12 @@ $specialPageAliases['lb'] = array(
 	'DisambiguationPageLinks' => array( 'HomonymieSäitLinken' ),
 );
 
+/** Minangkabau (Baso Minangkabau) */
+$specialPageAliases['min'] = array(
+	'DisambiguationPages' => array( 'LamanDisambiguasi' ),
+	'DisambiguationPageLinks' => array( 'PautanLamanDisambiguasi' ),
+);
+
 /** Macedonian (македонски) */
 $specialPageAliases['mk'] = array(
 	'DisambiguationPages' => array( 'ПојаснителниСтраници' ),
@@ -82,6 +88,6 @@ $specialPageAliases['vi'] = array(
 
 /** Simplified Chinese (中文（简体）‎) */
 $specialPageAliases['zh-hans'] = array(
-	'DisambiguationPages' => array( '消歧义页' ),
+	'DisambiguationPages' => array( '消歧义页面' ),
 	'DisambiguationPageLinks' => array( '链接到消歧义页的页面' ),
 );
