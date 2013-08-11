@@ -14,6 +14,12 @@ $specialPageAliases['en'] = array(
 	'DisambiguationPageLinks' => array( 'DisambiguationPageLinks' ),
 );
 
+/** Min Dong Chinese (Mìng-dĕ̤ng-ngṳ̄) */
+$specialPageAliases['cdo'] = array(
+	'DisambiguationPages' => array( '消除歧義頁面' ),
+	'DisambiguationPageLinks' => array( '消除歧義頁面鏈接' ),
+);
+
 /** German (Deutsch) */
 $specialPageAliases['de'] = array(
 	'DisambiguationPages' => array( 'Begriffsklärungsseiten' ),
