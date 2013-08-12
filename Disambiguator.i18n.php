@@ -27,7 +27,7 @@ A page is treated as a disambiguation page if it contains the tag <code><nowiki>
  * @author Shirayuki
  */
 $messages['qqq'] = array(
-	'disambig-desc' => '{{desc}}',
+	'disambig-desc' => '{{desc|name=Disambiguator|url=http://www.mediawiki.org/wiki/Extension:Disambiguator}}',
 	'disambiguationpages' => '{{doc-special|DisambiguationPages}}
 The special page shows all disambiguation pages.
 {{Identical|Disambiguation page}}',
