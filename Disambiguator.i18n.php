@@ -198,9 +198,11 @@ Unha páxina considérase de homónimos se contén a etiqueta <code><nowiki>__DI
 );
 
 /** Hebrew (עברית)
+ * @author Amire80
  * @author ערן
  */
 $messages['he'] = array(
+	'disambig-desc' => 'הוספת התג <code><nowiki>__DISAMBIG__</nowiki></code> כדי לסמן [[Special:DisambiguationPages|דפי פירושונים]]',
 	'disambiguationpages' => 'דפי פירושונים',
 	'disambiguationpages-summary' => 'רשימת דפי הפירושונים ב{{SITENAME}}.<br />
 דף מוגדר כדף פירושוניםאם הוא מכיל את הסימון <code><nowiki>__DISAMBIG__</nowiki></code>.',
@@ -375,6 +377,20 @@ $messages['ms'] = array(
 	'disambiguationpages-summary' => 'Yang berikut merupakan senarai semua halaman nyahkekaburan di {{SITENAME}}.<br />Sesebuah halaman yang mengandungi teg <code><nowiki>__DISAMBIG__</nowiki></code> (atau alias yang seumpamanya) dianggap sebagai halaman nyahkekaburan.',
 	'disambiguationpagelinks' => 'Halaman yang berpautan dengan halaman nyahkekaburan',
 	'disambiguationpagelinks-summary' => 'Halaman-halaman yang berikut mengandungi sekurang-kurangnya satu pautan ke halaman nyahkekaburan, tetapi seharusnya berpautan dengan halaman yang lebih sesuai.<br />Sesebuah halaman yang mengandungi teg <code><nowiki>__DISAMBIG__</nowiki></code> (atau alias yang seumpamanya) dianggap sebagai halaman nyahkekaburan.',
+);
+
+/** Low Saxon (Netherlands) (Nedersaksies)
+ * @author Servien
+ */
+$messages['nds-nl'] = array(
+	'disambig-desc' => 'Voegt t etiket <code><nowiki>__DISAMBIG__</nowiki></code> toe um [[Special:DisambiguationPages|deurverwiesziejen]] te markeren',
+	'disambiguationpages' => 'Deurverwiesziejen',
+	'disambiguationpages-summary' => 'Hier volgt n lieste mit alle deurverwiesziejen op de webstee van {{SITENAME}}.<br />
+n Zied wörden ezien as deurverwieszied as t etiket <code><nowiki>__DISAMBIG__</nowiki></code> derop steet (of n soortgelieke alias).',
+	'disambiguationpagelinks' => 'Ziejen die verwiezen naor deurverwiesziejen',
+	'disambiguationpagelinks-summary' => 'In de volgende ziejen steet tenminsten één verwiezing naor n deurverwieszied.
+t Kan ween dat ze mutten verwiezen naor n passendere zied.<br />
+n Zied wörden ezien as deurverwieszied as t etiket <code><nowiki>__DISAMBIG__</nowiki></code> derop steet (of n soortgelieke alias).',
 );
 
 /** Dutch (Nederlands)
