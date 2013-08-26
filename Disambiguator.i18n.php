@@ -421,6 +421,14 @@ Najprawdopodobniej powinny linkować do bardziej konkretnej strony docelowej.<br
 Strona jest uważana za ujednoznaczniającą gdy zawiera wyrażenie <code><nowiki>__DISAMBIG__</nowiki></code> (bądź równoważny alias).',
 );
 
+/** Portuguese (português)
+ * @author Malafaya
+ */
+$messages['pt'] = array(
+	'disambiguationpages' => 'Páginas de desambiguação',
+	'disambiguationpagelinks' => 'Páginas com ligações para páginas de desambiguação',
+);
+
 /** Romanian (română)
  * @author Minisarm
  */
