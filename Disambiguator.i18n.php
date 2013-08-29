@@ -407,6 +407,15 @@ Wellicht moeten ze koppelen naar een meer passende pagina.<br />
 Een pagina wordt gezien als doorverwijspagina als deze de tag <code><nowiki>__DISAMBIG__</nowiki></code> bevat (of een equivalent alias).",
 );
 
+/** Occitan (occitan)
+ * @author Cedric31
+ */
+$messages['oc'] = array(
+	'disambig-desc' => 'Apond la balisa <code><nowiki>__DISAMBIG__</nowiki></code> per marcar [[Special:DisambiguationPages|las paginas d’ambigüitat]].',
+	'disambiguationpages' => 'Paginas d’ambigüitat',
+	'disambiguationpagelinks' => 'Paginas que menan cap a de paginas d’ambigüitat',
+);
+
 /** Polish (polski)
  * @author Chrumps
  * @author WTM
