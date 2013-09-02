@@ -486,6 +486,7 @@ $messages['sr-ec'] = array(
 /** Swedish (svenska)
  * @author Ainali
  * @author Jopparn
+ * @author WikiPhoenix
  */
 $messages['sv'] = array(
 	'disambig-desc' => 'Lägger till taggen <code><nowiki>__DISAMBIG__</nowiki></code> för att markera [[Special:DisambiguationPages|förgreningssidor]]',
@@ -495,7 +496,7 @@ En sida behandlas som en förgreningssida om sidan innehåller syntaxen <code><n
 	'disambiguationpagelinks' => 'Sidor som länkar till förgreningssidor',
 	'disambiguationpagelinks-summary' => 'Följande sidor innehåller minst en länk till förgreningssida.
 De kan behöva länkas till en lämpligare sida istället.<br>
-En sida behandlas som en förgreningssida om sidan innehåller syntaxen <code><nowiki>__DISAMBIG__</nowiki></code> (eller ett motsvarande alias).', # Fuzzy
+En sida behandlas som en förgreningssida om den innehåller syntaxen <code><nowiki>__DISAMBIG__</nowiki></code> (eller ett motsvarande alias).', # Fuzzy
 );
 
 /** Telugu (తెలుగు)
