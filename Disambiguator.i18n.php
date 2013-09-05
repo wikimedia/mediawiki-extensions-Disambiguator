@@ -431,11 +431,30 @@ Strona jest uważana za ujednoznaczniającą gdy zawiera wyrażenie <code><nowik
 );
 
 /** Portuguese (português)
+ * @author Cainamarques
  * @author Malafaya
  */
 $messages['pt'] = array(
+	'disambig-desc' => 'Adiciona a tag <code><nowiki>__DISAMBIG__</nowiki></code> para marcar [[Special:DisambiguationPages|páginas de desambiguação]]',
 	'disambiguationpages' => 'Páginas de desambiguação',
+	'disambiguationpages-summary' => 'O que se segue é uma lista todas as páginas de desambiguação em {{SITENAME}}.<br />
+A página é tratada como desambiguação se contêm a tag <code><nowiki>__DISAMBIG__</nowiki></code> (ou um pseudônimo equivalente).',
 	'disambiguationpagelinks' => 'Páginas com ligações para páginas de desambiguação',
+	'disambiguationpagelinks-summary' => 'As páginas a seguir contêm ao menos uma ligação a uma página de desambiguação. Elas podem necessitar ligar a uma página mais específica.<br />
+A página é tratada como desambiguação se contêm a tag <code><nowiki>__DISAMBIG__</nowiki></code> (ou um pseudônimo equivalente).',
+);
+
+/** Brazilian Portuguese (português do Brasil)
+ * @author Cainamarques
+ */
+$messages['pt-br'] = array(
+	'disambig-desc' => 'Adiciona a tag <code><nowiki>__DISAMBIG__</nowiki></code> para marcar [[Special:DisambiguationPages|páginas de desambiguação]]',
+	'disambiguationpages' => 'Páginas de desambiguação',
+	'disambiguationpages-summary' => 'O que se segue é uma lista todas as páginas de desambiguação em {{SITENAME}}.<br />
+A página é tratada como desambiguação se contêm a tag <code><nowiki>__DISAMBIG__</nowiki></code> (ou um pseudônimo equivalente).',
+	'disambiguationpagelinks' => 'Páginas com ligações para páginas de desambiguação',
+	'disambiguationpagelinks-summary' => 'As páginas a seguir contêm ao menos uma ligação a uma página de desambiguação. Elas podem necessitar ligar a uma página mais específica.<br />
+A página é tratada como desambiguação se contêm a tag <code><nowiki>__DISAMBIG__</nowiki></code> (ou um pseudônimo equivalente).',
 );
 
 /** Romanian (română)
