@@ -80,6 +80,12 @@ $specialPageAliases['nl'] = array(
 	'DisambiguationPageLinks' => array( 'Doorverwijspaginakoppelingen' ),
 );
 
+/** Portuguese (português) */
+$specialPageAliases['pt'] = array(
+	'DisambiguationPages' => array( 'Páginas_de_desambiguação' ),
+	'DisambiguationPageLinks' => array( 'Links_para_páginas_de_desambiguação' ),
+);
+
 /** Ukrainian (українська) */
 $specialPageAliases['uk'] = array(
 	'DisambiguationPages' => array( 'Сторінки_тлумачення_неоднозначності' ),

@@ -514,8 +514,8 @@ $messages['sv'] = array(
 En sida behandlas som en förgreningssida om sidan innehåller syntaxen <code><nowiki>__DISAMBIG__</nowiki></code> (eller ett motsvarande alias).',
 	'disambiguationpagelinks' => 'Sidor som länkar till förgreningssidor',
 	'disambiguationpagelinks-summary' => 'Följande sidor innehåller minst en länk till förgreningssida.
-De kan behöva länkas till en lämpligare sida istället.<br>
-En sida behandlas som en förgreningssida om den innehåller syntaxen <code><nowiki>__DISAMBIG__</nowiki></code> (eller ett motsvarande alias).', # Fuzzy
+De kan behöva länkas till en lämpligare sida istället.<br />
+En sida behandlas som en förgreningssida om den innehåller syntaxen <code><nowiki>__DISAMBIG__</nowiki></code> (eller ett motsvarande alias).',
 );
 
 /** Telugu (తెలుగు)
