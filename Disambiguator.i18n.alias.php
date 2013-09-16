@@ -32,6 +32,12 @@ $specialPageAliases['diq'] = array(
 	'DisambiguationPageLinks' => array( 'GreyéPeréManedébini' ),
 );
 
+/** Estonian (eesti) */
+$specialPageAliases['et'] = array(
+	'DisambiguationPages' => array( 'Täpsustusleheküljed' ),
+	'DisambiguationPageLinks' => array( 'Lingid_täpsustusleheküljele' ),
+);
+
 /** Persian (فارسی) */
 $specialPageAliases['fa'] = array(
 	'DisambiguationPages' => array( 'صفحات_ابهام‌زدایی' ),
