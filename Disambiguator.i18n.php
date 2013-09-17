@@ -91,6 +91,20 @@ $messages['cs'] = array(
 	'disambiguationpagelinks-summary' => 'Následující stránky obsahují nejméně jeden odkaz na rozcestník. Možná by měly obsahovat na konkrétnější stránku.<br />Stránka je považována za rozcestník, pokud obsahuje značku <code><nowiki>__DISAMBIG__</nowiki></code> (nebo její synonymum).',
 );
 
+/** Danish (dansk)
+ * @author Christian List
+ */
+$messages['da'] = array(
+	'disambig-desc' => 'Tilføjer tagget <code><nowiki>__DISAMBIG__</nowiki></code> til at markere [[Special:DisambiguationPages|flertydige sider]]',
+	'disambiguationpages' => 'Flertydige sider',
+	'disambiguationpages-summary' => 'Følgende er en liste over alle flertydige sider på {{SITENAME}}.<br />
+En side behandles som en flertydig side, hvis den indeholder tagget <code><nowiki>__DISAMBIG__</nowiki></code> (eller et tilsvarende alias).',
+	'disambiguationpagelinks' => 'Sider, der henviser til flertydige titler',
+	'disambiguationpagelinks-summary' => 'De følgende sider indeholder mindst ét link til en flertydig side.
+De muligvis er nødt til at linke til en mere passende side i stedet for.<br />
+En side behandles som en flertydig side, hvis den indeholder tagget <code><nowiki>__DISAMBIG__</nowiki></code> (eller et tilsvarende alias).',
+);
+
 /** German (Deutsch)
  * @author Metalhead64
  */
