@@ -540,6 +540,19 @@ $messages['te'] = array(
 	'disambiguationpagelinks' => 'అయోమయ నివృత్తి పుటలకు లంకెలున్న పుటలు',
 );
 
+/** Turkish (Türkçe)
+ * @author Incelemeelemani
+ */
+$messages['tr'] = array(
+	'disambiguationpages' => 'Anlam ayrımı sayfaları',
+	'disambiguationpages-summary' => "Aşağıdaki listede {{SITENAME}}'deki tüm anlam ayrımı sayfaları listelenmektedir.<br />
+Eğer bir sayfa <code><nowiki>__DISAMBIG__</nowiki></code> (veya eşdeğer bir sihirli kelime) etiketini içeriyorsa, anlam ayrımı sayfası olarak kabul edilir.",
+	'disambiguationpagelinks' => 'Anlam ayrım sayfalarına bağlantısı olan sayfalar',
+	'disambiguationpagelinks-summary' => 'Aşağıdaki sayfalar en az bir anlam ayrımı sayfasına bağlantı içerir.
+Bu sayfalarda bu bağlantılar yerine daha uygun sayfalara bağlantı gerekebilir.<br />
+Eğer bir sayfa <code><nowiki>__DISAMBIG__</nowiki></code> (veya eşdeğer bir sihirli kelime) etiketini içeriyorsa, anlam ayrımı sayfası olarak kabul edilir.',
+);
+
 /** Ukrainian (українська)
  * @author Base
  * @author DixonD
