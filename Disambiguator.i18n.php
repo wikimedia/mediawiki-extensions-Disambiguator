@@ -328,6 +328,14 @@ Et künnt sin, dat se bäßer ob_en Sigg lenke dähte, di mieh zopaß kütt.
 En Sigg med_enem <code><nowiki>__DISAMBIG__</nowiki></code> Befähl dren, udder jät, wad_et sellve bedügg udder enföösch, zällt als en  „Watt eß dat?“ Sigg.',
 );
 
+/** Latin (Latina)
+ * @author UV
+ */
+$messages['la'] = array(
+	'disambiguationpages' => 'Paginae discretivae',
+	'disambiguationpagelinks' => 'Paginae quae ad paginas discretivas nectunt',
+);
+
 /** Luxembourgish (Lëtzebuergesch)
  * @author Les Meloures
  * @author Robby
