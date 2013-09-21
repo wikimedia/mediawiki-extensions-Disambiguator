@@ -74,6 +74,12 @@ $specialPageAliases['mk'] = array(
 	'DisambiguationPageLinks' => array( 'ВрскиДоПојаснување' ),
 );
 
+/** Malayalam (മലയാളം) */
+$specialPageAliases['ml'] = array(
+	'DisambiguationPages' => array( 'വിവക്ഷിതതാളുകൾ' ),
+	'DisambiguationPageLinks' => array( 'വിവക്ഷിതതാളുകളുടെകണ്ണികൾ' ),
+);
+
 /** Low Saxon (Netherlands) (Nedersaksies) */
 $specialPageAliases['nds-nl'] = array(
 	'DisambiguationPages' => array( 'Deurverwiesziejen' ),
