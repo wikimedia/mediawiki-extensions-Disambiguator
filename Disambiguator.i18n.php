@@ -31,13 +31,15 @@ $messages['qqq'] = array(
 	'disambiguationpages' => '{{doc-special|DisambiguationPages}}
 The special page shows all disambiguation pages.
 {{Identical|Disambiguation page}}',
-	'disambiguationpages-summary' => 'Header text explaining the purpose of the [[Special:DisambiguationPages]] page. It is not necessary to translate "<nowiki>__DISAMBIG__</nowiki>".
+	'disambiguationpages-summary' => '{{doc-important|Do not translate <code><nowiki>__DISAMBIG__</nowiki></code>.}}
+Header text explaining the purpose of the [[Special:DisambiguationPages]] page.
 
 See also:
 * {{msg-mw|Disambiguationpagelinks-summary}}',
 	'disambiguationpagelinks' => '{{doc-special|DisambiguationPageLinks}}
 The special page shows all pages with links needing disambiguation.',
-	'disambiguationpagelinks-summary' => 'Header text explaining the purpose of the [[Special:DisambiguationPageLinks]] page. It is not necessary to translate "<nowiki>__DISAMBIG__</nowiki>".
+	'disambiguationpagelinks-summary' => '{{doc-important|Do not translate <code><nowiki>__DISAMBIG__</nowiki></code>.}}
+Header text explaining the purpose of the [[Special:DisambiguationPageLinks]] page.
 
 See also:
 * {{msg-mw|Disambiguationpages-summary}}',
