@@ -5,6 +5,7 @@
  * @file
  * @ingroup Extensions
  */
+// @codingStandardsIgnoreFile
 
 $specialPageAliases = array();
 
@@ -108,6 +109,12 @@ $specialPageAliases['pt'] = array(
 $specialPageAliases['uk'] = array(
 	'DisambiguationPages' => array( 'Сторінки_тлумачення_неоднозначності' ),
 	'DisambiguationPageLinks' => array( 'Посилання_на_сторінки_тлумачення_неоднозначності' ),
+);
+
+/** vèneto (vèneto) */
+$specialPageAliases['vec'] = array(
+	'DisambiguationPages' => array( 'PagineDeDisambigua' ),
+	'DisambiguationPageLinks' => array( 'PagineChePontaAPagineDeDisambigua' ),
 );
 
 /** Vietnamese (Tiếng Việt) */

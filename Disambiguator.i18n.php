@@ -586,6 +586,14 @@ $messages['ur'] = array(
 	'disambig-desc' => 'ٹیگ کا اضافہ کرتا ہے <code><nowiki>__واضح رہے__</nowiki></code> [[Special:DisambiguationPages|صفحات کو واضح]] کے نشان زد کرنا',
 );
 
+/** vèneto (vèneto)
+ * @author Candalua
+ */
+$messages['vec'] = array(
+	'disambiguationpages' => 'Pagine de disambiguassion',
+	'disambiguationpagelinks' => 'Pagine che ponta a pagine de disambiguassion',
+);
+
 /** Vietnamese (Tiếng Việt)
  * @author Minh Nguyen
  */
