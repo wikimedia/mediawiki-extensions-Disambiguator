@@ -51,6 +51,12 @@ $specialPageAliases['fa'] = array(
 	'DisambiguationPageLinks' => array( 'پیوندهای_صفحات_ابهام‌زدایی' ),
 );
 
+/** Galician (galego) */
+$specialPageAliases['gl'] = array(
+	'DisambiguationPages' => array( 'Páxinas_de_homónimos' ),
+	'DisambiguationPageLinks' => array( 'Ligazóns_cara_a_páxinas_de_homónimos' ),
+);
+
 /** Japanese (日本語) */
 $specialPageAliases['ja'] = array(
 	'DisambiguationPages' => array( '曖昧さ回避ページ' ),

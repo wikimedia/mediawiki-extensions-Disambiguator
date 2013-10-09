@@ -511,10 +511,17 @@ Lore ponne avè abbesogne de collegarse a cchiù pàggene appropriate.<br />
 
 /** Russian (русский)
  * @author KPu3uC B Poccuu
+ * @author Okras
  */
 $messages['ru'] = array(
+	'disambig-desc' => 'Добавляет тег <code><nowiki>__DISAMBIG__</nowiki></code> для пометки [[Special:DisambiguationPages|страниц разрешения неоднозначностей]]',
 	'disambiguationpages' => 'Страницы разрешения неоднозначностей',
+	'disambiguationpages-summary' => 'Ниже приведён список страниц разрешения неоднозначностей на {{SITENAME}}.<br />
+Страница рассматривается как страница разрешения неоднозначностей, если она содержит тег <code><nowiki>__DISAMBIG__</nowiki></code> (или эквивалентные псевдонимы).',
 	'disambiguationpagelinks' => 'Страницы, ссылающиеся на страницы разрешения неоднозначности',
+	'disambiguationpagelinks-summary' => 'Следующие страницы содержат по крайней мере одну ссылку на страницу разрешения неоднозначностей.
+Им может потребоваться ссылка на более подходящую страницу.<br />
+Страница рассматривается как страница разрешения неоднозначностей, если она содержит тег <code><nowiki>__DISAMBIG__</nowiki></code> (или эквивалентные псевдонимы).',
 );
 
 /** Serbian (Cyrillic script) (српски (ћирилица)‎)
