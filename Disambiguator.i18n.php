@@ -228,6 +228,14 @@ $messages['he'] = array(
 דף מוגדר כדף פירושונים הם הוא מכיל את השימוש <code><nowiki>__DISAMBIG__</nowiki></code>.',
 );
 
+/** Croatian (hrvatski)
+ * @author SpeedyGonsales
+ */
+$messages['hr'] = array(
+	'disambiguationpages' => 'Razdvojbene stranice',
+	'disambiguationpagelinks' => 'Stranice koje vode na razdvojbene stranice',
+);
+
 /** Interlingua (interlingua)
  * @author McDutchie
  */
