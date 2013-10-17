@@ -82,6 +82,14 @@ $messages['br'] = array(
 	'disambiguationpagelinks' => 'Pajennoù enno liammoù war-zu pajennoù disheñvelout',
 );
 
+/** Chechen (нохчийн)
+ * @author Умар
+ */
+$messages['ce'] = array(
+	'disambiguationpages' => 'Дуккха маьӀнаш долу агӀонаш',
+	'disambiguationpagelinks' => 'Дуккха маьӀнаш долу хьажорца йолу агӀонаш',
+);
+
 /** Czech (česky)
  * @author Mormegil
  */
