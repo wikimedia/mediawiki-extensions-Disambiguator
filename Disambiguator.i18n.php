@@ -318,6 +318,13 @@ $messages['ka'] = array(
 	'disambiguationpages' => 'მრავალმნიშვნელოვანი გვერდები',
 );
 
+/** Kazakh (Cyrillic script) (қазақша (кирил)‎)
+ * @author Arystanbek
+ */
+$messages['kk-cyrl'] = array(
+	'disambiguationpages' => 'Айрық беттер',
+);
+
 /** Korean (한국어)
  * @author Kwj2772
  * @author 아라
