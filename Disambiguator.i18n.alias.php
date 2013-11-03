@@ -134,3 +134,9 @@ $specialPageAliases['zh-hans'] = array(
 	'DisambiguationPages' => array( '消歧义页面' ),
 	'DisambiguationPageLinks' => array( '链接到消歧义页的页面' ),
 );
+
+/** Traditional Chinese (中文（繁體）‎) */
+$specialPageAliases['zh-hant'] = array(
+	'DisambiguationPages' => array( '消歧義頁' ),
+	'DisambiguationPageLinks' => array( '消歧義頁連接' ),
+);

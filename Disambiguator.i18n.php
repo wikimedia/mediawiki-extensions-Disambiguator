@@ -90,7 +90,8 @@ $messages['ce'] = array(
 	'disambiguationpagelinks' => 'Дуккха маьӀнаш долу хьажорца йолу агӀонаш',
 );
 
-/** Czech (česky)
+/** Czech (čeština)
+ * @author Matěj Suchánek
  * @author Mormegil
  */
 $messages['cs'] = array(
@@ -98,7 +99,7 @@ $messages['cs'] = array(
 	'disambiguationpages' => 'Rozcestníky',
 	'disambiguationpages-summary' => 'Toto je seznam všech rozcestníků na {{grammar:6sg|{{SITENAME}}}}.<br />Stránka je považována za rozcestník, pokud obsahuje značku <code><nowiki>__DISAMBIG__</nowiki></code> (nebo její synonymum).',
 	'disambiguationpagelinks' => 'Stránky odkazující na rozcestníky',
-	'disambiguationpagelinks-summary' => 'Následující stránky obsahují nejméně jeden odkaz na rozcestník. Možná by měly obsahovat na konkrétnější stránku.<br />Stránka je považována za rozcestník, pokud obsahuje značku <code><nowiki>__DISAMBIG__</nowiki></code> (nebo její synonymum).',
+	'disambiguationpagelinks-summary' => 'Následující stránky obsahují nejméně jeden odkaz na rozcestník. Možná by měly odkazovat na konkrétnější stránku.<br />Stránka je považována za rozcestník, pokud obsahuje značku <code><nowiki>__DISAMBIG__</nowiki></code> (nebo její synonymum).',
 );
 
 /** Danish (dansk)
