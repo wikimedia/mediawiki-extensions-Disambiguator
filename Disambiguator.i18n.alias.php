@@ -57,6 +57,12 @@ $specialPageAliases['gl'] = array(
 	'DisambiguationPageLinks' => array( 'Ligazóns_cara_a_páxinas_de_homónimos' ),
 );
 
+/** Italian (italiano) */
+$specialPageAliases['it'] = array(
+	'DisambiguationPages' => array( 'PagineDisambiguazione' ),
+	'DisambiguationPageLinks' => array( 'CollegamentiPagineDisambiguazione' ),
+);
+
 /** Japanese (日本語) */
 $specialPageAliases['ja'] = array(
 	'DisambiguationPages' => array( '曖昧さ回避ページ' ),
