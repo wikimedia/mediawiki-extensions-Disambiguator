@@ -130,6 +130,14 @@ Sie sollten stattdessen auf eine passendere Seite verlinken.<br />
 Eine Seite wird als Begriffsklärungsseite behandelt, wenn sie das Tag <code><nowiki>__DISAMBIG__</nowiki></code> oder einen entsprechenden Alias enthält.',
 );
 
+/** Esperanto (Esperanto)
+ * @author KuboF
+ */
+$messages['eo'] = array(
+	'disambiguationpages' => 'Apartigiloj',
+	'disambiguationpagelinks' => 'Paĝoj ligantaj al apartigiloj',
+);
+
 /** Spanish (español)
  * @author Fitoschido
  * @author Luis Felipe Schenone
