@@ -232,13 +232,14 @@ Unha páxina considérase de homónimos se contén a etiqueta <code><nowiki>__DI
 
 /** Hebrew (עברית)
  * @author Amire80
+ * @author Guycn2
  * @author ערן
  */
 $messages['he'] = array(
 	'disambig-desc' => 'הוספת התג <code><nowiki>__DISAMBIG__</nowiki></code> כדי לסמן [[Special:DisambiguationPages|דפי פירושונים]]',
 	'disambiguationpages' => 'דפי פירושונים',
-	'disambiguationpages-summary' => 'רשימת דפי הפירושונים ב{{SITENAME}}.<br />
-דף מוגדר כדף פירושוניםאם הוא מכיל את הסימון <code><nowiki>__DISAMBIG__</nowiki></code>.',
+	'disambiguationpages-summary' => 'זוהי רשימה של כל דפי הפירושונים ב{{grammar:תחילית|{{SITENAME}}}}.<br />
+דף מוגדר כדף פירושונים אם הוא מכיל את הסימון <code><nowiki>__DISAMBIG__</nowiki></code>.',
 	'disambiguationpagelinks' => 'דפים המקשרים לדפי פירושונים',
 	'disambiguationpagelinks-summary' => 'הדפים הבאים מכילים לפחות קישור אחד לדף פירושונים.
 לרוב רצוי לתקן את הקישור לדף עם הפירוש המתאים.<br />
