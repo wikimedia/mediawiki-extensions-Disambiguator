@@ -57,6 +57,11 @@ $specialPageAliases['gl'] = array(
 	'DisambiguationPageLinks' => array( 'Ligazóns_cara_a_páxinas_de_homónimos' ),
 );
 
+/** Hebrew (עברית) */
+$specialPageAliases['he'] = array(
+	'DisambiguationPages' => array( 'דפי_פירושונים' ),
+);
+
 /** Italian (italiano) */
 $specialPageAliases['it'] = array(
 	'DisambiguationPages' => array( 'PagineDisambiguazione' ),
