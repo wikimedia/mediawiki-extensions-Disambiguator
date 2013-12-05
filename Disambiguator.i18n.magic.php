@@ -55,7 +55,7 @@ $magicWords['mk'] = array(
 
 /** Malayalam (മലയാളം) */
 $magicWords['ml'] = array(
-	'disambiguation' => array( '_വിവക്ഷിതം_' ),
+	'disambiguation' => array( '__വിവക്ഷ__' ),
 );
 
 /** Marathi (मराठी) */
