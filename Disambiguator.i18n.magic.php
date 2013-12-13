@@ -23,6 +23,11 @@ $magicWords['de'] = array(
 	'disambiguation' => array( '__BEGRIFFSKLÄRUNG__' ),
 );
 
+/** Spanish (español) */
+$magicWords['es'] = array(
+	'disambiguation' => array( '__DISAMBIGUACIÓN__', '__DISAMBIGUACION__' ),
+);
+
 /** Estonian (eesti) */
 $magicWords['et'] = array(
 	'disambiguation' => array( '__TÄPSUSTUS__' ),
@@ -40,7 +45,7 @@ $magicWords['fr'] = array(
 
 /** Galician (galego) */
 $magicWords['gl'] = array(
-	'disambiguation' => array( '__HOMÓNIMOS__' ),
+	'disambiguation' => array( '__HOMÓNIMOS__', '__HOMONIMOS__' ),
 );
 
 /** Korean (한국어) */
@@ -61,4 +66,9 @@ $magicWords['ml'] = array(
 /** Marathi (मराठी) */
 $magicWords['mr'] = array(
 	'disambiguation' => array( '__निःसंदिग्ध__' ),
+);
+
+/** Simplified Chinese (中文（简体）‎) */
+$magicWords['zh-hans'] = array(
+	'disambiguation' => array( '__消歧义__' ),
 );
