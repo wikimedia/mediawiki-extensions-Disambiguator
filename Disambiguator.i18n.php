@@ -86,8 +86,14 @@ $messages['br'] = array(
  * @author Умар
  */
 $messages['ce'] = array(
+	'disambig-desc' => 'ТӀетуху тег <code><nowiki>__DISAMBIG__</nowiki></code> [[Special:DisambiguationPages|дуккха маьӀнаш долу агӀонаш]] билгалъян',
 	'disambiguationpages' => 'Дуккха маьӀнаш долу агӀонаш',
+	'disambiguationpages-summary' => 'Лахахь гойту {{SITENAME}} чура дуккха маьӀнаш долу агӀонаш.<br />
+АгӀо дуккха маьӀнаш долуш лору цуна чохь тег <code><nowiki>__DISAMBIG__</nowiki></code> елахь.',
 	'disambiguationpagelinks' => 'Дуккха маьӀнаш долу хьажорца йолу агӀонаш',
+	'disambiguationpagelinks-summary' => 'Лахара агӀонаш чохь дуккха маьӀнаш долу агӀона тӀе цхьаъ мукъа хьажораг ю.
+Царна оьшуш хилла мега царца йогӀуш йолу агӀона тӀе хьажораг.<br />
+АгӀо дуккха маьӀнаш долуш лору цуна чохь тег __DISAMBIG__ елахь.',
 );
 
 /** Czech (čeština)
@@ -374,9 +380,10 @@ $messages['la'] = array(
 /** Luxembourgish (Lëtzebuergesch)
  * @author Les Meloures
  * @author Robby
+ * @author Soued031
  */
 $messages['lb'] = array(
-	'disambig-desc' => 'Setzt den Tag <code><nowiki>__DISAMBIG__</nowiki></code> derbäi fir [[Special:DisambiguationPages|Homonynie-Säiten]] ze markéieren',
+	'disambig-desc' => 'Setzt den Tag <code><nowiki>__DISAMBIG__</nowiki></code> dobäi fir [[Special:DisambiguationPages|Homonynie-Säiten]] ze markéieren',
 	'disambiguationpages' => 'Homonymie-Säiten',
 	'disambiguationpages-summary' => "Hei ass d'Lëscht vun allen Homonymiesäiten op {{SITENAME}}.<br />
 Eng Säit gëtt als Homonymiesäit betruecht wann op der Säit den Tag<code><nowiki>__DISAMBIG__</nowiki></code> (oder en equivalenten Alias) drop steet.",
