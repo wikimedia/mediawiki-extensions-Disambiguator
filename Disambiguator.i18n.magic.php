@@ -23,6 +23,11 @@ $magicWords['de'] = array(
 	'disambiguation' => array( '__BEGRIFFSKLÄRUNG__' ),
 );
 
+/** Zazaki (Zazaki) */
+$magicWords['diq'] = array(
+	'disambiguation' => array( '_MANEYOBİN_' ),
+);
+
 /** Spanish (español) */
 $magicWords['es'] = array(
 	'disambiguation' => array( '__DISAMBIGUACIÓN__', '__DISAMBIGUACION__' ),

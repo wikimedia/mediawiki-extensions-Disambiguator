@@ -299,6 +299,18 @@ Mabalin a dagitoy ket embes nasken a maisilpo ti nasaysayaat a panid.<br />
 Ti panid ket matrato a kas panangilawlawag a panid no aglaon ti etiketa ti <code><nowiki>__DISAMBIG__</nowiki></code> (wenno maysa a kapadpada a parbo a nagan).',
 );
 
+/** Icelandic (íslenska)
+ * @author Snævar
+ */
+$messages['is'] = array(
+	'disambiguationpages' => 'Aðgreiningarsíður',
+	'disambiguationpages-summary' => 'Eftirfarandi er listi yfir allar aðgreiningarsíður á {{SITENAME}}.<br />
+Síða er meðhöndluð sem aðgreiningarsíða ef hún inniheldur tagið <code><nowiki>__DISAMBIG__</nowiki></code> (eða svipað samnefni).',
+	'disambiguationpagelinks' => 'Síður sem tengja á aðgreiningarsíður',
+	'disambiguationpagelinks-summary' => 'Eftirfarandi síður innihalda að minnsta kosti einn tengil á aðgreiningarsíðu.
+Það gæti þurft að breyta tenglinum svo hann beini á rétta síðu. Síða er meðhöndluð sem aðgreiningarsíða ef tagið <code><nowiki>__DISAMBIG__</nowiki></code> (eða sambærilegt samheiti) er á síðunni.',
+);
+
 /** Italian (italiano)
  * @author Beta16
  */
@@ -383,7 +395,7 @@ $messages['la'] = array(
  * @author Soued031
  */
 $messages['lb'] = array(
-	'disambig-desc' => 'Setzt den Tag <code><nowiki>__DISAMBIG__</nowiki></code> dobäi fir [[Special:DisambiguationPages|Homonynie-Säiten]] ze markéieren',
+	'disambig-desc' => 'Setzt den Tag <code><nowiki>__DISAMBIG__</nowiki></code> derbäi fir [[Special:DisambiguationPages|Homonynie-Säiten]] ze markéieren',
 	'disambiguationpages' => 'Homonymie-Säiten',
 	'disambiguationpages-summary' => "Hei ass d'Lëscht vun allen Homonymiesäiten op {{SITENAME}}.<br />
 Eng Säit gëtt als Homonymiesäit betruecht wann op der Säit den Tag<code><nowiki>__DISAMBIG__</nowiki></code> (oder en equivalenten Alias) drop steet.",
