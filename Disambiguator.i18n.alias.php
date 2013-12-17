@@ -60,6 +60,7 @@ $specialPageAliases['gl'] = array(
 /** Hebrew (עברית) */
 $specialPageAliases['he'] = array(
 	'DisambiguationPages' => array( 'דפי_פירושונים' ),
+	'DisambiguationPageLinks' => array( 'דפים_המקשרים_לדפי_פירושונים' ),
 );
 
 /** Italian (italiano) */
