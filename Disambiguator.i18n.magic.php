@@ -53,6 +53,11 @@ $magicWords['gl'] = array(
 	'disambiguation' => array( '__HOMÓNIMOS__', '__HOMONIMOS__' ),
 );
 
+/** Hebrew (עברית) */
+$magicWords['he'] = array(
+	'disambiguation' => array( 'דף_פירושונים', 'פירושונים' ),
+);
+
 /** Korean (한국어) */
 $magicWords['ko'] = array(
 	'disambiguation' => array( '__동음이의__' ),
