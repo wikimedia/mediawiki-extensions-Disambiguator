@@ -522,15 +522,17 @@ A página é tratada como desambiguação se contêm a tag <code><nowiki>__DISAM
 
 /** Brazilian Portuguese (português do Brasil)
  * @author Cainamarques
+ * @author 555
  */
 $messages['pt-br'] = array(
 	'disambig-desc' => 'Adiciona a tag <code><nowiki>__DISAMBIG__</nowiki></code> para marcar [[Special:DisambiguationPages|páginas de desambiguação]]',
 	'disambiguationpages' => 'Páginas de desambiguação',
-	'disambiguationpages-summary' => 'O que se segue é uma lista todas as páginas de desambiguação em {{SITENAME}}.<br />
-A página é tratada como desambiguação se contêm a tag <code><nowiki>__DISAMBIG__</nowiki></code> (ou um pseudônimo equivalente).',
-	'disambiguationpagelinks' => 'Páginas com ligações para páginas de desambiguação',
-	'disambiguationpagelinks-summary' => 'As páginas a seguir contêm ao menos uma ligação a uma página de desambiguação. Elas podem necessitar ligar a uma página mais específica.<br />
-A página é tratada como desambiguação se contêm a tag <code><nowiki>__DISAMBIG__</nowiki></code> (ou um pseudônimo equivalente).',
+	'disambiguationpages-summary' => 'Segue abaixo listagem de todas as páginas de desambiguação em {{SITENAME}}.<br />
+A página é tratada como desambiguação se contêm a tag <code><nowiki>__DISAMBIG__</nowiki></code> (ou um equivalente).',
+	'disambiguationpagelinks' => 'Páginas com links para páginas de desambiguação',
+	'disambiguationpagelinks-summary' => 'As páginas a seguir contêm ao menos um link a uma página de desambiguação. 
+Talvez elas devam direcionar a uma página mais específica.<br />
+A página é tratada como desambiguação se contêm a tag <code><nowiki>__DISAMBIG__</nowiki></code> (ou um equivalente).',
 );
 
 /** Romanian (română)
