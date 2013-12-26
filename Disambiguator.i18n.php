@@ -136,6 +136,15 @@ Sie sollten stattdessen auf eine passendere Seite verlinken.<br />
 Eine Seite wird als Begriffsklärungsseite behandelt, wenn sie das Tag <code><nowiki>__DISAMBIG__</nowiki></code> oder einen entsprechenden Alias enthält.',
 );
 
+/** Lower Sorbian (dolnoserbski)
+ * @author Michawiki
+ */
+$messages['dsb'] = array(
+	'disambig-desc' => 'Pśidawa element <code><nowiki>__DISAMBIG__</nowiki></code>, aby [[Special:DisambiguationPages|boki wěcejwóznamowosći]] markěrowało',
+	'disambiguationpages' => 'Boki wěcejwóznamowosći',
+	'disambiguationpagelinks' => 'Boki, kótarež wótkazuju na boki wěcejwóznamowosći',
+);
+
 /** Esperanto (Esperanto)
  * @author KuboF
  */
@@ -258,6 +267,15 @@ $messages['he'] = array(
 $messages['hr'] = array(
 	'disambiguationpages' => 'Razdvojbene stranice',
 	'disambiguationpagelinks' => 'Stranice koje vode na razdvojbene stranice',
+);
+
+/** Upper Sorbian (hornjoserbsce)
+ * @author Michawiki
+ */
+$messages['hsb'] = array(
+	'disambig-desc' => 'Přidawa element <code><nowiki>__DISAMBIG__</nowiki></code>, zo by [[Special:DisambiguationPages|strony wjacewoznamowosće]] markěrowało',
+	'disambiguationpages' => 'Strony wjacewoznamowosće',
+	'disambiguationpagelinks' => 'Strony, kotrež na strony wjacewoznamowosće wotkazuja',
 );
 
 /** Interlingua (interlingua)
