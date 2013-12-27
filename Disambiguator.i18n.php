@@ -142,7 +142,10 @@ Eine Seite wird als Begriffsklärungsseite behandelt, wenn sie das Tag <code><no
 $messages['dsb'] = array(
 	'disambig-desc' => 'Pśidawa element <code><nowiki>__DISAMBIG__</nowiki></code>, aby [[Special:DisambiguationPages|boki wěcejwóznamowosći]] markěrowało',
 	'disambiguationpages' => 'Boki wěcejwóznamowosći',
+	'disambiguationpages-summary' => 'Slědujo lisćina wšych bokow wěcejcewóznamowosći na {{GRAMMAR:lokatiw|{{SITENAME}}}}.<br />Bok naglěda se ako bok wěcejwóznamowowsći, jolic wopśimujo element <code><nowiki>__DISAMBIG__</nowiki> (abo wótpowědujucy alias).',
 	'disambiguationpagelinks' => 'Boki, kótarež wótkazuju na boki wěcejwóznamowosći',
+	'disambiguationpagelinks-summary' => 'Slědujuce boki wopśimuju nanejmjenjej jaden wótkaz k bokoju wěcejwóznamowosći. Wóne by měli město togo na pśigódnjejšy bok wótkazowaś.<br />
+Bok naglěda se ako bok wěcejwóznamowosći, jolic wopśimujo element <code><nowiki>__DISAMBIG__</nowiki></code> (abo wotpowědujucy alias).',
 );
 
 /** Esperanto (Esperanto)
@@ -275,7 +278,10 @@ $messages['hr'] = array(
 $messages['hsb'] = array(
 	'disambig-desc' => 'Přidawa element <code><nowiki>__DISAMBIG__</nowiki></code>, zo by [[Special:DisambiguationPages|strony wjacewoznamowosće]] markěrowało',
 	'disambiguationpages' => 'Strony wjacewoznamowosće',
+	'disambiguationpages-summary' => 'Slěduje lisćina wšěch stronow wjacewoznamowosće na {{GRAMMAR:lokatiw|{{SITENAME}}}}.<br />Strona so jako strona wjacewoznamowowsće wobhladuje, jeli element <code><nowiki>__DISAMBIG__</nowiki> (abo wotpowědowacy alias) wobsahuje.',
 	'disambiguationpagelinks' => 'Strony, kotrež na strony wjacewoznamowosće wotkazuja',
+	'disambiguationpagelinks-summary' => 'Slědowace strony wobsahuja znajmjeńša jedyn wotkaz k stronje wjacewoznamowosće. Wone měli město toho na bóle přihódnu stronu wotkazować.<br />
+Strona so jako strona wjacewoznamowosće wobhladuje, jeli element <code><nowiki>__DISAMBIG__</nowiki></code> (abo wotpowědowacy alias) wobsahuje.',
 );
 
 /** Interlingua (interlingua)
