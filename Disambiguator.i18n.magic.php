@@ -55,7 +55,7 @@ $magicWords['gl'] = array(
 
 /** Hebrew (עברית) */
 $magicWords['he'] = array(
-	'disambiguation' => array( 'דף_פירושונים', 'פירושונים' ),
+	'disambiguation' => array( '__דף_פירושונים__', '__פירושונים__' ),
 );
 
 /** Korean (한국어) */
