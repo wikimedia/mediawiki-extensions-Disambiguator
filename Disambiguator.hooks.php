@@ -29,6 +29,22 @@ class DisambiguatorHooks {
 	}
 
 	/**
+	 * Modify the Special:LonelyPages query to ignore disambiguation pages
+	 * @param array &$tables
+	 * @param array &$conds
+	 * @param array &$joinConds
+	 * @return bool
+	 */
+	public static function onLonelyPagesQuery( &$tables, &$conds, &$joinConds ) {
+		$tables[] = 'page_props';
+		$conds['pp_page'] = null;
+		$joinConds['page_props'] = array(
+			'LEFT JOIN', array( 'page_id = pp_page', 'pp_propname' => 'disambiguation' )
+		);
+		return true;
+	}
+
+	/**
 	 * Convenience function for testing whether or not a page is a disambiguation page
 	 * @param object $title Title object of a page
 	 * @return bool

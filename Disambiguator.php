@@ -51,6 +51,7 @@ $wgExtensionMessagesFiles['DisambiguatorMagic'] = $dir . '/Disambiguator.i18n.ma
 // Register hooks
 $wgHooks['GetDoubleUnderscoreIDs'][] = 'DisambiguatorHooks::onGetDoubleUnderscoreIDs';
 $wgHooks['wgQueryPages'][] = 'DisambiguatorHooks::onwgQueryPages';
+$wgHooks['LonelyPagesQuery'][] = 'DisambiguatorHooks::onLonelyPagesQuery';
 
 // Register special pages
 $wgSpecialPages['DisambiguationPages'] = 'SpecialDisambiguationPages';
