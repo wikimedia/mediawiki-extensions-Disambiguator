@@ -46,7 +46,7 @@ class DisambiguatorHooks {
 
 	/**
 	 * Convenience function for testing whether or not a page is a disambiguation page
-	 * @param object $title Title object of a page
+	 * @param Title $title object of a page
 	 * @return bool
 	 */
 	public static function isDisambiguationPage( Title $title ) {
