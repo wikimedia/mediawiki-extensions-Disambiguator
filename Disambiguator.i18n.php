@@ -183,10 +183,11 @@ Lehekülg arvatakse täpsustusleheküljeks, kui see sisaldab märgist <code><now
 );
 
 /** Persian (فارسی)
+ * @author Ebraminio
  * @author Reza1615
  */
 $messages['fa'] = array(
-	'disambig-desc' => 'افزودن برچسب <code><nowiki>__DISAMBIG__</nowiki></code> برای مشخص کردن [[Special:DisambiguationPages|صفحات ابهام‌زدائی]]',
+	'disambig-desc' => 'افزودن برچسب <code><nowiki>__DISAMBIG__</nowiki></code> برای مشخص‌کردن [[Special:DisambiguationPages|صفحات ابهام‌زدایی]]',
 	'disambiguationpages' => 'صفحه‌های ابهام‌زدایی',
 	'disambiguationpages-summary' => 'در زیر فهرستی از همه صفحات ابهام‌زدایی {{SITENAME}} موجود است.<br />
 اگر صفحه حاوی برچسب <code><nowiki>__DISAMBIG__</nowiki></code> (یا نام مستعار معادل) باشد به عنوان صفحهٔ ابهام‌زدایی در نظر گرفته می‌شود.',
