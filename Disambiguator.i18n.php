@@ -82,6 +82,13 @@ $messages['br'] = array(
 	'disambiguationpagelinks' => 'Pajennoù enno liammoù war-zu pajennoù disheñvelout',
 );
 
+/** Catalan (català)
+ * @author Vriullop
+ */
+$messages['ca'] = array(
+	'disambiguationpagelinks' => 'Pàgines que enllacen a pàgines de desambiguació',
+);
+
 /** Chechen (нохчийн)
  * @author Умар
  */
@@ -462,7 +469,7 @@ $messages['mk'] = array(
  * @author Praveenp
  */
 $messages['ml'] = array(
-	'disambig-desc' => ' [[Special:DisambiguationPages|വിവക്ഷാതാളുകൾ]]  അടയാളപ്പെടുത്തുന്നതിനായി താളുകളിൽ <code><nowiki>__വിവക്ഷ__ </nowiki></code> അല്ലെങ്കിൽ <code><nowiki>__DISAMBIG__ </nowiki></code> എന്ന് ചേർക്കുന്നു',
+	'disambig-desc' => '[[Special:DisambiguationPages|വിവക്ഷാതാളുകൾ]]  അടയാളപ്പെടുത്തുന്നതിനായി താളുകളിൽ <code><nowiki>__വിവക്ഷ__ </nowiki></code> അല്ലെങ്കിൽ <code><nowiki>__DISAMBIG__ </nowiki></code> എന്ന് ചേർക്കുന്നു',
 	'disambiguationpages' => 'വിവക്ഷാതാളുകൾ',
 	'disambiguationpages-summary' => 'താഴെ {{SITENAME}} സംരംഭത്തിലെ വിവക്ഷാതാളുകളുടെ പട്ടിക കൊടുത്തിരിക്കുന്നു.<br /> ഒരു താൾ വിവക്ഷാതാളായി കണക്കാക്കണമെങ്കിൽ ആ താളിൽ <code><nowiki>__വിവക്ഷ__</nowiki></code> എന്ന ടാഗ് (അല്ലെങ്കിൽ സമാനമായവ) ഉണ്ടായിരിക്കണം.',
 	'disambiguationpagelinks' => 'വിവക്ഷാതാളുകളിലേയ്ക്ക് കണ്ണിചേർത്തിരിക്കുന്ന താളുകൾ',
