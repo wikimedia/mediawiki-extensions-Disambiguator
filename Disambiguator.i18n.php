@@ -387,15 +387,16 @@ $messages['kk-cyrl'] = array(
 
 /** Korean (한국어)
  * @author Kwj2772
+ * @author Priviet
  * @author 아라
  */
 $messages['ko'] = array(
 	'disambig-desc' => '[[Special:DisambiguationPages|동음이의 문서]]로 취급하도록 하는 <code><nowiki>__DISAMBIG__</nowiki></code> 태그를 추가합니다',
 	'disambiguationpages' => '동음이의 문서',
-	'disambiguationpages-summary' => '다음은 {{SITENAME}}에서 동음이의 문서의 목록입니다.<br />
+	'disambiguationpages-summary' => '다음은 {{SITENAME}}의 동음이의 문서 목록입니다.<br />
 <code><nowiki>__DISAMBIG__</nowiki></code> 태그(혹은 다른 이름의 태그)가 포함된 문서는 동음이의 문서로 취급됩니다.',
 	'disambiguationpagelinks' => '동음이의 문서를 가리키는 문서',
-	'disambiguationpagelinks-summary' => '다음 문서는 동음이의 문서를 가리키는 링크가 적어도 하나가 있는 문서입니다. 보다 적절한 문서로 다시 링크를 할 필요가 있습니다.<br />
+	'disambiguationpagelinks-summary' => '다음 문서는 동음이의 문서를 가리키는 링크가 적어도 하나 이상 있는 문서입니다. 보다 적절한 문서로 다시 링크할 필요가 있습니다.<br />
 <code><nowiki>__DISAMBIG__</nowiki></code> 태그(혹은 다른 이름의 태그)가 포함된 문서는 동음이의 문서로 취급됩니다.',
 );
 
