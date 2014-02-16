@@ -272,6 +272,19 @@ $messages['he'] = array(
 דף מוגדר כדף פירושונים הם הוא מכיל את השימוש <code><nowiki>__DISAMBIG__</nowiki></code>.',
 );
 
+/** Hindi (हिन्दी)
+ * @author Siddhartha Ghai
+ */
+$messages['hi'] = array(
+	'disambig-desc' => '[[Special:DisambiguationPages|बहुविकल्पी पृष्ठ]] चिन्हित करने हेतु <code><nowiki>__DISAMBIG__</nowiki></code> टैग जोड़ता है',
+	'disambiguationpages' => 'बहुविकल्पी पृष्ठ',
+	'disambiguationpages-summary' => '{{SITENAME}} पर सभी बहुविकल्पी पृष्ठों की सूची निम्न है।<br />
+किसी पृष्ठ को बहुविकल्पी पृष्ठ तब माना जाता है यदि उसमें <code><nowiki>__DISAMBIG__</nowiki></code> टैग (या उसके सामान कोड) का प्रयोग हो।',
+	'disambiguationpagelinks' => 'बहुविकल्पी पृष्ठों से जुड़ते पृष्ठ',
+	'disambiguationpagelinks-summary' => 'निम्न पृष्ठों में बहुविकल्पी पृष्ठों की कम-से-कम एक कड़ी है। इनमें उस कड़ी की जगह उपयुक्त पृष्ठ की कड़ी होनी चाहिए।<br/>
+किसी पृष्ठ को बहुविकल्पी पृष्ठ तब माना जाता है यदि उसमें <code><nowiki>__DISAMBIG__</nowiki></code> टैग (या उसके सामान कोड) का प्रयोग हो।', # Fuzzy
+);
+
 /** Croatian (hrvatski)
  * @author SpeedyGonsales
  */
@@ -484,6 +497,7 @@ $messages['mr'] = array(
 	'disambiguationpages' => 'निःसंदिग्धीकरण पाने',
 	'disambiguationpages-summary' => 'खाली {{SITENAME}} वरील सर्व निःसंदिग्धीकरण पानांची यादी दिलेली आहे.<br />
 एखाद्या पानास निःसंदिग्धीकरण पान तेंव्हाच समजल्या जाते, जेंव्हा त्यात  <code><nowiki>__DISAMBIG__</nowiki></code> ही खूणपताका असेल (किंवा त्या समकक्ष पर्याय असेल).',
+	'disambiguationpagelinks' => 'नि:संदिग्धीकरण पानांशी जुळलेली पाने',
 	'disambiguationpagelinks-summary' => 'खालील पानांना, निःसंदिग्धीकरण पृष्ठाशी जोडणारा किमान एक दुवा आहे.
 त्यापेक्षा, त्यांना अधिक योग्य पानाशी जोडल्या जावयाची गरज आहे.<br />
 एखाद्या पानास निःसंदिग्धीकरण पान तेंव्हाच समजल्या जाते, जेंव्हा त्यात <code><nowiki>__DISAMBIG__</nowiki></code> ही खूणपताका असेल (किंवा त्या समकक्ष पर्याय असेल).',
