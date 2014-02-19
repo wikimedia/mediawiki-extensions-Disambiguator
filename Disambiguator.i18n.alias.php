@@ -21,6 +21,12 @@ $specialPageAliases['ar'] = array(
 	'DisambiguationPageLinks' => array( 'وصلات_صفحات_توضيح' ),
 );
 
+/** Egyptian Spoken Arabic (مصرى) */
+$specialPageAliases['arz'] = array(
+	'DisambiguationPages' => array( 'صفحات_توضيح' ),
+	'DisambiguationPageLinks' => array( 'وصلات_صفحات_توضيح' ),
+);
+
 /** Min Dong Chinese (Mìng-dĕ̤ng-ngṳ̄) */
 $specialPageAliases['cdo'] = array(
 	'DisambiguationPages' => array( '消除歧義頁面' ),
