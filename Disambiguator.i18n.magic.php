@@ -63,6 +63,11 @@ $magicWords['he'] = array(
 	'disambiguation' => array( '__דף_פירושונים__', '__פירושונים__' ),
 );
 
+/** Hindi (हिन्दी) */
+$magicWords['hi'] = array(
+	'disambiguation' => array( '__बहुवि__' ),
+);
+
 /** Japanese (日本語) */
 $magicWords['ja'] = array(
 	'disambiguation' => array( '__曖昧さ回避__' ),
