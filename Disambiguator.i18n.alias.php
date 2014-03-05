@@ -129,6 +129,12 @@ $specialPageAliases['pt'] = array(
 	'DisambiguationPageLinks' => array( 'Links_para_páginas_de_desambiguação' ),
 );
 
+/** Swedish (svenska) */
+$specialPageAliases['sv'] = array(
+	'DisambiguationPages' => array( 'Förgreningssidor' ),
+	'DisambiguationPageLinks' => array( 'Sidor_som_länkar_till_förgreningssidor' ),
+);
+
 /** Ukrainian (українська) */
 $specialPageAliases['uk'] = array(
 	'DisambiguationPages' => array( 'Сторінки_тлумачення_неоднозначності' ),
