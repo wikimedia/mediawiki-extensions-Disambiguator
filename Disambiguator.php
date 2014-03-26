@@ -31,7 +31,7 @@ $wgExtensionCredits['other'][] = array(
 	'author' => array(
 		'Ryan Kaldari',
 	),
-	'version'  => '1.0',
+	'version'  => '1.1',
 	'url' => 'https://www.mediawiki.org/wiki/Extension:Disambiguator',
 	'descriptionmsg' => 'disambig-desc',
 );
@@ -44,6 +44,7 @@ $dir = __DIR__;
 $wgAutoloadClasses['DisambiguatorHooks'] = $dir . '/Disambiguator.hooks.php';
 $wgAutoloadClasses['SpecialDisambiguationPages'] = $dir . '/specials/SpecialDisambiguationPages.php';
 $wgAutoloadClasses['SpecialDisambiguationPageLinks'] = $dir . '/specials/SpecialDisambiguationPageLinks.php';
+$wgMessagesDirs['Disambiguator'] = __DIR__ . '/i18n';
 $wgExtensionMessagesFiles['Disambiguator'] = $dir . '/Disambiguator.i18n.php';
 $wgExtensionMessagesFiles['DisambiguatorAlias'] = $dir . '/Disambiguator.i18n.alias.php';
 $wgExtensionMessagesFiles['DisambiguatorMagic'] = $dir . '/Disambiguator.i18n.magic.php';

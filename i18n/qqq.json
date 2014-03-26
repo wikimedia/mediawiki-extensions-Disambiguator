@@ -1,0 +1,12 @@
+{
+    "@metadata": {
+        "authors": [
+            "Shirayuki"
+        ]
+    },
+    "disambig-desc": "{{desc|name=Disambiguator|url=http://www.mediawiki.org/wiki/Extension:Disambiguator}}",
+    "disambiguationpages": "{{doc-special|DisambiguationPages}}\nThe special page shows all disambiguation pages.\n{{Identical|Disambiguation page}}",
+    "disambiguationpages-summary": "{{doc-important|Do not translate <code><nowiki>__DISAMBIG__</nowiki></code>.}}\nHeader text explaining the purpose of the [[Special:DisambiguationPages]] page.\n\nSee also:\n* {{msg-mw|Disambiguationpagelinks-summary}}",
+    "disambiguationpagelinks": "{{doc-special|DisambiguationPageLinks}}\nThe special page shows all pages with links needing disambiguation.",
+    "disambiguationpagelinks-summary": "{{doc-important|Do not translate <code><nowiki>__DISAMBIG__</nowiki></code>.}}\nHeader text explaining the purpose of the [[Special:DisambiguationPageLinks]] page.\n\nSee also:\n* {{msg-mw|Disambiguationpages-summary}}"
+}
