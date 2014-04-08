@@ -4,5 +4,7 @@
             "Vriullop"
         ]
     },
-    "disambiguationpagelinks": "Pàgines que enllacen a pàgines de desambiguació"
+    "disambiguationpages-summary": "La següent és una llista de totes les pàgines de desambiguació del projecte {{SITENAME}}.<br />\nUna pàgina és tractada com una desambiguació si conté l'etiqueta <code><nowiki>__DISAMBIG__</nowiki></code> (o un àlies equivalent).",
+    "disambiguationpagelinks": "Pàgines que enllacen a pàgines de desambiguació",
+    "disambiguationpagelinks-summary": "Les pàgines següents tenen almenys un enllaç a una pàgina de desambiguació.\nEn el seu lloc potser haurien d'enllaçar a una pàgina més apropiada.<br />\nUna pàgina és tractada com una desambiguació si conté l'etiqueta <code><nowiki>__DISAMBIG__</nowiki></code> (o un àlies equivalent)."
 }
