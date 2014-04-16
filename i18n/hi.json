@@ -1,12 +1,12 @@
 {
-    "@metadata": {
-        "authors": [
-            "Siddhartha Ghai"
-        ]
-    },
-    "disambig-desc": "[[Special:DisambiguationPages|बहुविकल्पी पृष्ठ]] चिन्हित करने हेतु \u003Ccode\u003E\u003Cnowiki\u003E__DISAMBIG__\u003C/nowiki\u003E\u003C/code\u003E टैग जोड़ता है",
-    "disambiguationpages": "बहुविकल्पी पृष्ठ",
-    "disambiguationpages-summary": "{{SITENAME}} पर सभी बहुविकल्पी पृष्ठों की सूची निम्न है।\u003Cbr /\u003E\nकिसी पृष्ठ को बहुविकल्पी पृष्ठ तब माना जाता है यदि उसमें \u003Ccode\u003E\u003Cnowiki\u003E__DISAMBIG__\u003C/nowiki\u003E\u003C/code\u003E टैग (या उसके सामान कोड) का प्रयोग हो।",
-    "disambiguationpagelinks": "बहुविकल्पी पृष्ठों से जुड़ते पृष्ठ",
-    "disambiguationpagelinks-summary": "निम्न पृष्ठों में बहुविकल्पी पृष्ठों की कम-से-कम एक कड़ी है। इनमें उस कड़ी की जगह उपयुक्त पृष्ठ की कड़ी होनी चाहिए।\u003Cbr/\u003E\nकिसी पृष्ठ को बहुविकल्पी पृष्ठ तब माना जाता है यदि उसमें \u003Ccode\u003E\u003Cnowiki\u003E__DISAMBIG__\u003C/nowiki\u003E\u003C/code\u003E टैग (या उसके सामान कोड) का प्रयोग हो।"
+	"@metadata": {
+		"authors": [
+			"Siddhartha Ghai"
+		]
+	},
+	"disambig-desc": "[[Special:DisambiguationPages|बहुविकल्पी पृष्ठ]] चिन्हित करने हेतु <code><nowiki>__DISAMBIG__</nowiki></code> टैग जोड़ता है",
+	"disambiguationpages": "बहुविकल्पी पृष्ठ",
+	"disambiguationpages-summary": "{{SITENAME}} पर सभी बहुविकल्पी पृष्ठों की सूची निम्न है।<br />\nकिसी पृष्ठ को बहुविकल्पी पृष्ठ तब माना जाता है यदि उसमें <code><nowiki>__DISAMBIG__</nowiki></code> टैग (या उसके सामान कोड) का प्रयोग हो।",
+	"disambiguationpagelinks": "बहुविकल्पी पृष्ठों से जुड़ते पृष्ठ",
+	"disambiguationpagelinks-summary": "निम्न पृष्ठों में बहुविकल्पी पृष्ठों की कम-से-कम एक कड़ी है। इनमें उस कड़ी की जगह उपयुक्त पृष्ठ की कड़ी होनी चाहिए।<br/>\nकिसी पृष्ठ को बहुविकल्पी पृष्ठ तब माना जाता है यदि उसमें <code><nowiki>__DISAMBIG__</nowiki></code> टैग (या उसके सामान कोड) का प्रयोग हो।"
 }

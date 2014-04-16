@@ -1,13 +1,13 @@
 {
-    "@metadata": {
-        "authors": [
-            "Justincheng12345",
-            "Simon Shek"
-        ]
-    },
-    "disambig-desc": "加入\u003Ccode\u003E\u003Cnowiki\u003E__DISAMBIG__\u003C/nowiki\u003E\u003C/code\u003E標記以標示[[Special:DisambiguationPages|消歧義頁]]",
-    "disambiguationpages": "消歧義頁",
-    "disambiguationpages-summary": "以下是{{SITENAME}}上所以消歧義頁的列表。\n\n若頁面含有\u003Ccode\u003E\u003Cnowiki\u003E__DISAMBIG__\u003C/nowiki\u003E\u003C/code\u003E或相同標記則視為消歧義頁。",
-    "disambiguationpagelinks": "鏈接到消歧義頁的頁面",
-    "disambiguationpagelinks-summary": "下列頁面含有最下一個連往消歧義頁的連結，他們或應連至更準確的頁面。\n\n若頁面含有\u003Ccode\u003E\u003Cnowiki\u003E__DISAMBIG__\u003C/nowiki\u003E\u003C/code\u003E或相同標記則視為消歧義頁。"
+	"@metadata": {
+		"authors": [
+			"Justincheng12345",
+			"Simon Shek"
+		]
+	},
+	"disambig-desc": "加入<code><nowiki>__DISAMBIG__</nowiki></code>標記以標示[[Special:DisambiguationPages|消歧義頁]]",
+	"disambiguationpages": "消歧義頁",
+	"disambiguationpages-summary": "以下是{{SITENAME}}上所以消歧義頁的列表。\n\n若頁面含有<code><nowiki>__DISAMBIG__</nowiki></code>或相同標記則視為消歧義頁。",
+	"disambiguationpagelinks": "鏈接到消歧義頁的頁面",
+	"disambiguationpagelinks-summary": "下列頁面含有最下一個連往消歧義頁的連結，他們或應連至更準確的頁面。\n\n若頁面含有<code><nowiki>__DISAMBIG__</nowiki></code>或相同標記則視為消歧義頁。"
 }

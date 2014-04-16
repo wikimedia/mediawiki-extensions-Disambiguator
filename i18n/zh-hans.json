@@ -1,14 +1,14 @@
 {
-    "@metadata": {
-        "authors": [
-            "Cwek",
-            "Shizhao",
-            "Xiaomingyan"
-        ]
-    },
-    "disambig-desc": "添加标签\u003Ccode\u003E\u003Cnowiki\u003E__DISAMBIG__\u003C/nowiki\u003E\u003C/code\u003E以标记[[Special:DisambiguationPages|消歧义页面]]",
-    "disambiguationpages": "消歧义页面",
-    "disambiguationpages-summary": "以下是{{SITENAME}}所有消歧义页面的列表。\u003Cbr /\u003E\n如果页面含有标签\u003Ccode\u003E\u003Cnowiki\u003E__DISAMBIG__\u003C/nowiki\u003E\u003C/code\u003E（或等价别名），它会被视为消歧义页面。",
-    "disambiguationpagelinks": "链接至消歧义页面的页面",
-    "disambiguationpagelinks-summary": "以下页面包含至少一个至消歧义页面的链接。它们可能需要链接至更合适的页面。\u003Cbr /\u003E\n如果页面含有标签\u003Ccode\u003E\u003Cnowiki\u003E__DISAMBIG__\u003C/nowiki\u003E\u003C/code\u003E（或等价别名），它会被视为消歧义页面。"
+	"@metadata": {
+		"authors": [
+			"Cwek",
+			"Shizhao",
+			"Xiaomingyan"
+		]
+	},
+	"disambig-desc": "添加标签<code><nowiki>__DISAMBIG__</nowiki></code>以标记[[Special:DisambiguationPages|消歧义页面]]",
+	"disambiguationpages": "消歧义页面",
+	"disambiguationpages-summary": "以下是{{SITENAME}}所有消歧义页面的列表。<br />\n如果页面含有标签<code><nowiki>__DISAMBIG__</nowiki></code>（或等价别名），它会被视为消歧义页面。",
+	"disambiguationpagelinks": "链接至消歧义页面的页面",
+	"disambiguationpagelinks-summary": "以下页面包含至少一个至消歧义页面的链接。它们可能需要链接至更合适的页面。<br />\n如果页面含有标签<code><nowiki>__DISAMBIG__</nowiki></code>（或等价别名），它会被视为消歧义页面。"
 }
