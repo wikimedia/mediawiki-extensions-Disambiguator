@@ -41,8 +41,8 @@ $specialPageAliases['de'] = array(
 
 /** Zazaki (Zazaki) */
 $specialPageAliases['diq'] = array(
-	'DisambiguationPages' => array( 'PeréManedébini' ),
-	'DisambiguationPageLinks' => array( 'GreyéPeréManedébini' ),
+	'DisambiguationPages' => array( 'PerréManedébini' ),
+	'DisambiguationPageLinks' => array( 'GreyéPerréManedébini' ),
 );
 
 /** Estonian (eesti) */
