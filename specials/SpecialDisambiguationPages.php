@@ -31,9 +31,9 @@ class SpecialDisambiguationPages extends QueryPage {
 				'page_props'
 			),
 			'fields' => array(
-				'value' => 'page_props.pp_page',
-				'namespace' => 'page.page_namespace',
-				'title' => 'page.page_title',
+				'value' => 'pp_page',
+				'namespace' => 'page_namespace',
+				'title' => 'page_title',
 			),
 			'conds' => array(
 				'page_id = pp_page',
