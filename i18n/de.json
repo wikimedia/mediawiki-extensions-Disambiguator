@@ -4,7 +4,7 @@
 			"Metalhead64"
 		]
 	},
-	"disambig-desc": "Ergänzt das Tag <code><nowiki>__DISAMBIG__</nowiki></code> zum Markieren von [[Special:DisambiguationPages|Begriffsklärungsseiten]].",
+	"disambig-desc": "Ergänzt das Tag <code><nowiki>__DISAMBIG__</nowiki></code> zum Markieren von [[Special:DisambiguationPages|Begriffsklärungsseiten]]",
 	"disambiguationpages": "Begriffsklärungsseiten",
 	"disambiguationpages-summary": "Es folgt eine Liste aller Begriffsklärungsseiten auf {{SITENAME}}.<br />\nEine Seite wird als Begriffsklärungsseite behandelt, wenn sie das Tag <code><nowiki>__DISAMBIG__</nowiki></code> oder einen entsprechenden Alias enthält.",
 	"disambiguationpagelinks": "Seiten, die auf Begriffsklärungsseiten verlinken",
