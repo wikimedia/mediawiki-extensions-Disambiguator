@@ -72,4 +72,16 @@ class DisambiguatorHooks {
 		wfProfileOut( __METHOD__ );
 		return false;
 	}
+
+	/**
+	 * If VE is enabled, add our module so we can add a Disambiguation checkbox to the page settings dialog.
+	 * @return bool
+	 */
+	public static function onSetupAfterCache() {
+		global $wgVisualEditorPluginModules;
+		if ( is_array( $wgVisualEditorPluginModules ) ) {
+			$wgVisualEditorPluginModules[] = 'ext.disambiguator.visualEditor';
+		}
+		return true;
+	}
 }
