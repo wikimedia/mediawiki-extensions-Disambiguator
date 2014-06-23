@@ -1,10 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Милан Јелисавчић"
+			"Милан Јелисавчић",
+			"Milicevic01"
 		]
 	},
 	"disambig-desc": "Додаје ознаку <code><nowiki>__DISAMBIG__</nowiki></code> за обележавање [[Special:DisambiguationPages|вишезначних одредница]]",
 	"disambiguationpages": "Вишезначне одреднице",
-	"disambiguationpagelinks": "Странице до вишезначних одредница"
+	"disambiguationpagelinks": "Странице до вишезначних одредница",
+	"visualeditor-dialog-meta-settings-disambiguation-label": "Ово је вишезначна страница"
 }
