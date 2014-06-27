@@ -123,6 +123,11 @@ $specialPageAliases['nl'] = array(
 	'DisambiguationPageLinks' => array( 'Doorverwijspaginakoppelingen' ),
 );
 
+/** Polish (polski) */
+$specialPageAliases['pl'] = array(
+	'DisambiguationPages' => array( 'Strony_ujednoznaczniające' ),
+);
+
 /** Portuguese (português) */
 $specialPageAliases['pt'] = array(
 	'DisambiguationPages' => array( 'Páginas_de_desambiguação' ),
