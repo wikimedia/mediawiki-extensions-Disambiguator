@@ -89,7 +89,7 @@ $specialPageAliases['ko'] = array(
 
 /** Luxembourgish (Lëtzebuergesch) */
 $specialPageAliases['lb'] = array(
-	'DisambiguationPages' => array( 'HomonymieSäiten' ),
+	'DisambiguationPages' => array( 'Homonymie-Säiten' ),
 	'DisambiguationPageLinks' => array( 'HomonymieSäitLinken' ),
 );
 
