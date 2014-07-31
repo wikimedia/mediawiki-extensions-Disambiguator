@@ -167,5 +167,5 @@ $specialPageAliases['zh-hans'] = array(
 /** Traditional Chinese (中文（繁體）‎) */
 $specialPageAliases['zh-hant'] = array(
 	'DisambiguationPages' => array( '消歧義頁' ),
-	'DisambiguationPageLinks' => array( '消歧義頁連接' ),
+	'DisambiguationPageLinks' => array( '消歧義頁連結' ),
 );
