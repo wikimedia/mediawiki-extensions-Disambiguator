@@ -120,5 +120,5 @@ $magicWords['vi'] = array(
 
 /** Simplified Chinese (中文（简体）‎) */
 $magicWords['zh-hans'] = array(
-	'disambiguation' => array( '__消歧义__' ),
+	'disambiguation' => array( '__消除歧义__' ),
 );
