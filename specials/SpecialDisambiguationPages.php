@@ -38,8 +38,6 @@ class SpecialDisambiguationPages extends QueryPage {
 			'conds' => array(
 				'page_id = pp_page',
 				'pp_propname' => 'disambiguation',
-				// Exclude disambiguation templates
-				'page_namespace != ' . NS_TEMPLATE
 			)
 		);
 	}
