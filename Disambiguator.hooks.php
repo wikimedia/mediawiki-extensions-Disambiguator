@@ -51,11 +51,6 @@ class DisambiguatorHooks {
 	 */
 	public static function isDisambiguationPage( Title $title ) {
 		wfProfileIn( __METHOD__ );
-		// Exclude disambiguation templates
-		if ( $title->getNamespace() === NS_TEMPLATE ) {
-			wfProfileOut( __METHOD__ );
-			return false;
-		}
 		$pageId = $title->getArticleID();
 		if ( $pageId ) {
 			$dbr = wfGetDB( DB_SLAVE );
