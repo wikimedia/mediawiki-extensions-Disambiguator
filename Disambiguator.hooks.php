@@ -15,7 +15,7 @@ class DisambiguatorHooks {
 		$doubleUnderscoreIDs[] = 'disambiguation';
 		return true;
 	}
-	
+
 	/**
 	 * Add the Disambiguator special pages to the list of QueryPages. This
 	 * allows direct access via the API.
@@ -50,22 +50,57 @@ class DisambiguatorHooks {
 	 * @return bool
 	 */
 	public static function isDisambiguationPage( Title $title ) {
+		$res = static::filterDisambiguationPageIds( array( $title->getArticleID() ) );
+		return (bool)count( $res );
+	}
+
+	/**
+	 * Convenience function for testing whether or not pages are disambiguation pages
+	 * @param int[] $pageIds
+	 * @return int[] The page ids corresponding to pages that are disambiguations
+	 */
+	private static function filterDisambiguationPageIds( array $pageIds ) {
 		wfProfileIn( __METHOD__ );
-		$pageId = $title->getArticleID();
-		if ( $pageId ) {
+
+		// Don't needlessly check non-existent and special pages
+		$pageIds = array_filter( $pageIds, function ( $id ) { return $id > 0; } );
+
+		$output = array();
+		if ( $pageIds ) {
 			$dbr = wfGetDB( DB_SLAVE );
-			$isDisambiguationPage = $dbr->selectField(
+			$res = $dbr->select(
 				'page_props',
-				'pp_propname',
-				array( 'pp_page' => $pageId, 'pp_propname' => 'disambiguation' )
+				'pp_page',
+				array( 'pp_page' => $pageIds, 'pp_propname' => 'disambiguation' ),
+				__METHOD__
 			);
-			if ( $isDisambiguationPage ) {
-				wfProfileOut( __METHOD__ );
-				return true;
+
+			foreach ( $res as $row ) {
+				$output[] = $row->pp_page;
 			}
 		}
+
 		wfProfileOut( __METHOD__ );
-		return false;
+		return $output;
+	}
+
+	/**
+	 * Add 'mw-disambig' CSS class to links to disambiguation pages.
+	 * @param array $pageIdToDbKey Prefixed DB keys of the pages linked to, indexed by page_id
+	 * @param array $colours CSS classes, indexed by prefixed DB keys
+	 * @return bool true
+	 */
+	public static function onGetLinkColours( $pageIdToDbKey, &$colours ) {
+		global $wgDisambiguatorIndicateLinks;
+		if ( !$wgDisambiguatorIndicateLinks ) {
+			return true;
+		}
+
+		$pageIds = static::filterDisambiguationPageIds( array_keys( $pageIdToDbKey ) );
+		foreach ( $pageIds as $pageId ) {
+			$colours[ $pageIdToDbKey[$pageId] ] = 'mw-disambig';
+		}
+		return true;
 	}
 
 	/**

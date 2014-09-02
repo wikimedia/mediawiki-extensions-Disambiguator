@@ -54,6 +54,7 @@ $wgHooks['GetDoubleUnderscoreIDs'][] = 'DisambiguatorHooks::onGetDoubleUnderscor
 $wgHooks['wgQueryPages'][] = 'DisambiguatorHooks::onwgQueryPages';
 $wgHooks['LonelyPagesQuery'][] = 'DisambiguatorHooks::onLonelyPagesQuery';
 $wgHooks['SetupAfterCache'][] = 'DisambiguatorHooks::onSetupAfterCache';
+$wgHooks['GetLinkColours'][] = 'DisambiguatorHooks::onGetLinkColours';
 
 // Register special pages
 $wgSpecialPages['DisambiguationPages'] = 'SpecialDisambiguationPages';
@@ -72,5 +73,5 @@ $wgResourceModules['ext.disambiguator.visualEditor'] = array(
 
 /* Configuration */
 
-// TODO: Allow disambiguation links to be assigned a unique class
-#$wgDisambiguatorIndicateLinks = true;
+// Whether to add a 'mw-disambig' CSS class to links to disambiguation pages
+$wgDisambiguatorIndicateLinks = true;
