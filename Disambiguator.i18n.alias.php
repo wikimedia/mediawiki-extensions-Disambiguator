@@ -146,7 +146,7 @@ $specialPageAliases['uk'] = array(
 	'DisambiguationPageLinks' => array( 'Посилання_на_сторінки_тлумачення_неоднозначності' ),
 );
 
-/** vèneto (vèneto) */
+/** Venetian (vèneto) */
 $specialPageAliases['vec'] = array(
 	'DisambiguationPages' => array( 'PagineDeDisambigua' ),
 	'DisambiguationPageLinks' => array( 'PagineChePontaAPagineDeDisambigua' ),
