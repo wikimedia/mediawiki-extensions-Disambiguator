@@ -69,6 +69,12 @@ $specialPageAliases['he'] = array(
 	'DisambiguationPageLinks' => array( 'דפים_המקשרים_לדפי_פירושונים' ),
 );
 
+/** Croatian (hrvatski) */
+$specialPageAliases['hr'] = array(
+	'DisambiguationPages' => array( 'Razdvojbe' ),
+	'DisambiguationPageLinks' => array( 'Poveznice_na_razdvojbe' ),
+);
+
 /** Italian (italiano) */
 $specialPageAliases['it'] = array(
 	'DisambiguationPages' => array( 'PagineDisambiguazione' ),
