@@ -57,6 +57,11 @@ $specialPageAliases['fa'] = array(
 	'DisambiguationPageLinks' => array( 'پیوندهای_صفحات_ابهام‌زدایی' ),
 );
 
+/** Finnish (suomi) */
+$specialPageAliases['fi'] = array(
+	'DisambiguationPages' => array( 'Täsmennyssivut' ),
+);
+
 /** Galician (galego) */
 $specialPageAliases['gl'] = array(
 	'DisambiguationPages' => array( 'Páxinas_de_homónimos' ),
