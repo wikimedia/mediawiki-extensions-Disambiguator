@@ -34,6 +34,7 @@ $wgExtensionCredits['other'][] = array(
 	'version'  => '1.1',
 	'url' => 'https://www.mediawiki.org/wiki/Extension:Disambiguator',
 	'descriptionmsg' => 'disambig-desc',
+	'license-name' => 'MIT',
 );
 
 /* Setup */
