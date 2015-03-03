@@ -1,0 +1,79 @@
+{
+	"name": "Disambiguator",
+	"version": "1.1",
+	"author": [
+		"Ryan Kaldari"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:Disambiguator",
+	"descriptionmsg": "disambig-desc",
+	"license-name": "MIT",
+	"type": "other",
+	"ExtensionMessagesFiles": {
+		"Disambiguator": "Disambiguator.i18n.php",
+		"DisambiguatorAlias": "Disambiguator.i18n.alias.php",
+		"DisambiguatorMagic": "Disambiguator.i18n.magic.php"
+	},
+	"Hooks": {
+		"GetDoubleUnderscoreIDs": [
+			"DisambiguatorHooks::onGetDoubleUnderscoreIDs"
+		],
+		"wgQueryPages": [
+			"DisambiguatorHooks::onwgQueryPages"
+		],
+		"LonelyPagesQuery": [
+			"DisambiguatorHooks::onLonelyPagesQuery"
+		],
+		"SetupAfterCache": [
+			"DisambiguatorHooks::onSetupAfterCache"
+		],
+		"GetLinkColours": [
+			"DisambiguatorHooks::onGetLinkColours"
+		]
+	},
+	"MessagesDirs": {
+		"Disambiguator": [
+			"i18n"
+		]
+	},
+	"ResourceModules": {
+		"ext.disambiguator.visualEditor": {
+			"scripts": [
+				"visualEditorIntegration.js"
+			],
+			"messages": [
+				"visualeditor-dialog-meta-settings-disambiguation-label"
+			],
+			"dependencies": [
+				"ext.visualEditor.mwmeta",
+				"ext.visualEditor.mediawiki"
+			],
+			"targets": [
+				"desktop",
+				"mobile"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteExtPath": "Disambiguator"
+	},
+	"config": {
+		"DisambiguatorIndicateLinks": true
+	},
+	"SpecialPageGroups": {
+		"DisambiguationPages": "pages",
+		"DisambiguationPageLinks": "pages"
+	},
+	"SpecialPages": {
+		"DisambiguationPages": "SpecialDisambiguationPages",
+		"DisambiguationPageLinks": "SpecialDisambiguationPageLinks"
+	},
+	"AutoloadClasses": {
+		"DisambiguatorHooks": "Disambiguator.hooks.php",
+		"SpecialDisambiguationPages": "specials/SpecialDisambiguationPages.php",
+		"SpecialDisambiguationPageLinks": "specials/SpecialDisambiguationPageLinks.php"
+	},
+	"VisualEditorPluginModules": [
+		"ext.disambiguator.visualEditor"
+	]
+}

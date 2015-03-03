@@ -105,6 +105,10 @@ class DisambiguatorHooks {
 	 * @return bool
 	 */
 	public static function onSetupAfterCache() {
+		if ( ExtensionRegistry::getInstance()->isLoaded( 'Disambiguator' ) ) {
+			// Plugin already registered as an attribute
+			return true;
+		}
 		global $wgVisualEditorPluginModules;
 		if ( is_array( $wgVisualEditorPluginModules ) ) {
 			$wgVisualEditorPluginModules[] = 'ext.disambiguator.visualEditor';
