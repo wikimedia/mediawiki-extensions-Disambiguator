@@ -27,6 +27,12 @@ $specialPageAliases['arz'] = array(
 	'DisambiguationPageLinks' => array( 'وصلات_صفحات_توضيح' ),
 );
 
+/** Western Balochi (بلوچی رخشانی) */
+$specialPageAliases['bgn'] = array(
+	'DisambiguationPages' => array( 'شکّ_دور_کنۆکین_وّرق_ئان' ),
+	'DisambiguationPageLinks' => array( 'شکّ_دور_کنۆکین_وُرق_ئانی_لینک' ),
+);
+
 /** Min Dong Chinese (Mìng-dĕ̤ng-ngṳ̄) */
 $specialPageAliases['cdo'] = array(
 	'DisambiguationPages' => array( '消除歧義頁面' ),
