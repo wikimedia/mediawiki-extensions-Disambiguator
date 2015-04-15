@@ -110,8 +110,6 @@ class SpecialDisambiguationPageLinks extends QueryPage {
 		}
 
 		try {
-			// Clear out any old cached data
-			$dbw->delete( 'querycachetwo', array( 'qcc_type' => $this->getName() ), $fname );
 			// Do query
 			$res = $this->reallyDoQuery( $limit, false );
 			$num = false;
@@ -140,6 +138,9 @@ class SpecialDisambiguationPageLinks extends QueryPage {
 					);
 				}
 
+				$dbw->startAtomic( __METHOD__ );
+				// Clear out any old cached data
+				$dbw->delete( 'querycachetwo', array( 'qcc_type' => $this->getName() ), $fname );
 				// Save results into the querycachetwo table on the master
 				if ( count( $vals ) ) {
 					$dbw->insert( 'querycachetwo', $vals, __METHOD__ );
@@ -151,6 +152,7 @@ class SpecialDisambiguationPageLinks extends QueryPage {
 					array( 'qci_type' => $this->getName(), 'qci_timestamp' => $dbw->timestamp() ),
 					$fname
 				);
+				$dbw->endAtomic( __METHOD__ );
 			}
 		} catch ( DBError $e ) {
 			if ( !$ignoreErrors ) {
