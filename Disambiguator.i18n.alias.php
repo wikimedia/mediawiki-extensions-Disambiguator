@@ -51,6 +51,12 @@ $specialPageAliases['diq'] = array(
 	'DisambiguationPageLinks' => array( 'GıreyéPelanêManeyêBini' ),
 );
 
+/** Spanish (español) */
+$specialPageAliases['es'] = array(
+	'DisambiguationPages' => array( 'Páginas_de_desambiguación' ),
+	'DisambiguationPageLinks' => array( 'Páginas_que_enlazan_a_páginas_de_desambiguación' ),
+);
+
 /** Estonian (eesti) */
 $specialPageAliases['et'] = array(
 	'DisambiguationPages' => array( 'Täpsustusleheküljed' ),
