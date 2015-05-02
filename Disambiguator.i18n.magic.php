@@ -23,6 +23,11 @@ $magicWords['arz'] = array(
 	'disambiguation' => array( '__توضيح__' ),
 );
 
+/** Chuvash (Чӑвашла) */
+$magicWords['cv'] = array(
+	'disambiguation' => array( '__DISAMBIG__' ),
+);
+
 /** German (Deutsch) */
 $magicWords['de'] = array(
 	'disambiguation' => array( '__BEGRIFFSKLÄRUNG__' ),
