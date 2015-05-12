@@ -21,7 +21,7 @@ $specialPageAliases['ar'] = array(
 	'DisambiguationPageLinks' => array( 'وصلات_صفحات_توضيح' ),
 );
 
-/** Egyptian Spoken Arabic (مصرى) */
+/** Egyptian Arabic (مصرى) */
 $specialPageAliases['arz'] = array(
 	'DisambiguationPages' => array( 'صفحات_توضيح' ),
 	'DisambiguationPageLinks' => array( 'وصلات_صفحات_توضيح' ),
