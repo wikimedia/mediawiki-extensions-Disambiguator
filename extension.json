@@ -60,10 +60,6 @@
 	"config": {
 		"DisambiguatorIndicateLinks": true
 	},
-	"SpecialPageGroups": {
-		"DisambiguationPages": "pages",
-		"DisambiguationPageLinks": "pages"
-	},
 	"SpecialPages": {
 		"DisambiguationPages": "SpecialDisambiguationPages",
 		"DisambiguationPageLinks": "SpecialDisambiguationPageLinks"

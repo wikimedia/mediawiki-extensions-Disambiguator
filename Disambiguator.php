@@ -62,9 +62,7 @@ $wgHooks['GetLinkColours'][] = 'DisambiguatorHooks::onGetLinkColours';
 
 // Register special pages
 $wgSpecialPages['DisambiguationPages'] = 'SpecialDisambiguationPages';
-$wgSpecialPageGroups['DisambiguationPages'] = 'pages';
 $wgSpecialPages['DisambiguationPageLinks'] = 'SpecialDisambiguationPageLinks';
-$wgSpecialPageGroups['DisambiguationPageLinks'] = 'pages';
 
 $wgResourceModules['ext.disambiguator.visualEditor'] = array(
 	'localBasePath' => __DIR__,
