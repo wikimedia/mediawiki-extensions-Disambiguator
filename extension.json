@@ -71,5 +71,6 @@
 	},
 	"VisualEditorPluginModules": [
 		"ext.disambiguator.visualEditor"
-	]
+	],
+	"manifest_version": 1
 }
