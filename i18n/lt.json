@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Albertas"
+		]
+	},
+	"disambig-desc": "Prideda žymę <code><nowiki>__DISAMBIG__</nowiki></code>, kad pažymėtų [[Special:DisambiguationPages|dviprasmiškus puslapius]]",
+	"disambiguationpages": "Dviprasmiški puslapiai",
+	"disambiguationpages-summary": "Toliau nurodytas dviprasmiškų puslapių {{SITENAME}} tinklapyje sąrašas.<br />\nPuslapis laikomas dviprasmišku, jeigu jame yra žymė <code><nowiki>__DISAMBIG__</nowiki></code> (ar ekvivalentus atitikmuo).",
+	"disambiguationpagelinks": "Puslapiai turintys nuorodas į dviprasmiškus puslapius",
+	"disambiguationpagelinks-summary": "Toliau nurodyti puslapiai turi mažiausiai vieną nuorodą į dviprasmišką puslapį.\nGali tekti juose patikslinti nuorodas, kad būtų nukreipiama į tinkamesnius puslapius.<br />\nPuslapis laikomas dviprasmišku, jeigu jame yra žymė <code><nowiki>__DISAMBIG__</nowiki></code> (ar ekvivalentus atitikmuo).",
+	"visualeditor-dialog-meta-settings-disambiguation-label": "Tai dviprasmiškas puslapis"
+}
