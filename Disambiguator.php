@@ -36,7 +36,7 @@ $wgExtensionCredits['other'][] = array(
 	'author' => array(
 		'Ryan Kaldari',
 	),
-	'version'  => '1.1',
+	'version'  => '1.2',
 	'url' => 'https://www.mediawiki.org/wiki/Extension:Disambiguator',
 	'descriptionmsg' => 'disambig-desc',
 	'license-name' => 'MIT',
@@ -57,6 +57,7 @@ $wgExtensionMessagesFiles['DisambiguatorMagic'] = __DIR__ . '/Disambiguator.i18n
 $wgHooks['GetDoubleUnderscoreIDs'][] = 'DisambiguatorHooks::onGetDoubleUnderscoreIDs';
 $wgHooks['wgQueryPages'][] = 'DisambiguatorHooks::onwgQueryPages';
 $wgHooks['LonelyPagesQuery'][] = 'DisambiguatorHooks::onLonelyPagesQuery';
+$wgHooks['RandomPageQuery'][] = 'DisambiguatorHooks::onRandomPageQuery';
 $wgHooks['SetupAfterCache'][] = 'DisambiguatorHooks::onSetupAfterCache';
 $wgHooks['GetLinkColours'][] = 'DisambiguatorHooks::onGetLinkColours';
 

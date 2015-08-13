@@ -1,6 +1,6 @@
 {
 	"name": "Disambiguator",
-	"version": "1.1",
+	"version": "1.2",
 	"author": [
 		"Ryan Kaldari"
 	],
@@ -22,6 +22,9 @@
 		],
 		"LonelyPagesQuery": [
 			"DisambiguatorHooks::onLonelyPagesQuery"
+		],
+		"RandomPageQuery": [
+			"DisambiguatorHooks::onRandomPageQuery"
 		],
 		"SetupAfterCache": [
 			"DisambiguatorHooks::onSetupAfterCache"
