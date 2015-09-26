@@ -199,7 +199,7 @@ class SpecialDisambiguationPageLinks extends QueryPage {
 			__METHOD__,
 			$options
 		);
-		return $dbr->resultObject( $res );
+		return $res;
 	}
 
 }
