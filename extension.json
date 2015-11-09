@@ -9,7 +9,6 @@
 	"license-name": "MIT",
 	"type": "other",
 	"ExtensionMessagesFiles": {
-		"Disambiguator": "Disambiguator.i18n.php",
 		"DisambiguatorAlias": "Disambiguator.i18n.alias.php",
 		"DisambiguatorMagic": "Disambiguator.i18n.magic.php"
 	},

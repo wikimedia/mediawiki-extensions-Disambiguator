@@ -49,7 +49,6 @@ $wgAutoloadClasses['DisambiguatorHooks'] = __DIR__ . '/Disambiguator.hooks.php';
 $wgAutoloadClasses['SpecialDisambiguationPages'] = __DIR__ . '/specials/SpecialDisambiguationPages.php';
 $wgAutoloadClasses['SpecialDisambiguationPageLinks'] = __DIR__ . '/specials/SpecialDisambiguationPageLinks.php';
 $wgMessagesDirs['Disambiguator'] = __DIR__ . '/i18n';
-$wgExtensionMessagesFiles['Disambiguator'] = __DIR__ . '/Disambiguator.i18n.php';
 $wgExtensionMessagesFiles['DisambiguatorAlias'] = __DIR__ . '/Disambiguator.i18n.alias.php';
 $wgExtensionMessagesFiles['DisambiguatorMagic'] = __DIR__ . '/Disambiguator.i18n.magic.php';
 
