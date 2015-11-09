@@ -25,9 +25,6 @@
 		"RandomPageQuery": [
 			"DisambiguatorHooks::onRandomPageQuery"
 		],
-		"SetupAfterCache": [
-			"DisambiguatorHooks::onSetupAfterCache"
-		],
 		"GetLinkColours": [
 			"DisambiguatorHooks::onGetLinkColours"
 		]

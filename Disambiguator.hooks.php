@@ -115,20 +115,4 @@ class DisambiguatorHooks {
 		}
 		return true;
 	}
-
-	/**
-	 * If VE is enabled, add our module so we can add a Disambiguation checkbox to the page settings dialog.
-	 * @return bool
-	 */
-	public static function onSetupAfterCache() {
-		if ( ExtensionRegistry::getInstance()->isLoaded( 'Disambiguator' ) ) {
-			// Plugin already registered as an attribute
-			return true;
-		}
-		global $wgVisualEditorPluginModules;
-		if ( is_array( $wgVisualEditorPluginModules ) ) {
-			$wgVisualEditorPluginModules[] = 'ext.disambiguator.visualEditor';
-		}
-		return true;
-	}
 }
