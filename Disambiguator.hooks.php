@@ -45,6 +45,23 @@ class DisambiguatorHooks {
 	}
 
 	/**
+	 * Modify the Special:ShortPages query to ignore disambiguation pages
+	 * @param array &$tables
+	 * @param array &$conds
+	 * @param array &$joinConds
+	 * @param array &$options
+	 * @return bool
+	 */
+	public static function onShortPagesQuery( &$tables, &$conds, &$joinConds, &$options ) {
+		$tables[] = 'page_props';
+		$conds['pp_page'] = null;
+		$joinConds['page_props'] = array(
+			'LEFT JOIN', array( 'page_id = pp_page', 'pp_propname' => 'disambiguation' )
+		);
+		return true;
+	}
+
+	/**
 	 * Modify the Special:Random query to ignore disambiguation pages
 	 * @param array &$tables
 	 * @param array &$conds

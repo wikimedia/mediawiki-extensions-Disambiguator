@@ -22,6 +22,9 @@
 		"LonelyPagesQuery": [
 			"DisambiguatorHooks::onLonelyPagesQuery"
 		],
+		"ShortPagesQuery": [
+			"DisambiguatorHooks::onShortPagesQuery"
+		],
 		"RandomPageQuery": [
 			"DisambiguatorHooks::onRandomPageQuery"
 		],
