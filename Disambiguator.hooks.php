@@ -80,34 +80,64 @@ class DisambiguatorHooks {
 	/**
 	 * Convenience function for testing whether or not a page is a disambiguation page
 	 * @param Title $title object of a page
+	 * @param bool $includeRedirects Whether to consider redirects to disambiguations as disambiguations.
 	 * @return bool
 	 */
-	public static function isDisambiguationPage( Title $title ) {
-		$res = static::filterDisambiguationPageIds( array( $title->getArticleID() ) );
+	public static function isDisambiguationPage( Title $title, $includeRedirects = true ) {
+		$res = static::filterDisambiguationPageIds( array( $title->getArticleID() ), $includeRedirects );
 		return (bool)count( $res );
 	}
 
 	/**
 	 * Convenience function for testing whether or not pages are disambiguation pages
 	 * @param int[] $pageIds
+	 * @param bool $includeRedirects Whether to consider redirects to disambiguations as disambiguations.
 	 * @return int[] The page ids corresponding to pages that are disambiguations
 	 */
-	private static function filterDisambiguationPageIds( array $pageIds ) {
+	private static function filterDisambiguationPageIds( array $pageIds, $includeRedirects = true ) {
 		// Don't needlessly check non-existent and special pages
 		$pageIds = array_filter( $pageIds, function ( $id ) { return $id > 0; } );
 
 		$output = array();
 		if ( $pageIds ) {
 			$dbr = wfGetDB( DB_SLAVE );
+
+			$redirects = array();
+			if ( $includeRedirects ) {
+				// resolve redirects
+				$res = $dbr->select(
+					array ( 'page', 'redirect' ),
+					array( 'page_id', 'rd_from' ),
+					array( 'rd_from' => $pageIds ),
+					__METHOD__,
+					array(),
+					array( 'page' => array( 'INNER JOIN', array(
+						'rd_namespace=page_namespace',
+						'rd_title=page_title'
+					) ) )
+				);
+
+				foreach ( $res as $row ) {
+					// Key is the destination page ID, value is the source page ID
+					$redirects[$row->page_id] = $row->rd_from;
+				}
+			}
+			$pageIdsWithRedirects = array_keys( $redirects ) + array_diff( $pageIds, array_values( $redirects ) );
 			$res = $dbr->select(
 				'page_props',
 				'pp_page',
-				array( 'pp_page' => $pageIds, 'pp_propname' => 'disambiguation' ),
+				array( 'pp_page' => $pageIdsWithRedirects, 'pp_propname' => 'disambiguation' ),
 				__METHOD__
 			);
 
 			foreach ( $res as $row ) {
-				$output[] = $row->pp_page;
+				$disambiguationPageId = $row->pp_page;
+				if ( array_key_exists( $disambiguationPageId, $redirects ) ) {
+					$output[] = $redirects[$disambiguationPageId];
+				}
+				if ( in_array( $disambiguationPageId, $pageIds ) ){
+					$output[] = $disambiguationPageId;
+				}
 			}
 		}
 
@@ -128,7 +158,11 @@ class DisambiguatorHooks {
 
 		$pageIds = static::filterDisambiguationPageIds( array_keys( $pageIdToDbKey ) );
 		foreach ( $pageIds as $pageId ) {
-			$colours[ $pageIdToDbKey[$pageId] ] = 'mw-disambig';
+			if ( $colours[ $pageIdToDbKey[$pageId] ] ) {
+				$colours[ $pageIdToDbKey[$pageId] ] .= " mw-disambig";
+			} else {
+				$colours[ $pageIdToDbKey[$pageId] ] = 'mw-disambig';
+			}
 		}
 		return true;
 	}
