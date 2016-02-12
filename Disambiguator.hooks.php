@@ -158,8 +158,8 @@ class DisambiguatorHooks {
 
 		$pageIds = static::filterDisambiguationPageIds( array_keys( $pageIdToDbKey ) );
 		foreach ( $pageIds as $pageId ) {
-			if ( $colours[ $pageIdToDbKey[$pageId] ] ) {
-				$colours[ $pageIdToDbKey[$pageId] ] .= " mw-disambig";
+			if ( isset( $colours[ $pageIdToDbKey[$pageId] ] ) ) {
+				$colours[ $pageIdToDbKey[$pageId] ] .= ' mw-disambig';
 			} else {
 				$colours[ $pageIdToDbKey[$pageId] ] = 'mw-disambig';
 			}
