@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"David1010"
+			"David1010",
+			"BRUTE"
 		]
 	},
-	"disambiguationpages": "მრავალმნიშვნელოვანი გვერდები"
+	"disambiguationpages": "მრავალმნიშვნელოვანი გვერდები",
+	"disambiguationpagelinks": "გვერდები, რომლებიც გადადის მრავალმნიშვნელობის გვერდებზე"
 }
