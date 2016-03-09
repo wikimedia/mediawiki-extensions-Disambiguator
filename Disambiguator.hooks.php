@@ -122,7 +122,7 @@ class DisambiguatorHooks {
 					$redirects[$row->page_id] = $row->rd_from;
 				}
 			}
-			$pageIdsWithRedirects = array_keys( $redirects ) + array_diff( $pageIds, array_values( $redirects ) );
+			$pageIdsWithRedirects = array_merge( array_keys( $redirects ), array_diff( $pageIds, array_values( $redirects ) ) );
 			$res = $dbr->select(
 				'page_props',
 				'pp_page',
