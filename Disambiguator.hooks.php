@@ -29,6 +29,22 @@ class DisambiguatorHooks {
 	}
 
 	/**
+	 * Modify query parameters to ignore disambiguation pages
+	 * @param array &$tables
+	 * @param array &$conds
+	 * @param array &$joinConds
+	 * @return bool
+	 */
+	private static function excludeDisambiguationPages( &$tables, &$conds, &$joinConds ) {
+		$tables[] = 'page_props';
+		$conds['pp_page'] = null;
+		$joinConds['page_props'] = array(
+			'LEFT JOIN', array( 'page_id = pp_page', 'pp_propname' => 'disambiguation' )
+		);
+		return true;
+	}
+
+	/**
 	 * Modify the Special:LonelyPages query to ignore disambiguation pages
 	 * @param array &$tables
 	 * @param array &$conds
@@ -36,12 +52,7 @@ class DisambiguatorHooks {
 	 * @return bool
 	 */
 	public static function onLonelyPagesQuery( &$tables, &$conds, &$joinConds ) {
-		$tables[] = 'page_props';
-		$conds['pp_page'] = null;
-		$joinConds['page_props'] = array(
-			'LEFT JOIN', array( 'page_id = pp_page', 'pp_propname' => 'disambiguation' )
-		);
-		return true;
+		return self::excludeDisambiguationPages( $tables, $conds, $joinConds );
 	}
 
 	/**
@@ -53,12 +64,7 @@ class DisambiguatorHooks {
 	 * @return bool
 	 */
 	public static function onShortPagesQuery( &$tables, &$conds, &$joinConds, &$options ) {
-		$tables[] = 'page_props';
-		$conds['pp_page'] = null;
-		$joinConds['page_props'] = array(
-			'LEFT JOIN', array( 'page_id = pp_page', 'pp_propname' => 'disambiguation' )
-		);
-		return true;
+		return self::excludeDisambiguationPages( $tables, $conds, $joinConds );
 	}
 
 	/**
@@ -69,12 +75,7 @@ class DisambiguatorHooks {
 	 * @return bool
 	 */
 	public static function onRandomPageQuery( &$tables, &$conds, &$joinConds ) {
-		$tables[] = 'page_props';
-		$conds['pp_page'] = null;
-		$joinConds['page_props'] = array(
-			'LEFT JOIN', array( 'page_id = pp_page', 'pp_propname' => 'disambiguation' )
-		);
-		return true;
+		return self::excludeDisambiguationPages( $tables, $conds, $joinConds );
 	}
 
 	/**
