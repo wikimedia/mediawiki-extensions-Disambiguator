@@ -2,10 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Incelemeelemani",
-			"Arystanbek"
+			"Arystanbek",
+			"Sadrettin"
 		]
 	},
-	"disambig-desc": "Etiket ekler <code><nowiki>__DİSAMBİG__</nowiki></code> mark [[:|anlam ayrımı sayfaları DisambiguationPages Özel]]",
+	"disambig-desc": "<code><nowiki>__DISAMBIG__</nowiki></code> etiketi eklenmiş sayfalar: [[Special:DisambiguationPages|Anlam ayrımı sayfaları]]",
 	"disambiguationpages": "Anlam ayrımı sayfaları",
 	"disambiguationpages-summary": "Aşağıdaki listede {{SITENAME}}'deki tüm anlam ayrımı sayfaları listelenmektedir.<br />\nEğer bir sayfa <code><nowiki>__DISAMBIG__</nowiki></code> (veya eşdeğer bir sihirli kelime) etiketini içeriyorsa, anlam ayrımı sayfası olarak kabul edilir.",
 	"disambiguationpagelinks": "Anlam ayrım sayfalarına bağlantısı olan sayfalar",
