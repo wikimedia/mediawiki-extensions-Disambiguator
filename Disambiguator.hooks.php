@@ -9,23 +9,19 @@
 class DisambiguatorHooks {
 	/**
 	 * @param array &$doubleUnderscoreIDs
-	 * @return bool
 	 */
 	public static function onGetDoubleUnderscoreIDs( &$doubleUnderscoreIDs ) {
 		$doubleUnderscoreIDs[] = 'disambiguation';
-		return true;
 	}
 
 	/**
 	 * Add the Disambiguator special pages to the list of QueryPages. This
 	 * allows direct access via the API.
 	 * @param array &$queryPages
-	 * @return bool
 	 */
 	public static function onwgQueryPages( &$queryPages ) {
 		$queryPages[] = array( 'SpecialDisambiguationPages', 'DisambiguationPages' );
 		$queryPages[] = array( 'SpecialDisambiguationPageLinks', 'DisambiguationPageLinks' );
-		return true;
 	}
 
 	/**
@@ -33,7 +29,6 @@ class DisambiguatorHooks {
 	 * @param array &$tables
 	 * @param array &$conds
 	 * @param array &$joinConds
-	 * @return bool
 	 */
 	private static function excludeDisambiguationPages( &$tables, &$conds, &$joinConds ) {
 		$tables[] = 'page_props';
@@ -41,7 +36,6 @@ class DisambiguatorHooks {
 		$joinConds['page_props'] = array(
 			'LEFT JOIN', array( 'page_id = pp_page', 'pp_propname' => 'disambiguation' )
 		);
-		return true;
 	}
 
 	/**
@@ -49,10 +43,9 @@ class DisambiguatorHooks {
 	 * @param array &$tables
 	 * @param array &$conds
 	 * @param array &$joinConds
-	 * @return bool
 	 */
 	public static function onLonelyPagesQuery( &$tables, &$conds, &$joinConds ) {
-		return self::excludeDisambiguationPages( $tables, $conds, $joinConds );
+		self::excludeDisambiguationPages( $tables, $conds, $joinConds );
 	}
 
 	/**
@@ -61,10 +54,9 @@ class DisambiguatorHooks {
 	 * @param array &$conds
 	 * @param array &$joinConds
 	 * @param array &$options
-	 * @return bool
 	 */
 	public static function onShortPagesQuery( &$tables, &$conds, &$joinConds, &$options ) {
-		return self::excludeDisambiguationPages( $tables, $conds, $joinConds );
+		self::excludeDisambiguationPages( $tables, $conds, $joinConds );
 	}
 
 	/**
@@ -72,10 +64,9 @@ class DisambiguatorHooks {
 	 * @param array &$tables
 	 * @param array &$conds
 	 * @param array &$joinConds
-	 * @return bool
 	 */
 	public static function onRandomPageQuery( &$tables, &$conds, &$joinConds ) {
-		return self::excludeDisambiguationPages( $tables, $conds, $joinConds );
+		self::excludeDisambiguationPages( $tables, $conds, $joinConds );
 	}
 
 	/**
@@ -149,12 +140,11 @@ class DisambiguatorHooks {
 	 * Add 'mw-disambig' CSS class to links to disambiguation pages.
 	 * @param array $pageIdToDbKey Prefixed DB keys of the pages linked to, indexed by page_id
 	 * @param array $colours CSS classes, indexed by prefixed DB keys
-	 * @return bool true
 	 */
 	public static function onGetLinkColours( $pageIdToDbKey, &$colours ) {
 		global $wgDisambiguatorIndicateLinks;
 		if ( !$wgDisambiguatorIndicateLinks ) {
-			return true;
+			return;
 		}
 
 		$pageIds = static::filterDisambiguationPageIds( array_keys( $pageIdToDbKey ) );
@@ -165,6 +155,5 @@ class DisambiguatorHooks {
 				$colours[ $pageIdToDbKey[$pageId] ] = 'mw-disambig';
 			}
 		}
-		return true;
 	}
 }
