@@ -39,6 +39,12 @@ $specialPageAliases['cdo'] = array(
 	'DisambiguationPageLinks' => array( '消除歧義頁面鏈接' ),
 );
 
+/** Czech (Čeština) */
+$specialPageAliases['cs'] = array(
+	'DisambiguationPages' => array( 'Rozcestníky' ),
+	'DisambiguationPageLinks' => array( 'Odkazy_na_rozcestníky' ),
+);
+
 /** German (Deutsch) */
 $specialPageAliases['de'] = array(
 	'DisambiguationPages' => array( 'Begriffsklärungsseiten' ),
