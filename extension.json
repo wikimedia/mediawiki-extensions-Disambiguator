@@ -74,5 +74,8 @@
 	"VisualEditorPluginModules": [
 		"ext.disambiguator.visualEditor"
 	],
+	"ParserTestFiles": [
+		"tests/parserTests.txt"
+	],
 	"manifest_version": 1
 }
