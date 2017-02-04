@@ -57,8 +57,7 @@ class SpecialDisambiguationPages extends QueryPage {
 
 	function formatResult( $skin, $result ) {
 		$title = Title::newFromID( $result->value );
-		$link = Linker::linkKnown( $title );
-		return $link;
+		return $this->getLinkRenderer()->makeKnownLink( $title );
 	}
 
 	protected function getGroupName() {

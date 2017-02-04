@@ -72,15 +72,16 @@ class SpecialDisambiguationPageLinks extends QueryPage {
 		$fromTitle = Title::newFromID( $result->value );
 		$toTitle = Title::newFromText( $result->to_title, $result->to_namespace );
 
-		$from = Linker::linkKnown( $fromTitle );
-		$edit = Linker::link(
+		$linkRenderer = $this->getLinkRenderer();
+		$from = $linkRenderer->makeKnownLink( $fromTitle );
+		$edit = $linkRenderer->makeLink(
 			$fromTitle,
-			$this->msg( 'parentheses', $this->msg( 'editlink' )->text() )->escaped(),
+			$this->msg( 'parentheses', $this->msg( 'editlink' )->text() )->text(),
 			array(),
 			array( 'redirect' => 'no', 'action' => 'edit' )
 		);
 		$arr = $this->getLanguage()->getArrow();
-		$to = Linker::linkKnown( $toTitle );
+		$to = $linkRenderer->makeKnownLink( $toTitle );
 
 		return "$from $edit $arr $to";
 	}
