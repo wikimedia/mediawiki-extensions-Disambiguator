@@ -13,6 +13,8 @@ This is a normal page.
 
 !! test
 Link to disambig and non-disambig page
+!! options
+disabled
 !! input
 I am linking to [[Disambig]] and [[Normal]].
 !! result
