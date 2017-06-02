@@ -72,21 +72,26 @@ class DisambiguatorHooks {
 	/**
 	 * Convenience function for testing whether or not a page is a disambiguation page
 	 * @param Title $title object of a page
-	 * @param bool $includeRedirects Whether to consider redirects to disambiguations as disambiguations.
+	 * @param bool $includeRedirects Whether to consider redirects to disambiguations as
+	 *   disambiguations.
 	 * @return bool
 	 */
 	public static function isDisambiguationPage( Title $title, $includeRedirects = true ) {
-		$res = static::filterDisambiguationPageIds( array( $title->getArticleID() ), $includeRedirects );
+		$res = static::filterDisambiguationPageIds(
+			array( $title->getArticleID() ), $includeRedirects );
 		return (bool)count( $res );
 	}
 
 	/**
 	 * Convenience function for testing whether or not pages are disambiguation pages
 	 * @param int[] $pageIds
-	 * @param bool $includeRedirects Whether to consider redirects to disambiguations as disambiguations.
+	 * @param bool $includeRedirects Whether to consider redirects to disambiguations as
+	 *   disambiguations.
 	 * @return int[] The page ids corresponding to pages that are disambiguations
 	 */
-	private static function filterDisambiguationPageIds( array $pageIds, $includeRedirects = true ) {
+	private static function filterDisambiguationPageIds(
+		array $pageIds, $includeRedirects = true
+	) {
 		// Don't needlessly check non-existent and special pages
 		$pageIds = array_filter( $pageIds, function ( $id ) { return $id > 0; } );
 
@@ -114,7 +119,8 @@ class DisambiguatorHooks {
 					$redirects[$row->page_id] = $row->rd_from;
 				}
 			}
-			$pageIdsWithRedirects = array_merge( array_keys( $redirects ), array_diff( $pageIds, array_values( $redirects ) ) );
+			$pageIdsWithRedirects = array_merge( array_keys( $redirects ),
+				array_diff( $pageIds, array_values( $redirects ) ) );
 			$res = $dbr->select(
 				'page_props',
 				'pp_page',

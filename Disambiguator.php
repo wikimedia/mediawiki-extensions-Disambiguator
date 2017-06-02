@@ -7,7 +7,8 @@ if ( function_exists( 'wfLoadExtension' ) ) {
 	$wgExtensionMessagesFiles['DisambiguatorAlias'] = __DIR__ . '/Disambiguator.i18n.alias.php';
 	$wgExtensionMessagesFiles['DisambiguatorMagic'] = __DIR__ . '/Disambiguator.i18n.magic.php';
 	/* wfWarn(
-		'Deprecated PHP entry point used for Disambiguator extension. Please use wfLoadExtension instead, ' .
+		'Deprecated PHP entry point used for Disambiguator extension. ' .
+		'Please use wfLoadExtension instead, ' .
 		'see https://www.mediawiki.org/wiki/Extension_registration for more details.'
 	); */
 	return;
