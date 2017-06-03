@@ -25,23 +25,23 @@ class SpecialDisambiguationPageLinks extends QueryPage {
 	}
 
 	function getQueryInfo() {
-		return array (
-			'tables' => array(
+		return [
+			'tables' => [
 				'p1' => 'page',
 				'p2' => 'page',
 				'pagelinks',
 				'page_props'
-			),
+			],
 			// The fields we are selecting correspond with fields in the
 			// querycachetwo table so that the results are cachable.
-			'fields' => array(
+			'fields' => [
 				'value' => 'pl_from',
 				'namespace' => 'p2.page_namespace',
 				'title' => 'p2.page_title',
 				'to_namespace' => 'p1.page_namespace',
 				'to_title' => 'p1.page_title',
-			),
-			'conds' => array(
+			],
+			'conds' => [
 				'p1.page_id = pp_page',
 				'pp_propname' => 'disambiguation',
 				'pl_namespace = p1.page_namespace',
@@ -49,8 +49,8 @@ class SpecialDisambiguationPageLinks extends QueryPage {
 				'p2.page_id = pl_from',
 				'p2.page_namespace' => MWNamespace::getContentNamespaces(),
 				'p2.page_is_redirect != 1'
-			)
-		);
+			]
+		];
 	}
 
 	/**
@@ -61,7 +61,7 @@ class SpecialDisambiguationPageLinks extends QueryPage {
 	 * @return array
 	 */
 	function getOrderFields() {
-		return array( 'value', 'to_namespace', 'to_title' );
+		return [ 'value', 'to_namespace', 'to_title' ];
 	}
 
 	function sortDescending() {
@@ -77,8 +77,8 @@ class SpecialDisambiguationPageLinks extends QueryPage {
 		$edit = $linkRenderer->makeLink(
 			$fromTitle,
 			$this->msg( 'parentheses', $this->msg( 'editlink' )->text() )->text(),
-			array(),
-			array( 'redirect' => 'no', 'action' => 'edit' )
+			[],
+			[ 'redirect' => 'no', 'action' => 'edit' ]
 		);
 		$arr = $this->getLanguage()->getArrow();
 		$to = $linkRenderer->makeKnownLink( $toTitle );
@@ -105,7 +105,7 @@ class SpecialDisambiguationPageLinks extends QueryPage {
 
 		$fname = get_class( $this ) . '::recache';
 		$dbw = wfGetDB( DB_MASTER );
-		$dbr = wfGetDB( DB_SLAVE, array( $this->getName(), __METHOD__, 'vslow' ) );
+		$dbr = wfGetDB( DB_SLAVE, [ $this->getName(), __METHOD__, 'vslow' ] );
 		if ( !$dbw || !$dbr ) {
 			return false;
 		}
@@ -117,8 +117,10 @@ class SpecialDisambiguationPageLinks extends QueryPage {
 			if ( $res ) {
 				$num = $res->numRows();
 				// Fetch results
-				$vals = array();
+				$vals = [];
+				// @codingStandardsIgnoreStart
 				while ( $res && $row = $dbr->fetchObject( $res ) ) {
+				// @codingStandardsIgnoreEnd
 					if ( isset( $row->value ) ) {
 						if ( $this->usesTimestamps() ) {
 							$value = wfTimestamp( TS_UNIX, $row->value );
@@ -129,28 +131,28 @@ class SpecialDisambiguationPageLinks extends QueryPage {
 						$value = 0;
 					}
 
-					$vals[] = array(
+					$vals[] = [
 						'qcc_type' => $this->getName(),
 						'qcc_value' => $value,
 						'qcc_namespace' => $row->namespace,
 						'qcc_title' => $row->title,
 						'qcc_namespacetwo' => $row->to_namespace,
 						'qcc_titletwo' => $row->to_title,
-					);
+					];
 				}
 
 				$dbw->startAtomic( __METHOD__ );
 				// Clear out any old cached data
-				$dbw->delete( 'querycachetwo', array( 'qcc_type' => $this->getName() ), $fname );
+				$dbw->delete( 'querycachetwo', [ 'qcc_type' => $this->getName() ], $fname );
 				// Save results into the querycachetwo table on the master
 				if ( count( $vals ) ) {
 					$dbw->insert( 'querycachetwo', $vals, __METHOD__ );
 				}
 				// Update the querycache_info record for the page
-				$dbw->delete( 'querycache_info', array( 'qci_type' => $this->getName() ), $fname );
+				$dbw->delete( 'querycache_info', [ 'qci_type' => $this->getName() ], $fname );
 				$dbw->insert(
 					'querycache_info',
-					array( 'qci_type' => $this->getName(), 'qci_timestamp' => $dbw->timestamp() ),
+					[ 'qci_type' => $this->getName(), 'qci_timestamp' => $dbw->timestamp() ],
 					$fname
 				);
 				$dbw->endAtomic( __METHOD__ );
@@ -174,7 +176,7 @@ class SpecialDisambiguationPageLinks extends QueryPage {
 	 */
 	function fetchFromCache( $limit, $offset = false ) {
 		$dbr = wfGetDB( DB_SLAVE );
-		$options = array();
+		$options = [];
 		if ( $limit !== false ) {
 			$options['LIMIT'] = intval( $limit );
 		}
@@ -189,14 +191,14 @@ class SpecialDisambiguationPageLinks extends QueryPage {
 		}
 		$res = $dbr->select(
 			'querycachetwo',
-			array(
+			[
 				'value' => 'qcc_value',
 				'namespace' => 'qcc_namespace',
 				'title' => 'qcc_title',
 				'to_namespace' => 'qcc_namespacetwo',
 				'to_title' => 'qcc_titletwo',
-			),
-			array( 'qcc_type' => $this->getName() ),
+			],
+			[ 'qcc_type' => $this->getName() ],
 			__METHOD__,
 			$options
 		);

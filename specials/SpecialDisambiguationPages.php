@@ -25,21 +25,21 @@ class SpecialDisambiguationPages extends QueryPage {
 	}
 
 	function getQueryInfo() {
-		return array (
-			'tables' => array(
+		return [
+			'tables' => [
 				'page',
 				'page_props'
-			),
-			'fields' => array(
+			],
+			'fields' => [
 				'value' => 'pp_page',
 				'namespace' => 'page_namespace',
 				'title' => 'page_title',
-			),
-			'conds' => array(
+			],
+			'conds' => [
 				'page_id = pp_page',
 				'pp_propname' => 'disambiguation',
-			)
-		);
+			]
+		];
 	}
 
 	/**
@@ -48,7 +48,7 @@ class SpecialDisambiguationPages extends QueryPage {
 	 * @return array
 	 */
 	function getOrderFields() {
-		return array( 'value' );
+		return [ 'value' ];
 	}
 
 	function sortDescending() {
