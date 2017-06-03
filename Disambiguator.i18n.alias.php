@@ -5,196 +5,195 @@
  * @file
  * @ingroup Extensions
  */
-// @codingStandardsIgnoreFile
 
-$specialPageAliases = array();
+$specialPageAliases = [];
 
 /** English (English) */
-$specialPageAliases['en'] = array(
-	'DisambiguationPages' => array( 'DisambiguationPages' ),
-	'DisambiguationPageLinks' => array( 'DisambiguationPageLinks' ),
-);
+$specialPageAliases['en'] = [
+	'DisambiguationPages' => [ 'DisambiguationPages' ],
+	'DisambiguationPageLinks' => [ 'DisambiguationPageLinks' ],
+];
 
 /** Arabic (العربية) */
-$specialPageAliases['ar'] = array(
-	'DisambiguationPages' => array( 'صفحات_توضيح' ),
-	'DisambiguationPageLinks' => array( 'وصلات_صفحات_توضيح' ),
-);
+$specialPageAliases['ar'] = [
+	'DisambiguationPages' => [ 'صفحات_توضيح' ],
+	'DisambiguationPageLinks' => [ 'وصلات_صفحات_توضيح' ],
+];
 
 /** Egyptian Arabic (مصرى) */
-$specialPageAliases['arz'] = array(
-	'DisambiguationPages' => array( 'صفحات_توضيح' ),
-	'DisambiguationPageLinks' => array( 'وصلات_صفحات_توضيح' ),
-);
+$specialPageAliases['arz'] = [
+	'DisambiguationPages' => [ 'صفحات_توضيح' ],
+	'DisambiguationPageLinks' => [ 'وصلات_صفحات_توضيح' ],
+];
 
 /** Western Balochi (بلوچی رخشانی) */
-$specialPageAliases['bgn'] = array(
-	'DisambiguationPages' => array( 'شکّ_دور_کنۆکین_وّرق_ئان' ),
-	'DisambiguationPageLinks' => array( 'شکّ_دور_کنۆکین_وُرق_ئانی_لینک' ),
-);
+$specialPageAliases['bgn'] = [
+	'DisambiguationPages' => [ 'شکّ_دور_کنۆکین_وّرق_ئان' ],
+	'DisambiguationPageLinks' => [ 'شکّ_دور_کنۆکین_وُرق_ئانی_لینک' ],
+];
 
 /** Min Dong Chinese (Mìng-dĕ̤ng-ngṳ̄) */
-$specialPageAliases['cdo'] = array(
-	'DisambiguationPages' => array( '消除歧義頁面' ),
-	'DisambiguationPageLinks' => array( '消除歧義頁面鏈接' ),
-);
+$specialPageAliases['cdo'] = [
+	'DisambiguationPages' => [ '消除歧義頁面' ],
+	'DisambiguationPageLinks' => [ '消除歧義頁面鏈接' ],
+];
 
 /** Czech (Čeština) */
-$specialPageAliases['cs'] = array(
-	'DisambiguationPages' => array( 'Rozcestníky' ),
-	'DisambiguationPageLinks' => array( 'Odkazy_na_rozcestníky' ),
-);
+$specialPageAliases['cs'] = [
+	'DisambiguationPages' => [ 'Rozcestníky' ],
+	'DisambiguationPageLinks' => [ 'Odkazy_na_rozcestníky' ],
+];
 
 /** German (Deutsch) */
-$specialPageAliases['de'] = array(
-	'DisambiguationPages' => array( 'Begriffsklärungsseiten' ),
-	'DisambiguationPageLinks' => array( 'Begriffsklärungslinks' ),
-);
+$specialPageAliases['de'] = [
+	'DisambiguationPages' => [ 'Begriffsklärungsseiten' ],
+	'DisambiguationPageLinks' => [ 'Begriffsklärungslinks' ],
+];
 
 /** Zazaki (Zazaki) */
-$specialPageAliases['diq'] = array(
-	'DisambiguationPages' => array( 'PelêManeyêBini' ),
-	'DisambiguationPageLinks' => array( 'GıreyéPelanêManeyêBini' ),
-);
+$specialPageAliases['diq'] = [
+	'DisambiguationPages' => [ 'PelêManeyêBini' ],
+	'DisambiguationPageLinks' => [ 'GıreyéPelanêManeyêBini' ],
+];
 
 /** Spanish (español) */
-$specialPageAliases['es'] = array(
-	'DisambiguationPages' => array( 'Páginas_de_desambiguación' ),
-	'DisambiguationPageLinks' => array( 'Páginas_que_enlazan_a_páginas_de_desambiguación' ),
-);
+$specialPageAliases['es'] = [
+	'DisambiguationPages' => [ 'Páginas_de_desambiguación' ],
+	'DisambiguationPageLinks' => [ 'Páginas_que_enlazan_a_páginas_de_desambiguación' ],
+];
 
 /** Estonian (eesti) */
-$specialPageAliases['et'] = array(
-	'DisambiguationPages' => array( 'Täpsustusleheküljed' ),
-	'DisambiguationPageLinks' => array( 'Lingid_täpsustusleheküljele' ),
-);
+$specialPageAliases['et'] = [
+	'DisambiguationPages' => [ 'Täpsustusleheküljed' ],
+	'DisambiguationPageLinks' => [ 'Lingid_täpsustusleheküljele' ],
+];
 
 /** Persian (فارسی) */
-$specialPageAliases['fa'] = array(
-	'DisambiguationPages' => array( 'صفحات_ابهام‌زدایی' ),
-	'DisambiguationPageLinks' => array( 'پیوندهای_صفحات_ابهام‌زدایی' ),
-);
+$specialPageAliases['fa'] = [
+	'DisambiguationPages' => [ 'صفحات_ابهام‌زدایی' ],
+	'DisambiguationPageLinks' => [ 'پیوندهای_صفحات_ابهام‌زدایی' ],
+];
 
 /** Finnish (suomi) */
-$specialPageAliases['fi'] = array(
-	'DisambiguationPages' => array( 'Täsmennyssivut' ),
-);
+$specialPageAliases['fi'] = [
+	'DisambiguationPages' => [ 'Täsmennyssivut' ],
+];
 
 /** Galician (galego) */
-$specialPageAliases['gl'] = array(
-	'DisambiguationPages' => array( 'Páxinas_de_homónimos' ),
-	'DisambiguationPageLinks' => array( 'Ligazóns_cara_a_páxinas_de_homónimos' ),
-);
+$specialPageAliases['gl'] = [
+	'DisambiguationPages' => [ 'Páxinas_de_homónimos' ],
+	'DisambiguationPageLinks' => [ 'Ligazóns_cara_a_páxinas_de_homónimos' ],
+];
 
 /** Hebrew (עברית) */
-$specialPageAliases['he'] = array(
-	'DisambiguationPages' => array( 'דפי_פירושונים' ),
-	'DisambiguationPageLinks' => array( 'דפים_המקשרים_לדפי_פירושונים' ),
-);
+$specialPageAliases['he'] = [
+	'DisambiguationPages' => [ 'דפי_פירושונים' ],
+	'DisambiguationPageLinks' => [ 'דפים_המקשרים_לדפי_פירושונים' ],
+];
 
 /** Croatian (hrvatski) */
-$specialPageAliases['hr'] = array(
-	'DisambiguationPages' => array( 'Razdvojbe' ),
-	'DisambiguationPageLinks' => array( 'Poveznice_na_razdvojbe' ),
-);
+$specialPageAliases['hr'] = [
+	'DisambiguationPages' => [ 'Razdvojbe' ],
+	'DisambiguationPageLinks' => [ 'Poveznice_na_razdvojbe' ],
+];
 
 /** Italian (italiano) */
-$specialPageAliases['it'] = array(
-	'DisambiguationPages' => array( 'PagineDisambiguazione' ),
-	'DisambiguationPageLinks' => array( 'CollegamentiPagineDisambiguazione' ),
-);
+$specialPageAliases['it'] = [
+	'DisambiguationPages' => [ 'PagineDisambiguazione' ],
+	'DisambiguationPageLinks' => [ 'CollegamentiPagineDisambiguazione' ],
+];
 
 /** Japanese (日本語) */
-$specialPageAliases['ja'] = array(
-	'DisambiguationPages' => array( '曖昧さ回避ページ' ),
-	'DisambiguationPageLinks' => array( '曖昧さ回避ページリンク' ),
-);
+$specialPageAliases['ja'] = [
+	'DisambiguationPages' => [ '曖昧さ回避ページ' ],
+	'DisambiguationPageLinks' => [ '曖昧さ回避ページリンク' ],
+];
 
 /** Korean (한국어) */
-$specialPageAliases['ko'] = array(
-	'DisambiguationPages' => array( '동음이의어문서' ),
-	'DisambiguationPageLinks' => array( '동음이의어문서링크' ),
-);
+$specialPageAliases['ko'] = [
+	'DisambiguationPages' => [ '동음이의어문서' ],
+	'DisambiguationPageLinks' => [ '동음이의어문서링크' ],
+];
 
 /** Luxembourgish (Lëtzebuergesch) */
-$specialPageAliases['lb'] = array(
-	'DisambiguationPages' => array( 'Homonymie-Säiten' ),
-	'DisambiguationPageLinks' => array( 'HomonymieSäitLinken' ),
-);
+$specialPageAliases['lb'] = [
+	'DisambiguationPages' => [ 'Homonymie-Säiten' ],
+	'DisambiguationPageLinks' => [ 'HomonymieSäitLinken' ],
+];
 
 /** Minangkabau (Baso Minangkabau) */
-$specialPageAliases['min'] = array(
-	'DisambiguationPages' => array( 'LamanDisambiguasi' ),
-	'DisambiguationPageLinks' => array( 'PautanLamanDisambiguasi' ),
-);
+$specialPageAliases['min'] = [
+	'DisambiguationPages' => [ 'LamanDisambiguasi' ],
+	'DisambiguationPageLinks' => [ 'PautanLamanDisambiguasi' ],
+];
 
 /** Macedonian (македонски) */
-$specialPageAliases['mk'] = array(
-	'DisambiguationPages' => array( 'ПојаснителниСтраници' ),
-	'DisambiguationPageLinks' => array( 'ВрскиДоПојаснување' ),
-);
+$specialPageAliases['mk'] = [
+	'DisambiguationPages' => [ 'ПојаснителниСтраници' ],
+	'DisambiguationPageLinks' => [ 'ВрскиДоПојаснување' ],
+];
 
 /** Malayalam (മലയാളം) */
-$specialPageAliases['ml'] = array(
-	'DisambiguationPages' => array( 'വിവക്ഷിതതാളുകൾ' ),
-	'DisambiguationPageLinks' => array( 'വിവക്ഷിതതാളുകളുടെകണ്ണികൾ' ),
-);
+$specialPageAliases['ml'] = [
+	'DisambiguationPages' => [ 'വിവക്ഷിതതാളുകൾ' ],
+	'DisambiguationPageLinks' => [ 'വിവക്ഷിതതാളുകളുടെകണ്ണികൾ' ],
+];
 
 /** Low Saxon (Netherlands) (Nedersaksies) */
-$specialPageAliases['nds-nl'] = array(
-	'DisambiguationPages' => array( 'Deurverwiesziejen' ),
-	'DisambiguationPageLinks' => array( 'Deurverwieskoppelingen' ),
-);
+$specialPageAliases['nds-nl'] = [
+	'DisambiguationPages' => [ 'Deurverwiesziejen' ],
+	'DisambiguationPageLinks' => [ 'Deurverwieskoppelingen' ],
+];
 
 /** Dutch (Nederlands) */
-$specialPageAliases['nl'] = array(
-	'DisambiguationPages' => array( 'Doorverwijspaginas', 'Doorverwijspagina\'s' ),
-	'DisambiguationPageLinks' => array( 'Doorverwijspaginakoppelingen' ),
-);
+$specialPageAliases['nl'] = [
+	'DisambiguationPages' => [ 'Doorverwijspaginas', 'Doorverwijspagina\'s' ],
+	'DisambiguationPageLinks' => [ 'Doorverwijspaginakoppelingen' ],
+];
 
 /** Polish (polski) */
-$specialPageAliases['pl'] = array(
-	'DisambiguationPages' => array( 'Strony_ujednoznaczniające' ),
-);
+$specialPageAliases['pl'] = [
+	'DisambiguationPages' => [ 'Strony_ujednoznaczniające' ],
+];
 
 /** Portuguese (português) */
-$specialPageAliases['pt'] = array(
-	'DisambiguationPages' => array( 'Páginas_de_desambiguação' ),
-	'DisambiguationPageLinks' => array( 'Links_para_páginas_de_desambiguação' ),
-);
+$specialPageAliases['pt'] = [
+	'DisambiguationPages' => [ 'Páginas_de_desambiguação' ],
+	'DisambiguationPageLinks' => [ 'Links_para_páginas_de_desambiguação' ],
+];
 
 /** Swedish (svenska) */
-$specialPageAliases['sv'] = array(
-	'DisambiguationPages' => array( 'Förgreningssidor' ),
-	'DisambiguationPageLinks' => array( 'Sidor_som_länkar_till_förgreningssidor' ),
-);
+$specialPageAliases['sv'] = [
+	'DisambiguationPages' => [ 'Förgreningssidor' ],
+	'DisambiguationPageLinks' => [ 'Sidor_som_länkar_till_förgreningssidor' ],
+];
 
 /** Ukrainian (українська) */
-$specialPageAliases['uk'] = array(
-	'DisambiguationPages' => array( 'Сторінки_тлумачення_неоднозначності' ),
-	'DisambiguationPageLinks' => array( 'Посилання_на_сторінки_тлумачення_неоднозначності' ),
-);
+$specialPageAliases['uk'] = [
+	'DisambiguationPages' => [ 'Сторінки_тлумачення_неоднозначності' ],
+	'DisambiguationPageLinks' => [ 'Посилання_на_сторінки_тлумачення_неоднозначності' ],
+];
 
 /** Venetian (vèneto) */
-$specialPageAliases['vec'] = array(
-	'DisambiguationPages' => array( 'PagineDeDisambigua' ),
-	'DisambiguationPageLinks' => array( 'PagineChePontaAPagineDeDisambigua' ),
-);
+$specialPageAliases['vec'] = [
+	'DisambiguationPages' => [ 'PagineDeDisambigua' ],
+	'DisambiguationPageLinks' => [ 'PagineChePontaAPagineDeDisambigua' ],
+];
 
 /** Vietnamese (Tiếng Việt) */
-$specialPageAliases['vi'] = array(
-	'DisambiguationPages' => array( 'Trang_định_hướng' ),
-	'DisambiguationPageLinks' => array( 'Liên_kết_đến_trang_định_hướng' ),
-);
+$specialPageAliases['vi'] = [
+	'DisambiguationPages' => [ 'Trang_định_hướng' ],
+	'DisambiguationPageLinks' => [ 'Liên_kết_đến_trang_định_hướng' ],
+];
 
 /** Simplified Chinese (中文（简体）‎) */
-$specialPageAliases['zh-hans'] = array(
-	'DisambiguationPages' => array( '消歧义页面' ),
-	'DisambiguationPageLinks' => array( '链接到消歧义页的页面' ),
-);
+$specialPageAliases['zh-hans'] = [
+	'DisambiguationPages' => [ '消歧义页面' ],
+	'DisambiguationPageLinks' => [ '链接到消歧义页的页面' ],
+];
 
 /** Traditional Chinese (中文（繁體）‎) */
-$specialPageAliases['zh-hant'] = array(
-	'DisambiguationPages' => array( '消歧義頁面' ),
-	'DisambiguationPageLinks' => array( '消歧義頁面連結' ),
-);
+$specialPageAliases['zh-hant'] = [
+	'DisambiguationPages' => [ '消歧義頁面' ],
+	'DisambiguationPageLinks' => [ '消歧義頁面連結' ],
+];
