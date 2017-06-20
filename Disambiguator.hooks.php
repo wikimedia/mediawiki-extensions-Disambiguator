@@ -138,7 +138,7 @@ class DisambiguatorHooks {
 				if ( array_key_exists( $disambiguationPageId, $redirects ) ) {
 					$output[] = $redirects[$disambiguationPageId];
 				}
-				if ( in_array( $disambiguationPageId, $pageIds ) ){
+				if ( in_array( $disambiguationPageId, $pageIds ) ) {
 					$output[] = $disambiguationPageId;
 				}
 			}
