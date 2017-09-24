@@ -102,7 +102,7 @@ class DisambiguatorHooks {
 
 		$output = [];
 		if ( $pageIds ) {
-			$dbr = wfGetDB( DB_SLAVE );
+			$dbr = wfGetDB( DB_REPLICA );
 
 			$redirects = [];
 			if ( $includeRedirects ) {
