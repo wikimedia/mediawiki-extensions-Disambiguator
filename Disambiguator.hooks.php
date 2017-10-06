@@ -150,7 +150,7 @@ class DisambiguatorHooks {
 	/**
 	 * Add 'mw-disambig' CSS class to links to disambiguation pages.
 	 * @param array $pageIdToDbKey Prefixed DB keys of the pages linked to, indexed by page_id
-	 * @param array $colours CSS classes, indexed by prefixed DB keys
+	 * @param array &$colours CSS classes, indexed by prefixed DB keys
 	 */
 	public static function onGetLinkColours( $pageIdToDbKey, &$colours ) {
 		global $wgDisambiguatorIndicateLinks;
