@@ -174,6 +174,12 @@ $specialPageAliases['uk'] = [
 	'DisambiguationPageLinks' => [ 'Посилання_на_сторінки_тлумачення_неоднозначності' ],
 ];
 
+/** Urdu (اردو) */
+$specialPageAliases['ur'] = [
+	'DisambiguationPages' => [ 'ضد_ابہام_صفحات' ],
+	'DisambiguationPageLinks' => [ 'ضد_ابہام_صفحات_کے_روابط' ],
+];
+
 /** Venetian (vèneto) */
 $specialPageAliases['vec'] = [
 	'DisambiguationPages' => [ 'PagineDeDisambigua' ],
