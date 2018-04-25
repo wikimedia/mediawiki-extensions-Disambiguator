@@ -6,6 +6,8 @@
 	},
 	"disambig-desc": "Veug 't label <code><nowiki>__DISAMBIG__</nowiki></code> toe veur [[Special:DisambiguationPages|doorverwiespagina's]] te markere",
 	"disambiguationpages": "Doorverwiespagina's",
+	"disambiguationpages-summary": "Hie volg 'n lies mit alle verdudelikingspagina's op {{SITENAME}}.<br />\n'n Pagina weurt behanjeld es 'n verdudelikingspagina's wen 't de code <code><nowiki>__DISAMBIG__</nowiki></code> bevat (of get det daoveur in de plaats kump).",
 	"disambiguationpagelinks": "Pagina's die linke nao verdudelikingspagina's",
+	"disambiguationpagelinks-summary": "De volgende pagina's bevatte mindestes eine link nao 'n verdudelikingspagina.\n't Kan zeen det zie mótte linke nao ein of mieë passende pagina's.<br />\n'n Pagina weurt behanjeld es 'n verdudelikingspagina's wen 't de code <code><nowiki>__DISAMBIG__</nowiki></code> bevat (of get det daoveur in de plaats kump).",
 	"visualeditor-dialog-meta-settings-disambiguation-label": "Dit is 'n doorverwiespagina"
 }
