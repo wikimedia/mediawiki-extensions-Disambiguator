@@ -3,10 +3,11 @@
 		"authors": [
 			"Gomoko",
 			"Linedwell",
-			"Zebulon84"
+			"Zebulon84",
+			"Wladek92"
 		]
 	},
-	"disambig-desc": "Ajoute la balise <code><nowiki>__DISAMBIG__</nowiki></code> pour marquer [[Special:DisambiguationPages|les pages d’ambiguïté]].",
+	"disambig-desc": "Ajoute la balise <code><nowiki>__DISAMBIG__</nowiki></code> pour marquer [[Special:DisambiguationPages|les pages d’ambiguïté]]",
 	"disambiguationpages": "Pages d’homonymie",
 	"disambiguationpages-summary": "Ce qui suit est une liste de toutes les pages d’ambiguïté de {{SITENAME}}.<br />Une page est traitée comme page d’ambiguïté si la page contient la balise <code><nowiki>__DISAMBIG__</nowiki></code> (ou un alias équivalent).",
 	"disambiguationpagelinks": "Pages de liens vers des pages d'homonymie",
