@@ -39,6 +39,16 @@ class DisambiguatorHooks {
 	}
 
 	/**
+	 * Modify the Special:AncientPages query to ignore disambiguation pages
+	 * @param array &$tables
+	 * @param array &$conds
+	 * @param array &$joinConds
+	 */
+	public static function onAncientPagesQuery( &$tables, &$conds, &$joinConds ) {
+		self::excludeDisambiguationPages( $tables, $conds, $joinConds );
+	}
+
+	/**
 	 * Modify the Special:LonelyPages query to ignore disambiguation pages
 	 * @param array &$tables
 	 * @param array &$conds

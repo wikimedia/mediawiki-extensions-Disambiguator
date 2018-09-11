@@ -22,6 +22,9 @@
 		"wgQueryPages": [
 			"DisambiguatorHooks::onwgQueryPages"
 		],
+		"AncientPagesQuery": [
+			"DisambiguatorHooks::onAncientPagesQuery"
+		],
 		"LonelyPagesQuery": [
 			"DisambiguatorHooks::onLonelyPagesQuery"
 		],
