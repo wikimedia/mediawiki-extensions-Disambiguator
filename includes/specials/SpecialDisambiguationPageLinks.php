@@ -8,6 +8,7 @@
  */
 
 use Wikimedia\Rdbms\DBError;
+use Wikimedia\Rdbms\IDatabase;
 use Wikimedia\Rdbms\IResultWrapper;
 
 class SpecialDisambiguationPageLinks extends QueryPage {
@@ -77,16 +78,24 @@ class SpecialDisambiguationPageLinks extends QueryPage {
 
 		$linkRenderer = $this->getLinkRenderer();
 		$from = $linkRenderer->makeKnownLink( $fromTitle );
-		$edit = $linkRenderer->makeLink(
-			$fromTitle,
-			$this->msg( 'parentheses', $this->msg( 'editlink' )->text() )->text(),
-			[],
-			[ 'redirect' => 'no', 'action' => 'edit' ]
-		);
 		$arr = $this->getLanguage()->getArrow();
 		$to = $linkRenderer->makeKnownLink( $toTitle );
 
-		return "$from $edit $arr $to";
+		// Check if user is allowed to edit
+		if (
+			$fromTitle->quickUserCan( 'edit' ) &&
+			ContentHandler::getForTitle( $fromTitle )->supportsDirectEditing()
+		) {
+			$edit = $linkRenderer->makeLink(
+				$fromTitle,
+				$this->msg( 'parentheses', $this->msg( 'editlink' )->text() )->text(),
+				[],
+				[ 'redirect' => 'no', 'action' => 'edit' ]
+			);
+			return "$from $edit $arr $to";
+		}
+
+		return "$from $arr $to";
 	}
 
 	protected function getGroupName() {
@@ -210,4 +219,13 @@ class SpecialDisambiguationPageLinks extends QueryPage {
 		return $res;
 	}
 
+	/**
+	 * Cache page content model for performance
+	 *
+	 * @param IDatabase $db
+	 * @param IResultWrapper $res
+	 */
+	public function preprocessResults( $db, $res ) {
+		$this->executeLBFromResultWrapper( $res );
+	}
 }
