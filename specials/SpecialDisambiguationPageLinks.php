@@ -16,15 +16,15 @@ class SpecialDisambiguationPageLinks extends QueryPage {
 		parent::__construct( 'DisambiguationPageLinks' );
 	}
 
-	function isExpensive() {
+	public function isExpensive() {
 		return true;
 	}
 
-	function isSyndicated() {
+	public function isSyndicated() {
 		return false;
 	}
 
-	function getQueryInfo() {
+	public function getQueryInfo() {
 		return [
 			'tables' => [
 				'p1' => 'page',
@@ -60,15 +60,15 @@ class SpecialDisambiguationPageLinks extends QueryPage {
 	 *
 	 * @return array
 	 */
-	function getOrderFields() {
+	public function getOrderFields() {
 		return [ 'value', 'to_namespace', 'to_title' ];
 	}
 
-	function sortDescending() {
+	public function sortDescending() {
 		return false;
 	}
 
-	function formatResult( $skin, $result ) {
+	public function formatResult( $skin, $result ) {
 		$fromTitle = Title::newFromID( $result->value );
 		$toTitle = Title::newFromText( $result->to_title, $result->to_namespace );
 
@@ -98,7 +98,7 @@ class SpecialDisambiguationPageLinks extends QueryPage {
 	 * @throws DBError|Exception
 	 * @return bool|int
 	 */
-	function recache( $limit, $ignoreErrors = true ) {
+	public function recache( $limit, $ignoreErrors = true ) {
 		if ( !$this->isCacheable() ) {
 			return 0;
 		}
@@ -171,7 +171,7 @@ class SpecialDisambiguationPageLinks extends QueryPage {
 	 * @param int|bool $offset Numerical offset or false for no offset
 	 * @return ResultWrapper
 	 */
-	function fetchFromCache( $limit, $offset = false ) {
+	public function fetchFromCache( $limit, $offset = false ) {
 		$dbr = wfGetDB( DB_REPLICA );
 		$options = [];
 		if ( $limit !== false ) {

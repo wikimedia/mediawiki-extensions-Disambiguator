@@ -16,15 +16,15 @@ class SpecialDisambiguationPages extends QueryPage {
 		parent::__construct( 'DisambiguationPages' );
 	}
 
-	function isExpensive() {
+	public function isExpensive() {
 		return false;
 	}
 
-	function isSyndicated() {
+	public function isSyndicated() {
 		return false;
 	}
 
-	function getQueryInfo() {
+	public function getQueryInfo() {
 		return [
 			'tables' => [
 				'page',
@@ -47,15 +47,15 @@ class SpecialDisambiguationPages extends QueryPage {
 	 * We don't sort by namespace and title since this would trigger a filesort.
 	 * @return array
 	 */
-	function getOrderFields() {
+	public function getOrderFields() {
 		return [ 'value' ];
 	}
 
-	function sortDescending() {
+	public function sortDescending() {
 		return false;
 	}
 
-	function formatResult( $skin, $result ) {
+	public function formatResult( $skin, $result ) {
 		$title = Title::newFromID( $result->value );
 		return $this->getLinkRenderer()->makeKnownLink( $title );
 	}
