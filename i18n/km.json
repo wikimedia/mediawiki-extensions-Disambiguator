@@ -4,5 +4,10 @@
 			"គីមស៊្រុន"
 		]
 	},
+	"disambig-desc": "បន្ថែមស្លាក<code><nowiki>__DISAMBIG__</nowiki></code> ដើម្បីសម្គាល់[[Special:DisambiguationPages|ទំព័រអសង្ស័យកម្ម]]",
+	"disambiguationpages": "ទំព័រអសង្ស័យកម្ម",
+	"disambiguationpages-summary": "ខាងក្រោមនេះជាបញ្ជីទំព័រអសង្ស័យកម្មទាំងអស់នៅក្នុង{{SITENAME}}។<br />\nទំព័រមួយនឹងត្រូវចាត់ទុកជាទំព័រអសង្ស័យកម្ម បើសិនជាវាមានស្លាក <code><nowiki>__DISAMBIG__</nowiki></code> (ឬកូដដែលមានន័យដូចនេះ)។",
+	"disambiguationpagelinks": "ទំព័រដែលភ្ជាប់មកទំព័រអសង្ស័យកម្ម",
+	"disambiguationpagelinks-summary": "ទំព័រខាងក្រោមនេះមានតំណភ្ជាប់យ៉ាងតិចមួយទៅកាន់ទំព័រអសង្ស័យកម្មមួយ។ ទំព័រទាំងនេះគួរតែតភ្ជាប់ទៅទំព័រដែលសមរម្យជាងនេះ។<br />\nទំព័រមួយនឹងត្រូវចាត់ទុកជាទំព័រអសង្ស័យកម្ម បើសិនជាវាមានស្លាក <code><nowiki>__DISAMBIG__</nowiki></code> (ឬកូដដែលមានន័យដូចនេះ)។",
 	"visualeditor-dialog-meta-settings-disambiguation-label": "នេះជាទំព័រអសង្ស័យកម្ម"
 }
