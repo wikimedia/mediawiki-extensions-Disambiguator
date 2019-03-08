@@ -73,9 +73,9 @@
 		"DisambiguationPageLinks": "SpecialDisambiguationPageLinks"
 	},
 	"AutoloadClasses": {
-		"DisambiguatorHooks": "Disambiguator.hooks.php",
-		"SpecialDisambiguationPages": "specials/SpecialDisambiguationPages.php",
-		"SpecialDisambiguationPageLinks": "specials/SpecialDisambiguationPageLinks.php"
+		"DisambiguatorHooks": "includes/DisambiguatorHooks.php",
+		"SpecialDisambiguationPages": "includes/specials/SpecialDisambiguationPages.php",
+		"SpecialDisambiguationPageLinks": "includes/specials/SpecialDisambiguationPageLinks.php"
 	},
 	"VisualEditorPluginModules": [
 		"ext.disambiguator.visualEditor"
