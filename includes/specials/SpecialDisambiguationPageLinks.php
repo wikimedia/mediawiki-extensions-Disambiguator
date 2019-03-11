@@ -7,6 +7,9 @@
  * @ingroup Extensions
  */
 
+use Wikimedia\Rdbms\DBError;
+use Wikimedia\Rdbms\IResultWrapper;
+
 class SpecialDisambiguationPageLinks extends QueryPage {
 
 	/**
@@ -169,7 +172,7 @@ class SpecialDisambiguationPageLinks extends QueryPage {
 	 *
 	 * @param int|bool $limit Numerical limit or false for no limit
 	 * @param int|bool $offset Numerical offset or false for no offset
-	 * @return ResultWrapper
+	 * @return IResultWrapper
 	 */
 	public function fetchFromCache( $limit, $offset = false ) {
 		$dbr = wfGetDB( DB_REPLICA );
