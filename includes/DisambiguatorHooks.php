@@ -20,8 +20,8 @@ class DisambiguatorHooks {
 	 * @param array &$queryPages
 	 */
 	public static function onwgQueryPages( &$queryPages ) {
-		$queryPages[] = [ 'SpecialDisambiguationPages', 'DisambiguationPages' ];
-		$queryPages[] = [ 'SpecialDisambiguationPageLinks', 'DisambiguationPageLinks' ];
+		$queryPages[] = [ SpecialDisambiguationPages::class, 'DisambiguationPages' ];
+		$queryPages[] = [ SpecialDisambiguationPageLinks::class, 'DisambiguationPageLinks' ];
 	}
 
 	/**
