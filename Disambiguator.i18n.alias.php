@@ -162,6 +162,18 @@ $specialPageAliases['pt'] = [
 	'DisambiguationPageLinks' => [ 'Links_para_páginas_de_desambiguação' ],
 ];
 
+/** Serbian Cyrillic (српски (ћирилица)) */
+$specialPageAliases['sr-ec'] = [
+	'DisambiguationPages' => [ 'ВишезначнеОдреднице', 'Вишезначне_одреднице' ],
+	'DisambiguationPageLinks' => [ 'ВезеДоВишезначнихОдредница' ],
+];
+
+/** Serbian Latin (srpski (latinica)) */
+$specialPageAliases['sr-el'] = [
+	'DisambiguationPages' => [ 'VišeznačneOdrednice', 'Višeznačne_odrednice' ],
+	'DisambiguationPageLinks' => [ 'VezeDoVišeznačnihOdrednica' ],
+];
+
 /** Swedish (svenska) */
 $specialPageAliases['sv'] = [
 	'DisambiguationPages' => [ 'Förgreningssidor' ],
