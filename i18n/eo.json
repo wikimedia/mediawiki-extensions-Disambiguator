@@ -2,10 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"KuboF",
-			"NMaia"
+			"NMaia",
+			"Mirin"
 		]
 	},
 	"disambig-desc": "Aldonas la etikedon <code><nowiki>__DISAMBIG__</nowiki></code>__ por marki [[Special:DisambiguationPages|apartigilajn paĝojn]]",
 	"disambiguationpages": "Apartigiloj",
-	"disambiguationpagelinks": "Paĝoj ligantaj al apartigiloj"
+	"disambiguationpagelinks": "Paĝoj ligantaj al apartigiloj",
+	"visualeditor-dialog-meta-settings-disambiguation-label": "Ĉi tiu estas apartigilo"
 }
