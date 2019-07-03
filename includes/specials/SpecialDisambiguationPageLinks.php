@@ -167,6 +167,11 @@ class SpecialDisambiguationPageLinks extends QueryPage {
 		return $num;
 	}
 
+	public function execute( $par ) {
+		$this->addHelpLink( 'Extension:Disambiguator' );
+		parent::execute( $par );
+	}
+
 	/**
 	 * Fetch the query results from the query cache
 	 *
