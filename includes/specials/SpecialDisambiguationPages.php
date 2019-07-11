@@ -42,6 +42,11 @@ class SpecialDisambiguationPages extends QueryPage {
 		];
 	}
 
+	public function execute( $par ) {
+		$this->addHelpLink( 'Extension:Disambiguator' );
+		parent::execute( $par );
+	}
+
 	/**
 	 * Order the results by page ID.
 	 * We don't sort by namespace and title since this would trigger a filesort.
