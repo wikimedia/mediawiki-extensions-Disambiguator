@@ -73,8 +73,8 @@ class SpecialDisambiguationPageLinks extends QueryPage {
 	}
 
 	public function formatResult( $skin, $result ) {
-		$fromTitle = Title::newFromID( $result->value );
-		$toTitle = Title::newFromText( $result->to_title, $result->to_namespace );
+		$fromTitle = Title::makeTitle( $result->namespace, $result->title );
+		$toTitle = Title::makeTitle( $result->to_namespace, $result->to_title );
 
 		$linkRenderer = $this->getLinkRenderer();
 		$from = $linkRenderer->makeKnownLink( $fromTitle );
