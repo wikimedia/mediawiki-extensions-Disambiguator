@@ -7,6 +7,9 @@
  * @ingroup Extensions
  */
 
+use Wikimedia\Rdbms\IDatabase;
+use Wikimedia\Rdbms\IResultWrapper;
+
 class SpecialDisambiguationPages extends QueryPage {
 
 	/**
@@ -58,6 +61,14 @@ class SpecialDisambiguationPages extends QueryPage {
 
 	public function sortDescending() {
 		return false;
+	}
+
+	/**
+	 * @param IDatabase $db
+	 * @param IResultWrapper $res
+	 */
+	public function preprocessResults( $db, $res ) {
+		$this->executeLBFromResultWrapper( $res );
 	}
 
 	public function formatResult( $skin, $result ) {
