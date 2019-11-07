@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Teslaton"
+			"Teslaton",
+			"Luky001"
 		]
 	},
+	"disambig-desc": "Pridáva značku <code><nowiki>__DISAMBIG__</nowiki></code> na označenie [[Special:DisambiguationPages|rozlišovacích stránok]]",
 	"disambiguationpages": "Rozlišovacie stránky",
 	"disambiguationpages-summary": "Toto je zoznam všetkých rozlišovacích stránok na {{grammar:6sg|{{SITENAME}}}}.<br />Stránka je považovaná za rozlišovaciu ak obsahuje značku <code><nowiki>__DISAMBIG__</nowiki></code> (prípadne jej synonymum).",
 	"disambiguationpagelinks": "Stránky odkazujúce na rozlišovacie stránky",
