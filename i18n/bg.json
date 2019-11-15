@@ -4,11 +4,14 @@
 			"Spiritia",
 			"V111P",
 			"Termininja",
-			"ShockD"
+			"ShockD",
+			"StanProg"
 		]
 	},
+	"disambig-desc": "Добавя тага <code><nowiki>__DISAMBIG__</nowiki></code> за отбелязване на [[Special:DisambiguationPages|пояснителни страници]]",
 	"disambiguationpages": "Пояснителни страници",
 	"disambiguationpages-summary": "По-долу е даден списък на всички пояснителни страници в {{SITENAME}}.<br />\nЕдна страница се третира като пояснителна, ако съдържа маркер <code><nowiki>__DISAMBIG__</nowiki></code> (или еквивалентен псевдоним).",
 	"disambiguationpagelinks": "Страници с препратки към пояснителни страници",
+	"disambiguationpagelinks-summary": "Страниците по-долу съдържат поне една препратка към пояснителни страници.\nТе най-вероятно трябва да сочат към по-подходящи страници.<br />\nЕдна страница се приема за пояснителна страница, ако съдържа етикета <code><nowiki>__DISAMBIG__</nowiki></code> (или еквивалентен псевдоним)",
 	"visualeditor-dialog-meta-settings-disambiguation-label": "Това е пояснителна страница"
 }
