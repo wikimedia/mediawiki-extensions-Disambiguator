@@ -5,10 +5,11 @@
 			"V111P",
 			"Termininja",
 			"ShockD",
-			"StanProg"
+			"StanProg",
+			"Ted Masters"
 		]
 	},
-	"disambig-desc": "Добавя тага <code><nowiki>__DISAMBIG__</nowiki></code> за отбелязване на [[Special:DisambiguationPages|пояснителни страници]]",
+	"disambig-desc": "Добавя етикета <code><nowiki>__DISAMBIG__</nowiki></code> за отбелязване на [[Special:DisambiguationPages|пояснителни страници]]",
 	"disambiguationpages": "Пояснителни страници",
 	"disambiguationpages-summary": "По-долу е даден списък на всички пояснителни страници в {{SITENAME}}.<br />\nЕдна страница се третира като пояснителна, ако съдържа маркер <code><nowiki>__DISAMBIG__</nowiki></code> (или еквивалентен псевдоним).",
 	"disambiguationpagelinks": "Страници с препратки към пояснителни страници",
