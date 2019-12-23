@@ -226,6 +226,17 @@ class SpecialDisambiguationPageLinks extends QueryPage {
 	 * @param IResultWrapper $res
 	 */
 	public function preprocessResults( $db, $res ) {
-		$this->executeLBFromResultWrapper( $res );
+		if ( !$res->numRows() ) {
+			return;
+		}
+
+		$batch = new LinkBatch;
+		foreach ( $res as $row ) {
+			$batch->add( $row->namespace, $row->title );
+			$batch->add( $row->to_namespace, $row->to_title );
+		}
+		$batch->execute();
+
+		$res->seek( 0 );
 	}
 }
