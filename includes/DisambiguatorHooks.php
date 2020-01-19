@@ -31,10 +31,13 @@ class DisambiguatorHooks {
 	 * @param array &$joinConds
 	 */
 	private static function excludeDisambiguationPages( &$tables, &$conds, &$joinConds ) {
-		$tables[] = 'page_props';
-		$conds['pp_page'] = null;
-		$joinConds['page_props'] = [
-			'LEFT JOIN', [ 'page_id = pp_page', 'pp_propname' => 'disambiguation' ]
+		$tables['disambig_props'] = 'page_props';
+		$conds['disambig_props.pp_page'] = null;
+		$joinConds['disambig_props'] = [
+			'LEFT JOIN', [
+				'page_id = disambig_props.pp_page',
+				'disambig_props.pp_propname' => 'disambiguation'
+			]
 		];
 	}
 
