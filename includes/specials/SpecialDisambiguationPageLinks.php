@@ -7,6 +7,7 @@
  * @ingroup Extensions
  */
 
+use MediaWiki\MediaWikiServices;
 use Wikimedia\Rdbms\DBError;
 use Wikimedia\Rdbms\IDatabase;
 use Wikimedia\Rdbms\IResultWrapper;
@@ -81,9 +82,10 @@ class SpecialDisambiguationPageLinks extends QueryPage {
 		$arr = $this->getLanguage()->getArrow();
 		$to = $linkRenderer->makeKnownLink( $toTitle );
 
+		$permissionManager = MediaWikiServices::getInstance()->getPermissionManager();
 		// Check if user is allowed to edit
 		if (
-			$fromTitle->quickUserCan( 'edit' ) &&
+			$permissionManager->quickUserCan( 'edit', $this->getUser(), $fromTitle ) &&
 			ContentHandler::getForTitle( $fromTitle )->supportsDirectEditing()
 		) {
 			$edit = $linkRenderer->makeLink(
