@@ -16,27 +16,13 @@
 		"DisambiguatorMagic": "Disambiguator.i18n.magic.php"
 	},
 	"Hooks": {
-		"GetDoubleUnderscoreIDs": [
-			"DisambiguatorHooks::onGetDoubleUnderscoreIDs"
-		],
-		"wgQueryPages": [
-			"DisambiguatorHooks::onwgQueryPages"
-		],
-		"AncientPagesQuery": [
-			"DisambiguatorHooks::onAncientPagesQuery"
-		],
-		"LonelyPagesQuery": [
-			"DisambiguatorHooks::onLonelyPagesQuery"
-		],
-		"ShortPagesQuery": [
-			"DisambiguatorHooks::onShortPagesQuery"
-		],
-		"RandomPageQuery": [
-			"DisambiguatorHooks::onRandomPageQuery"
-		],
-		"GetLinkColours": [
-			"DisambiguatorHooks::onGetLinkColours"
-		]
+		"GetDoubleUnderscoreIDs": "DisambiguatorHooks::onGetDoubleUnderscoreIDs",
+		"wgQueryPages": "DisambiguatorHooks::onwgQueryPages",
+		"AncientPagesQuery": "DisambiguatorHooks::onAncientPagesQuery",
+		"LonelyPagesQuery": "DisambiguatorHooks::onLonelyPagesQuery",
+		"ShortPagesQuery": "DisambiguatorHooks::onShortPagesQuery",
+		"RandomPageQuery": "DisambiguatorHooks::onRandomPageQuery",
+		"GetLinkColours": "DisambiguatorHooks::onGetLinkColours"
 	},
 	"MessagesDirs": {
 		"Disambiguator": [
