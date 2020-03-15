@@ -48,8 +48,8 @@
 		}
 	},
 	"ResourceFileModulePaths": {
-		"localBasePath": "",
-		"remoteExtPath": "Disambiguator"
+		"localBasePath": "modules",
+		"remoteExtPath": "Disambiguator/modules"
 	},
 	"config": {
 		"DisambiguatorIndicateLinks": true
