@@ -5,8 +5,6 @@
  * @license The MIT License (MIT); see COPYING
  */
 
-/*global ve, OO, mw*/
-
 /**
  * DataModel disambiguation meta item (for __DISAMBIG__).
  *
@@ -35,7 +33,7 @@ ve.dm.MWDisambiguationMetaItem.static.matchTagNames = [ 'meta' ];
 ve.dm.MWDisambiguationMetaItem.static.matchRdfaTypes = [ 'mw:PageProp/disambiguation' ];
 
 ve.dm.MWDisambiguationMetaItem.static.toDataElement = function () {
-	return { 'type': this.name };
+	return { type: this.name };
 };
 
 ve.dm.MWDisambiguationMetaItem.static.toDomElements = function ( dataElement, doc ) {
