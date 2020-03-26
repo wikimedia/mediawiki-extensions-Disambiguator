@@ -109,8 +109,8 @@ class SpecialDisambiguationPageLinks extends QueryPage {
 	 *
 	 * @param int|bool $limit Limit for SQL statement
 	 * @param bool $ignoreErrors Whether to ignore database errors
-	 * @throws DBError|Exception
 	 * @return bool|int
+	 * @throws DBError|Exception
 	 */
 	public function recache( $limit, $ignoreErrors = true ) {
 		if ( !$this->isCacheable() ) {
