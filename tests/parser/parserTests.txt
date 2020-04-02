@@ -1,3 +1,5 @@
+!! Version 2
+
 !! article
 Disambig
 !! text
@@ -13,9 +15,9 @@ This is a normal page.
 
 !! test
 Link to disambig and non-disambig page
-!! input
+!! wikitext
 I am linking to [[Disambig]] and [[Normal]].
-!! result
+!! html
 <p>I am linking to <a href="/wiki/Disambig" class="mw-disambig" title="Disambig">Disambig</a> and <a href="/wiki/Normal" title="Normal">Normal</a>.
 </p>
 !! end
