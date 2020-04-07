@@ -1,12 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Spiritia",
-			"V111P",
-			"Termininja",
 			"ShockD",
+			"Spiritia",
 			"StanProg",
-			"Ted Masters"
+			"Ted Masters",
+			"Termininja",
+			"V111P"
 		]
 	},
 	"disambig-desc": "Добавя етикета <code><nowiki>__DISAMBIG__</nowiki></code> за отбелязване на [[Special:DisambiguationPages|пояснителни страници]]",

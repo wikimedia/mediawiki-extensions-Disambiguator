@@ -2,9 +2,9 @@
 	"@metadata": {
 		"authors": [
 			"Cainamarques",
+			"Hamilton Abreu",
 			"Malafaya",
-			"Vitorvicentevalente",
-			"Hamilton Abreu"
+			"Vitorvicentevalente"
 		]
 	},
 	"disambig-desc": "Adiciona o elemento <code><nowiki>__DISAMBIG__</nowiki></code> para marcar [[Special:DisambiguationPages|páginas de desambiguação]]",

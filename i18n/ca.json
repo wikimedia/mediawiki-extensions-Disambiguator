@@ -1,9 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Vriullop",
 			"Fitoschido",
-			"Ssola"
+			"Ssola",
+			"Vriullop"
 		]
 	},
 	"disambig-desc": "Afegeix l'etiqueta <code><nowiki>__DISAMBIG__</nowiki></code> per marcar les [[Special:DisambiguationPages|pàgines de desambiguació]]",

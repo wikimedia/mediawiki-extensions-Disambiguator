@@ -2,8 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Chrumps",
-			"WTM",
-			"Peter Bowman"
+			"Peter Bowman",
+			"WTM"
 		]
 	},
 	"disambig-desc": "Dodaje wyrażenie <code><nowiki>__DISAMBIG__</nowiki></code> w celu oznaczenia [[Special:DisambiguationPages|stron ujednoznaczniających]]",
