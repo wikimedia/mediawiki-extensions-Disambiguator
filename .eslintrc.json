@@ -2,11 +2,10 @@
 	"root": true,
 	"extends": [
 		"wikimedia/client",
-		"wikimedia/jquery"
+		"wikimedia/jquery",
+		"wikimedia/mediawiki"
 	],
 	"globals": {
-		"mw": false,
-		"ve": false,
-		"OO": false
+		"ve": false
 	}
 }
