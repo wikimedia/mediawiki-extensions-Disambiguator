@@ -1,4 +1,8 @@
-!! Version 2
+!! options
+version=2
+parsoid-compatible
+requirements=extension:Disambiguator
+!! end
 
 !! article
 Disambig
@@ -20,4 +24,14 @@ I am linking to [[Disambig]] and [[Normal]].
 !! html
 <p>I am linking to <a href="/wiki/Disambig" class="mw-disambig" title="Disambig">Disambig</a> and <a href="/wiki/Normal" title="Normal">Normal</a>.
 </p>
+!! end
+
+!! test
+Ensure disambiguation links are marked properly in Parsoid
+!! options
+parsoid=wt2html
+!! wikitext
+[[Disambig]]
+!! html/parsoid
+<p><a rel="mw:WikiLink" href="./Disambig" title="Disambig" class="mw-disambig">Disambig</a></p>
 !! end
