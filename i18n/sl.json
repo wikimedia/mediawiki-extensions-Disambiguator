@@ -6,7 +6,7 @@
 			"Yerpo"
 		]
 	},
-	"disambig-desc": "Doda oznako <code><nowiki>__DISAMBIG__</nowiki></code> za označitev [[Special:DisambiguationPages|razločitvenih strani]]",
+	"disambig-desc": "Doda značko <code><nowiki>__DISAMBIG__</nowiki></code> za označitev [[Special:DisambiguationPages|razločitvenih strani]]",
 	"disambiguationpages": "Razločitvene strani",
 	"disambiguationpages-summary": "Sledi seznam vseh razločitvenih strani na {{SITENAME}}.<br />\nStran obravnavamo kot razločitveno, če vsebuje oznako <code><nowiki>__DISAMBIG__</nowiki></code> (ali enakovreden vzdevek).",
 	"disambiguationpagelinks": "Strani, ki se povezujejo na razločitvene strani",
