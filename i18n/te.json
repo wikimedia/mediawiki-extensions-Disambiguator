@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			"Chaduvari",
 			"Veeven"
 		]
 	},
 	"disambiguationpages": "అయోమయ నివృత్తి పేజీలు",
-	"disambiguationpagelinks": "అయోమయ నివృత్తి పుటలకు లంకెలున్న పుటలు"
+	"disambiguationpagelinks": "అయోమయ నివృత్తి పుటలకు లంకెలున్న పుటలు",
+	"visualeditor-dialog-meta-settings-disambiguation-label": "ఇదొక అయోమయ నివృత్తి పేజీ"
 }
