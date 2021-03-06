@@ -7,18 +7,42 @@
  * @ingroup Extensions
  */
 
+use MediaWiki\Cache\LinkBatchFactory;
+use MediaWiki\Content\IContentHandlerFactory;
 use MediaWiki\MediaWikiServices;
 use Wikimedia\Rdbms\DBError;
 use Wikimedia\Rdbms\IDatabase;
+use Wikimedia\Rdbms\ILoadBalancer;
 use Wikimedia\Rdbms\IResultWrapper;
 
 class SpecialDisambiguationPageLinks extends QueryPage {
 
+	/** @var NamespaceInfo */
+	private $namespaceInfo;
+
+	/** @var LinkBatchFactory */
+	private $linkBatchFactory;
+
+	/** @var IContentHandlerFactory */
+	private $contentHandlerFactory;
+
 	/**
-	 * Initialize the special page.
+	 * @param NamespaceInfo $namespaceInfo
+	 * @param LinkBatchFactory $linkBatchFactory
+	 * @param IContentHandlerFactory $contentHandlerFactory
+	 * @param ILoadBalancer $loadBalancer
 	 */
-	public function __construct() {
+	public function __construct(
+		NamespaceInfo $namespaceInfo,
+		LinkBatchFactory $linkBatchFactory,
+		IContentHandlerFactory $contentHandlerFactory,
+		ILoadBalancer $loadBalancer
+	) {
 		parent::__construct( 'DisambiguationPageLinks' );
+		$this->namespaceInfo = $namespaceInfo;
+		$this->linkBatchFactory = $linkBatchFactory;
+		$this->contentHandlerFactory = $contentHandlerFactory;
+		$this->setDBLoadBalancer( $loadBalancer );
 	}
 
 	public function isExpensive() {
@@ -52,7 +76,7 @@ class SpecialDisambiguationPageLinks extends QueryPage {
 				'pl_namespace = p1.page_namespace',
 				'pl_title = p1.page_title',
 				'p2.page_id = pl_from',
-				'p2.page_namespace' => MWNamespace::getContentNamespaces(),
+				'p2.page_namespace' => $this->namespaceInfo->getContentNamespaces(),
 				'p2.page_is_redirect != 1'
 			]
 		];
@@ -86,7 +110,7 @@ class SpecialDisambiguationPageLinks extends QueryPage {
 		// Check if user is allowed to edit
 		if (
 			$permissionManager->quickUserCan( 'edit', $this->getUser(), $fromTitle ) &&
-			ContentHandler::getForTitle( $fromTitle )->supportsDirectEditing()
+			$this->contentHandlerFactory->getContentHandler( $fromTitle->getContentModel() )->supportsDirectEditing()
 		) {
 			$edit = $linkRenderer->makeLink(
 				$fromTitle,
@@ -118,7 +142,7 @@ class SpecialDisambiguationPageLinks extends QueryPage {
 		}
 
 		$fname = get_class( $this ) . '::recache';
-		$dbw = wfGetDB( DB_MASTER );
+		$dbw = $this->getDBLoadBalancer()->getConnectionRef( ILoadBalancer::DB_MASTER );
 		if ( !$dbw ) {
 			return false;
 		}
@@ -191,7 +215,7 @@ class SpecialDisambiguationPageLinks extends QueryPage {
 	 * @return IResultWrapper
 	 */
 	public function fetchFromCache( $limit, $offset = false ) {
-		$dbr = wfGetDB( DB_REPLICA );
+		$dbr = $this->getDBLoadBalancer()->getConnectionRef( ILoadBalancer::DB_REPLICA );
 		$options = [];
 		if ( $limit !== false ) {
 			$options['LIMIT'] = intval( $limit );
@@ -232,7 +256,7 @@ class SpecialDisambiguationPageLinks extends QueryPage {
 			return;
 		}
 
-		$batch = new LinkBatch;
+		$batch = $this->linkBatchFactory->newLinkBatch();
 		foreach ( $res as $row ) {
 			$batch->add( $row->namespace, $row->title );
 			$batch->add( $row->to_namespace, $row->to_title );

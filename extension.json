@@ -8,7 +8,7 @@
 	"descriptionmsg": "disambig-desc",
 	"license-name": "MIT",
 	"requires": {
-		"MediaWiki": ">= 1.29.0"
+		"MediaWiki": ">= 1.35.0"
 	},
 	"type": "other",
 	"ExtensionMessagesFiles": {
@@ -57,8 +57,22 @@
 		}
 	},
 	"SpecialPages": {
-		"DisambiguationPages": "SpecialDisambiguationPages",
-		"DisambiguationPageLinks": "SpecialDisambiguationPageLinks"
+		"DisambiguationPages": {
+			"class": "SpecialDisambiguationPages",
+			"services": [
+				"LinkBatchFactory",
+				"DBLoadBalancer"
+			]
+		},
+		"DisambiguationPageLinks": {
+			"class": "SpecialDisambiguationPageLinks",
+			"services": [
+				"NamespaceInfo",
+				"LinkBatchFactory",
+				"ContentHandlerFactory",
+				"DBLoadBalancer"
+			]
+		}
 	},
 	"AutoloadClasses": {
 		"DisambiguatorHooks": "includes/DisambiguatorHooks.php",

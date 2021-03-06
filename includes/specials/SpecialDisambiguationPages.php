@@ -7,16 +7,24 @@
  * @ingroup Extensions
  */
 
+use MediaWiki\Cache\LinkBatchFactory;
 use Wikimedia\Rdbms\IDatabase;
+use Wikimedia\Rdbms\ILoadBalancer;
 use Wikimedia\Rdbms\IResultWrapper;
 
 class SpecialDisambiguationPages extends QueryPage {
 
 	/**
-	 * Initialize the special page.
+	 * @param LinkBatchFactory $linkBatchFactory
+	 * @param ILoadBalancer $loadBalancer
 	 */
-	public function __construct() {
+	public function __construct(
+		LinkBatchFactory $linkBatchFactory,
+		ILoadBalancer $loadBalancer
+	) {
 		parent::__construct( 'DisambiguationPages' );
+		$this->setLinkBatchFactory( $linkBatchFactory );
+		$this->setDBLoadBalancer( $loadBalancer );
 	}
 
 	public function isExpensive() {
