@@ -9,7 +9,6 @@
 
 use MediaWiki\Cache\LinkBatchFactory;
 use MediaWiki\Content\IContentHandlerFactory;
-use MediaWiki\MediaWikiServices;
 use Wikimedia\Rdbms\DBError;
 use Wikimedia\Rdbms\IDatabase;
 use Wikimedia\Rdbms\ILoadBalancer;
@@ -106,10 +105,9 @@ class SpecialDisambiguationPageLinks extends QueryPage {
 		$arr = $this->getLanguage()->getArrow();
 		$to = $linkRenderer->makeKnownLink( $toTitle );
 
-		$permissionManager = MediaWikiServices::getInstance()->getPermissionManager();
 		// Check if user is allowed to edit
 		if (
-			$permissionManager->quickUserCan( 'edit', $this->getUser(), $fromTitle ) &&
+			$this->getAuthority()->isAllowed( 'edit' ) &&
 			$this->contentHandlerFactory->getContentHandler( $fromTitle->getContentModel() )->supportsDirectEditing()
 		) {
 			$edit = $linkRenderer->makeLink(
