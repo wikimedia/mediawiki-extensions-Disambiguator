@@ -6,7 +6,14 @@
  * @ingroup Extensions
  */
 
-class DisambiguatorHooks {
+namespace MediaWiki\Extension\Disambiguator;
+
+use MediaWiki\Extension\Disambiguator\Specials\SpecialDisambiguationPageLinks;
+use MediaWiki\Extension\Disambiguator\Specials\SpecialDisambiguationPages;
+use MediaWiki\MediaWikiServices;
+use Title;
+
+class Hooks {
 	/**
 	 * @param array &$doubleUnderscoreIDs
 	 */
@@ -84,80 +91,17 @@ class DisambiguatorHooks {
 
 	/**
 	 * Convenience function for testing whether or not a page is a disambiguation page
+	 *
+	 * @deprecated Use DisambiguatorLookup service
+	 *
 	 * @param Title $title object of a page
 	 * @param bool $includeRedirects Whether to consider redirects to disambiguations as
 	 *   disambiguations.
 	 * @return bool
 	 */
 	public static function isDisambiguationPage( Title $title, $includeRedirects = true ) {
-		$res = static::filterDisambiguationPageIds(
-			[ $title->getArticleID() ], $includeRedirects );
-		return (bool)count( $res );
-	}
-
-	/**
-	 * Convenience function for testing whether or not pages are disambiguation pages
-	 * @param int[] $pageIds
-	 * @param bool $includeRedirects Whether to consider redirects to disambiguations as
-	 *   disambiguations.
-	 * @return int[] The page ids corresponding to pages that are disambiguations
-	 */
-	private static function filterDisambiguationPageIds(
-		array $pageIds, $includeRedirects = true
-	) {
-		// Don't needlessly check non-existent and special pages
-		$pageIds = array_filter(
-			$pageIds,
-			function ( $id ) {
-				return $id > 0;
-			}
-		);
-
-		$output = [];
-		if ( $pageIds ) {
-			$dbr = wfGetDB( DB_REPLICA );
-
-			$redirects = [];
-			if ( $includeRedirects ) {
-				// resolve redirects
-				$res = $dbr->select(
-					[ 'page', 'redirect' ],
-					[ 'page_id', 'rd_from' ],
-					[ 'rd_from' => $pageIds ],
-					__METHOD__,
-					[],
-					[ 'page' => [ 'INNER JOIN', [
-						'rd_namespace=page_namespace',
-						'rd_title=page_title'
-					] ] ]
-				);
-
-				foreach ( $res as $row ) {
-					// Key is the destination page ID, value is the source page ID
-					$redirects[$row->page_id] = $row->rd_from;
-				}
-			}
-			$pageIdsWithRedirects = array_merge( array_keys( $redirects ),
-				array_diff( $pageIds, array_values( $redirects ) ) );
-			$res = $dbr->select(
-				'page_props',
-				'pp_page',
-				[ 'pp_page' => $pageIdsWithRedirects, 'pp_propname' => 'disambiguation' ],
-				__METHOD__
-			);
-
-			foreach ( $res as $row ) {
-				$disambiguationPageId = $row->pp_page;
-				if ( array_key_exists( $disambiguationPageId, $redirects ) ) {
-					$output[] = $redirects[$disambiguationPageId];
-				}
-				if ( in_array( $disambiguationPageId, $pageIds ) ) {
-					$output[] = $disambiguationPageId;
-				}
-			}
-		}
-
-		return $output;
+		return MediaWikiServices::getInstance()->getService( 'DisambiguatorLookup' )
+			->isDisambiguationPage( $title, $includeRedirects );
 	}
 
 	/**
@@ -171,7 +115,9 @@ class DisambiguatorHooks {
 			return;
 		}
 
-		$pageIds = static::filterDisambiguationPageIds( array_keys( $pageIdToDbKey ) );
+		$pageIds = MediaWikiServices::getInstance()->getService( 'DisambiguatorLookup' )
+			->filterDisambiguationPageIds( array_keys( $pageIdToDbKey ) );
+
 		foreach ( $pageIds as $pageId ) {
 			if ( isset( $colours[ $pageIdToDbKey[$pageId] ] ) ) {
 				$colours[ $pageIdToDbKey[$pageId] ] .= ' mw-disambig';
@@ -181,3 +127,5 @@ class DisambiguatorHooks {
 		}
 	}
 }
+
+class_alias( Hooks::class, 'DisambiguatorHooks' );

@@ -7,8 +7,14 @@
  * @ingroup Extensions
  */
 
+namespace MediaWiki\Extension\Disambiguator\Specials;
+
+use Exception;
 use MediaWiki\Cache\LinkBatchFactory;
 use MediaWiki\Content\IContentHandlerFactory;
+use NamespaceInfo;
+use QueryPage;
+use Title;
 use Wikimedia\Rdbms\DBError;
 use Wikimedia\Rdbms\IDatabase;
 use Wikimedia\Rdbms\ILoadBalancer;
@@ -192,9 +198,11 @@ class SpecialDisambiguationPageLinks extends QueryPage {
 			}
 		} catch ( DBError $e ) {
 			if ( !$ignoreErrors ) {
-				throw $e; // Report query error
+				// Report query error
+				throw $e;
 			}
-			$num = false; // Set result to false to indicate error
+			// Set result to false to indicate error
+			$num = false;
 		}
 
 		return $num;

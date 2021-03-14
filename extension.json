@@ -16,13 +16,13 @@
 		"DisambiguatorMagic": "Disambiguator.i18n.magic.php"
 	},
 	"Hooks": {
-		"GetDoubleUnderscoreIDs": "DisambiguatorHooks::onGetDoubleUnderscoreIDs",
-		"wgQueryPages": "DisambiguatorHooks::onwgQueryPages",
-		"AncientPagesQuery": "DisambiguatorHooks::onAncientPagesQuery",
-		"LonelyPagesQuery": "DisambiguatorHooks::onLonelyPagesQuery",
-		"ShortPagesQuery": "DisambiguatorHooks::onShortPagesQuery",
-		"RandomPageQuery": "DisambiguatorHooks::onRandomPageQuery",
-		"GetLinkColours": "DisambiguatorHooks::onGetLinkColours"
+		"GetDoubleUnderscoreIDs": "MediaWiki\\Extension\\Disambiguator\\Hooks::onGetDoubleUnderscoreIDs",
+		"wgQueryPages": "MediaWiki\\Extension\\Disambiguator\\Hooks::onwgQueryPages",
+		"AncientPagesQuery": "MediaWiki\\Extension\\Disambiguator\\Hooks::onAncientPagesQuery",
+		"LonelyPagesQuery": "MediaWiki\\Extension\\Disambiguator\\Hooks::onLonelyPagesQuery",
+		"ShortPagesQuery": "MediaWiki\\Extension\\Disambiguator\\Hooks::onShortPagesQuery",
+		"RandomPageQuery": "MediaWiki\\Extension\\Disambiguator\\Hooks::onRandomPageQuery",
+		"GetLinkColours": "MediaWiki\\Extension\\Disambiguator\\Hooks::onGetLinkColours"
 	},
 	"MessagesDirs": {
 		"Disambiguator": [
@@ -58,14 +58,14 @@
 	},
 	"SpecialPages": {
 		"DisambiguationPages": {
-			"class": "SpecialDisambiguationPages",
+			"class": "MediaWiki\\Extension\\Disambiguator\\Specials\\SpecialDisambiguationPages",
 			"services": [
 				"LinkBatchFactory",
 				"DBLoadBalancer"
 			]
 		},
 		"DisambiguationPageLinks": {
-			"class": "SpecialDisambiguationPageLinks",
+			"class": "MediaWiki\\Extension\\Disambiguator\\Specials\\SpecialDisambiguationPageLinks",
 			"services": [
 				"NamespaceInfo",
 				"LinkBatchFactory",
@@ -75,10 +75,15 @@
 		}
 	},
 	"AutoloadClasses": {
-		"DisambiguatorHooks": "includes/DisambiguatorHooks.php",
-		"SpecialDisambiguationPages": "includes/specials/SpecialDisambiguationPages.php",
-		"SpecialDisambiguationPageLinks": "includes/specials/SpecialDisambiguationPageLinks.php"
+		"DisambiguatorHooks": "includes/Hooks.php",
+		"MediaWiki\\Extension\\Disambiguator\\Hooks": "includes/Hooks.php"
 	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\Disambiguator\\": "includes/"
+	},
+	"ServiceWiringFiles": [
+		"includes/ServiceWiring.php"
+	],
 	"attributes": {
 		"VisualEditor": {
 			"PluginModules": [
