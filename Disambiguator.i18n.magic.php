@@ -108,6 +108,11 @@ $magicWords['mr'] = [
 	'disambiguation' => [ '__निःसंदिग्ध__' ],
 ];
 
+/** Norwegian Bokmål (norsk bokmål) */
+$magicWords['nb'] = [
+	'disambiguation' => [ '1', '__PEKER__' ],
+];
+
 /** Norwegian Nynorsk (norsk nynorsk) */
 $magicWords['nn'] = [
 	'disambiguation' => [ '__FLEIRTYDING__' ],

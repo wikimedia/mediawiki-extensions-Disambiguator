@@ -139,6 +139,12 @@ $specialPageAliases['ml'] = [
 	'DisambiguationPageLinks' => [ 'വിവക്ഷിതതാളുകളുടെകണ്ണികൾ' ],
 ];
 
+/** Norwegian Bokmål (norsk bokmål) */
+$specialPageAliases['nb'] = [
+	'DisambiguationPages' => [ 'Pekersider' ],
+	'DisambiguationPageLinks' => [ 'Lenker_til_pekersider' ],
+];
+
 /** Low Saxon (Netherlands) (Nedersaksies) */
 $specialPageAliases['nds-nl'] = [
 	'DisambiguationPages' => [ 'Deurverwiesziejen' ],
@@ -149,6 +155,12 @@ $specialPageAliases['nds-nl'] = [
 $specialPageAliases['nl'] = [
 	'DisambiguationPages' => [ 'Doorverwijspaginas', 'Doorverwijspagina\'s' ],
 	'DisambiguationPageLinks' => [ 'Doorverwijspaginakoppelingen' ],
+];
+
+/** Norwegian Nynorsk (norsk nynorsk) */
+$specialPageAliases['nn'] = [
+	'DisambiguationPages' => [ 'Fleirtydingssider' ],
+	'DisambiguationPageLinks' => [ 'Lenkjer_til_fleirtydingssider' ],
 ];
 
 /** Polish (polski) */
