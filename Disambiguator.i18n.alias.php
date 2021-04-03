@@ -166,6 +166,11 @@ $specialPageAliases['nn'] = [
 /** Polish (polski) */
 $specialPageAliases['pl'] = [
 	'DisambiguationPages' => [ 'Strony_ujednoznaczniające' ],
+	'DisambiguationPageLinks' => [
+		'Linkujące_do_ujednoznacznień',
+		'Strony_linkujące_do_ujednoznacznień',
+		'Linki_stron_ujednoznaczniających'
+	],
 ];
 
 /** Portuguese (português) */
