@@ -8,12 +8,31 @@
 
 namespace MediaWiki\Extension\Disambiguator;
 
+use ChangeTags;
+use LinksUpdate;
+use MediaWiki\ChangeTags\Hook\ChangeTagsListActiveHook;
+use MediaWiki\ChangeTags\Hook\ListDefinedTagsHook;
 use MediaWiki\Extension\Disambiguator\Specials\SpecialDisambiguationPageLinks;
 use MediaWiki\Extension\Disambiguator\Specials\SpecialDisambiguationPages;
 use MediaWiki\MediaWikiServices;
 use Title;
 
-class Hooks {
+class Hooks implements ListDefinedTagsHook, ChangeTagsListActiveHook {
+
+	private const TAGS = [
+		'disambiguator-link-added'
+	];
+
+	/** @var Lookup */
+	private $lookup;
+
+	/**
+	 * @param Lookup $lookup
+	 */
+	public function __construct( Lookup $lookup ) {
+		$this->lookup = $lookup;
+	}
+
 	/**
 	 * @param array &$doubleUnderscoreIDs
 	 */
@@ -124,6 +143,49 @@ class Hooks {
 			} else {
 				$colours[ $pageIdToDbKey[$pageId] ] = 'mw-disambig';
 			}
+		}
+	}
+
+	/**
+	 * Implements the ListDefinedTags hook, to populate core
+	 * Special:Tags with the change tags used by Disambiguator.
+	 *
+	 * @param string[] &$tags List of all active tags. Append to this array.
+	 */
+	public function onListDefinedTags( &$tags ) {
+		$tags = array_merge( $tags, static::TAGS );
+	}
+
+	/**
+	 * Implements the ChangeTagsListActive hook, to mark the
+	 * Disambiguator change tag as active.
+	 *
+	 * @param array &$tags Available change tags.
+	 */
+	public function onChangeTagsListActive( &$tags ) {
+		$tags = array_merge( $tags, static::TAGS );
+	}
+
+	/**
+	 * Add a change tag to edits that introduce links to disambiguation pages.
+	 *
+	 * @param LinksUpdate $linksUpdate
+	 */
+	public function onLinksUpdateComplete( LinksUpdate $linksUpdate ) {
+		$addedLinks = $linksUpdate->getAddedLinks();
+
+		if ( !$addedLinks ) {
+			return;
+		}
+
+		$pageIds = array_map( static function ( Title $title ) {
+			return $title->getId();
+		}, $addedLinks );
+
+		$disambigs = $this->lookup->filterDisambiguationPageIds( $pageIds, true );
+
+		if ( $disambigs ) {
+			ChangeTags::addTags( static::TAGS, null, $linksUpdate->getRevisionRecord()->getId() );
 		}
 	}
 }

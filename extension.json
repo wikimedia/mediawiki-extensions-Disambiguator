@@ -22,7 +22,16 @@
 		"LonelyPagesQuery": "MediaWiki\\Extension\\Disambiguator\\Hooks::onLonelyPagesQuery",
 		"ShortPagesQuery": "MediaWiki\\Extension\\Disambiguator\\Hooks::onShortPagesQuery",
 		"RandomPageQuery": "MediaWiki\\Extension\\Disambiguator\\Hooks::onRandomPageQuery",
-		"GetLinkColours": "MediaWiki\\Extension\\Disambiguator\\Hooks::onGetLinkColours"
+		"GetLinkColours": "MediaWiki\\Extension\\Disambiguator\\Hooks::onGetLinkColours",
+		"LinksUpdateComplete": "main",
+		"ListDefinedTags": "main",
+		"ChangeTagsListActive": "main"
+	},
+	"HookHandlers": {
+		"main": {
+			"class": "MediaWiki\\Extension\\Disambiguator\\Hooks",
+			"services": [ "DisambiguatorLookup" ]
+		}
 	},
 	"MessagesDirs": {
 		"Disambiguator": [
