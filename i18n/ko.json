@@ -3,6 +3,7 @@
 		"authors": [
 			"Kwj2772",
 			"Priviet",
+			"Ykhwong",
 			"아라"
 		]
 	},
@@ -11,5 +12,7 @@
 	"disambiguationpages-summary": "다음은 {{SITENAME}}의 동음이의 문서 목록입니다.<br />\n<code><nowiki>__DISAMBIG__</nowiki></code> 태그(혹은 다른 이름의 태그)가 포함된 문서는 동음이의 문서로 취급됩니다.",
 	"disambiguationpagelinks": "동음이의 문서를 가리키는 문서",
 	"disambiguationpagelinks-summary": "다음 문서는 동음이의 문서를 가리키는 링크가 적어도 하나 이상 있는 문서입니다. 보다 적절한 문서로 다시 링크할 필요가 있습니다.<br />\n<code><nowiki>__DISAMBIG__</nowiki></code> 태그(혹은 다른 이름의 태그)가 포함된 문서는 동음이의 문서로 취급됩니다.",
-	"visualeditor-dialog-meta-settings-disambiguation-label": "동음이의 문서입니다"
+	"visualeditor-dialog-meta-settings-disambiguation-label": "동음이의 문서입니다",
+	"tag-disambiguator-link-added": "동음이의 링크",
+	"tag-disambiguator-link-added-description": "동음이의 문서 링크를 추가하는 편집"
 }
