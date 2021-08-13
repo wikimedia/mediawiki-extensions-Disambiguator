@@ -9,5 +9,7 @@
 	"disambiguationpages-summary": "Ова е список на појаснителни страници на {{SITENAME}}.<br />\nЕдна страница се смета за појаснителна ако ја содржи ознаката <code><nowiki>__DISAMBIG__</nowiki></code> (или нејзин истозначник).",
 	"disambiguationpagelinks": "Страници што водат до појаснителни страници",
 	"disambiguationpagelinks-summary": "Следниве страници содржат барем по една врска до појаснителна страница.\nВеројатно ќе треба да ставите врска до посоодветна (поконкретна) страница.<br />\nЕдна страница се смета за појаснителна доколку ја содржи ознаката <code><nowiki>__DISAMBIG__</nowiki></code> (или нејзин истозначник).",
-	"visualeditor-dialog-meta-settings-disambiguation-label": "Ова е појаснителна страница"
+	"visualeditor-dialog-meta-settings-disambiguation-label": "Ова е појаснителна страница",
+	"tag-disambiguator-link-added": "Појаснителни врски",
+	"tag-disambiguator-link-added-description": "Уредувања што додаваат врски кон појаснителни страници"
 }
