@@ -16,5 +16,6 @@
 	"disambiguationpagelinks": "Pages liées aux pages d’homonymie",
 	"disambiguationpagelinks-summary": "Les pages suivantes contiennent au moins un lien vers une page d’ambiguïté. Elles peuvent devoir plutôt être liées à une page plus appropriée.<br />Une page est traitée comme page d’ambiguïté si la page contient la balise <code><nowiki>__DISAMBIG__</nowiki></code> (ou un alias équivalent).",
 	"visualeditor-dialog-meta-settings-disambiguation-label": "Ceci est une page d’homonymie",
+	"tag-disambiguator-link-added": "Liens d’homonymie",
 	"tag-disambiguator-link-added-description": "Modificaations qui ajoutent des liens aux pages de disambiguïsation"
 }
