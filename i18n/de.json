@@ -10,6 +10,5 @@
 	"disambiguationpagelinks": "Seiten, die auf Begriffsklärungsseiten verlinken",
 	"disambiguationpagelinks-summary": "Die folgenden Seiten enthalten mindestens einen Link auf eine Begriffsklärungsseite.\nSie sollten stattdessen auf eine passendere Seite verlinken.<br />\nEine Seite wird als Begriffsklärungsseite behandelt, wenn sie das Tag <code><nowiki>__DISAMBIG__</nowiki></code> oder einen entsprechenden Alias enthält.",
 	"visualeditor-dialog-meta-settings-disambiguation-label": "Dies ist eine Begriffsklärungsseite",
-	"tag-disambiguator-link-added": "Begriffsklärungsseiten-Links",
 	"tag-disambiguator-link-added-description": "Bearbeitungen, die Links zu Begriffsklärungsseiten hinzufügen"
 }
