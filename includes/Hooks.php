@@ -8,16 +8,16 @@
 
 namespace MediaWiki\Extension\Disambiguator;
 
-use ChangeTags;
 use LinksUpdate;
 use MediaWiki\ChangeTags\Hook\ChangeTagsListActiveHook;
 use MediaWiki\ChangeTags\Hook\ListDefinedTagsHook;
 use MediaWiki\Extension\Disambiguator\Specials\SpecialDisambiguationPageLinks;
 use MediaWiki\Extension\Disambiguator\Specials\SpecialDisambiguationPages;
+use MediaWiki\Hook\RecentChange_saveHook;
 use MediaWiki\MediaWikiServices;
 use Title;
 
-class Hooks implements ListDefinedTagsHook, ChangeTagsListActiveHook {
+class Hooks implements ListDefinedTagsHook, ChangeTagsListActiveHook, RecentChange_saveHook {
 
 	private const TAGS = [
 		'disambiguator-link-added'
@@ -25,6 +25,9 @@ class Hooks implements ListDefinedTagsHook, ChangeTagsListActiveHook {
 
 	/** @var Lookup */
 	private $lookup;
+
+	/** @var bool[] Rev IDs are used as keys */
+	private static $revsToTag = [];
 
 	/**
 	 * @param Lookup $lookup
@@ -183,9 +186,22 @@ class Hooks implements ListDefinedTagsHook, ChangeTagsListActiveHook {
 		}, $addedLinks );
 
 		$disambigs = $this->lookup->filterDisambiguationPageIds( $pageIds, true );
+		$rev = $linksUpdate->getRevisionRecord();
 
-		if ( $disambigs ) {
-			ChangeTags::addTags( static::TAGS, null, $linksUpdate->getRevisionRecord()->getId() );
+		if ( $disambigs && $rev ) {
+			self::$revsToTag[$rev->getId()] = true;
+		}
+	}
+
+	/**
+	 * @inheritDoc
+	 */
+	// phpcs:disable MediaWiki.NamingConventions.LowerCamelFunctionsName.FunctionName
+	public function onRecentChange_save( $recentChange ) {
+		$revId = $recentChange->getAttribute( 'rc_this_oldid' );
+		if ( isset( self::$revsToTag[$revId] ) ) {
+			$recentChange->addTags( self::TAGS );
+			unset( self::$revsToTag[$revId] );
 		}
 	}
 }
