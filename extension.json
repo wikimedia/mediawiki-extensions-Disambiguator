@@ -25,7 +25,8 @@
 		"GetLinkColours": "MediaWiki\\Extension\\Disambiguator\\Hooks::onGetLinkColours",
 		"LinksUpdateComplete": "main",
 		"ListDefinedTags": "main",
-		"ChangeTagsListActive": "main"
+		"ChangeTagsListActive": "main",
+		"RecentChange_save": "main"
 	},
 	"HookHandlers": {
 		"main": {
