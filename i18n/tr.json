@@ -6,6 +6,7 @@
 			"Incelemeelemani",
 			"MuratTheTurkish",
 			"Sadrettin",
+			"Sayginer",
 			"Sezgin İbiş"
 		]
 	},
@@ -14,5 +15,7 @@
 	"disambiguationpages-summary": "Aşağıdaki listede {{SITENAME}} sitesinde tüm anlam ayrımı sayfaları listelenmektedir.<br />\nEğer bir sayfa <code><nowiki>__DISAMBIG__</nowiki></code> (veya eşdeğer bir sihirli kelime) etiketini içeriyorsa, anlam ayrımı sayfası olarak kabul edilir.",
 	"disambiguationpagelinks": "Anlam ayrım sayfalarına bağlantısı olan sayfalar",
 	"disambiguationpagelinks-summary": "Aşağıdaki sayfalar en az bir anlam ayrımı sayfasına bağlantı içerir.\nBu sayfalarda bu bağlantılar yerine daha uygun sayfalara bağlantı gerekebilir.<br />\nEğer bir sayfa <code><nowiki>__DISAMBIG__</nowiki></code> (veya eşdeğer bir sihirli kelime) etiketini içeriyorsa, anlam ayrımı sayfası olarak kabul edilir.",
-	"visualeditor-dialog-meta-settings-disambiguation-label": "Bu bir anlam ayrımı sayfasıdır"
+	"visualeditor-dialog-meta-settings-disambiguation-label": "Bu bir anlam ayrımı sayfasıdır",
+	"tag-disambiguator-link-added": "Anlam ayrımı bağlantıları",
+	"tag-disambiguator-link-added-description": "Anlam ayrımı sayfalarına bağlantı veren değişiklikler"
 }
