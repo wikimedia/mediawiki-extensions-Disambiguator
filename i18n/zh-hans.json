@@ -5,6 +5,7 @@
 			"Liuxinyu970226",
 			"Shizhao",
 			"Xiaomingyan",
+			"Xiplus",
 			"Zhang8569"
 		]
 	},
@@ -14,6 +15,6 @@
 	"disambiguationpagelinks": "链接至消歧义页面的页面",
 	"disambiguationpagelinks-summary": "以下页面包含至少一个至消歧义页面的链接。它们可能需要链接至更合适的页面。<br />\n如果页面含有标签<code><nowiki>__DISAMBIG__</nowiki></code>（或等价别名），它会被视为消歧义页面。",
 	"visualeditor-dialog-meta-settings-disambiguation-label": "这是一个消歧义页",
-	"tag-disambiguator-link-added": "消歧义页面",
-	"tag-disambiguator-link-added-description": "通过添加页面来编辑消歧义页面"
+	"tag-disambiguator-link-added": "消歧义链接",
+	"tag-disambiguator-link-added-description": "添加到消歧义页面链接的编辑"
 }

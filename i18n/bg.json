@@ -14,5 +14,7 @@
 	"disambiguationpages-summary": "По-долу е даден списък на всички пояснителни страници в {{SITENAME}}.<br />\nЕдна страница се третира като пояснителна, ако съдържа маркер <code><nowiki>__DISAMBIG__</nowiki></code> (или еквивалентен псевдоним).",
 	"disambiguationpagelinks": "Страници с препратки към пояснителни страници",
 	"disambiguationpagelinks-summary": "Страниците по-долу съдържат поне една препратка към пояснителни страници.\nТе най-вероятно трябва да сочат към по-подходящи страници.<br />\nЕдна страница се приема за пояснителна страница, ако съдържа етикета <code><nowiki>__DISAMBIG__</nowiki></code> (или еквивалентен псевдоним)",
-	"visualeditor-dialog-meta-settings-disambiguation-label": "Това е пояснителна страница"
+	"visualeditor-dialog-meta-settings-disambiguation-label": "Това е пояснителна страница",
+	"tag-disambiguator-link-added": "Препратки към пояснителни страници",
+	"tag-disambiguator-link-added-description": "Редакции, които добавят препратки към пояснителни страници"
 }

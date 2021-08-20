@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Kkairri",
+			"Marine-Blue",
 			"Shirayuki"
 		]
 	},
@@ -10,5 +11,7 @@
 	"disambiguationpages-summary": "{{SITENAME}}上の曖昧さ回避ページを以下に列挙します。<br />\nタグ <code><nowiki>__DISAMBIG__</nowiki></code> (または同等の別名) を含むページを、曖昧さ回避ページと見なしています。",
 	"disambiguationpagelinks": "曖昧さ回避ページにリンクしているページ",
 	"disambiguationpagelinks-summary": "以下のページには、曖昧さ回避ページへのリンクが 1 つ以上あります。\nこれらのページでは、より適切なページにリンクする必要がある可能性があります。<br />\nタグ <code><nowiki>__DISAMBIG__</nowiki></code> (または同等の別名) を含むページを、曖昧さ回避ページと見なしています。",
-	"visualeditor-dialog-meta-settings-disambiguation-label": "このページは曖昧さ回避ページです"
+	"visualeditor-dialog-meta-settings-disambiguation-label": "このページは曖昧さ回避ページです",
+	"tag-disambiguator-link-added": "曖昧さ回避ページへのリンク",
+	"tag-disambiguator-link-added-description": "曖昧さ回避ページへのリンクを追加した編集"
 }
