@@ -1,11 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
+			"Bugoslav",
 			"MaGa",
 			"SpeedyGonsales"
 		]
 	},
 	"disambiguationpages": "Razdvojbene stranice",
 	"disambiguationpagelinks": "Stranice koje vode na razdvojbene stranice",
-	"visualeditor-dialog-meta-settings-disambiguation-label": "Ovo je razdvojbena stranica"
+	"visualeditor-dialog-meta-settings-disambiguation-label": "Ovo je razdvojbena stranica",
+	"tag-disambiguator-link-added": "poveznice na razdvojbe",
+	"tag-disambiguator-link-added-description": "Uređivanja kojima je dodana poveznica na razdvojbu"
 }
