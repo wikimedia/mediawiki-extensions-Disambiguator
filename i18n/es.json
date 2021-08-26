@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"-sasha-",
 			"Fitoschido",
 			"Luis Felipe Schenone",
 			"Sophivorus"
@@ -11,5 +12,7 @@
 	"disambiguationpages-summary": "La siguiente es una lista de todas las páginas de desambiguación en {{SITENAME}}.<br />Una página se considera de desambiguación si contiene la etiqueta <code><nowiki>__DISAMBIG__</nowiki></code> (o un alias equivalente).",
 	"disambiguationpagelinks": "Páginas que enlazan a páginas de desambiguación",
 	"disambiguationpagelinks-summary": "Las siguientes páginas contienen al menos un enlace a una página de desambiguación. Es posible que necesiten enlazar a una página más apropiada.<br />Una página se considera de desambiguación si contiene la etiqueta <code><nowiki>__DISAMBIG__</nowiki></code> (o un alias equivalente).",
-	"visualeditor-dialog-meta-settings-disambiguation-label": "Esta es una página de desambiguación"
+	"visualeditor-dialog-meta-settings-disambiguation-label": "Esta es una página de desambiguación",
+	"tag-disambiguator-link-added": "Enlaces a desambiguaciones",
+	"tag-disambiguator-link-added-description": "Ediciones que añaden enlaces a páginas de desambiguación"
 }
