@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Bas dehaan",
 			"Siebrand",
 			"Southparkfan"
 		]
@@ -10,5 +11,7 @@
 	"disambiguationpages-summary": "Hier volgt een lijst met alle doorverwijspagina's op de site {{SITENAME}}.<br />\nEen pagina wordt gezien als doorverwijspagina als deze het label <code><nowiki>__DISAMBIG__</nowiki></code> bevat (of een equivalent alias).",
 	"disambiguationpagelinks": "Pagina's die een koppeling hebben naar doorverwijspagina's",
 	"disambiguationpagelinks-summary": "De volgende pagina's bevatten ten minste één koppeling naar een doorverwijspagina.\nWellicht moeten ze koppelen naar een meer passende pagina.<br />\nEen pagina wordt gezien als doorverwijspagina als deze het label <code><nowiki>__DISAMBIG__</nowiki></code> bevat (of een equivalent alias).",
-	"visualeditor-dialog-meta-settings-disambiguation-label": "Dit is een doorverwijspagina"
+	"visualeditor-dialog-meta-settings-disambiguation-label": "Dit is een doorverwijspagina",
+	"tag-disambiguator-link-added": "Link naar doorverwijspagina",
+	"tag-disambiguator-link-added-description": "Bewerkingen die een link toevoegen naar een doorverwijspagina"
 }
