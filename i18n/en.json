@@ -1,6 +1,8 @@
 {
 	"@metadata": {
-		"authors": []
+		"authors": [
+			"MusikAnimal"
+		]
 	},
 	"disambig-desc": "Adds the tag <code><nowiki>__DISAMBIG__</nowiki></code> to mark [[Special:DisambiguationPages|disambiguation pages]]",
 	"disambiguationpages": "Disambiguation pages",
@@ -9,5 +11,8 @@
 	"disambiguationpagelinks-summary": "The following pages contain at least one link to a disambiguation page.\nThey may need to link to a more appropriate page instead.<br />\nA page is treated as a disambiguation page if it contains the tag <code><nowiki>__DISAMBIG__</nowiki></code> (or an equivalent alias).",
 	"visualeditor-dialog-meta-settings-disambiguation-label": "This is a disambiguation page",
 	"tag-disambiguator-link-added": "Disambiguation links",
-	"tag-disambiguator-link-added-description": "Edits that add links to disambiguation pages"
+	"tag-disambiguator-link-added-description": "Edits that add links to disambiguation pages",
+	"disambiguator-notification-question": "Would you like to make this link more specific?",
+	"disambiguator-notification-summary": "You linked to \"[[$1]]\" which is <strong>not</strong> a content page; it lists [https://mediawiki.org/wiki/Special:MyLanguage/Help:Extension:Disambiguator topics with similar names].",
+	"disambiguator-review-link": "Review link"
 }

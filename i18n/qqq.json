@@ -4,7 +4,8 @@
 			"Bdijkstra",
 			"Shirayuki",
 			"Tacsipacsi",
-			"Umherirrender"
+			"Umherirrender",
+			"MusikAnimal"
 		]
 	},
 	"disambig-desc": "{{desc|name=Disambiguator|url=https://www.mediawiki.org/wiki/Extension:Disambiguator}}",
@@ -14,5 +15,8 @@
 	"disambiguationpagelinks-summary": "{{doc-important|Do not translate <code><nowiki>__DISAMBIG__</nowiki></code>.}}\nHeader text explaining the purpose of the [[Special:DisambiguationPageLinks]] page.\n\nSee also:\n* {{msg-mw|Disambiguationpages-summary}}",
 	"visualeditor-dialog-meta-settings-disambiguation-label": "Prompt for the checkbox in VisualEditor to mark the page as a disambiguation page.",
 	"tag-disambiguator-link-added": "Change tag for edits that add links to disambiguation pages",
-	"tag-disambiguator-link-added-description": "Description for \"Disambiguation links\" change tag"
+	"tag-disambiguator-link-added-description": "Description for \"Disambiguation links\" change tag",
+	"disambiguator-notification-question": "First sentence of the notification message shown when the user types a link to a disambiguation page.",
+	"disambiguator-notification-summary": "The body of the notification message shown when the user types a link to a disambiguation page.\n\nParameters:\n* $1 - the page that was linked to. The word 'not' can be emphasized, but does not need to be.",
+	"disambiguator-review-link": "Label for the 'Review link' link in the notification popup. When clicked, the relevant wikitext that links to a disambiguation page is selected. The word 'review' in this context is a verb."
 }
