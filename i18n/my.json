@@ -1,9 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
+			"Dr Lotus Black",
 			"Ninjastrikers"
 		]
 	},
 	"disambiguationpages": "သံတူကြောင်းကွဲ စာမျက်နှာများ",
-	"disambiguationpagelinks": "သံတူကြောင်းကွဲ စာမျက်နှာများသို့ ချိတ်ဆက်ထားသော စာမျက်နှာများ"
+	"disambiguationpagelinks": "သံတူကြောင်းကွဲ စာမျက်နှာများသို့ ချိတ်ဆက်ထားသော စာမျက်နှာများ",
+	"visualeditor-dialog-meta-settings-disambiguation-label": "ဤအရာသည် သံတူကြောင်းကွဲစာမျက်နှာဖြစ်ပါသည်။",
+	"tag-disambiguator-link-added": "သံတူကြောင်းကွဲ လင့်ခ်များ"
 }
