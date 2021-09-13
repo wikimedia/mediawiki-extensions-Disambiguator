@@ -8,16 +8,26 @@
 
 namespace MediaWiki\Extension\Disambiguator;
 
+use Config;
+use EditPage;
 use LinksUpdate;
 use MediaWiki\ChangeTags\Hook\ChangeTagsListActiveHook;
 use MediaWiki\ChangeTags\Hook\ListDefinedTagsHook;
 use MediaWiki\Extension\Disambiguator\Specials\SpecialDisambiguationPageLinks;
 use MediaWiki\Extension\Disambiguator\Specials\SpecialDisambiguationPages;
+use MediaWiki\Hook\EditPage__showEditForm_initialHook;
 use MediaWiki\Hook\RecentChange_saveHook;
 use MediaWiki\MediaWikiServices;
+use OutputPage;
 use Title;
 
-class Hooks implements ListDefinedTagsHook, ChangeTagsListActiveHook, RecentChange_saveHook {
+// phpcs:disable MediaWiki.NamingConventions.LowerCamelFunctionsName.FunctionName
+class Hooks implements
+	ListDefinedTagsHook,
+	ChangeTagsListActiveHook,
+	RecentChange_saveHook,
+	EditPage__showEditForm_initialHook
+{
 
 	private const TAGS = [
 		'disambiguator-link-added'
@@ -26,14 +36,19 @@ class Hooks implements ListDefinedTagsHook, ChangeTagsListActiveHook, RecentChan
 	/** @var Lookup */
 	private $lookup;
 
+	/** @var bool */
+	private $showNotifications;
+
 	/** @var bool[] Rev IDs are used as keys */
 	private static $revsToTag = [];
 
 	/**
 	 * @param Lookup $lookup
+	 * @param Config $options
 	 */
-	public function __construct( Lookup $lookup ) {
+	public function __construct( Lookup $lookup, Config $options ) {
 		$this->lookup = $lookup;
+		$this->showNotifications = $options->get( 'DisambiguatorNotifications' );
 	}
 
 	/**
@@ -191,6 +206,21 @@ class Hooks implements ListDefinedTagsHook, ChangeTagsListActiveHook, RecentChan
 		if ( $disambigs && $rev ) {
 			self::$revsToTag[$rev->getId()] = true;
 		}
+	}
+
+	/**
+	 * Add the modules to the edit form.
+	 *
+	 * @param EditPage $editor
+	 * @param OutputPage $out
+	 */
+	public function onEditPage__showEditForm_initial( $editor, $out ) {
+		if ( $editor->contentModel !== CONTENT_MODEL_WIKITEXT || !$this->showNotifications ) {
+			return;
+		}
+
+		// Add modules.
+		$out->addModules( 'ext.disambiguator' );
 	}
 
 	/**

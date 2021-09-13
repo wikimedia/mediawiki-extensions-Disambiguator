@@ -1,6 +1,6 @@
 {
 	"name": "Disambiguator",
-	"version": "1.3",
+	"version": "1.4",
 	"author": [
 		"Ryan Kaldari"
 	],
@@ -26,12 +26,13 @@
 		"LinksUpdateComplete": "main",
 		"ListDefinedTags": "main",
 		"ChangeTagsListActive": "main",
-		"RecentChange_save": "main"
+		"RecentChange_save": "main",
+		"EditPage::showEditForm:initial": "main"
 	},
 	"HookHandlers": {
 		"main": {
 			"class": "MediaWiki\\Extension\\Disambiguator\\Hooks",
-			"services": [ "DisambiguatorLookup" ]
+			"services": [ "DisambiguatorLookup", "MainConfig" ]
 		}
 	},
 	"MessagesDirs": {
@@ -40,6 +41,26 @@
 		]
 	},
 	"ResourceModules": {
+		"ext.disambiguator": {
+			"dependencies": [
+				"mediawiki.api",
+				"mediawiki.jqueryMsg"
+			],
+			"packageFiles": [
+				"ext.disambiguator.js"
+			],
+			"styles": [
+				"ext.disambiguator.less"
+			],
+			"messages": [
+				"disambiguator-notification-question",
+				"disambiguator-notification-summary",
+				"disambiguator-review-link"
+			],
+			"targets": [
+				"desktop"
+			]
+		},
 		"ext.disambiguator.visualEditor": {
 			"scripts": [
 				"visualEditorIntegration.js"
@@ -64,6 +85,10 @@
 	"config": {
 		"DisambiguatorIndicateLinks": {
 			"value": true
+		},
+		"DisambiguatorNotifications": {
+			"value": false,
+			"description": "Show a warning notification after the user types a link to a disambiguation page"
 		}
 	},
 	"SpecialPages": {
