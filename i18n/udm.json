@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kotwys"
+		]
+	},
+	"disambiguator-notification-question": "Меӵакгес чӧлскон сётэмды потэ-а?",
+	"disambiguator-notification-summary": "Пуштросо бам луисьтэм «[[$1]]» бам вылэ чӧлскиды; со вера [https://mediawiki.org/wiki/Special:MyLanguage/Help:Extension:Disambiguator topics with similar names].",
+	"disambiguator-review-link": "Чӧлсконэз эскероно"
+}

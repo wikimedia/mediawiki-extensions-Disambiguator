@@ -17,5 +17,8 @@
 	"disambiguationpagelinks-summary": "Les pages suivantes contiennent au moins un lien vers une page d’ambiguïté. Elles peuvent devoir plutôt être liées à une page plus appropriée.<br />Une page est traitée comme page d’ambiguïté si la page contient la balise <code><nowiki>__DISAMBIG__</nowiki></code> (ou un alias équivalent).",
 	"visualeditor-dialog-meta-settings-disambiguation-label": "Ceci est une page d’homonymie",
 	"tag-disambiguator-link-added": "Liens d’homonymie",
-	"tag-disambiguator-link-added-description": "Modifications qui ajoutent des liens aux pages d'homonymie"
+	"tag-disambiguator-link-added-description": "Modifications qui ajoutent des liens aux pages d'homonymie",
+	"disambiguator-notification-question": "Voulez-vous rendre ce lien plus spécifique ?",
+	"disambiguator-notification-summary": "Vous avez lié à « [[$1]] » qui n’est <strong>pas</strong> une page de contenu ; elle liste [https://mediawiki.org/wiki/Special:MyLanguage/Help:Extension:Disambiguator des sujets avec des noms similaires].",
+	"disambiguator-review-link": "Revoir le lien"
 }
