@@ -11,5 +11,8 @@
 	"disambiguationpagelinks-summary": "I pagine raportade chì adree i gh'hann denter almanch un conligament a 'na pagina de desambiguazzion.\nA podaria vessegh besogn de vesser conligade a una pagina pussee sgiusta.<br />\nUna pagina l'è considerada come una pagina di desambiguazzione se la gh'hà dent l'eticheta <code><nowiki>__DISAMBIG__</nowiki></code> (o 'n'altra parola ecuvalenta).",
 	"visualeditor-dialog-meta-settings-disambiguation-label": "Questa chì l'è 'na pagina de desambiguazzion",
 	"tag-disambiguator-link-added": "Pagine de desambiguazzion",
-	"tag-disambiguator-link-added-description": "Modifeghe che sgionten di ligam a di pagine de desambiguazzion"
+	"tag-disambiguator-link-added-description": "Modifeghe che sgionten di ligam a di pagine de desambiguazzion",
+	"disambiguator-notification-question": "Te voeulet fà quell ligam chì pussee specifich?",
+	"disambiguator-notification-summary": "Te se see conligad a \"[[$ 1]]\" che <strong> l'è minga </strong> ona pagina de contegnud; la fà la lista di [https://mediawiki.org/wiki/Special:MyLanguage/Help:Extension:Disambiguator argoment con di nom compagn].",
+	"disambiguator-review-link": "Varda an'mò el ligam"
 }
