@@ -147,9 +147,6 @@ class SpecialDisambiguationPageLinks extends QueryPage {
 
 		$fname = get_class( $this ) . '::recache';
 		$dbw = $this->getDBLoadBalancer()->getConnectionRef( ILoadBalancer::DB_PRIMARY );
-		if ( !$dbw ) {
-			return false;
-		}
 
 		try {
 			// Do query
