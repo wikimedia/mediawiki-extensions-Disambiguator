@@ -7,6 +7,7 @@
 			"TsuyaMarisa",
 			"Xiaomingyan",
 			"Xiplus",
+			"Xzonn",
 			"Zhang8569"
 		]
 	},
@@ -18,5 +19,7 @@
 	"visualeditor-dialog-meta-settings-disambiguation-label": "这是一个消歧义页",
 	"tag-disambiguator-link-added": "消歧义链接",
 	"tag-disambiguator-link-added-description": "添加到消歧义页面链接的编辑",
-	"disambiguator-review-link": "预览链接"
+	"disambiguator-notification-question": "您想让这个链接更具体吗？",
+	"disambiguator-notification-summary": "您链接到了“[[$1]]”，它<strong>不是</strong>内容页面；它列出了[https://mediawiki.org/wiki/Special:MyLanguage/Help:Extension:Disambiguator 具有相似名称的主题]。",
+	"disambiguator-review-link": "查看链接"
 }
