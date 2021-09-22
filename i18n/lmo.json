@@ -13,6 +13,6 @@
 	"tag-disambiguator-link-added": "Pagine de desambiguazzion",
 	"tag-disambiguator-link-added-description": "Modifeghe che sgionten di ligam a di pagine de desambiguazzion",
 	"disambiguator-notification-question": "Te voeulet fà quell ligam chì pussee specifich?",
-	"disambiguator-notification-summary": "Te se see conligad a \"[[$ 1]]\" che <strong> l'è minga </strong> ona pagina de contegnud; la fà la lista di [https://mediawiki.org/wiki/Special:MyLanguage/Help:Extension:Disambiguator argoment con di nom compagn].",
+	"disambiguator-notification-summary": "Te se see conligad a \"[[$1]]\" che l'è <strong>minga</strong> ona pagina de contegnud; la fà la lista di [https://mediawiki.org/wiki/Special:MyLanguage/Help:Extension:Disambiguator argoment con di nom compagn].",
 	"disambiguator-review-link": "Varda an'mò el ligam"
 }
