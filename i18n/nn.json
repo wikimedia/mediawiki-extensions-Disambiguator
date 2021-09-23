@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Njardarlogar"
+			"Njardarlogar",
+			"Ranveig"
 		]
 	},
 	"disambig-desc": "Introduserer merket <code><nowiki>__DISAMBIG__</nowiki></code> som merkjer [[Special:DisambiguationPages|fleirtydingssider]] .",
@@ -9,5 +10,10 @@
 	"disambiguationpages-summary": "Dette er ei liste over alle fleirtydingssidene på {{SITENAME}}.<br />\nEi side vert rekna som ei fleirtydingsside om ho inneheld merket <code><nowiki>__DISAMBIG__</nowiki></code> (eller eit liketydande merke)",
 	"disambiguationpagelinks": "Sider som lenkjar til fleirtydingssider",
 	"disambiguationpagelinks-summary": "Desse sidene inneheld minst éi lenkje til ei fleirtydingsside. Det kan vera at dei bør lenkja til ei meir passande side i staden.<br />\nEi side vert rekna som ei fleirtydingsside om ho inneheld merket <code><nowiki>__DISAMBIG__</nowiki></code> (eller eit liketydande merke)",
-	"visualeditor-dialog-meta-settings-disambiguation-label": "Dette er ei fleirtydingsside"
+	"visualeditor-dialog-meta-settings-disambiguation-label": "Dette er ei fleirtydingsside",
+	"tag-disambiguator-link-added": "Lenkjer til fleirtydingssider",
+	"tag-disambiguator-link-added-description": "Endringar som legg inn lenkjer til fleirtydingssider",
+	"disambiguator-notification-question": "Ønskjer du å gjera denne lenkja meir spesifikk?",
+	"disambiguator-notification-summary": "Du lenkja til \"[[$1]]\", som <strong>ikkje</strong> er ei innhaldsside; ho listar opp [https://mediawiki.org/wiki/Special:MyLanguage/Help:Extension:Disambiguator emne med liknande namn].",
+	"disambiguator-review-link": "Sjekk lenkja"
 }
