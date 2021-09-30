@@ -5,6 +5,7 @@
 			"Jopparn",
 			"Lokal Profil",
 			"Nirmos (Wikimedia)",
+			"Sabelöga",
 			"WikiPhoenix"
 		]
 	},
@@ -15,5 +16,8 @@
 	"disambiguationpagelinks-summary": "Följande sidor innehåller minst en länk till förgreningssida.\nDe kan behöva länkas till en lämpligare sida istället.<br />\nEn sida behandlas som en förgreningssida om den innehåller syntaxen <code><nowiki>__DISAMBIG__</nowiki></code> (eller ett motsvarande alias).",
 	"visualeditor-dialog-meta-settings-disambiguation-label": "Detta är en förgreningssida",
 	"tag-disambiguator-link-added": "Grensidelänkar",
+	"tag-disambiguator-link-added-description": "Redigeringar som lägger till länkar till förgreningssidor",
+	"disambiguator-notification-question": "Skulle du vilja specificera den här länken?",
+	"disambiguator-notification-summary": "Du länkade till \"[[$1]]\" vilket <strong>inte</strong> är en innehållssida; den listar [https://mediawiki.org/wiki/Special:MyLanguage/Help:Extension:Disambiguator ämnen med liknande namn].",
 	"disambiguator-review-link": "Granska länk"
 }
