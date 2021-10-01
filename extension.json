@@ -111,10 +111,6 @@
 			]
 		}
 	},
-	"AutoloadClasses": {
-		"DisambiguatorHooks": "includes/Hooks.php",
-		"MediaWiki\\Extension\\Disambiguator\\Hooks": "includes/Hooks.php"
-	},
 	"AutoloadNamespaces": {
 		"MediaWiki\\Extension\\Disambiguator\\": "includes/"
 	},
