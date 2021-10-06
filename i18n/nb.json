@@ -11,5 +11,9 @@
 	"disambiguationpagelinks": "Sider som lenker til pekersider",
 	"disambiguationpagelinks-summary": "Dette er en liste over alle sider som har minst en lenke til en pekerside.\nDet kan være behov for å endre slike lenker til å peke direkte mot vanlige sider i stedet.<br />\nEn side regnes som en pekerside hvis den inneholder merket <code><nowiki>__DISAMBIG__</nowiki></code> (eller et tilsvarende alias).",
 	"visualeditor-dialog-meta-settings-disambiguation-label": "Dette er en pekerside",
-	"tag-disambiguator-link-added": "Lenker til pekersider"
+	"tag-disambiguator-link-added": "Lenker til pekersider",
+	"tag-disambiguator-link-added-description": "Endringer som oppretter lenker til pekersider",
+	"disambiguator-notification-question": "Har du lyst til å gjøre denne lenken tydeligere?",
+	"disambiguator-notification-summary": "Du lenket til «[[$1]]» som <strong>ikke</strong> er en innholdsside; den lenker bare til [https://mediawiki.org/wiki/Special:MyLanguage/Help:Extension:Disambiguator sider med lignende navn]",
+	"disambiguator-review-link": "Undersøk lenken"
 }
