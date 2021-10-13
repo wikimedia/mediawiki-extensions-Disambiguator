@@ -1,8 +1,34 @@
 /* global mediaWiki, jQuery */
 ( ( function ( mw, $ ) {
-	var api = new mw.Api(),
+	const api = new mw.Api(),
 		// eslint-disable-next-line no-jquery/no-global-selector
 		$textarea = $( '#wpTextbox1' );
+	let wikiEditorContext;
+
+	/**
+	 * Click handler for the 'Review link' link.
+	 *
+	 * @param {Event} e
+	 */
+	function reviewLinkClickHandler( e ) {
+		const start = e.data.cursorPosition - e.data.linkWikitext.length,
+			end = e.data.cursorPosition;
+
+		if ( $textarea.val().substring( start, end ) !== e.data.linkWikitext ) {
+			// Abort if wikitext has changed since the popup was shown.
+			return;
+		}
+
+		e.preventDefault();
+		$textarea.trigger( 'focus' );
+		$textarea.textSelection( 'setSelection', { start, end } );
+
+		// Open the WikiEditor link insertion dialog, double-checking that it still exists (T271457)
+		if ( wikiEditorContext && $.wikiEditor && $.wikiEditor.modules && $.wikiEditor.modules.dialogs ) {
+			$.wikiEditor.modules.dialogs.api.openDialog( wikiEditorContext, 'insert-link' );
+			e.data.notification.close();
+		}
+	}
 
 	/**
 	 * Issue a notification of type 'warn'.
@@ -14,7 +40,7 @@
 	function showWarning( pageTitle, linkWikitext, cursorPosition ) {
 		// Build the content, which generates as the parsed 'disambiguator-notification-question'
 		//   and 'disambiguator-notification-message' messages, followed by the 'Review link'.
-		var $reviewLink = $( '<a>' )
+		const $reviewLink = $( '<a>' )
 				.prop( 'href', new mw.Title( pageTitle ).getUrl() )
 				.text( mw.msg( 'disambiguator-review-link' ) )
 				.addClass( 'disambiguator-review-link' ),
@@ -33,27 +59,17 @@
 		// Make links open in a new tab.
 		$container.find( 'a' ).prop( 'target', '_blank' );
 
-		// Except for $reviewLink, which should highlight the relevant wikitext in the textarea.
-		$reviewLink.on( 'click', function ( e ) {
-			var start = cursorPosition - linkWikitext.length,
-				end = cursorPosition;
-
-			if ( $textarea.val().substring( start, end ) !== linkWikitext ) {
-				// Abort if wikitext has changed since the popup was shown.
-				return;
-			}
-
-			e.preventDefault();
-			$textarea[ 0 ].selectionStart = start;
-			$textarea[ 0 ].selectionEnd = end;
-			$textarea.trigger( 'focus' );
-		} );
-
 		// Issue long notification of type 'warn'.
-		mw.notify( $container, {
+		const notification = mw.notification.notify( $container, {
 			autoHideSeconds: 'long',
 			type: 'warn'
 		} );
+
+		$reviewLink.bind(
+			'click',
+			{ linkWikitext, cursorPosition, notification },
+			reviewLinkClickHandler
+		);
 	}
 
 	/**
@@ -72,7 +88,7 @@
 			prop: 'pageprops',
 			ppprop: 'disambiguation',
 			formatversion: 2
-		} ).then( function ( resp ) {
+		} ).then( ( resp ) => {
 			if ( resp.query.pages && resp.query.pages[ 0 ].pageprops &&
 				Object.prototype.hasOwnProperty.call( resp.query.pages[ 0 ].pageprops, 'disambiguation' )
 			) {
@@ -81,12 +97,12 @@
 		} );
 	}
 
-	$textarea.on( 'keyup.disambiguator', function ( e ) {
+	$textarea.on( 'keyup.disambiguator', ( e ) => {
 		if ( e.key === ']' ) {
-			var cursorPosition = $textarea[ 0 ].selectionStart,
+			const cursorPosition = $textarea[ 0 ].selectionStart,
 				context = $textarea.val().substring( 0, cursorPosition ),
-				matches = /.*(\[\[([^[\]|]+)(?:\|.*]]|]]))$/.exec( context ),
-				pageTitle, linkWikitext;
+				matches = /.*(\[\[([^[\]|]+)(?:\|.*]]|]]))$/.exec( context );
+			let pageTitle, linkWikitext;
 
 			if ( matches ) {
 				// We always want the last match.
@@ -95,6 +111,11 @@
 				checkIfDisambig( context, pageTitle, linkWikitext, cursorPosition );
 			}
 		}
+	} );
+
+	// WikiEditor integration; causes the 'Review link' link to open the link insertion dialog.
+	mw.hook( 'wikiEditor.toolbarReady' ).add( ( $wikiEditorTextarea ) => {
+		wikiEditorContext = $wikiEditorTextarea.data( 'wikiEditor-context' );
 	} );
 
 } )( mediaWiki, jQuery ) );
