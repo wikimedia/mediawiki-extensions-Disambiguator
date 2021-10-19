@@ -8,7 +8,7 @@
 	"descriptionmsg": "disambig-desc",
 	"license-name": "MIT",
 	"requires": {
-		"MediaWiki": ">= 1.36.0"
+		"MediaWiki": ">= 1.37.0"
 	},
 	"type": "other",
 	"ExtensionMessagesFiles": {
@@ -42,15 +42,17 @@
 	},
 	"ResourceModules": {
 		"ext.disambiguator": {
+			"es6": true,
 			"dependencies": [
 				"mediawiki.api",
-				"mediawiki.jqueryMsg"
+				"mediawiki.jqueryMsg",
+				"mediawiki.notification"
 			],
 			"packageFiles": [
-				"ext.disambiguator.js"
+				"disambiguator/ext.disambiguator.js"
 			],
 			"styles": [
-				"ext.disambiguator.less"
+				"disambiguator/ext.disambiguator.less"
 			],
 			"messages": [
 				"disambiguator-notification-question",
