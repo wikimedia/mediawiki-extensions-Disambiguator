@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			"Ajeje Brazorf",
 			"Sarvaturi"
 		]
 	},
 	"disambiguationpages": "Pàggini di disambiguazzioni",
-	"disambiguationpagelinks": "Pàggini ca pùntanu a pàggini di disambiguazzioni"
+	"disambiguationpagelinks": "Pàggini ca pùntanu a pàggini di disambiguazzioni",
+	"visualeditor-dialog-meta-settings-disambiguation-label": "Chista è na pàggina di disambiguazzioni"
 }
