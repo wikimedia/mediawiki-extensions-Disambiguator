@@ -1,9 +1,9 @@
 /* global mediaWiki, jQuery */
 ( ( function ( mw, $ ) {
-	const api = new mw.Api(),
+	const api = new mw.Api();
+	let wikiEditorContext,
 		// eslint-disable-next-line no-jquery/no-global-selector
 		$textarea = $( '#wpTextbox1' );
-	let wikiEditorContext;
 
 	/**
 	 * Click handler for the 'Review link' link.
@@ -12,9 +12,11 @@
 	 */
 	function reviewLinkClickHandler( e ) {
 		const start = e.data.cursorPosition - e.data.linkWikitext.length,
-			end = e.data.cursorPosition;
+			end = e.data.cursorPosition,
+			selectedContent = $textarea.textSelection( 'getContents' )
+				.substring( start, end );
 
-		if ( $textarea.val().substring( start, end ) !== e.data.linkWikitext ) {
+		if ( selectedContent !== e.data.linkWikitext ) {
 			// Abort if wikitext has changed since the popup was shown.
 			return;
 		}
@@ -97,25 +99,38 @@
 		} );
 	}
 
-	$textarea.on( 'keyup.disambiguator', ( e ) => {
-		if ( e.key === ']' ) {
-			const cursorPosition = $textarea[ 0 ].selectionStart,
-				context = $textarea.val().substring( 0, cursorPosition ),
-				matches = /.*(\[\[([^[\]|]+)(?:\|.*]]|]]))$/.exec( context );
-			let pageTitle, linkWikitext;
+	/**
+	 * (Re-)add the keyup listener to the textarea.
+	 */
+	function bindTextareaListener() {
+		$textarea.off( 'keyup.disambiguator' ).on( 'keyup.disambiguator', ( e ) => {
+			if ( e.key === ']' ) {
+				const cursorPosition = $textarea.textSelection( 'getCaretPosition' ),
+					context = $textarea.textSelection( 'getContents' )
+						.substring( 0, cursorPosition ),
+					matches = /.*(\[\[([^[\]|]+)(?:\|.*]]|]]))$/.exec( context );
+				let pageTitle, linkWikitext;
 
-			if ( matches ) {
-				// We always want the last match.
-				pageTitle = matches[ matches.length - 1 ].trim();
-				linkWikitext = matches[ matches.length - 2 ];
-				checkIfDisambig( context, pageTitle, linkWikitext, cursorPosition );
+				if ( matches ) {
+					// We always want the last match.
+					pageTitle = matches[ matches.length - 1 ].trim();
+					linkWikitext = matches[ matches.length - 2 ];
+					checkIfDisambig( context, pageTitle, linkWikitext, cursorPosition );
+				}
 			}
-		}
-	} );
+		} );
+	}
 
 	// WikiEditor integration; causes the 'Review link' link to open the link insertion dialog.
 	mw.hook( 'wikiEditor.toolbarReady' ).add( ( $wikiEditorTextarea ) => {
 		wikiEditorContext = $wikiEditorTextarea.data( 'wikiEditor-context' );
 	} );
 
+	// CodeMirror integration.
+	mw.hook( 'ext.CodeMirror.switch' ).add( ( _enabled, $editor ) => {
+		$textarea = $editor;
+		bindTextareaListener();
+	} );
+
+	bindTextareaListener();
 } )( mediaWiki, jQuery ) );
