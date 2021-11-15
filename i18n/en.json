@@ -13,6 +13,6 @@
 	"tag-disambiguator-link-added": "Disambiguation links",
 	"tag-disambiguator-link-added-description": "Edits that add links to disambiguation pages",
 	"disambiguator-notification-question": "Would you like to make this link more specific?",
-	"disambiguator-notification-summary": "You linked to \"[[$1]]\" which is <strong>not</strong> a content page; it lists [https://mediawiki.org/wiki/Special:MyLanguage/Help:Extension:Disambiguator topics with similar names].",
+	"disambiguator-notification-summary": "You linked to \"[[$1]]\" which is <strong>not</strong> a content page but a list of [https://mediawiki.org/wiki/Special:MyLanguage/Help:Extension:Disambiguator topics with similar names].",
 	"disambiguator-review-link": "Review link"
 }
