@@ -13,6 +13,6 @@
 	"tag-disambiguator-link-added": "Begriffsklärungsseiten-Links",
 	"tag-disambiguator-link-added-description": "Bearbeitungen, die Links zu Begriffsklärungsseiten hinzufügen",
 	"disambiguator-notification-question": "Möchtest du diesen Link genauer setzen?",
-	"disambiguator-notification-summary": "Du hast auf „[[$1]]“ verlinkt, was <strong>keine</strong> Inhaltsseite ist; sie führt lediglich [https://mediawiki.org/wiki/Special:MyLanguage/Help:Extension:Disambiguator Themen mit ähnlichen Namen] auf.",
+	"disambiguator-notification-summary": "Du hast auf „[[$1]]“ verlinkt, die <strong>keine</strong> Inhaltsseite ist, sondern auf eine Liste von [https://mediawiki.org/wiki/Special:MyLanguage/Help:Extension:Disambiguator Themen mit ähnlichen Namen].",
 	"disambiguator-review-link": "Link überprüfen"
 }
