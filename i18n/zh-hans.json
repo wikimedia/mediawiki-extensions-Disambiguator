@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Cwek",
+			"GuoPC",
 			"Liuxinyu970226",
 			"Shizhao",
 			"TsuyaMarisa",
@@ -20,6 +21,6 @@
 	"tag-disambiguator-link-added": "消歧义链接",
 	"tag-disambiguator-link-added-description": "添加到消歧义页面链接的编辑",
 	"disambiguator-notification-question": "您想让这个链接更具体吗？",
-	"disambiguator-notification-summary": "您链接到了“[[$1]]”，它<strong>不是</strong>内容页面；它列出了[https://mediawiki.org/wiki/Special:MyLanguage/Help:Extension:Disambiguator 具有相似名称的主题]。",
+	"disambiguator-notification-summary": "您链接到了“[[$1]]”，它<strong>不是</strong>一个内容页面，而是一个列出了[https://mediawiki.org/wiki/Special:MyLanguage/Help:Extension:Disambiguator 具有相似名称主题]的列表。",
 	"disambiguator-review-link": "查看链接"
 }

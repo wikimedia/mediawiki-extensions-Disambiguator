@@ -19,6 +19,6 @@
 	"tag-disambiguator-link-added": "Liens d’homonymie",
 	"tag-disambiguator-link-added-description": "Modifications qui ajoutent des liens aux pages d'homonymie",
 	"disambiguator-notification-question": "Voulez-vous rendre ce lien plus spécifique ?",
-	"disambiguator-notification-summary": "Vous avez lié à « [[$1]] » qui n’est <strong>pas</strong> une page de contenu ; elle liste [https://mediawiki.org/wiki/Special:MyLanguage/Help:Extension:Disambiguator des sujets avec des noms similaires].",
+	"disambiguator-notification-summary": "Vous avez lié à « [[$1]] » qui n’est <strong>pas</strong> une page de contenu, mais une liste des [https://mediawiki.org/wiki/Special:MyLanguage/Help:Extension:Disambiguator sujets avec des noms similaires].",
 	"disambiguator-review-link": "Revoir le lien"
 }

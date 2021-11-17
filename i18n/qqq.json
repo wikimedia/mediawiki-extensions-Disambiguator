@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Bdijkstra",
 			"MusikAnimal",
 			"Shirayuki",
@@ -17,6 +18,6 @@
 	"tag-disambiguator-link-added": "Change tag for edits that add links to disambiguation pages",
 	"tag-disambiguator-link-added-description": "Description for \"Disambiguation links\" change tag",
 	"disambiguator-notification-question": "First sentence of the notification message shown when the user types a link to a disambiguation page.",
-	"disambiguator-notification-summary": "The body of the notification message shown when the user types a link to a disambiguation page. Similar to {{msg-wm|wikieditor-toolbar-tool-link-int-target-status-disambig}}.\n\nParameters:\n* $1 - the page that was linked to. The word 'not' can be emphasized, but does not need to be.",
+	"disambiguator-notification-summary": "The body of the notification message shown when the user types a link to a disambiguation page.\n\nRelated to this message: {{msg-mw|wikieditor-toolbar-tool-link-int-target-status-disambig}}.\n\nThese messages should be phrased similarly.\n\nParameters:\n* $1 - the page that was linked to. The word 'not' can be emphasized, but does not need to be.",
 	"disambiguator-review-link": "Label for the 'Review link' link in the notification popup. When clicked, the relevant wikitext that links to a disambiguation page is selected. The word 'review' in this context is a verb."
 }

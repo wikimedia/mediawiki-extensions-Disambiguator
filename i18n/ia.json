@@ -13,6 +13,6 @@
 	"tag-disambiguator-link-added": "Ligamines de disambiguation",
 	"tag-disambiguator-link-added-description": "Modificationes que adde ligamines a paginas de disambiguation",
 	"disambiguator-notification-question": "Volerea tu facer iste ligamine plus specific?",
-	"disambiguator-notification-summary": "Tu ha ligate a \"[[$1]]\" que <strong>non</strong> es un pagina de contento; illo lista [https://mediawiki.org/wiki/Special:MyLanguage/Help:Extension:Disambiguator subjectos con nomines similar].",
+	"disambiguator-notification-summary": "Tu ha ligate a \"[[$1]]\" que <strong>non</strong> es un pagina de contento ma un lista de [https://mediawiki.org/wiki/Special:MyLanguage/Help:Extension:Disambiguator subjectos con nomines similar].",
 	"disambiguator-review-link": "Revider ligamine"
 }
