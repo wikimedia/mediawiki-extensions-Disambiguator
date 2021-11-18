@@ -3,6 +3,7 @@
 		"authors": [
 			"Chrumps",
 			"Peter Bowman",
+			"Tar Lócesilion",
 			"WTM"
 		]
 	},
@@ -11,5 +12,10 @@
 	"disambiguationpages-summary": "Poniżej znajduje się lista wszystkich stron ujednoznaczniających w {{GRAMMAR:MS.lp|{{SITENAME}}}}.<br />\nStrona jest uważana za ujednoznaczniającą, gdy zawiera wyrażenie <code><nowiki>__DISAMBIG__</nowiki></code> (bądź równoważny alias).",
 	"disambiguationpagelinks": "Strony z linkami do ujednoznacznień",
 	"disambiguationpagelinks-summary": "Poniższe strony zawierają co najmniej jeden link prowadzący do jakiejś strony ujednoznaczniającej.\nNajprawdopodobniej powinny linkować do bardziej konkretnej strony docelowej.<br />\nStrona jest uważana za ujednoznaczniającą gdy zawiera wyrażenie <code><nowiki>__DISAMBIG__</nowiki></code> (bądź równoważny alias).",
-	"visualeditor-dialog-meta-settings-disambiguation-label": "To jest strona ujednoznaczniająca"
+	"visualeditor-dialog-meta-settings-disambiguation-label": "To jest strona ujednoznaczniająca",
+	"tag-disambiguator-link-added": "Linki do stron ujednoznaczniających",
+	"tag-disambiguator-link-added-description": "Edycje, które dodają linki do stron ujednoznaczniających",
+	"disambiguator-notification-question": "Czy chcesz, żeby ten link prowadził do strony o konkretnym znaczeniu?",
+	"disambiguator-notification-summary": "Link do \"[[$1]]\" prowadzi <strong>nie</strong> do hasła, tylko do [[Wikipedia:Strona ujednoznaczniająca|listy haseł o tej samej nazwie]].",
+	"disambiguator-review-link": "Popraw link"
 }
