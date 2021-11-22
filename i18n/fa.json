@@ -3,6 +3,7 @@
 		"authors": [
 			"Ebraminio",
 			"Jeeputer",
+			"Mehran",
 			"Reza1615",
 			"Rtemis"
 		]
@@ -14,5 +15,8 @@
 	"disambiguationpagelinks-summary": "صفحه های زیر شامل حداقل یک پیوند به یک صفحه ابهام زدایی است.\nبهتر است آنها به پیوندهای دقیق‌تری پیوند داشته باشند.<br />\nاگر صفحه حاوی برچسب <code><nowiki>__DISAMBIG__</nowiki></code> (یا نام مستعار معادل) باشد به عنوان صفحهٔ ابهام‌زدایی در نظر گرفته می‌شود.",
 	"visualeditor-dialog-meta-settings-disambiguation-label": "این یک صفحه ابهام‌زدایی است",
 	"tag-disambiguator-link-added": "پیوندهای ابهام‌زدایی",
-	"tag-disambiguator-link-added-description": "ویرایش‌هایی که پیوندهایی به صفحه‌های ابهام‌زدایی اضافه کرده‌اند"
+	"tag-disambiguator-link-added-description": "ویرایش‌هایی که پیوندهایی به صفحه‌های ابهام‌زدایی اضافه کرده‌اند",
+	"disambiguator-notification-question": "آیا مایلید که این پیوند را دقیق‌تر کنید؟",
+	"disambiguator-notification-summary": "شما به «[[$1]]» پیوند داده‌اید که یک صفحه شامل محتوا <strong>نیست</strong>، بلکه فهرستی از [https://mediawiki.org/wiki/Special:MyLanguage/Help:Extension:Disambiguator موضوعات با نام مشابه است].",
+	"disambiguator-review-link": "پیش‌نمایش پیوند"
 }
