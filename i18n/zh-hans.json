@@ -6,7 +6,10 @@
 			"Shizhao",
 			"Xiaomingyan",
 			"Xiplus",
-			"Zhang8569"
+			"Zhang8569",
+			"GuoPC",
+			"TsuyaMarisa",
+			"Xzonn"
 		]
 	},
 	"disambig-desc": "添加标签<code><nowiki>__DISAMBIG__</nowiki></code>以标记[[Special:DisambiguationPages|消歧义页面]]",
@@ -16,5 +19,7 @@
 	"disambiguationpagelinks-summary": "以下页面包含至少一个至消歧义页面的链接。它们可能需要链接至更合适的页面。<br />\n如果页面含有标签<code><nowiki>__DISAMBIG__</nowiki></code>（或等价别名），它会被视为消歧义页面。",
 	"visualeditor-dialog-meta-settings-disambiguation-label": "这是一个消歧义页",
 	"tag-disambiguator-link-added": "消歧义链接",
-	"tag-disambiguator-link-added-description": "添加到消歧义页面链接的编辑"
+	"tag-disambiguator-link-added-description": "添加到消歧义页面链接的编辑",
+	"disambiguator-notification-question": "您想让这个链接更具体吗？",
+	"disambiguator-review-link": "查看链接"
 }

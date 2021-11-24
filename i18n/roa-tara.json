@@ -11,5 +11,7 @@
 	"disambiguationpagelinks-summary": "Le pàggene seguende tènene almene 'na pàgene de disambbiguazione.\nLore ponne avè abbesogne de collegarse a cchiù pàggene appropriate.<br />\n'Na pàgene jè trattate cumme a 'na pàgene de disambbiguazione ce 'a pàgene tène 'u tag <code><nowiki>__DISAMBIG__</nowiki></code> (o 'nu nome equivalende).",
 	"visualeditor-dialog-meta-settings-disambiguation-label": "Queste jè 'na pàgene de disambiguazzione",
 	"tag-disambiguator-link-added": "Collegaminde de disambbiguazione",
-	"tag-disambiguator-link-added-description": "Le cangiaminde ca aggiungene collegaminde a le pàggene de desambiguazzione"
+	"tag-disambiguator-link-added-description": "Le cangiaminde ca aggiungene collegaminde a le pàggene de desambiguazzione",
+	"disambiguator-notification-question": "Pe piacerebbe fà devendà stu collegamende cchiù specifeche?",
+	"disambiguator-review-link": "Condrolle 'u collegamende"
 }

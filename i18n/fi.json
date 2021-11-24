@@ -3,7 +3,8 @@
 		"authors": [
 			"Moj",
 			"Pyscowicz",
-			"Stryn"
+			"Stryn",
+			"MITO"
 		]
 	},
 	"disambig-desc": "Lisää merkinnän <code><nowiki>__DISAMBIG__</nowiki></code> merkitäkseen [[Special:DisambiguationPages|täsmennyssivut]]",
@@ -12,5 +13,6 @@
 	"disambiguationpagelinks": "Sivut, jotka linkittävät täsmennyssivuihin",
 	"disambiguationpagelinks-summary": "Seuraavat sivut sisältävät vähintään yhden linkin täsmennyssivulle.\nNe täytyy ehkä linkittää sopivampaan sivuun.<br />\nSivu katsotaan täsmennyssivuksi, jos se sisältää merkinnän <code><nowiki>__DISAMBIG__</nowiki></code> (tai vastaavan aliaksen).",
 	"visualeditor-dialog-meta-settings-disambiguation-label": "Tämä on täsmennyssivu",
-	"tag-disambiguator-link-added": "Linkki täsmennyssivulle"
+	"tag-disambiguator-link-added": "Linkki täsmennyssivulle",
+	"disambiguator-review-link": "Esikatsele linkki"
 }

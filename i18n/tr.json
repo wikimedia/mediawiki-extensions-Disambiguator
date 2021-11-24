@@ -7,7 +7,9 @@
 			"MuratTheTurkish",
 			"Sadrettin",
 			"Sayginer",
-			"Sezgin İbiş"
+			"Sezgin İbiş",
+			"SaldırganSincap",
+			"Tarkovsky"
 		]
 	},
 	"disambig-desc": "[[Special:DisambiguationPages|Anlam ayrımı sayfalarını]] işaretlemek için <code><nowiki>__DISAMBIG__</nowiki></code> etiketi ekler",
@@ -17,5 +19,7 @@
 	"disambiguationpagelinks-summary": "Aşağıdaki sayfalar en az bir anlam ayrımı sayfasına bağlantı içerir.\nBu sayfalarda bu bağlantılar yerine daha uygun sayfalara bağlantı gerekebilir.<br />\nEğer bir sayfa <code><nowiki>__DISAMBIG__</nowiki></code> (veya eşdeğer bir sihirli kelime) etiketini içeriyorsa, anlam ayrımı sayfası olarak kabul edilir.",
 	"visualeditor-dialog-meta-settings-disambiguation-label": "Bu bir anlam ayrımı sayfasıdır",
 	"tag-disambiguator-link-added": "Anlam ayrımı bağlantıları",
-	"tag-disambiguator-link-added-description": "Anlam ayrımı sayfalarına bağlantı veren değişiklikler"
+	"tag-disambiguator-link-added-description": "Anlam ayrımı sayfalarına bağlantı veren değişiklikler",
+	"disambiguator-notification-question": "Bu bağlantıyı daha belirgin hâle getirmek ister misiniz?",
+	"disambiguator-review-link": "Bağlantıyı incele"
 }

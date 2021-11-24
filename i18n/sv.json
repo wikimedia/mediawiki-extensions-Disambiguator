@@ -4,7 +4,9 @@
 			"Ainali",
 			"Jopparn",
 			"Lokal Profil",
-			"WikiPhoenix"
+			"WikiPhoenix",
+			"Nirmos (Wikimedia)",
+			"Sabelöga"
 		]
 	},
 	"disambig-desc": "Lägger till taggen <code><nowiki>__DISAMBIG__</nowiki></code> för att markera [[Special:DisambiguationPages|förgreningssidor]]",
@@ -12,5 +14,9 @@
 	"disambiguationpages-summary": "Följande är en lista på alla förgreningssidor på {{SITENAME}}. <br />\nEn sida behandlas som en förgreningssida om sidan innehåller syntaxen <code><nowiki>__DISAMBIG__</nowiki></code> (eller ett motsvarande alias).",
 	"disambiguationpagelinks": "Sidor som länkar till förgreningssidor",
 	"disambiguationpagelinks-summary": "Följande sidor innehåller minst en länk till förgreningssida.\nDe kan behöva länkas till en lämpligare sida istället.<br />\nEn sida behandlas som en förgreningssida om den innehåller syntaxen <code><nowiki>__DISAMBIG__</nowiki></code> (eller ett motsvarande alias).",
-	"visualeditor-dialog-meta-settings-disambiguation-label": "Detta är en förgreningssida"
+	"visualeditor-dialog-meta-settings-disambiguation-label": "Detta är en förgreningssida",
+	"tag-disambiguator-link-added": "Grensidelänkar",
+	"tag-disambiguator-link-added-description": "Redigeringar som lägger till länkar till förgreningssidor",
+	"disambiguator-notification-question": "Skulle du vilja specificera den här länken?",
+	"disambiguator-review-link": "Granska länk"
 }

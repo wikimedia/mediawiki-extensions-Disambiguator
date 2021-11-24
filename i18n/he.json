@@ -13,5 +13,7 @@
 	"disambiguationpagelinks-summary": "הדפים הבאים מכילים לפחות קישור אחד לדף פירושונים.\nלרוב רצוי לתקן את הקישור לדף עם הפירוש המתאים.<br />\nדף מוגדר כדף פירושונים הם הוא מכיל את התג <code><nowiki>__DISAMBIG__</nowiki></code>.",
 	"visualeditor-dialog-meta-settings-disambiguation-label": "זהו דף פירושונים",
 	"tag-disambiguator-link-added": "קישורים לדפי פירושונים",
-	"tag-disambiguator-link-added-description": "עריכות שמוסיפות קישורים לדפי פירושונים"
+	"tag-disambiguator-link-added-description": "עריכות שמוסיפות קישורים לדפי פירושונים",
+	"disambiguator-notification-question": "האם {{GENDER:|תרצה|תרצי}} להפוך את הקישור הזה למדויק יותר?",
+	"disambiguator-review-link": "סקירת קישור"
 }
