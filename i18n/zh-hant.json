@@ -18,5 +18,7 @@
 	"visualeditor-dialog-meta-settings-disambiguation-label": "這是消歧義頁面",
 	"tag-disambiguator-link-added": "消歧義連結",
 	"tag-disambiguator-link-added-description": "加入到消歧義頁面連結的編輯",
+	"disambiguator-notification-question": "您想要讓這個連結更具體嗎？",
+	"disambiguator-notification-summary": "您連結到的「[[$1]]」<strong>不是</strong>一個內容頁面，而是[https://mediawiki.org/wiki/Special:MyLanguage/Help:Extension:Disambiguator 主題帶有類似名稱]的清單。",
 	"disambiguator-review-link": "檢視連結"
 }
