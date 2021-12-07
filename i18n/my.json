@@ -1,9 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ninjastrikers"
+			"Ninjastrikers",
+			"Dr Lotus Black"
 		]
 	},
+	"disambig-desc": "[[Special:DisambiguationPages|သံတူကြောင်းကွဲစာမျက်နှာများ]]အား မှတ်သားရန် <code><nowiki>__DISAMBIG__</nowiki></code> ဟူသော tag ကိုပေါင်းထည့်ပါ",
 	"disambiguationpages": "သံတူကြောင်းကွဲ စာမျက်နှာများ",
-	"disambiguationpagelinks": "သံတူကြောင်းကွဲ စာမျက်နှာများသို့ ချိတ်ဆက်ထားသော စာမျက်နှာများ"
+	"disambiguationpages-summary": "အောက်ပါတို့သည် {{SITENAME}}ပေါ်ရှိ သံတူကြောင်းကွဲစာမျက်နှာများအားလုံး၏ စာရင်းတစ်ခုဖြစ်သည်။<br />\nစာမျက်နှာတစ်ခုသည် <code><nowiki>__DISAMBIG__</nowiki></code> (သို့မဟုတ် အခြားတူညီသောစကားလုံး) ပါဝင်ပါက သံတူကြောင်းကွဲစာမျက်နှာအဖြစ် ပြုမူသည်။",
+	"disambiguationpagelinks": "သံတူကြောင်းကွဲ စာမျက်နှာများသို့ ချိတ်ဆက်ထားသော စာမျက်နှာများ",
+	"disambiguationpagelinks-summary": "အောက်ပါစာမျက်နှာတို့သည် သံတူကြောင်းကွဲစာမျက်နှာတစ်ခုသို့ အနည်းဆုံးလင့်ခ်တစ်ခုချိတ်ထားသည်။\nပိုမိုသင့်လျော်သောစာမျက်နှာသို့ ချိတ်ဆက်ရန် လိုအပ်ကောင်းလိုအပ်နေပါလိမ့်မည်။<br />\nစာမျက်နှာတစ်ခုသည် <code><nowiki>__DISAMBIG__</nowiki></code> (သို့မဟုတ် အခြားတူညီသောစကားလုံး) ပါဝင်ပါက သံတူကြောင်းကွဲစာမျက်နှာအဖြစ် ပြုမူသည်။",
+	"visualeditor-dialog-meta-settings-disambiguation-label": "ဤအရာသည် သံတူကြောင်းကွဲစာမျက်နှာဖြစ်ပါသည်။"
 }
