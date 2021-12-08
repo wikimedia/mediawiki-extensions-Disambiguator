@@ -18,5 +18,6 @@
 	"visualeditor-dialog-meta-settings-disambiguation-label": "這是消歧義頁面",
 	"tag-disambiguator-link-added": "消歧義連結",
 	"tag-disambiguator-link-added-description": "加入到消歧義頁面連結的編輯",
+	"disambiguator-notification-question": "您想要讓這個連結更具體嗎？",
 	"disambiguator-review-link": "檢視連結"
 }
