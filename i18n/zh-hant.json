@@ -6,10 +6,12 @@
 			"LNDDYL",
 			"Simon Shek",
 			"Wwycheuk",
-			"Xiplus"
+			"Xiplus",
+			"Kly",
+			"Winston Sung"
 		]
 	},
-	"disambig-desc": "加入 <code><nowiki>__DISAMBIG__</nowiki></code> 標籤以用來標示[[Special:DisambiguationPages|消歧義頁面]]",
+	"disambig-desc": "加入 <code><nowiki>__DISAMBIG__</nowiki></code> 標籤以標示[[Special:DisambiguationPages|消歧義頁面]]",
 	"disambiguationpages": "消歧義頁面",
 	"disambiguationpages-summary": "以下為{{SITENAME}}中所有的消歧義頁面清單。<br />\n頁面內容含有 <code><nowiki>__DISAMBIG__</nowiki></code> (或別名) 標籤會被作為消歧義頁面。",
 	"disambiguationpagelinks": "連結到消歧義頁的頁面",

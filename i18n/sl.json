@@ -2,13 +2,15 @@
 	"@metadata": {
 		"authors": [
 			"Dbc334",
-			"Yerpo"
+			"Yerpo",
+			"Eleassar",
+			"Upwinxp"
 		]
 	},
-	"disambig-desc": "Doda oznako <code><nowiki>__DISAMBIG__</nowiki></code> za označitev [[Special:DisambiguationPages|razločitvenih strani]]",
+	"disambig-desc": "Doda značko <code><nowiki>__DISAMBIG__</nowiki></code> za označitev [[Special:DisambiguationPages|razločitvenih strani]]",
 	"disambiguationpages": "Razločitvene strani",
 	"disambiguationpages-summary": "Sledi seznam vseh razločitvenih strani na {{SITENAME}}.<br />\nStran obravnavamo kot razločitveno, če vsebuje oznako <code><nowiki>__DISAMBIG__</nowiki></code> (ali enakovreden vzdevek).",
 	"disambiguationpagelinks": "Strani, ki se povezujejo na razločitvene strani",
 	"disambiguationpagelinks-summary": "Sledeče strani vsebujejo vsaj eno povezavo na razločitveno stran.\nMorda bi bolje, da namesto tega kažejo na ustreznejšo stran.<br />\nStran obravnavamo kot razločitveno, če vsebuje oznako <code><nowiki>__DISAMBIG__</nowiki></code> (ali enakovreden vzdevek).",
-	"visualeditor-dialog-meta-settings-disambiguation-label": "To je razločitvena stran"
+	"visualeditor-dialog-meta-settings-disambiguation-label": "To je razločitvena stran."
 }

@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Salvemm el lombard"
+		]
+	},
+	"disambig-desc": "El sgionta l'eticheta <code><nowiki>__DISAMBIG__</nowiki></code> per marcà i [[Special:DisambiguationPages|pagine de desambiguazzion]].",
+	"disambiguationpages": "Pagine de desambiguazzion",
+	"disambiguationpages-summary": "Chì adree l'è raportada una lista de tute i pagine de desambiguazzion de {{SITENAME}}.<br />\nUna pagina l'è considerada de desambiguazzion se la gh'hà denter l'eticheta <code><nowiki>__DISAMBIG__</nowiki></code> (o una parola ecuvalenta).",
+	"disambiguationpagelinks": "Pagine che se conlighen a di pagine de desambiguazzion",
+	"disambiguationpagelinks-summary": "I pagine raportade chì adree i gh'hann denter almanch un conligament a 'na pagina de desambiguazzion.\nA podaria vessegh besogn de vesser conligade a una pagina pussee sgiusta.<br />\nUna pagina l'è considerada come una pagina di desambiguazzione se la gh'hà dent l'eticheta <code><nowiki>__DISAMBIG__</nowiki></code> (o 'n'altra parola ecuvalenta).",
+	"visualeditor-dialog-meta-settings-disambiguation-label": "Questa chì l'è 'na pagina de desambiguazzion"
+}

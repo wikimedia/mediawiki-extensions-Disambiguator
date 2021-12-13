@@ -4,10 +4,15 @@
 			"Arystanbek",
 			"BaRaN6161 TURK",
 			"Incelemeelemani",
-			"Sadrettin"
+			"Sadrettin",
+			"MuratTheTurkish",
+			"SaldırganSincap",
+			"Sayginer",
+			"Sezgin İbiş",
+			"Tarkovsky"
 		]
 	},
-	"disambig-desc": "<code><nowiki>__DISAMBIG__</nowiki></code> etiketi eklenmiş sayfalar: [[Special:DisambiguationPages|Anlam ayrımı sayfaları]]",
+	"disambig-desc": "[[Special:DisambiguationPages|Anlam ayrımı sayfalarını]] işaretlemek için <code><nowiki>__DISAMBIG__</nowiki></code> etiketi ekler",
 	"disambiguationpages": "Anlam ayrımı sayfaları",
 	"disambiguationpages-summary": "Aşağıdaki listede {{SITENAME}} sitesinde tüm anlam ayrımı sayfaları listelenmektedir.<br />\nEğer bir sayfa <code><nowiki>__DISAMBIG__</nowiki></code> (veya eşdeğer bir sihirli kelime) etiketini içeriyorsa, anlam ayrımı sayfası olarak kabul edilir.",
 	"disambiguationpagelinks": "Anlam ayrım sayfalarına bağlantısı olan sayfalar",
