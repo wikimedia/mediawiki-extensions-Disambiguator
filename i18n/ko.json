@@ -15,5 +15,7 @@
 	"visualeditor-dialog-meta-settings-disambiguation-label": "동음이의 문서입니다",
 	"tag-disambiguator-link-added": "동음이의 링크",
 	"tag-disambiguator-link-added-description": "동음이의 문서 링크를 추가하는 편집",
-	"disambiguator-notification-question": "이 링크를 더 구체적으로 만드시겠습니까?"
+	"disambiguator-notification-question": "이 링크를 더 구체적으로 만드시겠습니까?",
+	"disambiguator-notification-summary": "당신은 컨텐츠 문서가 아니라 [https://mediawiki.org/wiki/Special:MyLanguage/Help:Extension:Disambiguator 비슷한 이름을 가진 주제]의 목록인 \"[[$1]]\"로 링크하였습니다.",
+	"disambiguator-review-link": "링크 검토하기"
 }
