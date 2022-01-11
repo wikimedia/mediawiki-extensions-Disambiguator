@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Red Winged Duck",
+			"Renessaince",
 			"Wizardist"
 		]
 	},
@@ -10,5 +11,10 @@
 	"disambiguationpages-summary": "Ніжэй пададзены сьпіс усіх старонак-неадназначнасьцяў у {{GRAMMAR:месны|{{SITENAME}}}}.<br />\nСтаронка лічыцца неадназначнай, калі яна ўтрымлівае тэг <code><nowiki>__DISAMBIG__</nowiki></code> (або адпаведны сынонім).",
 	"disambiguationpagelinks": "Старонкі, якія спасылаюцца на старонкі-неадназначнасьці",
 	"disambiguationpagelinks-summary": "Наступныя старонкі ўтрымліваюць прынамсі адну спасылку на старонку-неадназначнасьць.\nМагчыма, патрабуецца ўдакладненьне спасылак.<br />\nСтаронка лічыцца неадназначнай, калі яна ўтрымлівае тэг <code><nowiki>__DISAMBIG__</nowiki></code> (або адпаведны сынонім).",
-	"visualeditor-dialog-meta-settings-disambiguation-label": "Гэта старонка разьвязаньня неадназначнасьцяў"
+	"visualeditor-dialog-meta-settings-disambiguation-label": "Гэта старонка разьвязаньня неадназначнасьцяў",
+	"tag-disambiguator-link-added": "Спасылкі на неадназначнасьці",
+	"tag-disambiguator-link-added-description": "Рэдагаваньні, якія дадаюць спасылкі на старонкі неадназначнасьцяў",
+	"disambiguator-notification-question": "Вы хочаце зрабіць гэтую спасылку больш канкрэтнай?",
+	"disambiguator-notification-summary": "Вы спаслаліся на „[[$1]]“, якая вядзе <strong>не</strong> на старонку зьместу, а на сьпіс [https://mediawiki.org/wiki/Special:MyLanguage/Help:Extension:Disambiguator тэмаў з падобнымі назвамі].",
+	"disambiguator-review-link": "Пераглядзець спасылку"
 }
