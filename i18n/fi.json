@@ -3,18 +3,20 @@
 		"authors": [
 			"MITO",
 			"Moj",
+			"Nike",
 			"Pyscowicz",
 			"Stryn"
 		]
 	},
-	"disambig-desc": "Lisää merkinnän <code><nowiki>__DISAMBIG__</nowiki></code> merkitäkseen [[Special:DisambiguationPages|täsmennyssivut]]",
+	"disambig-desc": "Lisää <code><nowiki>__DISAMBIG__</nowiki></code>-merkinnän [[Special:DisambiguationPages|täsmennyssivujen]] merkitsemiseen",
 	"disambiguationpages": "Täsmennyssivut",
 	"disambiguationpages-summary": "Seuraavassa on luettelo kaikista täsmennyssivuista {{GRAMMAR:inessive|{{SITENAME}}}}.<br />\nSivu katsotaan täsmennyssivuksi, jos se sisältää merkinnän <code><nowiki>__DISAMBIG__</nowiki></code> (tai vastaavan aliaksen).",
 	"disambiguationpagelinks": "Sivut, jotka linkittävät täsmennyssivuihin",
 	"disambiguationpagelinks-summary": "Seuraavat sivut sisältävät vähintään yhden linkin täsmennyssivulle.\nNe täytyy ehkä linkittää sopivampaan sivuun.<br />\nSivu katsotaan täsmennyssivuksi, jos se sisältää merkinnän <code><nowiki>__DISAMBIG__</nowiki></code> (tai vastaavan aliaksen).",
 	"visualeditor-dialog-meta-settings-disambiguation-label": "Tämä on täsmennyssivu",
 	"tag-disambiguator-link-added": "Linkki täsmennyssivulle",
+	"tag-disambiguator-link-added-description": "Muokkaukset, joissa linkitetään täsmennyssivuihin",
 	"disambiguator-notification-question": "Tarvitsisiko tätä linkitystä tarkentaa?",
-	"disambiguator-notification-summary": "Linkki johtaa nyt sivulle \"[[$1]]\", joka <strong>ei ole</strong> sisältösivu, vaan [https://mediawiki.org/wiki/Special:MyLanguage/Help:Extension:Disambiguator täsmennyssivu].",
-	"disambiguator-review-link": "Esikatsele linkki"
+	"disambiguator-notification-summary": "Linkki johtaa sivulle [[$1]], joka <strong>ei ole</strong> sisältösivu, vaan [https://mediawiki.org/wiki/Special:MyLanguage/Help:Extension:Disambiguator täsmennyssivu].",
+	"disambiguator-review-link": "Näytä linkki"
 }

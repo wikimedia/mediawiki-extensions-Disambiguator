@@ -1,15 +1,20 @@
 {
 	"@metadata": {
 		"authors": [
+			"Hhaboh162002",
 			"زكريا",
 			"محمد أحمد عبد الفتاح"
 		]
 	},
-	"disambig-desc": "إضافة العلامة  <code><nowiki>__DISAMBIG__</nowiki></code> لتمييز [[Special:DisambiguationPages|صفحات التوضيح]]",
+	"disambig-desc": "يضيف الوسم <code><nowiki>__DISAMBIG__</nowiki></code> بغرض وسم [[Special:DisambiguationPages|صفحات التوضيح]]",
 	"disambiguationpages": "صفحات توضيح",
 	"disambiguationpages-summary": "هذه قائمة بكافة صفحات التوضيح في {{SITENAME}}.<br />\nتعد الصفحة من صفحات التوضيح إذا احتوت على <code><nowiki>__DISAMBIG__</nowiki></code> أو <code><nowiki>__توضيح__</nowiki></code>.",
 	"disambiguationpagelinks": "الصفحات التي تصل إلى صفحات توضيح",
-	"disambiguationpagelinks-summary": "تحتوي الصفحات التالية على وصلة أو أكثر لصفحة توضيح.\nيلزم وصل الصفحات إلى العناوين المناسبة بدل صفحات التوضيح.<br />\nتعد الصفحة من صفحات التوضيح إذا احتوت على <code><nowiki>__DISAMBIG__</nowiki></code> أو <code><nowiki>__توضيح__</nowiki></code>.",
+	"disambiguationpagelinks-summary": "تحتوي الصفحات التالية على وصلة أو أكثر لصفحة توضيح.\nيلزم وصل الصفحات إلى العناوين المناسبة بدلا من صفحات التوضيح.<br />\nتعد الصفحة من صفحات التوضيح إذا احتوت على <code><nowiki>__DISAMBIG__</nowiki></code> أو <code><nowiki>__توضيح__</nowiki></code>.",
 	"visualeditor-dialog-meta-settings-disambiguation-label": "هذه صفحة توضيح",
-	"disambiguator-notification-question": "هل تريد جعل هذه الوصلة أكثر تحديدًا؟"
+	"tag-disambiguator-link-added": "وصلات توضيح شبكية",
+	"tag-disambiguator-link-added-description": "تعديلات تضيف وصلات شبكية إلى صفحات توضيح",
+	"disambiguator-notification-question": "هل تريد جعل هذه الوصلة أكثر تحديدًا؟",
+	"disambiguator-notification-summary": "لقد أضفت وصلة شبكية تصل إلى «[[$1]]» وهي <strong>ليست</strong> صفحة محتوى بل هي قائمة [https://mediawiki.org/wiki/Special:MyLanguage/Help:Extension:Disambiguator مواضيع تحمل ذات الاسم].",
+	"disambiguator-review-link": "معاينة الوصلة الشبكية"
 }

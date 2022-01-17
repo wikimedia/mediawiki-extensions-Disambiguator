@@ -17,5 +17,5 @@
 	"tag-disambiguator-link-added-description": "Редагування, що додають посилання на сторінки вирішення неоднозначності",
 	"disambiguator-notification-question": "Хочете зробити це посилання більш конкретним?",
 	"disambiguator-notification-summary": "Ви посилалися на «[[$1]]», яка <strong>не</strong> є сторінкою вмісту; у ньому перераховані [https://mediawiki.org/wiki/Special:MyLanguage/Help:Extension:Disambiguator теми зі схожими назвами].",
-	"disambiguator-review-link": "Посилання на огляд"
+	"disambiguator-review-link": "Переглянути посилання"
 }

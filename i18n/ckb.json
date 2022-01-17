@@ -1,9 +1,19 @@
 {
 	"@metadata": {
 		"authors": [
-			"Calak"
+			"Calak",
+			"ئارام بکر"
 		]
 	},
+	"disambig-desc": "تاگی <code><nowiki>__DISAMBIG__</nowiki></code> زیاد دەکات تا [[Special:DisambiguationPages|پەڕە ڕوونکردنەوەکان]] دیاری بکات.",
 	"disambiguationpages": "پەڕەکانی ڕوونکردنەوە",
-	"disambiguationpagelinks": "پەڕە بەستەردراوەکان بۆ پەڕەکانی ڕوونکردنەوە"
+	"disambiguationpages-summary": "ئەمەی خوارەوە پێڕستێکی سەرجەم پەڕە ڕوونکردنەوەکانی سەر {{SITENAME}}یە.<br />\nپەڕەیەک وەک پەڕەیەکی ڕوونکردنەوە مامەڵەی لەگەڵ دەکرێت گەر تاگی <code><nowiki>__DISAMBIG__</nowiki></code> (یان نازناوێکی ھاوواتا)ی تێدا بێت.",
+	"disambiguationpagelinks": "پەڕە بەستەردراوەکان بۆ پەڕەکانی ڕوونکردنەوە",
+	"disambiguationpagelinks-summary": "ئەم پەڕانەی خوارەوە بە لایەنی کەمەوە بەستەرێکیان بۆ پەڕەیەکی ڕوونکردنەوە تێدایە.\nلەوانەیە پێویست بکات کە لەجیاتیی ئەوە بەستەر بە پەڕەکی گونجاوتر بدەن.<br />\nپەڕەیەک وەک پەڕەیەکی ڕوونکردنەوە مامەڵەی لەگەڵ دەکرێت گەر تاگی <code><nowiki>__DISAMBIG__</nowiki></code> (یان نازناوێکی ھاوواتا)ی تێدا بێت.",
+	"visualeditor-dialog-meta-settings-disambiguation-label": "ئەمە پەڕەیەکی ڕوونکردنەوەیە",
+	"tag-disambiguator-link-added": "بەستەرە ڕوونکردنەوەکان",
+	"tag-disambiguator-link-added-description": "ئەو دەستکارییانەی کە بەستەر بە پەڕە ڕوونکردنەوەکان دەدەن",
+	"disambiguator-notification-question": "دەتەوێت ئەم بەستەرە دوورودرێژ و وردتر بکەیت؟",
+	"disambiguator-notification-summary": "تۆ بەستەرت بە «[[$1]]» دا کە پەڕەیەکی ناوەڕۆک <strong>نییە</strong> بەڵکوو، پێڕستێکی [https://mediawiki.org/wiki/Special:MyLanguage/Help:Extension:Disambiguator ئەو بابەتانەیە کە ھەمان ناویان ھەیە].",
+	"disambiguator-review-link": "بەستەرەکە ببینە"
 }
