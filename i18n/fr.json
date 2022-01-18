@@ -6,13 +6,15 @@
 			"Niridya",
 			"Verdy p",
 			"Wladek92",
-			"Zebulon84"
+			"Zebulon84",
+			"Pols12",
+			"Thibaut120094"
 		]
 	},
-	"disambig-desc": "Ajoute la balise <code><nowiki>__DISAMBIG__</nowiki></code> pour marquer [[Special:DisambiguationPages|les pages d’ambiguïté]]",
+	"disambig-desc": "Ajoute la balise <code><nowiki>__DISAMBIG__</nowiki></code> pour marquer [[Special:DisambiguationPages|les pages d’homonymie]].",
 	"disambiguationpages": "Pages d’homonymie",
-	"disambiguationpages-summary": "Ce qui suit est une liste de toutes les pages d’ambiguïté de {{SITENAME}}.<br />Une page est traitée comme page d’ambiguïté si la page contient la balise <code><nowiki>__DISAMBIG__</nowiki></code> (ou un alias équivalent).",
+	"disambiguationpages-summary": "Voici une liste de toutes les pages d’homonymie de {{SITENAME}}.<br />\nUne page est considérée comme « page d’homonymie » si elle contient la balise <code><nowiki>__DISAMBIG__</nowiki></code> (ou un alias équivalent).",
 	"disambiguationpagelinks": "Pages liées aux pages d’homonymie",
-	"disambiguationpagelinks-summary": "Les pages suivantes contiennent au moins un lien vers une page d’ambiguïté. Elles peuvent devoir plutôt être liées à une page plus appropriée.<br />Une page est traitée comme page d’ambiguïté si la page contient la balise <code><nowiki>__DISAMBIG__</nowiki></code> (ou un alias équivalent).",
+	"disambiguationpagelinks-summary": "Les pages suivantes contiennent au moins un lien vers une page d’homonymie.\nIl faut peut-être remplacer ces liens vers des pages plus appropriées.<br />\nUne page est considérée comme « page d’homonymie » si elle contient la balise <code><nowiki>__DISAMBIG__</nowiki></code> (ou un alias équivalent).",
 	"visualeditor-dialog-meta-settings-disambiguation-label": "Ceci est une page d’homonymie"
 }
