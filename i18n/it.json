@@ -19,5 +19,5 @@
 	"tag-disambiguator-link-added-description": "Modifiche che aggiungono collegamenti a pagine di disambiguazione",
 	"disambiguator-notification-question": "Vorresti usare un collegamento più specifico?",
 	"disambiguator-notification-summary": "Hai collegato la pagina a \"[[$1]]\" che <strong>non</strong> è una pagina di contenuto, ma una lista di [https://mediawiki.org/wiki/Special:MyLanguage/Help:Extension:Disambiguator argomenti con nomi simili].",
-	"disambiguator-review-link": "Correggi link"
+	"disambiguator-review-link": "Correggi collegamento"
 }

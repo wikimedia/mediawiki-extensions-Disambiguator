@@ -18,6 +18,6 @@
 	"tag-disambiguator-link-added": "Grensidelänkar",
 	"tag-disambiguator-link-added-description": "Redigeringar som lägger till länkar till förgreningssidor",
 	"disambiguator-notification-question": "Skulle du vilja specificera den här länken?",
-	"disambiguator-notification-summary": "Du länkade till \"[[$1]]\" vilket <strong>inte</strong> är en innehållssida; den listar [https://mediawiki.org/wiki/Special:MyLanguage/Help:Extension:Disambiguator ämnen med liknande namn].",
+	"disambiguator-notification-summary": "Du länkade till \"[[$1]]\" vilket <strong>inte</strong> är en innehållssida utan en lista över [https://mediawiki.org/wiki/Special:MyLanguage/Help:Extension:Disambiguator ämnen med liknande namn].",
 	"disambiguator-review-link": "Granska länk"
 }
