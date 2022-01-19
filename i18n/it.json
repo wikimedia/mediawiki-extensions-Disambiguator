@@ -5,7 +5,8 @@
 			"Daimona Eaytoy",
 			"Ricordisamoa",
 			"Fringio",
-			"Mannivu"
+			"Mannivu",
+			"Sakretsu"
 		]
 	},
 	"disambig-desc": "Aggiunge il tag <code><nowiki>__DISAMBIG__</nowiki></code> per marcare le [[Special:DisambiguationPages|pagine di disambiguazione]]",
@@ -17,5 +18,5 @@
 	"tag-disambiguator-link-added": "Link a pagina di disambiguazione",
 	"tag-disambiguator-link-added-description": "Modifiche che aggiungono collegamenti a pagine di disambiguazione",
 	"disambiguator-notification-question": "Vorresti usare un collegamento più specifico?",
-	"disambiguator-review-link": "Revisiona collegamento"
+	"disambiguator-review-link": "Correggi collegamento"
 }

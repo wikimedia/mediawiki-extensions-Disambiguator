@@ -3,7 +3,8 @@
 		"authors": [
 			"Aefgh39622",
 			"Geonuch",
-			"Patsagorn Y."
+			"Patsagorn Y.",
+			"Bebiezaza"
 		]
 	},
 	"disambig-desc": "เพิ่มแท็ก <code><nowiki>__DISAMBIG__</nowiki></code> เพื่อทำเครื่องหมายว่าเป็น[[Special:DisambiguationPages|หน้าแก้ความกำกวม]]",
@@ -11,5 +12,9 @@
 	"disambiguationpages-summary": "รายชื่อดังต่อไปนี้เป็นรายชื่อหน้าแก้ความกำกวมทั้งหมดบน {{SITENAME}}<br />\nหน้าที่มีป้ายกำกับ <code><nowiki>__DISAMBIG__</nowiki></code> (หรือนามแฝงที่เท่าเทียมกัน) จะถือเป็นหน้าแก้ความกำกวม",
 	"disambiguationpagelinks": "หน้าที่เชื่อมโยงไปยังหน้าแก้ความกำกวม",
 	"disambiguationpagelinks-summary": "หน้าดังต่อไปนี้มีลิงก์อย่างน้อยหนึ่งลิงก์ที่ไปยังหน้าแก้ความกำกวม\nซึ่งอาจต้องลิงก์ไปยังหน้าที่เหมาะสมกว่านี้แทน<br />\nหน้าที่มีป้ายกำกับ <code><nowiki>__DISAMBIG__</nowiki></code> (หรือนามแฝงที่เท่าเทียมกัน) จะถือเป็นหน้าแก้ความกำกวม",
-	"visualeditor-dialog-meta-settings-disambiguation-label": "หน้านี้เป็นหน้าแก้ความกำกวม"
+	"visualeditor-dialog-meta-settings-disambiguation-label": "หน้านี้เป็นหน้าแก้ความกำกวม",
+	"tag-disambiguator-link-added": "ลิงก์แก้ความกำกวม",
+	"tag-disambiguator-link-added-description": "การแก้ไขที่เพิ่มลิงก์ไปยังหน้าแก้ความกำกวม",
+	"disambiguator-notification-question": "คุณต้องการให้ลิงก์นี้มีความเฉพาะเจาะจงมากขึ้นหรือไม่?",
+	"disambiguator-review-link": "ทบทวนลิงก์"
 }
