@@ -11,5 +11,8 @@
 	"disambiguationpagelinks-summary": "Järgmised leheküljed sisaldavad vähemalt üht linki, mis viitab täpsustusleheküljele.\nVõimalik, et nad peaks viitama sobivamale lehekülje.<br />\nLehekülg arvatakse täpsustusleheküljeks, kui see sisaldab märgist <code><nowiki>__DISAMBIG__</nowiki></code> või vastavat rööpkuju.",
 	"visualeditor-dialog-meta-settings-disambiguation-label": "See on täpsustuslehekülg",
 	"tag-disambiguator-link-added": "Täpsustuslehekülgede lingid",
-	"tag-disambiguator-link-added-description": "Muudatused, millega lisatakse linke täpsustuslehekülgedele."
+	"tag-disambiguator-link-added-description": "Muudatused, millega lisatakse linke täpsustuslehekülgedele.",
+	"disambiguator-notification-question": "Kas soovid täpsemini linkida?",
+	"disambiguator-notification-summary": "Linkisid leheküljele \"[[$1]]\", mis <strong>ei</strong> ole sisulehekülg. Seal on loetletud [https://mediawiki.org/wiki/Special:MyLanguage/Help:Extension:Disambiguator sama nimega teemasid].",
+	"disambiguator-review-link": "Vaata link üle"
 }
