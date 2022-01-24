@@ -2,10 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"Pyscowicz",
-			"Stryn"
+			"Stryn",
+			"MITO",
+			"Moj",
+			"Nike"
 		]
 	},
-	"disambig-desc": "Lisää merkinnän <code><nowiki>__DISAMBIG__</nowiki></code> merkitäkseen [[Special:DisambiguationPages|täsmennyssivut]]",
+	"disambig-desc": "Lisää <code><nowiki>__DISAMBIG__</nowiki></code>-merkinnän [[Special:DisambiguationPages|täsmennyssivujen]] merkitsemiseen",
 	"disambiguationpages": "Täsmennyssivut",
 	"disambiguationpages-summary": "Seuraavassa on luettelo kaikista täsmennyssivuista {{GRAMMAR:inessive|{{SITENAME}}}}.<br />\nSivu katsotaan täsmennyssivuksi, jos se sisältää merkinnän <code><nowiki>__DISAMBIG__</nowiki></code> (tai vastaavan aliaksen).",
 	"disambiguationpagelinks": "Sivut, jotka linkittävät täsmennyssivuihin",
