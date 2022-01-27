@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"C messier",
 			"NikosLikomitros",
 			"Nikosgranturismogt",
 			"Αντιγόνη"
@@ -11,5 +12,10 @@
 	"disambiguationpages-summary": "Αυτός είναι ο κατάλογος με όλες οι σελίδες αποσαφήνισης του {{SITENAME}}.<br />\nΜια σελίδα αντιμετωπίζεται ως σελίδα αποσαφήνισης εάν περιέχει την πινακίδα <code><nowiki>__DISAMBIG__</nowiki></code> (ή μια ισοδύναμη αντίστοιχη).",
 	"disambiguationpagelinks": "Σελίδες που συνδέουν σε σελίδες αποσαφήνισης",
 	"disambiguationpagelinks-summary": "Οι παρακάτω σελίδες περιέχουν τουλάχιστον έναν σύνδεσμο προς κάποια σελίδα αποσαφήνισης. Ίσως όμως είναι δυνατό να οδηγούν προς μια πιο κατάλληλη σελίδα.<br />\nΜια σελίδα αντιμετωπίζεται ως σελίδα αποσαφήνισης εάν περιέχει την πινακίδα <code><nowiki>__DISAMBIG__</nowiki></code> (ή μια ισοδύναμη αντίστοιχη).",
-	"visualeditor-dialog-meta-settings-disambiguation-label": "Αυτή είναι μια σελίδα αποσαφήνισης"
+	"visualeditor-dialog-meta-settings-disambiguation-label": "Αυτή είναι μια σελίδα αποσαφήνισης",
+	"tag-disambiguator-link-added": "Σελίδες αποσαφήνισης",
+	"tag-disambiguator-link-added-description": "Επεξεργασίες που προσθέτουν συνδέσμους προς σελίδες αποσαφήνισης",
+	"disambiguator-notification-question": "Θέλετε να κάνετε αυτόν τον σύνδεσμο πιο συγκεκριμένο;",
+	"disambiguator-notification-summary": "Προσθέσατε σύνδεσμο προς τη σελίδα \"[[$1]]\" η οποία <strong>δεν</strong> είναι σελίδα περιεχομένου αλλά ένας κατάλογος με [https://mediawiki.org/wiki/Special:MyLanguage/Help:Extension:Disambiguator θέματα με παρόμοια ονόματα].",
+	"disambiguator-review-link": "Δείτε τον σύνδεσμο"
 }
