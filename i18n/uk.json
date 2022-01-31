@@ -7,7 +7,7 @@
 			"Ата"
 		]
 	},
-	"disambig-desc": "Додає чарівне слово <code><nowiki>__DISAMBIG__</nowiki></code> для позначення [[Special:DisambiguationPages|сторінок вирішення неоднозначності]]",
+	"disambig-desc": "Додає магічне слово <code><nowiki>__DISAMBIG__</nowiki></code> для позначення [[Special:DisambiguationPages|сторінок вирішення неоднозначності]]",
 	"disambiguationpages": "Сторінки вирішення неоднозначності",
 	"disambiguationpages-summary": "Далі наводиться список всіх сторінок вирішення неоднозначності у {{grammar:locative|{{SITENAME}}}}.<br />\nСторінка вважається сторінкою вирішення неоднозначності, якщо вона містить магічне слово <code><nowiki>__DISAMBIG__</nowiki></code> (або його відповідний псевдонім).",
 	"disambiguationpagelinks": "Сторінки, що посилаються на сторінки вирішення неоднозначності",

@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Bas dehaan",
+			"Romaine",
 			"Siebrand",
 			"Southparkfan"
 		]
@@ -13,5 +14,8 @@
 	"disambiguationpagelinks-summary": "De volgende pagina's bevatten ten minste één koppeling naar een doorverwijspagina.\nWellicht moeten ze koppelen naar een meer passende pagina.<br />\nEen pagina wordt gezien als doorverwijspagina als deze het label <code><nowiki>__DISAMBIG__</nowiki></code> bevat (of een equivalent alias).",
 	"visualeditor-dialog-meta-settings-disambiguation-label": "Dit is een doorverwijspagina",
 	"tag-disambiguator-link-added": "Link naar doorverwijspagina",
-	"tag-disambiguator-link-added-description": "Bewerkingen die een link toevoegen naar een doorverwijspagina"
+	"tag-disambiguator-link-added-description": "Bewerkingen die een link toevoegen naar een doorverwijspagina",
+	"disambiguator-notification-question": "Wilt u deze link specifieker maken?",
+	"disambiguator-notification-summary": "U linkte naar \"[[$1]]\" en dat is <strong>geen</strong> inhoudelijke pagina, maar een doorverwijspagina met een lijst van [https://mediawiki.org/wiki/Special:MyLanguage/Help:Extension:Disambiguator onderwerpen met gelijkaardige namen].",
+	"disambiguator-review-link": "Beoordeel de link"
 }
