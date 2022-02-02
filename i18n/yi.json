@@ -1,11 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"פוילישער"
+			"פוילישער",
+			"Castillerian"
 		]
 	},
 	"disambig-desc": "לייגט צו דעם טאג <code><nowiki>__DISAMBIG__</nowiki></code> צו מארקירן [[Special:DisambiguationPages|באדייטונג בלעטער]]",
-	"disambiguationpages": "באדייטונג-בלעטער",
-	"visualeditor-dialog-meta-settings-disambiguation-label": "דאס איז א באדייטונג בלאט",
-	"tag-disambiguator-link-added": "באדייטונג-לינקען"
+	"disambiguationpages": "באַדײַטונג־בלעטער",
+	"visualeditor-dialog-meta-settings-disambiguation-label": "דאָס איז אַ באַדײַטונג־בלאַט",
+	"tag-disambiguator-link-added": "באַדײַטונג־לינקס"
 }
