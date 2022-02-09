@@ -11,15 +11,15 @@
 			"Zebulon84"
 		]
 	},
-	"disambig-desc": "Ajoute la balise <code><nowiki>__DISAMBIG__</nowiki></code> pour marquer [[Special:DisambiguationPages|les pages d’homonymie]].",
+	"disambig-desc": "Ajoute la balise <code><nowiki>__DISAMBIG__</nowiki></code> pour marquer des [[Special:DisambiguationPages|pages d’homonymie]].",
 	"disambiguationpages": "Pages d’homonymie",
-	"disambiguationpages-summary": "Voici une liste de toutes les pages d’homonymie de {{SITENAME}}.<br />\nUne page est considérée comme « page d’homonymie » si elle contient la balise <code><nowiki>__DISAMBIG__</nowiki></code> (ou un alias équivalent).",
+	"disambiguationpages-summary": "Voici une liste de toutes les pages d’homonymie de {{SITENAME}}.<br />\nUne page est considérée comme « page d’homonymie » si elle contient la balise <code><nowiki>__DISAMBIG__</nowiki></code> (ou un alias équivalent).",
 	"disambiguationpagelinks": "Pages liées aux pages d’homonymie",
-	"disambiguationpagelinks-summary": "Les pages suivantes contiennent au moins un lien vers une page d’homonymie.\nIl faut peut-être remplacer ces liens vers des pages plus appropriées.<br />\nUne page est considérée comme « page d’homonymie » si elle contient la balise <code><nowiki>__DISAMBIG__</nowiki></code> (ou un alias équivalent).",
+	"disambiguationpagelinks-summary": "Les pages suivantes contiennent au moins un lien vers une page d’homonymie.\nIl faut peut-être remplacer ces liens vers des pages plus appropriées.<br />\nUne page est considérée comme « page d’homonymie » si elle contient la balise <code><nowiki>__DISAMBIG__</nowiki></code> (ou un alias équivalent).",
 	"visualeditor-dialog-meta-settings-disambiguation-label": "Ceci est une page d’homonymie",
 	"tag-disambiguator-link-added": "Liens d’homonymie",
 	"tag-disambiguator-link-added-description": "Modifications qui ajoutent des liens vers les pages d’homonymie",
 	"disambiguator-notification-question": "Voulez-vous rendre ce lien plus spécifique ?",
-	"disambiguator-notification-summary": "Vous avez ajouté un lien vers « [[$1]] » qui n’est <strong>pas</strong> une page de contenu, mais une liste des [https://mediawiki.org/wiki/Special:MyLanguage/Help:Extension:Disambiguator sujets avec des noms similaires].",
+	"disambiguator-notification-summary": "Vous avez ajouté un lien vers « [[$1]] » qui n’est <strong>pas</strong> une page de contenu, mais une liste de [https://mediawiki.org/wiki/Special:MyLanguage/Help:Extension:Disambiguator sujets avec des noms similaires].",
 	"disambiguator-review-link": "Vérifier le lien"
 }
