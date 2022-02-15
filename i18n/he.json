@@ -3,6 +3,7 @@
 		"authors": [
 			"Amire80",
 			"Guycn2",
+			"לואיקה",
 			"ערן"
 		]
 	},
@@ -14,7 +15,7 @@
 	"visualeditor-dialog-meta-settings-disambiguation-label": "זהו דף פירושונים",
 	"tag-disambiguator-link-added": "קישורים לדפי פירושונים",
 	"tag-disambiguator-link-added-description": "עריכות שמוסיפות קישורים לדפי פירושונים",
-	"disambiguator-notification-question": "האם {{GENDER:|תרצה|תרצי}} להפוך את הקישור הזה למדויק יותר?",
+	"disambiguator-notification-question": "האם {{GENDER:|תרצה|תרצי|ברצונך}} להפוך את הקישור למדויק יותר?",
 	"disambiguator-notification-summary": "קישרת לדף \"[[$1]]\" ש<strong>אינו</strong> דף תוכן אלא רשימת [https://mediawiki.org/wiki/Special:MyLanguage/Help:Extension:Disambiguator נושאים בעלי שמות דומים].",
 	"disambiguator-review-link": "סקירת קישור"
 }
