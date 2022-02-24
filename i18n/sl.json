@@ -14,5 +14,8 @@
 	"disambiguationpagelinks-summary": "Sledeče strani vsebujejo vsaj eno povezavo na razločitveno stran.\nMorda bi bolje, da namesto tega kažejo na ustreznejšo stran.<br />\nStran obravnavamo kot razločitveno, če vsebuje oznako <code><nowiki>__DISAMBIG__</nowiki></code> (ali enakovreden vzdevek).",
 	"visualeditor-dialog-meta-settings-disambiguation-label": "To je razločitvena stran.",
 	"tag-disambiguator-link-added": "povezave do razločitev",
-	"tag-disambiguator-link-added-description": "Urejanja, ki dodajajo povezave do razločitvenih strani"
+	"tag-disambiguator-link-added-description": "Urejanja, ki dodajajo povezave do razločitvenih strani",
+	"disambiguator-notification-question": "Bi želeli to povezavo napraviti določnejšo?",
+	"disambiguator-notification-summary": "Dodali ste povezavo na »[[$1]]«, ki <strong>ni</strong> stran z vsebino, temveč seznam [https://sl.wikipedia.org/wiki/Wikipedija:Razlo%C4%8Ditev tem s podobnimi imeni].",
+	"disambiguator-review-link": "Preglej povezavo"
 }
