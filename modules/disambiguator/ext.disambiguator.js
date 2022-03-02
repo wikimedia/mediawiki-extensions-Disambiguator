@@ -64,7 +64,8 @@
 		// Issue long notification of type 'warn'.
 		const notification = mw.notification.notify( $container, {
 			autoHideSeconds: 'long',
-			type: 'warn'
+			type: 'warn',
+			classes: 'mw-disambiguator-notification'
 		} );
 
 		$reviewLink.bind(
