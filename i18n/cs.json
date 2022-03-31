@@ -11,5 +11,9 @@
 	"disambiguationpagelinks": "Stránky odkazující na rozcestníky",
 	"disambiguationpagelinks-summary": "Následující stránky obsahují nejméně jeden odkaz na rozcestník. Možná by měly odkazovat na konkrétnější stránku.<br />Stránka je považována za rozcestník, pokud obsahuje značku <code><nowiki>__DISAMBIG__</nowiki></code> (nebo její synonymum).",
 	"visualeditor-dialog-meta-settings-disambiguation-label": "Tato stránka je rozcestník",
-	"tag-disambiguator-link-added": "odkazy na rozcestníky"
+	"tag-disambiguator-link-added": "odkazy na rozcestníky",
+	"tag-disambiguator-link-added-description": "Editace, které přidávají odkazy na rozcestníky",
+	"disambiguator-notification-question": "Nechcete, aby tento odkaz byl konkrétnější?",
+	"disambiguator-notification-summary": "Odkázali jste na „[[$1]]“, což <strong>není</strong> článek, ale seznam [https://mediawiki.org/wiki/Special:MyLanguage/Help:Extension:Disambiguator témat s podobným názvem].",
+	"disambiguator-review-link": "Zkontrolovat odkaz"
 }

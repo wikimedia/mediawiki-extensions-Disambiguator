@@ -2,13 +2,19 @@
 	"@metadata": {
 		"authors": [
 			"Artsiom91",
-			"ZlyiLev"
+			"ZlyiLev",
+			"Tomato Cream"
 		]
 	},
+	"disambig-desc": "Дадае тэг <code><nowiki>__DISAMBIG__</nowiki></code> для пазначэння [[Special:DisambiguationPages|старонак вырашэння неадназначнасцяў]]",
 	"disambiguationpages": "Старонкі вырашэння неадназначнасцей",
 	"disambiguationpages-summary": "Ніжэй прыведзены спіс старонак вырашэння неадназначнасцей на {{SITENAME}}.<br />\nСтаронка разглядаецца як старонка вырашэння неадназначнасцей, калі яна змяшчае тэг <code><nowiki>__DISAMBIG__</nowiki></code> (або эквівалентныя псеўданімы).",
 	"disambiguationpagelinks": "Старонкі, якія спасылаюцца на старонкі вырашэння неадназначнасцей",
 	"disambiguationpagelinks-summary": "Наступныя старонкі змяшчаюць як мінімум адну спасылку на старонку вырашэння неадназначнасцей.\nІм можа спатрэбіцца спасылка на болей дакладную старонку.\nСтаронка разглядаецца як старонка вырашэння неадназначнасцей, калі яна змяшчае тэг <code><nowiki>__DISAMBIG__</nowiki></code> (або эквівалентныя псеўданімы).",
+	"visualeditor-dialog-meta-settings-disambiguation-label": "Гэта старонка вырашэння неадназначнасцяў",
 	"tag-disambiguator-link-added": "Спасылкі на старонкі неадназначнасцяў",
-	"tag-disambiguator-link-added-description": "Праўкі, якімі былі дададзеныя спасылкі на старонкі неадназначнасцяў"
+	"tag-disambiguator-link-added-description": "Праўкі, якімі былі дададзеныя спасылкі на старонкі неадназначнасцяў",
+	"disambiguator-notification-question": "Вы хочаце зрабіць гэтую спасылку больш канкрэтнай?",
+	"disambiguator-notification-summary": "Вы спаслаліся на «[[$1]]», якая вядзе <strong>не</strong> на старонку зместу, а на спіс [https://mediawiki.org/wiki/Special:MyLanguage/Help:Extension:Disambiguator тэмаў з падобнымі назвамі].",
+	"disambiguator-review-link": "Пераглядзець спасылку"
 }
