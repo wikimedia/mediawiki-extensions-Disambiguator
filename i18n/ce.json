@@ -10,5 +10,7 @@
 	"disambiguationpagelinks": "Дуккха маьӀнаш долу хьажорца йолу агӀонаш",
 	"disambiguationpagelinks-summary": "Лахара агӀонаш чохь дуккха маьӀнаш долу агӀонан тӀе цхьаъ мукъа хьажорг йу.\nЦарна оьшуш хилла мега царца йогӀуш йолу агӀонан тӀе хьажорг.<br />\nАгӀо дуккха маьӀнаш долуш лору цуна чохь тег __DISAMBIG__ йелахь.",
 	"visualeditor-dialog-meta-settings-disambiguation-label": "ХӀокху агӀонан цӀеран дукху а маьӀнаш ду",
-	"tag-disambiguator-link-added": "Чолхаллашна тӀе хьажоргаш"
+	"tag-disambiguator-link-added": "Чолхаллашна тӀе хьажоргаш",
+	"disambiguator-notification-question": "Лаьий хьуна хӀара хьажорг кхин билгалйан?",
+	"disambiguator-notification-summary": "Ахьа йихкина \"[[$1]]\" иза <strong>йац</strong> контентан агӀо, [https://mediawiki.org/wiki/Special:MyLanguage/Help:Extension:Disambiguator цӀерш тӀера йолучера могӀам]."
 }
