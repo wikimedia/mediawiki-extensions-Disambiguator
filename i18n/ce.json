@@ -12,5 +12,6 @@
 	"visualeditor-dialog-meta-settings-disambiguation-label": "ХӀокху агӀонан цӀеран дукху а маьӀнаш ду",
 	"tag-disambiguator-link-added": "Чолхаллашна тӀе хьажоргаш",
 	"disambiguator-notification-question": "Лаьий хьуна хӀара хьажорг кхин билгалйан?",
-	"disambiguator-notification-summary": "Ахьа йихкина \"[[$1]]\" иза <strong>йац</strong> контентан агӀо, [https://mediawiki.org/wiki/Special:MyLanguage/Help:Extension:Disambiguator цӀерш тӀера йолучера могӀам]."
+	"disambiguator-notification-summary": "Ахьа йихкина \"[[$1]]\" иза <strong>йац</strong> контентан агӀо, [https://mediawiki.org/wiki/Special:MyLanguage/Help:Extension:Disambiguator цӀерш тӀера йолучера могӀам].",
+	"disambiguator-review-link": "Хьажа хьажорге"
 }
