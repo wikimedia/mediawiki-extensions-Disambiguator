@@ -13,6 +13,6 @@
 	"tag-disambiguator-link-added": "Појаснителни врски",
 	"tag-disambiguator-link-added-description": "Уредувања што додаваат врски кон појаснителни страници",
 	"disambiguator-notification-question": "Дали сакате да ја уточните врската?",
-	"disambiguator-notification-summary": "Ставивте врска до „[[$1]]“, што <strong>не е</strong> содржинска страница, туку наведува [https://mediawiki.org/wiki/Special:MyLanguage/Help:Extension:Disambiguator одредници со сличен назив].",
+	"disambiguator-notification-summary": "Ставивте врска до „[[$1]]“, што <strong>не е</strong> содржинска страница, туку список на [https://mediawiki.org/wiki/Special:MyLanguage/Help:Extension:Disambiguator одредници со сличен назив].",
 	"disambiguator-review-link": "Прегледај врска"
 }
