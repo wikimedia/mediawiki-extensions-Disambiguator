@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mehtab ahmed"
+		]
+	},
+	"disambig-desc": "ٽيگ <code><nowiki>__DISAMBIG__</nowiki></code> کي [[Special:DisambiguationPages|سلجهائپ صفحن]] کي نشان ھڻڻ لاءِ وجهي ٿو",
+	"disambiguationpages": "سلجهائپ صفحا",
+	"disambiguationpages-summary": "ھيٺ {{SITENAME}} تي سڀني سلجهائپ صفحن جي فھرست آھي.<br />\nڪنھن صفحي کي سلجهائپ صفحي طور ليکيو ويندو آھي جيڪڏھن ان ۾ <code><nowiki>__DISAMBIG__</nowiki></code> ٽيگ ھجي (يا ان جو برابر عرف).",
+	"disambiguationpagelinks": "سلجهائپ صفحن سان ڳنڍيندڙ صفحا",
+	"disambiguationpagelinks-summary": "ھيٺيان صفحا گهٽ ۾ گهٽ ھڪ سلجهائپ صفحي ڏانھن ڳنڍڻو رکن ٿا. ان بجاءِ انھن کي وڌيڪ مناسب صفحي ڏانھن ڳنڍڻو رکڻ جي ضرورت ٿي سگهي ٿي. <br /> ڪنھن صفحي کي سلجهائپ صفحو طور ليکيو ويندو آھي جيڪڏھن ان ۾ <code><nowiki>__DISAMBIG__</nowiki></code> ٽيگ ھجي (يا ان جي برابر عرف).",
+	"visualeditor-dialog-meta-settings-disambiguation-label": "ھي ھڪ سلجهائپ صفحو آھي",
+	"tag-disambiguator-link-added": "سلجهائپ ڳنڍڻا",
+	"tag-disambiguator-link-added-description": "اھي سنوارون جيڪي سلجهائپ صفحن ڏانھن ڳنڍڻا وجهن ٿيون",
+	"disambiguator-notification-question": "ڇا توھان ھن ڳنڍڻي کي وڌيڪ مخصوص ڪرڻ پسند ڪندئو؟",
+	"disambiguator-notification-summary": "توھان \"[[$1]]\" ڏانھن ڳنڍڻو ڏنو جيڪو ڪو موادي صفحو <strong>نہ</strong> آھي پر انھن صفحن جي فھرست رکي ٿو [https://mediawiki.org/wiki/Special:MyLanguage/Help:Extension:Disambiguator جن جا نالا ھڪجھڙا آھن].",
+	"disambiguator-review-link": "ڳنڍڻي جي نظرثاني ڪريو"
+}
