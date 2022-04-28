@@ -15,6 +15,6 @@
 	"tag-disambiguator-link-added": "Спасылкі на старонкі неадназначнасцяў",
 	"tag-disambiguator-link-added-description": "Праўкі, якімі былі дададзеныя спасылкі на старонкі неадназначнасцяў",
 	"disambiguator-notification-question": "Вы хочаце зрабіць гэтую спасылку больш канкрэтнай?",
-	"disambiguator-notification-summary": "Вы спаслаліся на «[[$1]]», якая вядзе <strong>не</strong> на старонку зместу, а на спіс [https://mediawiki.org/wiki/Special:MyLanguage/Help:Extension:Disambiguator тэмаў з падобнымі назвамі].",
+	"disambiguator-notification-summary": "Вы спаслаліся на старонку «[[$1]]», якая вядзе <strong>не</strong> на старонку зместу, а на спіс [https://mediawiki.org/wiki/Special:MyLanguage/Help:Extension:Disambiguator тэм з падобнымі назвамі].",
 	"disambiguator-review-link": "Пераглядзець спасылку"
 }
