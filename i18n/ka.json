@@ -2,13 +2,18 @@
 	"@metadata": {
 		"authors": [
 			"BRUTE",
-			"David1010"
+			"David1010",
+			"Გიო ოქრო"
 		]
 	},
-	"disambig-desc": "დაამატებს ტეგს code><nowiki>__DISAMBIG__</nowiki></code> [[Special:DisambiguationPages|მრავალმნიშვნელობის გვერდების]] აღსანიშნავად.",
+	"disambig-desc": "[[Special:DisambiguationPages|მრავალმნიშვნელობის გვერდების]] აღსანიშნავად ამატებს ტეგს code><nowiki>__DISAMBIG__</nowiki></code>.",
 	"disambiguationpages": "მრავალმნიშვნელოვანი გვერდები",
 	"disambiguationpages-summary": "აქ მოცემულია მრავალმნიშვნელობის გვერდების სია {{SITENAME}}-ზე.<br />\nგვერდი ჩაითვლება მრავალნიშვნელობის გვერდად, თუ შეიცავს ტეგს <code><nowiki>__DISAMBIG__</nowiki></code> (ან მის ექვივალენტს).",
 	"disambiguationpagelinks": "გვერდები, რომლებიც გადადის მრავალმნიშვნელობის გვერდებზე",
 	"disambiguationpagelinks-summary": "მომდევნო გვერდები შეიცავენ მინიმუმ ერთ ბმულს მრავალმნიშვნელობის გვერდზე.\nუმჯობესია, თუ ბმული გაკეთდება უფრო სპეციფიურ სტატიაზე.<br />\nგვერდი ჩაითვლება მრავალნიშვნელობის გვერდად, თუ შეიცავს ტეგს <code><nowiki>__DISAMBIG__</nowiki></code> (ან მის ექვივალენტს).",
-	"visualeditor-dialog-meta-settings-disambiguation-label": "ეს მარვალმნიშვნელობის გვერდია"
+	"visualeditor-dialog-meta-settings-disambiguation-label": "ეს მარვალმნიშვნელობის გვერდია",
+	"tag-disambiguator-link-added": "ბმულები მრავალმნიშვნელოვან გვერდებზე",
+	"tag-disambiguator-link-added-description": "რედაქტირებები, რომლითაც დაემატა მრავალმნიშვნელოვან გვერდებზე გადამსვლელი ბმულები",
+	"disambiguator-notification-question": "გსურთ, რომ ეს ბმული უფრო კონკრეტული გახდეს?",
+	"disambiguator-review-link": "ბმულზე გადასვლა"
 }
