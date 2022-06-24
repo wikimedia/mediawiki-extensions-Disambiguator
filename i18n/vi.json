@@ -15,6 +15,6 @@
 	"tag-disambiguator-link-added": "Liên kết định hướng",
 	"tag-disambiguator-link-added-description": "Sửa đổi thêm liên kết đến các trang định hướng",
 	"disambiguator-notification-question": "Bạn có muốn làm cho liên kết này trở nên cụ thể hơn không?",
-	"disambiguator-notification-summary": "Bạn đã liên kết tới \"[[$1]]\", đây <strong>không phải</strong> là một trang nội dung mà là một danh sách [https://mediawiki.org/wiki/Special:MyLanguage/Help:Extension:Disambiguator các chủ đề với tên tương tự nhau].",
+	"disambiguator-notification-summary": "Bạn đã liên kết tới “[[$1]]”, đây <strong>không phải</strong> là một trang nội dung mà là một danh sách [https://mediawiki.org/wiki/Special:MyLanguage/Help:Extension:Disambiguator các chủ đề với tên tương tự nhau].",
 	"disambiguator-review-link": "Xem lại liên kết"
 }
