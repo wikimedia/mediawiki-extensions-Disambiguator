@@ -6,7 +6,9 @@
 			"Noor2020"
 		]
 	},
-	"disambig-desc": "ٹیگ کا اضافہ کرتا ہے <code><nowiki>__واضح رہے__</nowiki></code> [[Special:DisambiguationPages|صفحات کو واضح]] کے نشان زد کرنا",
+	"disambig-desc": "[[Special:DisambiguationPages|ضد ابہام صفحات]] میں ٹیگ <code><nowiki>__DISAMBIG__</nowiki></code> شامل کرتا ہے",
+	"disambiguationpages": "ضد ابہام صفحات",
+	"disambiguationpages-summary": "ذیل میں {{SITENAME}} پر موجود ضد ابہام صفحات کی مکمل فہرست ہے۔<br /> \nاگر کسی صفحہ میں ٹیگ <nowiki> <code>__DISAMBIG__</code></nowiki> (یا اس کے مماثل کوئی ٹیگ) ہو تو اسے ضد ابہام صفحہ سمجھا جاتا ہے۔",
 	"disambiguationpagelinks": "ضد ابہام صفحوں سے مربوط صفحات",
 	"visualeditor-dialog-meta-settings-disambiguation-label": "یہ ایک ضد ابہام صفحہ ہے"
 }
