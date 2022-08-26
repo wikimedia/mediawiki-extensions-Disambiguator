@@ -14,5 +14,8 @@
 	"disambiguationpagelinks-summary": "As seguintes páginas contêm pelo menos uma hiperligação para uma página de desambiguação. É provável que essa hiperligação devesse ser feita para uma página mais específica.<br />\nUma página é considerada de desambiguação se contém o elemento <code><nowiki>__DISAMBIG__</nowiki></code> (ou um nome alternativo equivalente).",
 	"visualeditor-dialog-meta-settings-disambiguation-label": "Esta é uma página de desambiguação",
 	"tag-disambiguator-link-added": "Hiperligações de desambiguação",
-	"tag-disambiguator-link-added-description": "Edições que adicionam hiperligações para páginas de desambiguação"
+	"tag-disambiguator-link-added-description": "Edições que adicionam hiperligações para páginas de desambiguação",
+	"disambiguator-notification-question": "Gostaria de tornar esta hiperligação mais específica?",
+	"disambiguator-notification-summary": "Criou uma hiperligação para \"[[$1]]\" que <strong>não</strong> é uma página de conteúdo, mas sim uma lista de [https://mediawiki.org/wiki/Special:MyLanguage/Help:Extension:Disambiguator assuntos com nomes semelhantes].",
+	"disambiguator-review-link": "Rever hiperligação"
 }
