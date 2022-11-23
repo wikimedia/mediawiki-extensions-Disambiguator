@@ -10,6 +10,7 @@ namespace MediaWiki\Extension\Disambiguator;
 
 use Config;
 use EditPage;
+use ExtensionRegistry;
 use LinksUpdate;
 use MediaWiki\ChangeTags\Hook\ChangeTagsListActiveHook;
 use MediaWiki\ChangeTags\Hook\ListDefinedTagsHook;
@@ -220,7 +221,12 @@ class Hooks implements
 		}
 
 		// Add modules.
-		$out->addModules( 'ext.disambiguator' );
+		$services = MediaWikiServices::getInstance();
+		$isMobileView = ExtensionRegistry::getInstance()->isLoaded( 'MobileFrontend' ) &&
+			$services->getService( 'MobileFrontend.Context' )->shouldDisplayMobileView();
+		if ( !$isMobileView ) {
+			$out->addModules( 'ext.disambiguator' );
+		}
 	}
 
 	/**

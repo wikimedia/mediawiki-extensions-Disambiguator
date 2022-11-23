@@ -5,6 +5,11 @@
 		// eslint-disable-next-line no-jquery/no-global-selector
 		$textarea = $( '#wpTextbox1' );
 
+	/** Skin doesn't support disambiguator if this is not present in page. */
+	if ( !$textarea.length ) {
+		return;
+	}
+
 	/**
 	 * Click handler for the 'Review link' link.
 	 *
