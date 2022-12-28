@@ -13,6 +13,6 @@
 	"tag-disambiguator-link-added": "Collegaminde de disambbiguazione",
 	"tag-disambiguator-link-added-description": "Le cangiaminde ca aggiungene collegaminde a le pàggene de desambiguazzione",
 	"disambiguator-notification-question": "Pe piacerebbe fà devendà stu collegamende cchiù specifeche?",
-	"disambiguator-notification-summary": "T'è collegate a \"[[$1]]\" 'u quale <strong>non</strong> g'è 'na pàgene de condenute; elenghe [https://mediawiki.org/wiki/Special:MyLanguage/Help:Extension:Disambiguator de le arguminde cu le nome ca s'assemegghiane].",
+	"disambiguator-notification-summary": "T'è collegate a \"[[$1]]\" 'u quale <strong>non</strong> g'è 'na pàgene de condenute ma 'n'elenghe de [https://mediawiki.org/wiki/Special:MyLanguage/Help:Extension:Disambiguator de le arguminde cu le nome ca s'assemegghiane].",
 	"disambiguator-review-link": "Condrolle 'u collegamende"
 }

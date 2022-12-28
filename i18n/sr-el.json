@@ -5,11 +5,12 @@
 			"Vipz"
 		]
 	},
+	"disambig-desc": "Dodaje oznaku <code><nowiki>__DISAMBIG__</nowiki></code> za obeležavanje [[Special:DisambiguationPages|višeznačnih odrednica]]",
 	"disambiguationpages": "Višeznačne odrednice",
 	"disambiguationpages-summary": "Ovo je spisak višeznačnih odrednica na {{SITENAME}}.<br />\nStranica se smatra višeznačnom odrednicom ako ima oznaku <code><nowiki>__DISAMBIG__</nowiki></code> (ili neki drugi ekvivalent).",
 	"disambiguationpagelinks": "Stranice do višeznačnih odrednica",
 	"disambiguationpagelinks-summary": "Ovo je spisak stranica koje imaju bar jednu vezu do neke višeznačne odrednice.\nU principu stranice ne bi trebale da imaju veze do višeznačnih odrednica.<br />\nStranica se smatra višeznačnom odrednicom ako ima oznaku <code><nowiki>__DISAMBIG__</nowiki></code> (ili neki drugi ekvivalent).",
-	"visualeditor-dialog-meta-settings-disambiguation-label": "Ovo je višeznačna stranica",
+	"visualeditor-dialog-meta-settings-disambiguation-label": "Ovo je višeznačna odrednica",
 	"tag-disambiguator-link-added": "veze do višeznačnih odrednica",
 	"tag-disambiguator-link-added-description": "Izmene kojima se dodaju veze do višeznačnih odrednica"
 }
