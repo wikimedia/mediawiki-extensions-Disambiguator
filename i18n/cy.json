@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Afalau"
+		]
+	},
+	"disambig-desc": "Yn ychwanegu'r tag <code><nowiki>__DISAMBIG__</nowiki></code> i ddynodi [[Special:DisambiguationPages|tudalennau gwahaniaethu]]",
+	"disambiguationpages": "Tudalennau gwahaniaethu",
+	"disambiguationpages-summary": "Mae'r rhestr ganlynol yn nodi pob tudalen wahaniaethu ar {{SITENAME}}.<br />\nMae tudalen yn cael ei thrin fel tudalen wahaniaethu os defnyddir y tag <code><nowiki>__DISAMBIG__</nowiki></code> (neu dag cyfatebol).",
+	"disambiguationpagelinks": "Tudalennau sy'n cysylltu â thudalennau gwahaniaethu",
+	"disambiguationpagelinks-summary": "Mae'r tudalennau canlynol yn cynnwys o leiaf un ddolen i dudalen wahaniaethu.\nGwiriwch a oes modd iddynt gyfeirio at dudalen fwy penodol.<br />\nMae tudalen yn cael ei thrin fel tudalen wahaniaethu os defnyddir y tag <code><nowiki>__DISAMBIG__</nowiki></code> (neu dag cyfatebol).",
+	"visualeditor-dialog-meta-settings-disambiguation-label": "Tudalen wahaniaethu yw hon",
+	"tag-disambiguator-link-added": "Dolenni gwahaniaethu",
+	"tag-disambiguator-link-added-description": "Golygiadau sy'n ychwanegu dolenni i dudalennau gwahaniaethu",
+	"disambiguator-notification-question": "Hoffech chi wneud y ddolen hon yn fwy penodol?",
+	"disambiguator-notification-summary": "Rydych chi wedi creu dolen i \"[[$1]]\", sy <strong>ddim</strong> yn dudalen gynnwys ond yn rhestr o [https://mediawiki.org/wiki/Special:MyLanguage/Help:Extension:Disambiguator bynciau ag enwau tebyg].",
+	"disambiguator-review-link": "Adolygu'r ddolen"
+}
