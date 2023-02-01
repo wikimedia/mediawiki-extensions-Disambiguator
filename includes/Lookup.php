@@ -43,6 +43,7 @@ class Lookup {
 			$dbr = wfGetDB( DB_REPLICA );
 
 			$redirects = [];
+			$redirectsMap = [];
 			if ( $includeRedirects ) {
 				// resolve redirects
 				$res = $dbr->select(
@@ -58,12 +59,13 @@ class Lookup {
 				);
 
 				foreach ( $res as $row ) {
-					// Key is the destination page ID, value is the source page ID
-					$redirects[$row->page_id] = $row->rd_from;
+					$redirects[] = $row->rd_from;
+					// Key is the destination page ID, values are the source page IDs
+					$redirectsMap[$row->page_id][] = $row->rd_from;
 				}
 			}
-			$pageIdsWithRedirects = array_merge( array_keys( $redirects ),
-				array_diff( $pageIds, array_values( $redirects ) ) );
+			$pageIdsWithRedirects = array_merge( array_keys( $redirectsMap ),
+				array_diff( $pageIds, $redirects ) );
 			$res = $dbr->select(
 				'page_props',
 				'pp_page',
@@ -73,8 +75,8 @@ class Lookup {
 
 			foreach ( $res as $row ) {
 				$disambiguationPageId = $row->pp_page;
-				if ( array_key_exists( $disambiguationPageId, $redirects ) ) {
-					$output[] = $redirects[$disambiguationPageId];
+				if ( array_key_exists( $disambiguationPageId, $redirectsMap ) ) {
+					$output = array_merge( $output, $redirectsMap[$disambiguationPageId] );
 				}
 				if ( in_array( $disambiguationPageId, $pageIds ) ) {
 					$output[] = $disambiguationPageId;
