@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Cainamarques",
+			"CoelhitaWingz223",
 			"Dianakc",
 			"Eduardoaddad",
 			555
@@ -16,5 +17,6 @@
 	"tag-disambiguator-link-added": "Links de desambiguação",
 	"tag-disambiguator-link-added-description": "Edições que adicionam links para páginas de desambiguação",
 	"disambiguator-notification-question": "Você gostaria de tornar este link mais específico?",
+	"disambiguator-notification-summary": "Você criou uma ligação para \"[[$1]]\", a qual <strong>não</strong> é uma página de conteúdo mas uma lista de [https://mediawiki.org/wiki/Special:MyLanguage/Help:Extension:Disambiguator tópicos com nomes parecidos].",
 	"disambiguator-review-link": "Link de revisão"
 }
