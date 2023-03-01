@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Fitoschido"
+		]
+	},
+	"disambiguator-notification-summary": "Enlazó a «[[$1]]», que <strong>no</strong> es una página de contenido, sino una lista de [https://mediawiki.org/wiki/Special:MyLanguage/Help:Extension:Disambiguator temas con nombres similares]."
+}
