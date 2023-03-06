@@ -6,6 +6,8 @@
 		]
 	},
 	"disambiguationpages": "అయోమయ నివృత్తి పేజీలు",
-	"disambiguationpagelinks": "అయోమయ నివృత్తి పుటలకు లంకెలున్న పుటలు",
+	"disambiguationpages-summary": "కిందిది {{SITENAME}}లో ఉన్న అయోమయ నివృత్తి పేజీలన్నిటి జాబితా.<br />\nఏదైనా పేజీలో <code><nowiki>__DISAMBIG__</nowiki></code> అనే ట్యాగు (లేదా దానికి సమానమైన అలియాస్) ఉంటే ఆ పేజీని అయోమయ నివృత్తి పేజీగా పరిగణిస్తారు.",
+	"disambiguationpagelinks": "అయోమయ నివృత్తి పేజీలకు లింకులున్న పేజీలు",
+	"disambiguationpagelinks-summary": "కింది పేజీల్లో, కనీసం ఒక్కటైనా అయోమయ నివృత్తి పేజీకి లింకులున్నాయి.\nఆ లింకులను మరింత సరైన పేజీలకు మార్చాల్సిన అవసరం ఉంది.<br />\nఏదైనా పేజీలో <code><nowiki>__DISAMBIG__</nowiki></code> అనే ట్యాగు (లేదా దానికి సమానమైన అలియాస్) ఉంటే ఆ పేజీని అయోమయ నివృత్తి పేజీగా పరిగణిస్తారు.",
 	"visualeditor-dialog-meta-settings-disambiguation-label": "ఇదొక అయోమయ నివృత్తి పేజీ"
 }
