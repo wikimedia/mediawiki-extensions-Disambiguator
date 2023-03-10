@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Albertas",
-			"Homo"
+			"Homo",
+			"Hugo.arg"
 		]
 	},
 	"disambig-desc": "Prideda žymę <code><nowiki>__DISAMBIG__</nowiki></code>, kad pažymėtų [[Special:DisambiguationPages|dviprasmiškus puslapius]]",
@@ -10,5 +11,10 @@
 	"disambiguationpages-summary": "Žemiau pateikiamas nuorodinių puslapių šiame projekte sąrašas.<br />\nPuslapis laikomas nuorodiniu, jeigu jame yra žyma <code><nowiki>__DISAMBIG__</nowiki></code> (ar lygiavertis atitikmuo).",
 	"disambiguationpagelinks": "Puslapiai, kuriuose yra nuorodų į nuorodinius puslapius",
 	"disambiguationpagelinks-summary": "Žemiau pateikiami puslapiai, kurie turi mažiausiai vieną nuorodą į nuorodinį puslapį.\nGali tekti juose patikslinti nuorodas, kad būtų nukreipiama į tinkamesnius puslapius.<br />\nPuslapis laikomas nuorodiniu, jeigu jame yra žyma <code><nowiki>__DISAMBIG__</nowiki></code> (ar lygiavertis atitikmuo).",
-	"visualeditor-dialog-meta-settings-disambiguation-label": "Tai dviprasmiškas puslapis"
+	"visualeditor-dialog-meta-settings-disambiguation-label": "Tai dviprasmiškas puslapis",
+	"tag-disambiguator-link-added": "Nevienareikšmės nuorodos",
+	"tag-disambiguator-link-added-description": "Keitimai, kuriais pridedamos nuorodos į nuorodinius puslapius",
+	"disambiguator-notification-question": "Gal norėtumėte patikslinti šią nuorodą?",
+	"disambiguator-notification-summary": "Sukūrėte nuorodą į puslapį „[[$1]]“, kuris <strong>nėra</strong> turinio puslapis, tačiau nuorodų [https://mediawiki.org/wiki/Special:MyLanguage/Help:Extension:Disambiguator į straipsnius tokiu pat pavadinimų rinkinys].",
+	"disambiguator-review-link": "Peržiūrėti nuorodą"
 }
