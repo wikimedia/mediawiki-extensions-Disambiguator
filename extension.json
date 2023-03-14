@@ -8,7 +8,7 @@
 	"descriptionmsg": "disambig-desc",
 	"license-name": "MIT",
 	"requires": {
-		"MediaWiki": ">= 1.37.0"
+		"MediaWiki": ">= 1.39.0"
 	},
 	"type": "other",
 	"ExtensionMessagesFiles": {
@@ -32,7 +32,10 @@
 	"HookHandlers": {
 		"main": {
 			"class": "MediaWiki\\Extension\\Disambiguator\\Hooks",
-			"services": [ "DisambiguatorLookup", "MainConfig" ]
+			"services": [
+				"DisambiguatorLookup",
+				"MainConfig"
+			]
 		}
 	},
 	"MessagesDirs": {
