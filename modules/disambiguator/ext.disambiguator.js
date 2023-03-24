@@ -28,7 +28,7 @@
 
 		e.preventDefault();
 		$textarea.trigger( 'focus' );
-		$textarea.textSelection( 'setSelection', { start, end } );
+		$textarea.textSelection( 'setSelection', { start: start, end: end } );
 
 		// Open the WikiEditor link insertion dialog, double-checking that it still exists (T271457)
 		if ( wikiEditorContext && $.wikiEditor && $.wikiEditor.modules && $.wikiEditor.modules.dialogs ) {
@@ -75,7 +75,7 @@
 
 		$reviewLink.bind(
 			'click',
-			{ linkWikitext, cursorPosition, notification },
+			{ linkWikitext: linkWikitext, cursorPosition: cursorPosition, notification: notification },
 			reviewLinkClickHandler
 		);
 	}
@@ -96,7 +96,7 @@
 			prop: 'pageprops',
 			ppprop: 'disambiguation',
 			formatversion: 2
-		} ).then( ( resp ) => {
+		} ).then( function ( resp ) {
 			if ( resp.query.pages && resp.query.pages[ 0 ].pageprops &&
 				Object.prototype.hasOwnProperty.call( resp.query.pages[ 0 ].pageprops, 'disambiguation' )
 			) {
@@ -109,11 +109,11 @@
 	 * (Re-)add the keyup listener to the textarea.
 	 */
 	function bindTextareaListener() {
-		$textarea.off( 'keyup.disambiguator' ).on( 'keyup.disambiguator', ( e ) => {
+		$textarea.off( 'keyup.disambiguator' ).on( 'keyup.disambiguator', function ( e ) {
 			if ( e.key === ']' ) {
 				const cursorPosition = $textarea.textSelection( 'getCaretPosition' ),
 					context = $textarea.textSelection( 'getContents' )
-						.substring( 0, cursorPosition ),
+						.slice( 0, cursorPosition ),
 					matches = /.*(\[\[([^[\]|]+)(?:\|.*]]|]]))$/.exec( context );
 				let pageTitle, linkWikitext;
 
@@ -128,12 +128,12 @@
 	}
 
 	// WikiEditor integration; causes the 'Review link' link to open the link insertion dialog.
-	mw.hook( 'wikiEditor.toolbarReady' ).add( ( $wikiEditorTextarea ) => {
+	mw.hook( 'wikiEditor.toolbarReady' ).add( function ( $wikiEditorTextarea ) {
 		wikiEditorContext = $wikiEditorTextarea.data( 'wikiEditor-context' );
 	} );
 
 	// CodeMirror integration.
-	mw.hook( 'ext.CodeMirror.switch' ).add( ( _enabled, $editor ) => {
+	mw.hook( 'ext.CodeMirror.switch' ).add( function ( _enabled, $editor ) {
 		$textarea = $editor;
 		bindTextareaListener();
 	} );

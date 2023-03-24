@@ -1,5 +1,9 @@
 {
 	"extends": [
 		"wikimedia/client-es6"
-	]
+	],
+	"rules": {
+		"es-x/no-block-scoped-variables": "warn",
+		"unicorn/prefer-string-slice": "warn"
+	}
 }
