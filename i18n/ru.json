@@ -6,7 +6,8 @@
 			"Okras",
 			"Stjn",
 			"Pacha Tchernof",
-			"Kaganer"
+			"Kaganer",
+			"Radmir Far"
 		]
 	},
 	"disambig-desc": "Добавляет тег <code><nowiki>__DISAMBIG__</nowiki></code> для пометки [[Special:DisambiguationPages|страниц разрешения неоднозначностей]]",
@@ -17,5 +18,7 @@
 	"visualeditor-dialog-meta-settings-disambiguation-label": "Это страница разрешения неоднозначностей",
 	"tag-disambiguator-link-added": "Ссылки на неоднозначности",
 	"tag-disambiguator-link-added-description": "Правки, добавляющие ссылки на страницы разрешения неоднозначностей",
+	"disambiguator-notification-question": "Хотите сделать эту ссылку более конкретной?",
+	"disambiguator-notification-summary": "Вы добавили ссылку на страницу «[[$1]]», которая является <strong>не статьёй</strong>, [https://mediawiki.org/wiki/Special:MyLanguage/Help:Extension:Disambiguator а списком тем с похожими названиями].",
 	"disambiguator-review-link": "Предпросмотр ссылки"
 }
