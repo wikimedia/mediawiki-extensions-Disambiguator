@@ -9,11 +9,11 @@
 namespace MediaWiki\Extension\Disambiguator;
 
 use Config;
-use EditPage;
 use ExtensionRegistry;
 use LinksUpdate;
 use MediaWiki\ChangeTags\Hook\ChangeTagsListActiveHook;
 use MediaWiki\ChangeTags\Hook\ListDefinedTagsHook;
+use MediaWiki\EditPage\EditPage;
 use MediaWiki\Extension\Disambiguator\Specials\SpecialDisambiguationPageLinks;
 use MediaWiki\Extension\Disambiguator\Specials\SpecialDisambiguationPages;
 use MediaWiki\Hook\EditPage__showEditForm_initialHook;
