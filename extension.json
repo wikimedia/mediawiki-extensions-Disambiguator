@@ -58,10 +58,6 @@
 				"disambiguator-notification-question",
 				"disambiguator-notification-summary",
 				"disambiguator-review-link"
-			],
-			"targets": [
-				"mobile",
-				"desktop"
 			]
 		},
 		"ext.disambiguator.visualEditor": {
@@ -74,10 +70,6 @@
 			"dependencies": [
 				"ext.visualEditor.mwmeta",
 				"ext.visualEditor.mediawiki"
-			],
-			"targets": [
-				"desktop",
-				"mobile"
 			]
 		}
 	},
