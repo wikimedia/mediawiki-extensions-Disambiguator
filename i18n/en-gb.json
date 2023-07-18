@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Piano1forte2"
+		]
+	},
+	"disambiguator-notification-summary": "You linked to '[[$1]]' which is <strong>not</strong> a content page but a list of [https://mediawiki.org/wiki/Special:MyLanguage/Help:Extension:Disambiguator topics with similar names]."
+}
