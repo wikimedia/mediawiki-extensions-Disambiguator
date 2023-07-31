@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Winston Sung"
+		]
+	},
+	"disambig-desc": "Staje oznaku <code><nowiki>__DISAMBIG__</nowiki></code> s kojoj označuje [[Special:DisambiguationPages|višeznačne odrednice]].",
+	"disambiguationpages": "Višeznačne odrednice",
+	"disambiguationpages-summary": "Ovo je spisak višeznačnih odrednica na {{SITENAME}}.<br />\nJedna stranica se smatra višeznačnom odrednicom ako sadrži oznaku <code><nowiki>__DISAMBIG__</nowiki></code> (ili njezin istoznačnik).",
+	"disambiguationpagelinks": "Stranice što vode do višeznačnih odrednica",
+	"disambiguationpagelinks-summary": "Sljedeće stranice sadrže bar jedan link na višeznačnu odrednicu.\nVjerojatno ćete se morati povezati s relevantnijom (specifičnijom) stranicom.<br />\nJedna stranica se smatra višeznačnom odrednicom ako sadrži oznaku <code><nowiki>__DISAMBIG__</nowiki></code> (ili njezin istoznačnik).",
+	"visualeditor-dialog-meta-settings-disambiguation-label": "Ovo je višeznačna stranica"
+}
