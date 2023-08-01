@@ -146,7 +146,7 @@ class SpecialDisambiguationPageLinks extends QueryPage {
 		}
 
 		$fname = get_class( $this ) . '::recache';
-		$dbw = $this->getDBLoadBalancer()->getConnectionRef( ILoadBalancer::DB_PRIMARY );
+		$dbw = $this->getDBLoadBalancer()->getConnection( ILoadBalancer::DB_PRIMARY );
 
 		try {
 			// Do query
@@ -218,7 +218,7 @@ class SpecialDisambiguationPageLinks extends QueryPage {
 	 * @return IResultWrapper
 	 */
 	public function fetchFromCache( $limit, $offset = false ) {
-		$dbr = $this->getDBLoadBalancer()->getConnectionRef( ILoadBalancer::DB_REPLICA );
+		$dbr = $this->getDBLoadBalancer()->getConnection( ILoadBalancer::DB_REPLICA );
 		$options = [];
 		if ( $limit !== false ) {
 			$options['LIMIT'] = intval( $limit );

@@ -32,7 +32,10 @@
 	"HookHandlers": {
 		"main": {
 			"class": "MediaWiki\\Extension\\Disambiguator\\Hooks",
-			"services": [ "DisambiguatorLookup", "MainConfig" ]
+			"services": [
+				"DisambiguatorLookup",
+				"MainConfig"
+			]
 		}
 	},
 	"MessagesDirs": {
