@@ -2,7 +2,7 @@
 
 namespace MediaWiki\Extension\Disambiguator;
 
-use Title;
+use MediaWiki\Title\Title;
 
 class Lookup {
 	/**

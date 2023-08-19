@@ -19,8 +19,8 @@ use MediaWiki\Extension\Disambiguator\Specials\SpecialDisambiguationPages;
 use MediaWiki\Hook\EditPage__showEditForm_initialHook;
 use MediaWiki\Hook\RecentChange_saveHook;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Title\Title;
 use OutputPage;
-use Title;
 
 // phpcs:disable MediaWiki.NamingConventions.LowerCamelFunctionsName.FunctionName
 class Hooks implements
