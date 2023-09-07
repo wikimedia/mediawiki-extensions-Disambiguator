@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bangrapip"
+		]
+	},
+	"disambig-desc": "Nambahin tenger <code><nowiki>__DISAMBIG__</nowiki></code> nengerin [[Special:DisambiguationPages|halaman pembèdaan]]",
+	"disambiguationpages": "Halaman pembèdaan",
+	"disambiguationpages-summary": "Ni dia daptar semua halaman pembèdaan di {{SITENAME}}.<br />\nAtu halaman dirèken jadi halaman pembèdaan kalo ada tenger <code><nowiki>__DISAMBIG__</nowiki></code> (atawa nama laèn nyang sepantar).",
+	"disambiguationpagelinks": "Halaman nyang nyènggèt ke halaman pembèdaan",
+	"disambiguationpagelinks-summary": "Ni halaman pada ada paling kaga' atu sènggètan ke halaman pembèdaannya.\nTu halaman pada mentak butuh disènggètin ke halaman nyang lebih pas.<br />\nAtu halaman dirèken jadi halaman pembèdaan kalo ada tenger <code><nowiki>__DISAMBIG__</nowiki></code> (atawa nama laèn nyang sepantar).",
+	"visualeditor-dialog-meta-settings-disambiguation-label": "Ni – halaman pembèdaan",
+	"tag-disambiguator-link-added": "Sènggètan pembèdaan",
+	"tag-disambiguator-link-added-description": "Permakan nyang nambahin sènggètan ke halaman pembèdaan",
+	"disambiguator-notification-question": "Apa lu pèngèn bikin ni sènggètan lebi husus?",
+	"disambiguator-notification-summary": "Lu nyènggètin ke \"[[$1]]\" nyang <strong>bukan</strong> halaman isi, melèngken daptar [https://mediawiki.org/wiki/Special:MyLanguage/Help:Extension:Disambiguator topik dengen nama nyang mèmper].",
+	"disambiguator-review-link": "Perèksa ulang sènggètan"
+}
