@@ -54,7 +54,8 @@ class Lookup {
 					[],
 					[ 'page' => [ 'INNER JOIN', [
 						'rd_namespace=page_namespace',
-						'rd_title=page_title'
+						'rd_title=page_title',
+						'rd_interwiki' => '',
 					] ] ]
 				);
 
