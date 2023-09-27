@@ -16,9 +16,16 @@ use MediaWiki\ChangeTags\Hook\ListDefinedTagsHook;
 use MediaWiki\EditPage\EditPage;
 use MediaWiki\Extension\Disambiguator\Specials\SpecialDisambiguationPageLinks;
 use MediaWiki\Extension\Disambiguator\Specials\SpecialDisambiguationPages;
+use MediaWiki\Hook\AncientPagesQueryHook;
 use MediaWiki\Hook\EditPage__showEditForm_initialHook;
+use MediaWiki\Hook\GetDoubleUnderscoreIDsHook;
+use MediaWiki\Hook\GetLinkColoursHook;
+use MediaWiki\Hook\LonelyPagesQueryHook;
+use MediaWiki\Hook\RandomPageQueryHook;
 use MediaWiki\Hook\RecentChange_saveHook;
+use MediaWiki\Hook\ShortPagesQueryHook;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\SpecialPage\Hook\WgQueryPagesHook;
 use MediaWiki\Title\Title;
 use OutputPage;
 
@@ -27,7 +34,14 @@ class Hooks implements
 	ListDefinedTagsHook,
 	ChangeTagsListActiveHook,
 	RecentChange_saveHook,
-	EditPage__showEditForm_initialHook
+	EditPage__showEditForm_initialHook,
+	GetDoubleUnderscoreIDsHook,
+	WgQueryPagesHook,
+	AncientPagesQueryHook,
+	LonelyPagesQueryHook,
+	ShortPagesQueryHook,
+	RandomPageQueryHook,
+	GetLinkColoursHook
 {
 
 	private const TAGS = [
@@ -55,7 +69,7 @@ class Hooks implements
 	/**
 	 * @param array &$doubleUnderscoreIDs
 	 */
-	public static function onGetDoubleUnderscoreIDs( &$doubleUnderscoreIDs ) {
+	public function onGetDoubleUnderscoreIDs( &$doubleUnderscoreIDs ) {
 		$doubleUnderscoreIDs[] = 'disambiguation';
 	}
 
@@ -64,7 +78,7 @@ class Hooks implements
 	 * allows direct access via the API.
 	 * @param array &$queryPages
 	 */
-	public static function onwgQueryPages( &$queryPages ) {
+	public function onWgQueryPages( &$queryPages ) {
 		$queryPages[] = [ SpecialDisambiguationPages::class, 'DisambiguationPages' ];
 		$queryPages[] = [ SpecialDisambiguationPageLinks::class, 'DisambiguationPageLinks' ];
 	}
@@ -92,7 +106,7 @@ class Hooks implements
 	 * @param array &$conds
 	 * @param array &$joinConds
 	 */
-	public static function onAncientPagesQuery( &$tables, &$conds, &$joinConds ) {
+	public function onAncientPagesQuery( &$tables, &$conds, &$joinConds ) {
 		self::excludeDisambiguationPages( $tables, $conds, $joinConds );
 	}
 
@@ -102,7 +116,7 @@ class Hooks implements
 	 * @param array &$conds
 	 * @param array &$joinConds
 	 */
-	public static function onLonelyPagesQuery( &$tables, &$conds, &$joinConds ) {
+	public function onLonelyPagesQuery( &$tables, &$conds, &$joinConds ) {
 		self::excludeDisambiguationPages( $tables, $conds, $joinConds );
 	}
 
@@ -113,7 +127,7 @@ class Hooks implements
 	 * @param array &$joinConds
 	 * @param array &$options
 	 */
-	public static function onShortPagesQuery( &$tables, &$conds, &$joinConds, &$options ) {
+	public function onShortPagesQuery( &$tables, &$conds, &$joinConds, &$options ) {
 		self::excludeDisambiguationPages( $tables, $conds, $joinConds );
 	}
 
@@ -123,7 +137,7 @@ class Hooks implements
 	 * @param array &$conds
 	 * @param array &$joinConds
 	 */
-	public static function onRandomPageQuery( &$tables, &$conds, &$joinConds ) {
+	public function onRandomPageQuery( &$tables, &$conds, &$joinConds ) {
 		self::excludeDisambiguationPages( $tables, $conds, $joinConds );
 	}
 
@@ -146,8 +160,9 @@ class Hooks implements
 	 * Add 'mw-disambig' CSS class to links to disambiguation pages.
 	 * @param array $pageIdToDbKey Prefixed DB keys of the pages linked to, indexed by page_id
 	 * @param array &$colours CSS classes, indexed by prefixed DB keys
+	 * @param Title $title
 	 */
-	public static function onGetLinkColours( $pageIdToDbKey, &$colours ) {
+	public function onGetLinkColours( $pageIdToDbKey, &$colours, $title ) {
 		global $wgDisambiguatorIndicateLinks;
 		if ( !$wgDisambiguatorIndicateLinks ) {
 			return;
