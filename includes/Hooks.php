@@ -250,6 +250,9 @@ class Hooks implements
 	// phpcs:disable MediaWiki.NamingConventions.LowerCamelFunctionsName.FunctionName
 	public function onRecentChange_save( $recentChange ) {
 		$revId = $recentChange->getAttribute( 'rc_this_oldid' );
+		if ( $recentChange->getAttribute( 'rc_log_type' ) ) {
+			return;
+		}
 		if ( isset( self::$revsToTag[$revId] ) ) {
 			$recentChange->addTags( self::TAGS );
 			unset( self::$revsToTag[$revId] );
