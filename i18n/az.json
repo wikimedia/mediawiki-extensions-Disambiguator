@@ -4,5 +4,15 @@
 			"NMW03"
 		]
 	},
-	"tag-disambiguator-link-added": "Dəqiqləşdirmə keçidləri"
+	"disambig-desc": "[[Special:DisambiguationPages|Dəqiqləşdirmə səhifələrini]] işarələmək üçün <code><nowiki>__DISAMBIG__</nowiki></code> teqini əlavə edir",
+	"disambiguationpages": "Dəqiqləşdirmə səhifələri",
+	"disambiguationpages-summary": "Aşağıda {{SITENAME}} saytındakı bütün dəqiqləşdirmə səhifələrinin siyahısı verilmişdir.<br /> \nƏgər səhifədə <code><nowiki>__DISAMBIG__</nowiki></code> (və ya oxşar) teqi varsa, səhifə dəqiqləşdirmə səhifəsi kimi qəbul edilir.",
+	"disambiguationpagelinks": "Dəqiqləşdirmə səhifələrinə keçid verən səhifələr",
+	"disambiguationpagelinks-summary": "Aşağıdakı səhifələr ən az bir dəqiqləşdirmə səhifəsinə keçid verir.\nOnların daha dəqiq səhifəyə keçid verməsi daha uyğun hesab oluna bilər.<br />\nSəhifədə <code><nowiki>__DISAMBIG__</nowiki></code> teqi varsa o səhifə dəqiqləşdirmə hesab olunur.",
+	"visualeditor-dialog-meta-settings-disambiguation-label": "Bu dəqiqləşdirmə səhifəsidir",
+	"tag-disambiguator-link-added": "Dəqiqləşdirmə keçidləri",
+	"tag-disambiguator-link-added-description": "Dəqiqləşdirmə səhifəsinə keçidlər əlavə edən redaktələr",
+	"disambiguator-notification-question": "Bu keçidi daha dəqiq etmək istəyirsiniz?",
+	"disambiguator-notification-summary": "Siz \"[[$1]]\" səhifəsinə keçid verdiniz, ancaq bu səhifə <strong>məzmun yox</strong> [https://mediawiki.org/wiki/Special:MyLanguage/Help:Extension:Disambiguator eyni adlı fərqli mövzuların siyahısıdır].",
+	"disambiguator-review-link": "Keçidi nəzərdən keçir"
 }
