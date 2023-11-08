@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"CiphriusKane"
+		]
+	},
+	"disambiguator-notification-question": "Wud ye lik tae mak this airtin mair specific?",
+	"disambiguator-notification-summary": "Ye put ae airtin tae \"[[$1]]\" that <strong>isnae</strong> ae content page but ae leet o  [https://mediawiki.org/wiki/Special:MyLanguage/Help:Extension:Disambiguator topics wi seemlir names].",
+	"disambiguator-review-link": "Leuk ower airtin"
+}
