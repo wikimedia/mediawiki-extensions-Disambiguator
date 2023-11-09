@@ -103,7 +103,8 @@
 				"NamespaceInfo",
 				"LinkBatchFactory",
 				"ContentHandlerFactory",
-				"DBLoadBalancer"
+				"DBLoadBalancerFactory",
+				"LinksMigration"
 			]
 		}
 	},

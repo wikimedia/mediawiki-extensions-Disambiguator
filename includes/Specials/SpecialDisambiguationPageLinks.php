@@ -12,12 +12,13 @@ namespace MediaWiki\Extension\Disambiguator\Specials;
 use Exception;
 use MediaWiki\Cache\LinkBatchFactory;
 use MediaWiki\Content\IContentHandlerFactory;
+use MediaWiki\Linker\LinksMigration;
 use MediaWiki\Title\Title;
 use NamespaceInfo;
 use QueryPage;
 use Wikimedia\Rdbms\DBError;
+use Wikimedia\Rdbms\IConnectionProvider;
 use Wikimedia\Rdbms\IDatabase;
-use Wikimedia\Rdbms\ILoadBalancer;
 use Wikimedia\Rdbms\IResultWrapper;
 
 class SpecialDisambiguationPageLinks extends QueryPage {
@@ -30,24 +31,29 @@ class SpecialDisambiguationPageLinks extends QueryPage {
 
 	/** @var IContentHandlerFactory */
 	private $contentHandlerFactory;
+	private IConnectionProvider $dbProvider;
+	private LinksMigration $linksMigration;
 
 	/**
 	 * @param NamespaceInfo $namespaceInfo
 	 * @param LinkBatchFactory $linkBatchFactory
 	 * @param IContentHandlerFactory $contentHandlerFactory
-	 * @param ILoadBalancer $loadBalancer
+	 * @param IConnectionProvider $dbProvider
+	 * @param LinksMigration $linksMigration
 	 */
 	public function __construct(
 		NamespaceInfo $namespaceInfo,
 		LinkBatchFactory $linkBatchFactory,
 		IContentHandlerFactory $contentHandlerFactory,
-		ILoadBalancer $loadBalancer
+		IConnectionProvider $dbProvider,
+		LinksMigration $linksMigration
 	) {
 		parent::__construct( 'DisambiguationPageLinks' );
 		$this->namespaceInfo = $namespaceInfo;
 		$this->linkBatchFactory = $linkBatchFactory;
 		$this->contentHandlerFactory = $contentHandlerFactory;
-		$this->setDBLoadBalancer( $loadBalancer );
+		$this->dbProvider = $dbProvider;
+		$this->linksMigration = $linksMigration;
 	}
 
 	public function isExpensive() {
@@ -59,13 +65,14 @@ class SpecialDisambiguationPageLinks extends QueryPage {
 	}
 
 	public function getQueryInfo() {
+		[ $blNamespace, $blTitle ] = $this->linksMigration->getTitleFields( 'pagelinks' );
+		$queryInfo = $this->linksMigration->getQueryInfo( 'pagelinks', 'pagelinks' );
 		return [
-			'tables' => [
+			'tables' => array_merge( $queryInfo['tables'], [
 				'p1' => 'page',
 				'p2' => 'page',
-				'pagelinks',
 				'page_props'
-			],
+			] ),
 			// The fields we are selecting correspond with fields in the
 			// querycachetwo table so that the results are cachable.
 			'fields' => [
@@ -76,14 +83,15 @@ class SpecialDisambiguationPageLinks extends QueryPage {
 				'to_title' => 'p1.page_title',
 			],
 			'conds' => [
-				'p1.page_id = pp_page',
 				'pp_propname' => 'disambiguation',
-				'pl_namespace = p1.page_namespace',
-				'pl_title = p1.page_title',
-				'p2.page_id = pl_from',
 				'p2.page_namespace' => $this->namespaceInfo->getContentNamespaces(),
 				'p2.page_is_redirect != 1'
-			]
+			],
+			'join_conds' => array_merge( $queryInfo['joins'], [
+				'p1' => [ 'JOIN', [ "$blNamespace = p1.page_namespace", "$blTitle = p1.page_title" ] ],
+				'page_props' => [ 'JOIN', [ 'p1.page_id = pp_page' ] ],
+				'p2' => [ 'JOIN', [ 'p2.page_id = pl_from' ] ]
+			] )
 		];
 	}
 
@@ -146,7 +154,7 @@ class SpecialDisambiguationPageLinks extends QueryPage {
 		}
 
 		$fname = get_class( $this ) . '::recache';
-		$dbw = $this->getDBLoadBalancer()->getConnection( ILoadBalancer::DB_PRIMARY );
+		$dbw = $this->dbProvider->getPrimaryDatabase();
 
 		try {
 			// Do query
@@ -218,7 +226,7 @@ class SpecialDisambiguationPageLinks extends QueryPage {
 	 * @return IResultWrapper
 	 */
 	public function fetchFromCache( $limit, $offset = false ) {
-		$dbr = $this->getDBLoadBalancer()->getConnection( ILoadBalancer::DB_REPLICA );
+		$dbr = $this->dbProvider->getReplicaDatabase();
 		$options = [];
 		if ( $limit !== false ) {
 			$options['LIMIT'] = intval( $limit );
