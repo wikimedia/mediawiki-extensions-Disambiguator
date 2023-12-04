@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Soumaya"
+		]
+	},
+	"disambig-desc": "Adds the tag <code><nowiki>__DISAMBIG__</nowiki></code> to mark [[Special:DisambiguationPages to be disambiguatedpages]]",
+	"disambiguationpages": "Dẽn-kãsems sɛb",
+	"disambiguationpages-summary": "Sõng-kãngã yaa sõsg ning sẽn be {{SITENAME}} wã zugu. Pag sã n tar tag <code><nowiki>__DISAMBIG__</nowiki></code> (sẽn yaa yʋ-kãng sẽn zemse) bɩ a pa tar tag-kãng, a getame tɩ yaa pag sẽn pa tar gom-biis a taaba.<br/>",
+	"disambiguationpagelinks": "Pages linking to tags tags tags",
+	"disambiguationpagelinks-summary": "Sõsg ning sẽn pʋgdã tara link a yembr n na n wilg tɩ ned pa tõe n yeel bũmb a to ye. Tõe tɩ yaa tɩlae tɩ b link n kẽng seb-kãngã sẽn zems-n-taag n paase. Pag sã n tar tag <code><nowiki>__DISAMBIG__</nowiki></code> (sẽn yaa yʋ-kãng sẽn zemse) bɩ a pa tar tag-kãng, a getame tɩ yaa pag sẽn pa tar gom-biis a taaba.<br/>",
+	"visualeditor-dialog-meta-settings-disambiguation-label": "Yaa seb-kãngã n wilgd tɩ ned pa tõe n bãng a sẽn yet bũmb ningã ye."
+}
