@@ -10,8 +10,8 @@
 namespace MediaWiki\Extension\Disambiguator\Specials;
 
 use MediaWiki\Cache\LinkBatchFactory;
+use MediaWiki\SpecialPage\QueryPage;
 use MediaWiki\Title\Title;
-use QueryPage;
 use Wikimedia\Rdbms\IDatabase;
 use Wikimedia\Rdbms\ILoadBalancer;
 use Wikimedia\Rdbms\IResultWrapper;

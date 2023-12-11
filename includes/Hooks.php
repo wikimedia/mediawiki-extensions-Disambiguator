@@ -8,11 +8,11 @@
 
 namespace MediaWiki\Extension\Disambiguator;
 
-use Config;
 use ExtensionRegistry;
-use LinksUpdate;
 use MediaWiki\ChangeTags\Hook\ChangeTagsListActiveHook;
 use MediaWiki\ChangeTags\Hook\ListDefinedTagsHook;
+use MediaWiki\Config\Config;
+use MediaWiki\Deferred\LinksUpdate\LinksUpdate;
 use MediaWiki\EditPage\EditPage;
 use MediaWiki\Extension\Disambiguator\Specials\SpecialDisambiguationPageLinks;
 use MediaWiki\Extension\Disambiguator\Specials\SpecialDisambiguationPages;
@@ -25,9 +25,9 @@ use MediaWiki\Hook\RandomPageQueryHook;
 use MediaWiki\Hook\RecentChange_saveHook;
 use MediaWiki\Hook\ShortPagesQueryHook;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Output\OutputPage;
 use MediaWiki\SpecialPage\Hook\WgQueryPagesHook;
 use MediaWiki\Title\Title;
-use OutputPage;
 
 // phpcs:disable MediaWiki.NamingConventions.LowerCamelFunctionsName.FunctionName
 class Hooks implements
