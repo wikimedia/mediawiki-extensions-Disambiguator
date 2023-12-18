@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			"Raizkgh",
 			"Soumaya"
 		]
 	},
-	"disambig-desc": "Adds the tag <code><nowiki>__DISAMBIG__</nowiki></code> to mark [[Special:DisambiguationPages to be disambiguatedpages]]",
+	"disambig-desc": "Pãas <code><nowiki>__DISAMBIG__</nowiki></code> to mark [[Special:DisambiguationPages|disambiguation pages]]",
 	"disambiguationpages": "Dẽn-kãsems sɛb",
 	"disambiguationpages-summary": "Sõng-kãngã yaa sõsg ning sẽn be {{SITENAME}} wã zugu. Pag sã n tar tag <code><nowiki>__DISAMBIG__</nowiki></code> (sẽn yaa yʋ-kãng sẽn zemse) bɩ a pa tar tag-kãng, a getame tɩ yaa pag sẽn pa tar gom-biis a taaba.<br/>",
 	"disambiguationpagelinks": "Pages linking to tags tags tags",
