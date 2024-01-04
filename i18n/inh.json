@@ -13,6 +13,6 @@
 	"tag-disambiguator-link-added": "Тайп-тайпара маӀанаш долча оагӀонашта бола тӀатовжамаш",
 	"tag-disambiguator-link-added-description": "Тайп-тайпара маӀанаш долча оагӀонашта тӀатовжамаш тӀатохаш дола хувцамаш.",
 	"disambiguator-notification-question": "Укх тӀатовжамо дӀахьожавеш йола оагӀув дикагӀа белгалъе безам бий хьа?",
-	"disambiguator-notification-summary": "«[[$1]]» яхача оагӀонна тӀатовжам баьб Ӏа, амма из къаьстта <strong>статья яц</strong>, [https://mediawiki.org/wiki/Special:MyLanguage/Help:Extension:Disambiguator вӀаший тарра цӀераш йолча темий мугӀам мара бац из (список тем с похожими названиями)].",
+	"disambiguator-notification-summary": "«[[$1]]» яхача оагӀонна тӀатовжам баьб Ӏа, амма из оагӀув къаьстта <strong>статья яц</strong>, [https://mediawiki.org/wiki/Special:MyLanguage/Help:Extension:Disambiguator вӀаший тарра цӀераш йолча темий листам мара бац из].",
 	"disambiguator-review-link": "ТӀатовжамага хьалххе хьажар"
 }
