@@ -45,7 +45,6 @@
 	},
 	"ResourceModules": {
 		"ext.disambiguator": {
-			"es6": true,
 			"dependencies": [
 				"mediawiki.api",
 				"mediawiki.jqueryMsg",
