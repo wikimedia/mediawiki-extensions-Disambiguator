@@ -8,7 +8,7 @@ use MediaWiki\Extension\Disambiguator\Lookup;
 // @codeCoverageIgnoreStart
 
 return [
-	'DisambiguatorLookup' => static function () {
+	'DisambiguatorLookup' => static function (): Lookup {
 		return new Lookup();
 	}
 ];
