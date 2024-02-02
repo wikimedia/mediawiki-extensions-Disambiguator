@@ -142,21 +142,6 @@ class Hooks implements
 	}
 
 	/**
-	 * Convenience function for testing whether or not a page is a disambiguation page
-	 *
-	 * @deprecated Use DisambiguatorLookup service
-	 *
-	 * @param Title $title object of a page
-	 * @param bool $includeRedirects Whether to consider redirects to disambiguations as
-	 *   disambiguations.
-	 * @return bool
-	 */
-	public static function isDisambiguationPage( Title $title, $includeRedirects = true ) {
-		return MediaWikiServices::getInstance()->getService( 'DisambiguatorLookup' )
-			->isDisambiguationPage( $title, $includeRedirects );
-	}
-
-	/**
 	 * Add 'mw-disambig' CSS class to links to disambiguation pages.
 	 * @param array $pageIdToDbKey Prefixed DB keys of the pages linked to, indexed by page_id
 	 * @param array &$colours CSS classes, indexed by prefixed DB keys
@@ -168,8 +153,9 @@ class Hooks implements
 			return;
 		}
 
-		$pageIds = MediaWikiServices::getInstance()->getService( 'DisambiguatorLookup' )
-			->filterDisambiguationPageIds( array_keys( $pageIdToDbKey ) );
+		$pageIds = $this->lookup->filterDisambiguationPageIds(
+			array_keys( $pageIdToDbKey )
+		);
 
 		foreach ( $pageIds as $pageId ) {
 			if ( isset( $colours[ $pageIdToDbKey[$pageId] ] ) ) {
