@@ -24,6 +24,8 @@ I am linking to [[Disambig]] and [[Normal]].
 !! html
 <p>I am linking to <a href="/wiki/Disambig" class="mw-disambig" title="Disambig">Disambig</a> and <a href="/wiki/Normal" title="Normal">Normal</a>.
 </p>
+!! html/parsoid
+<p>I am linking to <a rel="mw:WikiLink" href="./Disambig" title="Disambig" class="mw-disambig">Disambig</a> and <a rel="mw:WikiLink" href="./Normal" title="Normal">Normal</a>.</p>
 !! end
 
 !! test
