@@ -3,8 +3,19 @@
 namespace MediaWiki\Extension\Disambiguator;
 
 use MediaWiki\Title\Title;
+use Wikimedia\Rdbms\IConnectionProvider;
 
 class Lookup {
+
+	private IConnectionProvider $dbProvider;
+
+	/**
+	 * @param IConnectionProvider $dbProvider
+	 */
+	public function __construct( IConnectionProvider $dbProvider ) {
+		$this->dbProvider = $dbProvider;
+	}
+
 	/**
 	 * Convenience function for testing whether or not a page is a disambiguation page
 	 *
@@ -40,7 +51,7 @@ class Lookup {
 
 		$output = [];
 		if ( $pageIds ) {
-			$dbr = wfGetDB( DB_REPLICA );
+			$dbr = $this->dbProvider->getReplicaDatabase();
 
 			$redirects = [];
 			$redirectsMap = [];
