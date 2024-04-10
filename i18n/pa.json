@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kuldeepburjbhalaike"
+		]
+	},
+	"disambig-desc": "[[Special:DisambiguationPages|ਗੁੰਝਲ-ਖੋਲ੍ਹ ਸਫ਼ੇ]] ਮਾਰਕ ਕਰਨ ਲਈ <code><nowiki>__DISAMBIG__</nowiki></code> ਟੈਗ ਜੋੜੋ",
+	"disambiguationpages": "ਗੁੰਝਲ-ਖੋਲ੍ਹ ਸਫ਼ੇ",
+	"disambiguationpages-summary": "ਹੇਠਾਂ {{SITENAME}} ਦੇ ਸਾਰੇ ਗੁੰਝਲ-ਖੋਲ੍ਹ ਸਫ਼ਿਆਂ ਦੀ ਸੂਚੀ ਹੈ।<br />\nਇੱਕ ਸਫ਼ੇ ਨੂੰ ਇੱਕ ਗੁੰਝਲ-ਖੋਲ੍ਹ ਸਫ਼ਾ ਮੰਨਿਆ ਜਾਂਦਾ ਹੈ ਜੇਕਰ ਇਸ ਵਿੱਚ <code><nowiki>__DISAMBIG__</nowiki></code> (ਜਾਂ ਇਸਦੇ ਬਰਾਬਰ ਦਾ ਉਪਨਾਮ) ਟੈਗ ਸ਼ਾਮਲ ਹੁੰਦਾ ਹੈ।",
+	"disambiguationpagelinks": "ਗੁੰਝਲ-ਖੋਲ੍ਹ ਸਫ਼ਿਆਂ ਨਾਲ ਜੁੜਦੇ ਸਫ਼ੇ",
+	"visualeditor-dialog-meta-settings-disambiguation-label": "ਇਹ ਇੱਕ ਗੁੰਝਲ-ਖੋਲ੍ਹ ਸਫ਼ਾ ਹੈ",
+	"tag-disambiguator-link-added": "ਗੁੰਝਲ-ਖੋਲ੍ਹ ਲਿੰਕ",
+	"tag-disambiguator-link-added-description": "ਸੋਧਾਂ ਜੋ ਗੁੰਝਲ-ਖੋਲ੍ਹ ਸਫ਼ਿਆਂ ਨਾਲ ਲਿੰਕ ਜੋੜਦੀਆਂ ਹਨ",
+	"disambiguator-notification-question": "ਕੀ ਤੁਸੀਂ ਇਸ ਲਿੰਕ ਨੂੰ ਹੋਰ ਵਿਸ਼ੇਸ਼ ਬਣਾਉਣਾ ਚਾਹੋਗੇ?",
+	"disambiguator-review-link": "ਲਿੰਕ ਦੀ ਸਮੀਖਿਆ ਕਰੋ"
+}
