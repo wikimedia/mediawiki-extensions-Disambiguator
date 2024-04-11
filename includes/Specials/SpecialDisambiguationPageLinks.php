@@ -187,18 +187,30 @@ class SpecialDisambiguationPageLinks extends QueryPage {
 
 				$dbw->startAtomic( __METHOD__ );
 				// Clear out any old cached data
-				$dbw->delete( 'querycachetwo', [ 'qcc_type' => $this->getName() ], $fname );
+				$dbw->newDeleteQueryBuilder()
+					->deleteFrom( 'querycachetwo' )
+					->where( [ 'qcc_type' => $this->getName() ] )
+					->caller( $fname )
+					->execute();
 				// Save results into the querycachetwo table on the master
 				if ( count( $vals ) ) {
-					$dbw->insert( 'querycachetwo', $vals, __METHOD__ );
+					$dbw->newInsertQueryBuilder()
+						->insertInto( 'querycachetwo' )
+						->rows( $vals )
+						->caller( $fname )
+						->execute();
 				}
 				// Update the querycache_info record for the page
-				$dbw->delete( 'querycache_info', [ 'qci_type' => $this->getName() ], $fname );
-				$dbw->insert(
-					'querycache_info',
-					[ 'qci_type' => $this->getName(), 'qci_timestamp' => $dbw->timestamp() ],
-					$fname
-				);
+				$dbw->newDeleteQueryBuilder()
+					->deleteFrom( 'querycache_info' )
+					->where( [ 'qci_type' => $this->getName() ] )
+					->caller( $fname )
+					->execute();
+				$dbw->newInsertQueryBuilder()
+					->insertInto( 'querycache_info' )
+					->row( [ 'qci_type' => $this->getName(), 'qci_timestamp' => $dbw->timestamp() ] )
+					->caller( $fname )
+					->execute();
 				$dbw->endAtomic( __METHOD__ );
 			}
 		} catch ( DBError $e ) {
