@@ -57,18 +57,17 @@ class Lookup {
 			$redirectsMap = [];
 			if ( $includeRedirects ) {
 				// resolve redirects
-				$res = $dbr->select(
-					[ 'page', 'redirect' ],
-					[ 'page_id', 'rd_from' ],
-					[ 'rd_from' => $pageIds ],
-					__METHOD__,
-					[],
-					[ 'page' => [ 'INNER JOIN', [
+				$res = $dbr->newSelectQueryBuilder()
+					->select( [ 'page_id', 'rd_from' ] )
+					->from( 'page' )
+					->join( 'redirect', null, [
 						'rd_namespace=page_namespace',
 						'rd_title=page_title',
 						'rd_interwiki' => '',
-					] ] ]
-				);
+					] )
+					->where( [ 'rd_from' => $pageIds ] )
+					->caller( __METHOD__ )
+					->fetchResultSet();
 
 				foreach ( $res as $row ) {
 					$redirects[] = $row->rd_from;
@@ -78,12 +77,12 @@ class Lookup {
 			}
 			$pageIdsWithRedirects = array_merge( array_keys( $redirectsMap ),
 				array_diff( $pageIds, $redirects ) );
-			$res = $dbr->select(
-				'page_props',
-				'pp_page',
-				[ 'pp_page' => $pageIdsWithRedirects, 'pp_propname' => 'disambiguation' ],
-				__METHOD__
-			);
+			$res = $dbr->newSelectQueryBuilder()
+				->select( 'pp_page' )
+				->from( 'page_props' )
+				->where( [ 'pp_page' => $pageIdsWithRedirects, 'pp_propname' => 'disambiguation' ] )
+				->caller( __METHOD__ )
+				->fetchResultSet();
 
 			foreach ( $res as $row ) {
 				$disambiguationPageId = $row->pp_page;

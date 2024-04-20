@@ -20,6 +20,7 @@ use Wikimedia\Rdbms\DBError;
 use Wikimedia\Rdbms\IConnectionProvider;
 use Wikimedia\Rdbms\IDatabase;
 use Wikimedia\Rdbms\IResultWrapper;
+use Wikimedia\Rdbms\SelectQueryBuilder;
 
 class SpecialDisambiguationPageLinks extends QueryPage {
 
@@ -239,33 +240,34 @@ class SpecialDisambiguationPageLinks extends QueryPage {
 	 */
 	public function fetchFromCache( $limit, $offset = false ) {
 		$dbr = $this->dbProvider->getReplicaDatabase();
-		$options = [];
-		if ( $limit !== false ) {
-			$options['LIMIT'] = intval( $limit );
-		}
-		if ( $offset !== false ) {
-			$options['OFFSET'] = intval( $offset );
-		}
-		// Set sort order. This should match the ordering in getOrderFields().
-		if ( $this->sortDescending() ) {
-			$options['ORDER BY'] = 'qcc_value, qcc_namespacetwo, qcc_titletwo DESC';
-		} else {
-			$options['ORDER BY'] = 'qcc_value, qcc_namespacetwo, qcc_titletwo ASC';
-		}
-		$res = $dbr->select(
-			'querycachetwo',
-			[
+
+		$queryBuilder = $dbr->newSelectQueryBuilder()
+			->select( [
 				'value' => 'qcc_value',
 				'namespace' => 'qcc_namespace',
 				'title' => 'qcc_title',
 				'to_namespace' => 'qcc_namespacetwo',
 				'to_title' => 'qcc_titletwo',
-			],
-			[ 'qcc_type' => $this->getName() ],
-			__METHOD__,
-			$options
-		);
-		return $res;
+			] )
+			->from( 'querycachetwo' )
+			->where( [ 'qcc_type' => $this->getName() ] )
+			->caller( __METHOD__ );
+
+		if ( $limit !== false ) {
+			$queryBuilder->limit( intval( $limit ) );
+		}
+		if ( $offset !== false ) {
+			$queryBuilder->offset( intval( $offset ) );
+		}
+		// Set sort order. This should match the ordering in getOrderFields().
+		$queryBuilder->orderBy( [ 'qcc_value', 'qcc_namespacetwo' ] );
+		if ( $this->sortDescending() ) {
+			$queryBuilder->orderBy( 'qcc_titletwo', SelectQueryBuilder::SORT_DESC );
+		} else {
+			$queryBuilder->orderBy( 'qcc_titletwo', SelectQueryBuilder::SORT_ASC );
+		}
+
+		return $queryBuilder->fetchResultSet();
 	}
 
 	/**
