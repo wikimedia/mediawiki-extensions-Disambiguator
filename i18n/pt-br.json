@@ -1,11 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			555,
 			"Cainamarques",
 			"CoelhitaWingz223",
 			"Dianakc",
-			"Eduardoaddad",
-			555
+			"Eduardoaddad"
 		]
 	},
 	"disambig-desc": "Adiciona a tag <code><nowiki>__DISAMBIG__</nowiki></code> para marcar [[Special:DisambiguationPages|páginas de desambiguação]]",
