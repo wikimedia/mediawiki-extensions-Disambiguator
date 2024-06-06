@@ -37,7 +37,7 @@ ve.dm.MWDisambiguationMetaItem.static.toDataElement = function () {
 };
 
 ve.dm.MWDisambiguationMetaItem.static.toDomElements = function ( dataElement, doc ) {
-	var meta = doc.createElement( 'meta' );
+	const meta = doc.createElement( 'meta' );
 	meta.setAttribute( 'property', 'mw:PageProp/disambiguation' );
 	return [ meta ];
 };

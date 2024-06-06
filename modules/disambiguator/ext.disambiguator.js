@@ -96,7 +96,7 @@
 			prop: 'pageprops',
 			ppprop: 'disambiguation',
 			formatversion: 2
-		} ).then( function ( resp ) {
+		} ).then( ( resp ) => {
 			if ( resp.query.pages && resp.query.pages[ 0 ].pageprops &&
 				Object.prototype.hasOwnProperty.call( resp.query.pages[ 0 ].pageprops, 'disambiguation' )
 			) {
@@ -109,7 +109,7 @@
 	 * (Re-)add the keyup listener to the textarea.
 	 */
 	function bindTextareaListener() {
-		$textarea.off( 'keyup.disambiguator' ).on( 'keyup.disambiguator', function ( e ) {
+		$textarea.off( 'keyup.disambiguator' ).on( 'keyup.disambiguator', ( e ) => {
 			if ( e.key === ']' ) {
 				const cursorPosition = $textarea.textSelection( 'getCaretPosition' ),
 					context = $textarea.textSelection( 'getContents' )
@@ -128,12 +128,12 @@
 	}
 
 	// WikiEditor integration; causes the 'Review link' link to open the link insertion dialog.
-	mw.hook( 'wikiEditor.toolbarReady' ).add( function ( $wikiEditorTextarea ) {
+	mw.hook( 'wikiEditor.toolbarReady' ).add( ( $wikiEditorTextarea ) => {
 		wikiEditorContext = $wikiEditorTextarea.data( 'wikiEditor-context' );
 	} );
 
 	// CodeMirror integration.
-	mw.hook( 'ext.CodeMirror.switch' ).add( function ( _enabled, $editor ) {
+	mw.hook( 'ext.CodeMirror.switch' ).add( ( _enabled, $editor ) => {
 		$textarea = $editor;
 		bindTextareaListener();
 	} );
