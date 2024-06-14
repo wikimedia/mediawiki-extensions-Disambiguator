@@ -1,10 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Arystanbek"
+			"Arystanbek",
+			"Casserium"
 		]
 	},
 	"disambiguationpages": "Айрық беттер",
 	"disambiguationpagelinks": "Айрық беттерге сілтенген беттер",
-	"visualeditor-dialog-meta-settings-disambiguation-label": "Бұл айрық бет"
+	"visualeditor-dialog-meta-settings-disambiguation-label": "Бұл айрық бет",
+	"tag-disambiguator-link-added": "Айрық бетке сілтеме",
+	"tag-disambiguator-link-added-description": "Айрық беттерге сілтеме қосатын өңдемелер"
 }
