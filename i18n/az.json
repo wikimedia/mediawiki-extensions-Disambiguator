@@ -1,7 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"NMW03"
+			"NMW03",
+			"Nemoralis",
+			"Toghrul Rahimli"
 		]
 	},
 	"disambig-desc": "[[Special:DisambiguationPages|Dəqiqləşdirmə səhifələrini]] işarələmək üçün <code><nowiki>__DISAMBIG__</nowiki></code> teqini əlavə edir",
@@ -13,6 +15,6 @@
 	"tag-disambiguator-link-added": "Dəqiqləşdirmə keçidləri",
 	"tag-disambiguator-link-added-description": "Dəqiqləşdirmə səhifəsinə keçidlər əlavə edən redaktələr",
 	"disambiguator-notification-question": "Bu keçidi daha dəqiq etmək istəyirsiniz?",
-	"disambiguator-notification-summary": "Siz \"[[$1]]\" səhifəsinə keçid verdiniz, ancaq bu səhifə <strong>məzmun yox</strong> [https://mediawiki.org/wiki/Special:MyLanguage/Help:Extension:Disambiguator eyni adlı fərqli mövzuların siyahısıdır].",
+	"disambiguator-notification-summary": "Siz \"[[$1]]\" səhifəsinə keçid verdiniz, lakin bu bu səhifə <strong>məqalə deyil,</strong> [https://mediawiki.org/wiki/Special:MyLanguage/Help:Extension:Disambiguator eyniadlı fərqli mövzuların siyahısıdır].",
 	"disambiguator-review-link": "Keçidi nəzərdən keçir"
 }
