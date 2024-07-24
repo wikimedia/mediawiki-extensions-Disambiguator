@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Bjarki S",
 			"Snævar"
 		]
 	},
@@ -9,5 +10,10 @@
 	"disambiguationpages-summary": "Eftirfarandi er listi yfir allar aðgreiningarsíður á {{SITENAME}}.<br />\nSíða er meðhöndluð sem aðgreiningarsíða ef hún inniheldur tagið <code><nowiki>__DISAMBIG__</nowiki></code> (eða svipað samnefni).",
 	"disambiguationpagelinks": "Síður sem tengja á aðgreiningarsíður",
 	"disambiguationpagelinks-summary": "Eftirfarandi síður innihalda að minnsta kosti einn tengil á aðgreiningarsíðu.\nÞað gæti þurft að breyta tenglinum svo hann beini á rétta síðu. Síða er meðhöndluð sem aðgreiningarsíða ef tagið <code><nowiki>__DISAMBIG__</nowiki></code> (eða sambærilegt samheiti) er á síðunni.",
-	"visualeditor-dialog-meta-settings-disambiguation-label": "Þetta er aðgreiningarsíða"
+	"visualeditor-dialog-meta-settings-disambiguation-label": "Þetta er aðgreiningarsíða",
+	"tag-disambiguator-link-added": "Aðgreiningarsíður",
+	"tag-disambiguator-link-added-description": "Breytingar sem bæta við hlekkjum á aðgreiningarsíður",
+	"disambiguator-notification-question": "Vilt þú gera þennan tengil nákvæmari?",
+	"disambiguator-notification-summary": "Þú gerðir hlekk á „[[$1]]“ sem er <strong>ekki</strong> efnissíða heldur [https://mediawiki.org/wiki/Special:MyLanguage/Help:Extension:Disambiguator aðgreiningarsíða] sem er listi yfir viðfangsefni með svipuð nöfn.",
+	"disambiguator-review-link": "Endurskoða hlekk"
 }
