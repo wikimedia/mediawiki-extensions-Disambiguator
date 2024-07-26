@@ -93,7 +93,7 @@
 			"class": "MediaWiki\\Extension\\Disambiguator\\Specials\\SpecialDisambiguationPages",
 			"services": [
 				"LinkBatchFactory",
-				"DBLoadBalancer"
+				"ConnectionProvider"
 			]
 		},
 		"DisambiguationPageLinks": {
