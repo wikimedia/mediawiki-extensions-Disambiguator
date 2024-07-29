@@ -12,6 +12,7 @@ use ExtensionRegistry;
 use MediaWiki\ChangeTags\Hook\ChangeTagsListActiveHook;
 use MediaWiki\ChangeTags\Hook\ListDefinedTagsHook;
 use MediaWiki\Config\Config;
+use MediaWiki\Deferred\LinksUpdate\LinksTable;
 use MediaWiki\Deferred\LinksUpdate\LinksUpdate;
 use MediaWiki\EditPage\EditPage;
 use MediaWiki\Extension\Disambiguator\Specials\SpecialDisambiguationPageLinks;
@@ -26,6 +27,7 @@ use MediaWiki\Hook\RecentChange_saveHook;
 use MediaWiki\Hook\ShortPagesQueryHook;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Output\OutputPage;
+use MediaWiki\Page\PageStore;
 use MediaWiki\SpecialPage\Hook\WgQueryPagesHook;
 use MediaWiki\Title\Title;
 
@@ -54,16 +56,20 @@ class Hooks implements
 	/** @var bool */
 	private $showNotifications;
 
+	private PageStore $pageStore;
+
 	/** @var bool[] Rev IDs are used as keys */
 	private static $revsToTag = [];
 
 	/**
 	 * @param Lookup $lookup
 	 * @param Config $options
+	 * @param PageStore $pageStore
 	 */
-	public function __construct( Lookup $lookup, Config $options ) {
+	public function __construct( Lookup $lookup, Config $options, PageStore $pageStore ) {
 		$this->lookup = $lookup;
 		$this->showNotifications = $options->get( 'DisambiguatorNotifications' );
+		$this->pageStore = $pageStore;
 	}
 
 	/**
@@ -192,15 +198,19 @@ class Hooks implements
 	 * @param LinksUpdate $linksUpdate
 	 */
 	public function onLinksUpdateComplete( LinksUpdate $linksUpdate ) {
-		$addedLinks = $linksUpdate->getAddedLinks();
+		$addedLinks = $linksUpdate->getPageReferenceIterator( 'pagelinks', LinksTable::INSERTED );
 
-		if ( !$addedLinks ) {
-			return;
+		$pageIds = [];
+		foreach ( $addedLinks as $pageReference ) {
+			$pageRecord = $this->pageStore->getPageByReference( $pageReference );
+			if ( $pageRecord ) {
+				$pageIds[] = $pageRecord->getId();
+			}
 		}
 
-		$pageIds = array_map( static function ( Title $title ) {
-			return $title->getId();
-		}, $addedLinks );
+		if ( !$pageIds ) {
+			return;
+		}
 
 		$disambigs = $this->lookup->filterDisambiguationPageIds( $pageIds, true );
 		$rev = $linksUpdate->getRevisionRecord();

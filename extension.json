@@ -34,7 +34,8 @@
 			"class": "MediaWiki\\Extension\\Disambiguator\\Hooks",
 			"services": [
 				"DisambiguatorLookup",
-				"MainConfig"
+				"MainConfig",
+				"PageStore"
 			]
 		}
 	},
