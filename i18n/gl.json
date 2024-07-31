@@ -5,10 +5,15 @@
 			"Vivaelcelta"
 		]
 	},
-	"disambig-desc": "Engade a etiqueta <code><nowiki>__DISAMBIG__</nowiki></code> para marcar as [[Special:DisambiguationPages|páxinas de homónimos]].",
+	"disambig-desc": "Engade a etiqueta <code><nowiki>__DISAMBIG__</nowiki></code> para marcar as [[Special:DisambiguationPages|páxinas de homónimos]]",
 	"disambiguationpages": "Páxinas de homónimos",
 	"disambiguationpages-summary": "A seguinte é unha lista de todas as páxinas de homónimos de {{SITENAME}}.<br />\nUnha páxina considérase de homónimos se contén a etiqueta <code><nowiki>__DISAMBIG__</nowiki></code> (ou un pseudónimo equivalente).",
 	"disambiguationpagelinks": "Páxinas que ligan con páxinas de homónimos",
 	"disambiguationpagelinks-summary": "As seguintes páxinas conteñen, polo menos, unha ligazón a unha páxina de homónimos.\nSe cadra, deberían ligar cunha páxina máis axeitada.<br />\nUnha páxina considérase de homónimos se contén a etiqueta <code><nowiki>__DISAMBIG__</nowiki></code> (ou un pseudónimo equivalente).",
-	"visualeditor-dialog-meta-settings-disambiguation-label": "Esta é unha páxina de homónimos"
+	"visualeditor-dialog-meta-settings-disambiguation-label": "Esta é unha páxina de homónimos",
+	"tag-disambiguator-link-added": "Ligazóns a páxinas de homónimos",
+	"tag-disambiguator-link-added-description": "Edición que engade ligazóns a páxinas de homónimos",
+	"disambiguator-notification-question": "Queres facer esta ligazón máis específica?",
+	"disambiguator-notification-summary": "Engadiches unha ligazón a \"[[$1]]\", que <strong>non</strong> é unha páxina de contidos senón unha lista de [https://mediawiki.org/wiki/Special:MyLanguage/Help:Extension:Disambiguator temas con nomes parecidos].",
+	"disambiguator-review-link": "Revisar a ligazón"
 }
