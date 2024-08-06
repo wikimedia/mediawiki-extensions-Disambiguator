@@ -1,8 +1,19 @@
 {
 	"@metadata": {
 		"authors": [
-			"Kimberli Mäkäräinen (WMNO)"
+			"Kimberli Mäkäräinen (WMNO)",
+			"WMNO sámeprošeakta"
 		]
 	},
+	"disambig-desc": "Lasiha mearkka <code><nowiki>__DISAMBIG__</nowiki></code> merken dihte [[Special:DisambiguationPages|čujuhansiidduid]]",
+	"disambiguationpages": "Čujuhansiiddut",
+	"disambiguationpages-summary": "Dát lea visot čujuhansiiddut listtut {{SITENAME}}:s.<br />\nOkta siidu rehkenastto čujuhansiidui jus dat sisttisdoallá <code><nowiki>__DISAMBIG__</nowiki></code> mearkka (dahje vástideaddji lassehámi).",
+	"disambiguationpagelinks": "Siiddut mat liŋkejit čujuhansiidduide",
+	"disambiguationpagelinks-summary": "Dát listu sisttisdoallá visot siidduid main lea unnimusat okta liŋka čujuhansiidui.\nSoaitá dárbu leat rievdadit dakkár liŋkkaid nu ahte čujuhit dábálaš siidduide baicca.<br />\nOkta siidu rehkenastto čujuhansiidun jus dat sisttisdoallá <code><nowiki>__DISAMBIG__</nowiki></code> mearkka (dahje vástideaddji lassehámi).",
+	"visualeditor-dialog-meta-settings-disambiguation-label": "Dát lea čujuhansiidu",
+	"tag-disambiguator-link-added": "Liŋkkat čujuhansiidduide",
+	"tag-disambiguator-link-added-description": "Rievdadusat mat ásahit liŋkkaid čujuhansiidduide",
+	"disambiguator-notification-question": "Háliidat go dahkat dán liŋka čielgaseabbon?",
+	"disambiguator-notification-summary": "Don liŋkejuvvojit «[[$1]]», mii <strong>ii</strong> leat sisdoallosiidu; dat liŋke dušše [https://mediawiki.org/wiki/Special:MyLanguage/Help:Extension:Disambiguator siiddude main leat sullasaš namat]",
 	"disambiguator-review-link": "Dárkkis liŋkka"
 }
