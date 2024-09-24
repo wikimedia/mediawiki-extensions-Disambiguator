@@ -119,6 +119,16 @@
 			"PluginModules": [
 				"ext.disambiguator.visualEditor"
 			]
+		},
+		"Scribunto": {
+			"LuaExtraTitleAttributes": {
+				"isDisambiguationPage": {
+					"class": "MediaWiki\\Extension\\Disambiguator\\LuaDisambiguationAttributeResolver",
+					"services": [
+						"DisambiguatorLookup"
+					]
+				}
+			}
 		}
 	},
 	"manifest_version": 2
