@@ -4,6 +4,15 @@
 			"IJzeren Jan"
 		]
 	},
+	"disambig-desc": "Dodavaje tag <code><nowiki>__DISAMBIG__</nowiki></code> za označenje [[Special:DisambiguationPages|razdvajajučih stranic]]",
 	"disambiguationpages": "Razdvajajuče stranice",
-	"disambiguationpages-summary": "Na tutoj stranici nahodi se spisok vsih razdvajajučih stranic v projektu {{SITENAME}}.</br >\nRazdvajajuča stranica sodrživaje linky na stranice s jednoznačnymi nazvami i povinna jest sodrživati značku <code><nowiki>__DISAMBIG__</nowiki></code> (ili něčto ravnoznačno)."
+	"disambiguationpages-summary": "Na tutoj stranici nahodi se spisok vsih razdvajajučih stranic v projektu {{SITENAME}}.</br >\nRazdvajajuča stranica sodrživaje linky na stranice s jednoznačnymi nazvami i povinna jest sodrživati značku <code><nowiki>__DISAMBIG__</nowiki></code> (ili něčto ravnoznačno).",
+	"disambiguationpagelinks": "Stranice s linkami na razdvajajuče stranice",
+	"disambiguationpagelinks-summary": "Slědujuče stranice sodrživajut minimalno jedin link na razdvajajuču stranicu. Zaměsto togo može byti lěpje, ako link vede na uměstnějšu stranicu.<br />\nStranica tretuje se kako razdvajajuča, ako sodrživaje tag <code><nowiki>__DISAMBIG__</nowiki></code> (ili ravnoznačny psevdonim).",
+	"visualeditor-dialog-meta-settings-disambiguation-label": "Tuto jest razdvajajuča stranica",
+	"tag-disambiguator-link-added": "Linky na razdvajajuče stranice",
+	"tag-disambiguator-link-added-description": "Pravky, ktore dodali linky na razdvajajuče stranice",
+	"disambiguator-notification-question": "Hočete li, že by tutoj link byl konkretnějši?",
+	"disambiguator-notification-summary": "Vy jeste dodali link na stranicu «[[$1]]», ktora <strong>ne</strong> jest članok, ale spisok [https://mediawiki.org/wiki/Special:MyLanguage/Help:Extension:Disambiguator prědmetov s podobnymi nazvami].",
+	"disambiguator-review-link": "Prověriti link"
 }
