@@ -122,12 +122,11 @@
 					context = $textarea.textSelection( 'getContents' )
 						.slice( 0, cursorPosition ),
 					matches = /.*(\[\[([^[\]|]+)(?:\|.*]]|]]))$/.exec( context );
-				let pageTitle, linkWikitext;
 
 				if ( matches ) {
 					// We always want the last match.
-					pageTitle = matches[ matches.length - 1 ].trim();
-					linkWikitext = matches[ matches.length - 2 ];
+					const pageTitle = matches[ matches.length - 1 ].trim();
+					const linkWikitext = matches[ matches.length - 2 ];
 					checkIfDisambig( context, pageTitle, linkWikitext, cursorPosition );
 				}
 			}
