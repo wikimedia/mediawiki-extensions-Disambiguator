@@ -1,4 +1,4 @@
-( ( function () {
+( () => {
 	const api = new mw.Api();
 	let wikiEditorContext,
 		// eslint-disable-next-line no-jquery/no-global-selector
@@ -17,6 +17,7 @@
 	function reviewLinkClickHandler( e ) {
 		const start = e.data.cursorPosition - e.data.linkWikitext.length,
 			end = e.data.cursorPosition,
+			// eslint-disable-next-line unicorn/prefer-string-slice
 			selectedContent = $textarea.textSelection( 'getContents' )
 				.substring( start, end );
 
@@ -30,7 +31,10 @@
 		$textarea.textSelection( 'setSelection', { start: start, end: end } );
 
 		// Open the WikiEditor link insertion dialog, double-checking that it still exists (T271457)
-		if ( wikiEditorContext && $.wikiEditor && $.wikiEditor.modules && $.wikiEditor.modules.dialogs ) {
+		if (
+			wikiEditorContext && $.wikiEditor &&
+			$.wikiEditor.modules && $.wikiEditor.modules.dialogs
+		) {
 			$.wikiEditor.modules.dialogs.api.openDialog( wikiEditorContext, 'insert-link' );
 			e.data.notification.close();
 		}
@@ -72,9 +76,13 @@
 			classes: 'mw-disambiguator-notification'
 		} );
 
-		$reviewLink.bind(
+		$reviewLink.on(
 			'click',
-			{ linkWikitext: linkWikitext, cursorPosition: cursorPosition, notification: notification },
+			{
+				linkWikitext: linkWikitext,
+				cursorPosition: cursorPosition,
+				notification: notification
+			},
 			reviewLinkClickHandler
 		);
 	}
@@ -138,4 +146,4 @@
 	} );
 
 	bindTextareaListener();
-} )() );
+} )();

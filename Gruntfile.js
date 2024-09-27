@@ -1,4 +1,5 @@
-/* eslint-env node */
+'use strict';
+
 module.exports = function ( grunt ) {
 	const conf = grunt.file.readJSON( 'extension.json' );
 
@@ -10,7 +11,8 @@ module.exports = function ( grunt ) {
 		banana: conf.MessagesDirs,
 		eslint: {
 			options: {
-				cache: true
+				cache: true,
+				fix: grunt.option( 'fix' )
 			},
 			all: [
 				'**/*.js{,on}',
