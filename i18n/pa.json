@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Cabal",
 			"Kuldeepburjbhalaike"
 		]
 	},
@@ -12,5 +13,5 @@
 	"tag-disambiguator-link-added": "ਗੁੰਝਲ-ਖੋਲ੍ਹ ਲਿੰਕ",
 	"tag-disambiguator-link-added-description": "ਸੋਧਾਂ ਜੋ ਗੁੰਝਲ-ਖੋਲ੍ਹ ਸਫ਼ਿਆਂ ਨਾਲ ਲਿੰਕ ਜੋੜਦੀਆਂ ਹਨ",
 	"disambiguator-notification-question": "ਕੀ ਤੁਸੀਂ ਇਸ ਲਿੰਕ ਨੂੰ ਹੋਰ ਵਿਸ਼ੇਸ਼ ਬਣਾਉਣਾ ਚਾਹੋਗੇ?",
-	"disambiguator-review-link": "ਲਿੰਕ ਦੀ ਸਮੀਖਿਆ ਕਰੋ"
+	"disambiguator-review-link": "ਕੜੀ ਦੀ ਸਮੀਖਿਆ ਕਰੋ"
 }
