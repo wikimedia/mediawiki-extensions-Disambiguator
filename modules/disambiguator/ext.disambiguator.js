@@ -1,5 +1,4 @@
-/* global mediaWiki, jQuery */
-( ( function ( mw, $ ) {
+( ( function () {
 	const api = new mw.Api();
 	let wikiEditorContext,
 		// eslint-disable-next-line no-jquery/no-global-selector
@@ -139,4 +138,4 @@
 	} );
 
 	bindTextareaListener();
-} )( mediaWiki, jQuery ) );
+} )() );
