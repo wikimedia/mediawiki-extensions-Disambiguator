@@ -57,14 +57,15 @@ class SpecialDisambiguationPageLinks extends QueryPage {
 		$this->linksMigration = $linksMigration;
 	}
 
-	public function isExpensive() {
+	public function isExpensive(): bool {
 		return true;
 	}
 
-	public function isSyndicated() {
+	public function isSyndicated(): bool {
 		return false;
 	}
 
+	/** @inheritDoc */
 	public function getQueryInfo() {
 		[ $blNamespace, $blTitle ] = $this->linksMigration->getTitleFields( 'pagelinks' );
 		$queryInfo = $this->linksMigration->getQueryInfo( 'pagelinks', 'pagelinks' );
@@ -107,10 +108,11 @@ class SpecialDisambiguationPageLinks extends QueryPage {
 		return [ 'value', 'to_namespace', 'to_title' ];
 	}
 
-	public function sortDescending() {
+	public function sortDescending(): bool {
 		return false;
 	}
 
+	/** @inheritDoc */
 	public function formatResult( $skin, $result ) {
 		$fromTitle = Title::makeTitle( $result->namespace, $result->title );
 		$toTitle = Title::makeTitle( $result->to_namespace, $result->to_title );
@@ -137,6 +139,7 @@ class SpecialDisambiguationPageLinks extends QueryPage {
 		return "$from $arr $to";
 	}
 
+	/** @inheritDoc */
 	protected function getGroupName() {
 		return 'pages';
 	}
@@ -226,6 +229,9 @@ class SpecialDisambiguationPageLinks extends QueryPage {
 		return $num;
 	}
 
+	/**
+	 * @param string|null $par
+	 */
 	public function execute( $par ) {
 		$this->addHelpLink( 'Extension:Disambiguator' );
 		parent::execute( $par );

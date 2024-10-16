@@ -31,14 +31,15 @@ class SpecialDisambiguationPages extends QueryPage {
 		$this->setDatabaseProvider( $dbProvider );
 	}
 
-	public function isExpensive() {
+	public function isExpensive(): bool {
 		return false;
 	}
 
-	public function isSyndicated() {
+	public function isSyndicated(): bool {
 		return false;
 	}
 
+	/** @inheritDoc */
 	public function getQueryInfo() {
 		return [
 			'tables' => [
@@ -57,6 +58,9 @@ class SpecialDisambiguationPages extends QueryPage {
 		];
 	}
 
+	/**
+	 * @param string|null $par
+	 */
 	public function execute( $par ) {
 		$this->addHelpLink( 'Extension:Disambiguator' );
 		parent::execute( $par );
@@ -83,11 +87,13 @@ class SpecialDisambiguationPages extends QueryPage {
 		$this->executeLBFromResultWrapper( $res );
 	}
 
+	/** @inheritDoc */
 	public function formatResult( $skin, $result ) {
 		$title = Title::makeTitle( $result->namespace, $result->title );
 		return $this->getLinkRenderer()->makeKnownLink( $title );
 	}
 
+	/** @inheritDoc */
 	protected function getGroupName() {
 		return 'pages';
 	}

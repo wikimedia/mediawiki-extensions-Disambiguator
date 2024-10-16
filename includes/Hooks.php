@@ -240,10 +240,7 @@ class Hooks implements
 		}
 	}
 
-	/**
-	 * @inheritDoc
-	 */
-	// phpcs:disable MediaWiki.NamingConventions.LowerCamelFunctionsName.FunctionName
+	/** @inheritDoc */
 	public function onRecentChange_save( $recentChange ) {
 		$revId = $recentChange->getAttribute( 'rc_this_oldid' );
 		if ( $recentChange->getAttribute( 'rc_log_type' ) ) {
