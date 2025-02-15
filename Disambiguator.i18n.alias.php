@@ -26,6 +26,12 @@ $specialPageAliases['arz'] = [
 	'DisambiguationPageLinks' => [ 'وصلات_صفحات_توضيح' ],
 ];
 
+/** Azerbaijani (Azərbaycanca) */
+$specialPageAliases['az'] = [
+	'DisambiguationPages' => [ 'DəqiqləşdirməSəhifələri' ],
+	'DisambiguationPageLinks' => [ 'DəqiqləşdirməSəhifələriKeçidləri' ],
+];
+
 /** Western Balochi (بلوچی رخشانی) */
 $specialPageAliases['bgn'] = [
 	'DisambiguationPages' => [ 'شکّ_دور_کنۆکین_وّرق_ئان' ],

@@ -23,6 +23,11 @@ $magicWords['arz'] = [
 	'disambiguation' => [ '__توضيح__' ],
 ];
 
+/** Azerbaijani (Azərbaycanca) */
+$magicWords['az'] = [
+	'disambiguation' => [ '__DƏQİQLƏŞDİRMƏ__' ],
+];
+
 /** Czech (Čeština) */
 $magicWords['cs'] = [
 	'disambiguation' => [ '__ROZCESTNÍK__' ],
