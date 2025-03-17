@@ -1,11 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Cedric31"
+			"Cedric31",
+			"Lhanars"
 		]
 	},
 	"disambig-desc": "Apond la balisa <code><nowiki>__DISAMBIG__</nowiki></code> per marcar [[Special:DisambiguationPages|las paginas d’ambigüitat]].",
 	"disambiguationpages": "Paginas d’ambigüitat",
 	"disambiguationpagelinks": "Paginas que menan cap a de paginas d’ambigüitat",
-	"visualeditor-dialog-meta-settings-disambiguation-label": "Aquò's una pagina d’omonimia"
+	"visualeditor-dialog-meta-settings-disambiguation-label": "Aquò's una pagina d’omonimia",
+	"tag-disambiguator-link-added": "Ligams d'omonimia"
 }
