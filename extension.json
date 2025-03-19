@@ -8,7 +8,7 @@
 	"descriptionmsg": "disambig-desc",
 	"license-name": "MIT",
 	"requires": {
-		"MediaWiki": ">= 1.43"
+		"MediaWiki": ">= 1.44"
 	},
 	"type": "other",
 	"ExtensionMessagesFiles": {
