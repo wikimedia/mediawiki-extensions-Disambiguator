@@ -75,6 +75,7 @@ class SpecialDisambiguationPages extends QueryPage {
 		return [ 'value' ];
 	}
 
+	/** @inheritDoc */
 	public function sortDescending() {
 		return false;
 	}
