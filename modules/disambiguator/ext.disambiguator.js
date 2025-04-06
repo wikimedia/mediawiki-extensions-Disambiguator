@@ -139,8 +139,9 @@
 	} );
 
 	// CodeMirror integration.
-	mw.hook( 'ext.CodeMirror.switch' ).add( ( _enabled, $editor ) => {
-		$textarea = $editor;
+	// TODO: Can be removed after CodeMirror 5 is retired.
+	mw.hook( 'ext.CodeMirror.toggle' ).add( ( _enabled, _cm, textarea ) => {
+		$textarea = $( textarea );
 		bindTextareaListener();
 	} );
 
