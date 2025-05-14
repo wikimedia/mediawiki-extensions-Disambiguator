@@ -1,13 +1,5 @@
 ( () => {
 	const api = new mw.Api();
-	let wikiEditorContext,
-		// eslint-disable-next-line no-jquery/no-global-selector
-		$textarea = $( '#wpTextbox1' );
-
-	/** Skin doesn't support disambiguator if this is not present in page. */
-	if ( !$textarea.length ) {
-		return;
-	}
 
 	/**
 	 * Click handler for the 'Review link' link.
@@ -15,6 +7,7 @@
 	 * @param {Event} e
 	 */
 	function reviewLinkClickHandler( e ) {
+		const $textarea = e.data.$textarea;
 		const start = e.data.cursorPosition - e.data.linkWikitext.length,
 			end = e.data.cursorPosition,
 			// eslint-disable-next-line unicorn/prefer-string-slice
@@ -31,6 +24,7 @@
 		$textarea.textSelection( 'setSelection', { start: start, end: end } );
 
 		// Open the WikiEditor link insertion dialog, double-checking that it still exists (T271457)
+		const wikiEditorContext = $textarea.data( 'wikiEditor-context' );
 		if (
 			wikiEditorContext && $.wikiEditor &&
 			$.wikiEditor.modules && $.wikiEditor.modules.dialogs
@@ -46,8 +40,9 @@
 	 * @param {string} pageTitle
 	 * @param {string} linkWikitext
 	 * @param {number} cursorPosition
+	 * @param {jQuery} $textarea
 	 */
-	function showWarning( pageTitle, linkWikitext, cursorPosition ) {
+	function showWarning( pageTitle, linkWikitext, cursorPosition, $textarea ) {
 		// Build the content, which generates as the parsed 'disambiguator-notification-question'
 		//   and 'disambiguator-notification-message' messages, followed by the 'Review link'.
 		const $reviewLink = $( '<a>' )
@@ -78,11 +73,7 @@
 
 		$reviewLink.on(
 			'click',
-			{
-				linkWikitext: linkWikitext,
-				cursorPosition: cursorPosition,
-				notification: notification
-			},
+			{ $textarea, linkWikitext, cursorPosition, notification },
 			reviewLinkClickHandler
 		);
 	}
@@ -95,8 +86,9 @@
 	 * @param {string} pageTitle
 	 * @param {string} linkWikitext
 	 * @param {number} cursorPosition
+	 * @param {jQuery} $textarea
 	 */
-	function checkIfDisambig( context, pageTitle, linkWikitext, cursorPosition ) {
+	function checkIfDisambig( context, pageTitle, linkWikitext, cursorPosition, $textarea ) {
 		api.get( {
 			action: 'query',
 			titles: pageTitle,
@@ -107,15 +99,17 @@
 			if ( resp.query.pages && resp.query.pages[ 0 ].pageprops &&
 				Object.prototype.hasOwnProperty.call( resp.query.pages[ 0 ].pageprops, 'disambiguation' )
 			) {
-				showWarning( pageTitle, linkWikitext, cursorPosition );
+				showWarning( pageTitle, linkWikitext, cursorPosition, $textarea );
 			}
 		} );
 	}
 
 	/**
 	 * (Re-)add the keyup listener to the textarea.
+	 *
+	 * @param {jQuery} $textarea
 	 */
-	function bindTextareaListener() {
+	function bindTextareaListener( $textarea ) {
 		$textarea.off( 'keyup.disambiguator' ).on( 'keyup.disambiguator', ( e ) => {
 			if ( e.key === ']' ) {
 				const cursorPosition = $textarea.textSelection( 'getCaretPosition' ),
@@ -127,7 +121,7 @@
 					// We always want the last match.
 					const pageTitle = matches[ matches.length - 1 ].trim();
 					const linkWikitext = matches[ matches.length - 2 ];
-					checkIfDisambig( context, pageTitle, linkWikitext, cursorPosition );
+					checkIfDisambig( context, pageTitle, linkWikitext, cursorPosition, $textarea );
 				}
 			}
 		} );
@@ -135,15 +129,14 @@
 
 	// WikiEditor integration; causes the 'Review link' link to open the link insertion dialog.
 	mw.hook( 'wikiEditor.toolbarReady' ).add( ( $wikiEditorTextarea ) => {
-		wikiEditorContext = $wikiEditorTextarea.data( 'wikiEditor-context' );
+		bindTextareaListener( $wikiEditorTextarea );
 	} );
 
 	// CodeMirror integration.
 	// TODO: Can be removed after CodeMirror 5 is retired.
 	mw.hook( 'ext.CodeMirror.toggle' ).add( ( _enabled, _cm, textarea ) => {
-		$textarea = $( textarea );
-		bindTextareaListener();
+		const $textarea = $( textarea );
+		bindTextareaListener( $textarea );
 	} );
 
-	bindTextareaListener();
 } )();
