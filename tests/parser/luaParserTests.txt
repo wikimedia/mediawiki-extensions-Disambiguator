@@ -1,0 +1,40 @@
+!! Version 2
+
+# Force the test runner to ensure Scribunto is loaded
+!! functionhooks
+invoke
+!! endfunctionhooks
+
+!! article
+Disambig
+!! text
+This is a disambig page.
+__DISAMBIG__
+!! endarticle
+
+!! article
+Normal
+!! text
+This is a normal page.
+!! endarticle
+
+!! article
+Module:Disambiguation
+!! text
+local p = {}
+p.main = function(frame)
+	return mw.title.new(frame.args.page).isDisambiguationPage
+end
+return p
+!! endarticle
+
+!! test
+Test page disambiguation status exposed to Lua
+!! wikitext
+{{#invoke:Disambiguation|main|page=Disambig}}
+{{#invoke:Disambiguation|main|page=Normal}}
+!! html
+<p>true
+false
+</p>
+!! end
