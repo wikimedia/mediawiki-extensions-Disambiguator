@@ -227,14 +227,20 @@ $specialPageAliases['vi'] = [
 	'DisambiguationPageLinks' => [ 'Liên_kết_đến_trang_định_hướng' ],
 ];
 
-/** Simplified Chinese (中文（简体）‎) */
-$specialPageAliases['zh-hans'] = [
-	'DisambiguationPages' => [ '消歧义页面' ],
-	'DisambiguationPageLinks' => [ '链接到消歧义页的页面' ],
+/** Chinese (中文) */
+$specialPageAliases['zh'] = [
+	'DisambiguationPages' => [ 'DisambiguationPages' ],
+	'DisambiguationPageLinks' => [ 'DisambiguationPageLinks' ],
 ];
 
-/** Traditional Chinese (中文（繁體）‎) */
+/** Simplified Chinese (中文（简体）) */
+$specialPageAliases['zh-hans'] = [
+	'DisambiguationPages' => [ '消歧义页面' ],
+	'DisambiguationPageLinks' => [ '链接到消歧义页面的页面', '链接到消歧义页的页面' ],
+];
+
+/** Traditional Chinese (中文（繁體）) */
 $specialPageAliases['zh-hant'] = [
 	'DisambiguationPages' => [ '消歧義頁面' ],
-	'DisambiguationPageLinks' => [ '消歧義頁面連結' ],
+	'DisambiguationPageLinks' => [ '連結到消歧義頁面的頁面', '連結到消歧義頁的頁面', '消歧義頁面連結' ],
 ];
