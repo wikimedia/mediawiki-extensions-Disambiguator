@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Winston Sung"
+			"Winston Sung",
+			"Yueman"
 		]
 	},
 	"disambig-desc": "加 <code><nowiki>__DISAMBIG__</nowiki></code> 標籤去標示[[Special:DisambiguationPages|搞清楚版]]",
@@ -10,5 +11,9 @@
 	"disambiguationpagelinks": "連去搞清楚版嘅版面",
 	"disambiguationpagelinks-summary": "下面嘅版面起碼有一個連去搞清楚版嘅連結。\n呢啲連結可能需要連到更合適嘅版面。<br />\n逢親版面有 <code><nowiki>__DISAMBIG__</nowiki></code> (或者類似) 嘅標籤都算係搞清楚版。",
 	"visualeditor-dialog-meta-settings-disambiguation-label": "呢個係搞清楚版",
-	"tag-disambiguator-link-added": "搞清楚連結"
+	"tag-disambiguator-link-added": "搞清楚連結",
+	"tag-disambiguator-link-added-description": "加連結到搞清楚版嘅編輯",
+	"disambiguator-notification-question": "你想唔想將條連結變得更加具體？",
+	"disambiguator-notification-summary": "你連去嘅「[[$1]]」並<strong>唔係</strong>一個內容頁，而係[https://mediawiki.org/wiki/Special:MyLanguage/Help:Extension:Disambiguator 列出帶有類似名主題]嘅清單。",
+	"disambiguator-review-link": "重檢連結"
 }
