@@ -50,26 +50,18 @@ class Hooks implements
 		'disambiguator-link-added'
 	];
 
-	/** @var Lookup */
-	private $lookup;
-
 	/** @var bool */
 	private $showNotifications;
-
-	private PageStore $pageStore;
 
 	/** @var bool[] Rev IDs are used as keys */
 	private static $revsToTag = [];
 
-	/**
-	 * @param Lookup $lookup
-	 * @param Config $options
-	 * @param PageStore $pageStore
-	 */
-	public function __construct( Lookup $lookup, Config $options, PageStore $pageStore ) {
-		$this->lookup = $lookup;
+	public function __construct(
+		private readonly Lookup $lookup,
+		Config $options,
+		private readonly PageStore $pageStore,
+	) {
 		$this->showNotifications = $options->get( 'DisambiguatorNotifications' );
-		$this->pageStore = $pageStore;
 	}
 
 	/**

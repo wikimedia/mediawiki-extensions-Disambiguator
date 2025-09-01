@@ -18,10 +18,6 @@ use Wikimedia\Rdbms\IResultWrapper;
 
 class SpecialDisambiguationPages extends QueryPage {
 
-	/**
-	 * @param LinkBatchFactory $linkBatchFactory
-	 * @param IConnectionProvider $dbProvider
-	 */
 	public function __construct(
 		LinkBatchFactory $linkBatchFactory,
 		IConnectionProvider $dbProvider

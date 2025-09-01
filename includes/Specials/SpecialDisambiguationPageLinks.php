@@ -24,37 +24,14 @@ use Wikimedia\Rdbms\SelectQueryBuilder;
 
 class SpecialDisambiguationPageLinks extends QueryPage {
 
-	/** @var NamespaceInfo */
-	private $namespaceInfo;
-
-	/** @var LinkBatchFactory */
-	private $linkBatchFactory;
-
-	/** @var IContentHandlerFactory */
-	private $contentHandlerFactory;
-	private IConnectionProvider $dbProvider;
-	private LinksMigration $linksMigration;
-
-	/**
-	 * @param NamespaceInfo $namespaceInfo
-	 * @param LinkBatchFactory $linkBatchFactory
-	 * @param IContentHandlerFactory $contentHandlerFactory
-	 * @param IConnectionProvider $dbProvider
-	 * @param LinksMigration $linksMigration
-	 */
 	public function __construct(
-		NamespaceInfo $namespaceInfo,
-		LinkBatchFactory $linkBatchFactory,
-		IContentHandlerFactory $contentHandlerFactory,
-		IConnectionProvider $dbProvider,
-		LinksMigration $linksMigration
+		private readonly NamespaceInfo $namespaceInfo,
+		private readonly LinkBatchFactory $linkBatchFactory,
+		private readonly IContentHandlerFactory $contentHandlerFactory,
+		private readonly IConnectionProvider $dbProvider,
+		private readonly LinksMigration $linksMigration,
 	) {
 		parent::__construct( 'DisambiguationPageLinks' );
-		$this->namespaceInfo = $namespaceInfo;
-		$this->linkBatchFactory = $linkBatchFactory;
-		$this->contentHandlerFactory = $contentHandlerFactory;
-		$this->dbProvider = $dbProvider;
-		$this->linksMigration = $linksMigration;
 	}
 
 	public function isExpensive(): bool {

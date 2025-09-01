@@ -8,10 +8,9 @@ use MediaWiki\Title\Title;
 
 class LuaDisambiguationAttributeResolver extends TitleAttributeResolver {
 
-	private Lookup $lookup;
-
-	public function __construct( Lookup $lookup ) {
-		$this->lookup = $lookup;
+	public function __construct(
+		private readonly Lookup $lookup,
+	) {
 	}
 
 	/**
