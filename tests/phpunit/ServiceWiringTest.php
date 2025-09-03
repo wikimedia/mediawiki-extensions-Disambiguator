@@ -7,7 +7,6 @@
 
 namespace MediaWiki\Extension\Disambiguator\Tests;
 
-use MediaWiki\MediaWikiServices;
 use MediaWikiIntegrationTestCase;
 
 /**
@@ -21,7 +20,7 @@ class ServiceWiringTest extends MediaWikiIntegrationTestCase {
 	 * @dataProvider provideService
 	 */
 	public function testService( string $name ) {
-		MediaWikiServices::getInstance()->get( $name );
+		$this->getServiceContainer()->get( $name );
 		$this->addToAssertionCount( 1 );
 	}
 
