@@ -1,11 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ahmed-Najib-Biabani-Ibrahimkhel"
+			"Ahmed-Najib-Biabani-Ibrahimkhel",
+			"شاه زمان پټان"
 		]
 	},
-	"disambiguationpages": "نامبهم شوي مخونه",
+	"disambiguationpages": "څومانيز مخونه",
 	"disambiguationpages-summary": "دلته لاندې په {{SITENAME}} باندې د نامبهم شويو مخونو يو لړليک راغلی.<br />\nيو مخ هغه وخت د يو نامبهم شوي مخ په توگه پېژندل کېږي کله چې په هغه مخ کې د <code><nowiki>__DISAMBIG__</nowiki></code> نښلن ځای پر ځای شوی وي (او يا هم ورته مستعار نوم).",
-	"disambiguationpagelinks": "د نامبهم شويو مخونو سره تړلي مخونه",
+	"disambiguationpagelinks": "څومانيز مخونو سره تړلي مخونه",
+	"disambiguationpagelinks-summary": "لاندې مخونه لږترلږه څومانيز مخونو ته يو تړونی لري.\nدوی ښايي د دې پرځای له دې ډېر ښه مخ سره د تړوني اړتيا ولري.<br />که چېرې يو مخ  <code><nowiki>__DISAMBIG__</nowiki></code> (يا د هغې مساوي بل‌نوم) نښلن ولري؛ نو څومانيز مخ گڼل کېږي.",
 	"visualeditor-dialog-meta-settings-disambiguation-label": "دا يو نامبهم شوی مخ دی"
 }
