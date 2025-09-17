@@ -31,7 +31,6 @@ use MediaWiki\Registration\ExtensionRegistry;
 use MediaWiki\SpecialPage\Hook\WgQueryPagesHook;
 use MediaWiki\Title\Title;
 
-// phpcs:disable MediaWiki.NamingConventions.LowerCamelFunctionsName.FunctionName
 class Hooks implements
 	ListDefinedTagsHook,
 	ChangeTagsListActiveHook,
