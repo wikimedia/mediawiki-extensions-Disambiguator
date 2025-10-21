@@ -5,9 +5,15 @@
 			"شاه زمان پټان"
 		]
 	},
+	"disambig-desc": "د [[Special:DisambiguationPages|څومانيز مخونو]] نښه‌کولو لپاره <code><nowiki>__DISAMBIG__</nowiki> نښلن ورگډوي",
 	"disambiguationpages": "څومانيز مخونه",
-	"disambiguationpages-summary": "دلته لاندې په {{SITENAME}} باندې د نامبهم شويو مخونو يو لړليک راغلی.<br />\nيو مخ هغه وخت د يو نامبهم شوي مخ په توگه پېژندل کېږي کله چې په هغه مخ کې د <code><nowiki>__DISAMBIG__</nowiki></code> نښلن ځای پر ځای شوی وي (او يا هم ورته مستعار نوم).",
+	"disambiguationpages-summary": "دلته لاندې په {{SITENAME}} کې د څومانيزو مخونو يو لړليک راغلی.<br />\nيو مخ هغه وخت څومانيز مخ گڼل کېږي کله چې په هغه مخ کې د <code><nowiki>__DISAMBIG__</nowiki></code> نښلن ځای پر ځای شوی وي (او يا هم ورته بل‌نوم).",
 	"disambiguationpagelinks": "څومانيز مخونو سره تړلي مخونه",
 	"disambiguationpagelinks-summary": "لاندې مخونه لږترلږه څومانيز مخونو ته يو تړونی لري.\nدوی ښايي د دې پرځای له دې ډېر ښه مخ سره د تړوني اړتيا ولري.<br />که چېرې يو مخ  <code><nowiki>__DISAMBIG__</nowiki></code> (يا د هغې مساوي بل‌نوم) نښلن ولري؛ نو څومانيز مخ گڼل کېږي.",
-	"visualeditor-dialog-meta-settings-disambiguation-label": "دا يو نامبهم شوی مخ دی"
+	"visualeditor-dialog-meta-settings-disambiguation-label": "دا يو څومانيز مخ دی",
+	"tag-disambiguator-link-added": "څومانيز تړوني",
+	"tag-disambiguator-link-added-description": "هغه سمونونه چې څومانيز مخونو ته تړوني ورگډوي",
+	"disambiguator-notification-question": "ايا تاسو غواړئ چې دا تړونی نور هم مشخص کړئ؟",
+	"disambiguator-notification-summary": "تاسو \"[[$1]]\" ته تړونی ورکړی، کوم چې منځپانگيز مخ <strong>نه</strong> دی، بلکې د [https://mediawiki.org/wiki/Special:MyLanguage/Help:Extension:Disambiguator ورته نومونو د سکالوگانو] يو لړليک دی.",
+	"disambiguator-review-link": "تړوني مخکتنه"
 }
