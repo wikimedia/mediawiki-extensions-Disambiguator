@@ -2,10 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Ahmed-Najib-Biabani-Ibrahimkhel",
+			"SaldırganSincap",
 			"شاه زمان پټان"
 		]
 	},
-	"disambig-desc": "د [[Special:DisambiguationPages|څومانيز مخونو]] نښه‌کولو لپاره <code><nowiki>__DISAMBIG__</nowiki> نښلن ورگډوي",
+	"disambig-desc": "د [[Special:DisambiguationPages|څومانيز مخونو]] نښه‌کولو لپاره <code><nowiki>__DISAMBIG__</nowiki></code> نښلن ورگډوي",
 	"disambiguationpages": "څومانيز مخونه",
 	"disambiguationpages-summary": "دلته لاندې په {{SITENAME}} کې د څومانيزو مخونو يو لړليک راغلی.<br />\nيو مخ هغه وخت څومانيز مخ گڼل کېږي کله چې په هغه مخ کې د <code><nowiki>__DISAMBIG__</nowiki></code> نښلن ځای پر ځای شوی وي (او يا هم ورته بل‌نوم).",
 	"disambiguationpagelinks": "څومانيز مخونو سره تړلي مخونه",
