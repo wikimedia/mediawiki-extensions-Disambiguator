@@ -21,6 +21,9 @@ module.exports = function ( grunt ) {
 			]
 		},
 		stylelint: {
+			options: {
+				cache: true
+			},
 			all: [
 				'**/*.{le,c}ss',
 				'!node_modules/**',
