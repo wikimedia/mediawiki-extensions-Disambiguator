@@ -10,9 +10,9 @@
 namespace MediaWiki\Extension\Disambiguator\Specials;
 
 use Exception;
-use MediaWiki\Cache\LinkBatchFactory;
 use MediaWiki\Content\IContentHandlerFactory;
 use MediaWiki\Linker\LinksMigration;
+use MediaWiki\Page\LinkBatchFactory;
 use MediaWiki\SpecialPage\QueryPage;
 use MediaWiki\Title\NamespaceInfo;
 use MediaWiki\Title\Title;

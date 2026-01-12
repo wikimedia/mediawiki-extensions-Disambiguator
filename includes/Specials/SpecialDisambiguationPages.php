@@ -9,7 +9,7 @@
 
 namespace MediaWiki\Extension\Disambiguator\Specials;
 
-use MediaWiki\Cache\LinkBatchFactory;
+use MediaWiki\Page\LinkBatchFactory;
 use MediaWiki\SpecialPage\QueryPage;
 use MediaWiki\Title\Title;
 use Wikimedia\Rdbms\IConnectionProvider;
