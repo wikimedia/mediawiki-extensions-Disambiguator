@@ -5,6 +5,7 @@
 			"Moj",
 			"Nike",
 			"Pyscowicz",
+			"Samoasambia",
 			"Stryn"
 		]
 	},
@@ -18,5 +19,5 @@
 	"tag-disambiguator-link-added-description": "Muokkaukset, joissa linkitetään täsmennyssivuihin",
 	"disambiguator-notification-question": "Tarvitsisiko tätä linkitystä tarkentaa?",
 	"disambiguator-notification-summary": "Linkki johtaa sivulle [[$1]], joka <strong>ei ole</strong> sisältösivu, vaan [https://mediawiki.org/wiki/Special:MyLanguage/Help:Extension:Disambiguator täsmennyssivu].",
-	"disambiguator-review-link": "Näytä linkki"
+	"disambiguator-review-link": "Tarkista linkki"
 }
