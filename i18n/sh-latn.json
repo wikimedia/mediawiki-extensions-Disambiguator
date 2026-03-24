@@ -6,13 +6,13 @@
 			"Aca"
 		]
 	},
-	"disambig-desc": "Staje oznaku <code><nowiki>__DISAMBIG__</nowiki></code> s kojoj označuje [[Special:DisambiguationPages|višeznačne odrednice]].",
-	"disambiguationpages": "Višeznačne odrednice",
-	"disambiguationpages-summary": "Ovo je spisak višeznačnih odrednica na {{SITENAME}}.<br />\nJedna stranica se smatra višeznačnom odrednicom ako sadrži oznaku <code><nowiki>__DISAMBIG__</nowiki></code> (ili njezin istoznačnik).",
-	"disambiguationpagelinks": "Stranice što vode do višeznačnih odrednica",
-	"disambiguationpagelinks-summary": "Sljedeće stranice sadrže bar jedan link na višeznačnu odrednicu.\nVjerojatno ćete se morati povezati s relevantnijom (specifičnijom) stranicom.<br />\nJedna stranica se smatra višeznačnom odrednicom ako sadrži oznaku <code><nowiki>__DISAMBIG__</nowiki></code> (ili njezin istoznačnik).",
-	"visualeditor-dialog-meta-settings-disambiguation-label": "Ovo je višeznačna stranica",
-	"tag-disambiguator-link-added": "veze do višeznačnih odrednica",
-	"tag-disambiguator-link-added-description": "Izmjene kojima se dodaju veze do višeznačnih odrednica",
-	"disambiguator-notification-question": "Želite li ovaj link učiniti specifičnijim?"
+	"disambig-desc": "Dodaje oznaku <code><nowiki>__DISAMBIG__</nowiki></code> za označavanje [[Special:DisambiguationPages|višeznačnica]]",
+	"disambiguationpages": "Višeznačnice",
+	"disambiguationpages-summary": "Sljedeća lista sadrži sve višeznačnice na {{GRAMMAR:dativ|{{SITENAME}}}}.<br />\nStranica će se označiti kao višeznačnica ako sadrži oznaku <code><nowiki>__DISAMBIG__</nowiki></code> (ili sličan pseudonim).",
+	"disambiguationpagelinks": "Stranice koje vode do višeznačnica",
+	"disambiguationpagelinks-summary": "Sljedeći spisak sadrži stranice koje u sebi sadrži bar jedan link na višeznačnicu.\nMožda bi trebale upućivati na tačnu stranicu.<br />\nStranica će se označiti kao višeznačnica ako sadrži oznaku <code><nowiki>__DISAMBIG__</nowiki></code> (ili sličan pseudonim).",
+	"visualeditor-dialog-meta-settings-disambiguation-label": "Ovo je višeznačnica",
+	"tag-disambiguator-link-added": "veze do višeznačnica",
+	"tag-disambiguator-link-added-description": "Izmjene kojima se dodaju veze do višeznačnica",
+	"disambiguator-notification-question": "Želite li ovu vezu učiniti konkretnijom?"
 }
