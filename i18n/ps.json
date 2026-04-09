@@ -16,5 +16,5 @@
 	"tag-disambiguator-link-added-description": "هغه سمونونه چې څومانيز مخونو ته تړوني ورگډوي",
 	"disambiguator-notification-question": "ايا تاسو غواړئ چې دا تړونی نور هم مشخص کړئ؟",
 	"disambiguator-notification-summary": "تاسو \"[[$1]]\" ته تړونی ورکړی، کوم چې منځپانگيز مخ <strong>نه</strong> دی، بلکې د [https://mediawiki.org/wiki/Special:MyLanguage/Help:Extension:Disambiguator ورته نومونو د سکالوگانو] يو لړليک دی.",
-	"disambiguator-review-link": "تړوني مخکتنه"
+	"disambiguator-review-link": "تړوني بياکتنه"
 }
