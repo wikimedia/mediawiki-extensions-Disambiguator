@@ -16,19 +16,19 @@ use MediaWiki\Deferred\LinksUpdate\LinksUpdate;
 use MediaWiki\EditPage\EditPage;
 use MediaWiki\Extension\Disambiguator\Specials\SpecialDisambiguationPageLinks;
 use MediaWiki\Extension\Disambiguator\Specials\SpecialDisambiguationPages;
-use MediaWiki\Hook\AncientPagesQueryHook;
 use MediaWiki\Hook\EditPage__showEditForm_initialHook;
 use MediaWiki\Hook\GetDoubleUnderscoreIDsHook;
-use MediaWiki\Hook\GetLinkColoursHook;
-use MediaWiki\Hook\LonelyPagesQueryHook;
-use MediaWiki\Hook\RandomPageQueryHook;
-use MediaWiki\Hook\RecentChange_saveHook;
-use MediaWiki\Hook\ShortPagesQueryHook;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Output\OutputPage;
 use MediaWiki\Page\PageStore;
+use MediaWiki\Parser\Hook\GetLinkColoursHook;
+use MediaWiki\RecentChanges\Hook\RecentChange_saveHook;
 use MediaWiki\Registration\ExtensionRegistry;
 use MediaWiki\SpecialPage\Hook\WgQueryPagesHook;
+use MediaWiki\Specials\Hook\AncientPagesQueryHook;
+use MediaWiki\Specials\Hook\LonelyPagesQueryHook;
+use MediaWiki\Specials\Hook\RandomPageQueryHook;
+use MediaWiki\Specials\Hook\ShortPagesQueryHook;
 use MediaWiki\Title\Title;
 
 class Hooks implements
