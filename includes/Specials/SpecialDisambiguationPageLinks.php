@@ -11,7 +11,6 @@ namespace MediaWiki\Extension\Disambiguator\Specials;
 
 use Exception;
 use MediaWiki\Content\IContentHandlerFactory;
-use MediaWiki\Linker\LinksMigration;
 use MediaWiki\Page\LinkBatchFactory;
 use MediaWiki\SpecialPage\QueryPage;
 use MediaWiki\Title\NamespaceInfo;
@@ -29,7 +28,6 @@ class SpecialDisambiguationPageLinks extends QueryPage {
 		private readonly LinkBatchFactory $linkBatchFactory,
 		private readonly IContentHandlerFactory $contentHandlerFactory,
 		private readonly IConnectionProvider $dbProvider,
-		private readonly LinksMigration $linksMigration,
 	) {
 		parent::__construct( 'DisambiguationPageLinks' );
 	}
@@ -44,14 +42,14 @@ class SpecialDisambiguationPageLinks extends QueryPage {
 
 	/** @inheritDoc */
 	public function getQueryInfo() {
-		[ $blNamespace, $blTitle ] = $this->linksMigration->getTitleFields( 'pagelinks' );
-		$queryInfo = $this->linksMigration->getQueryInfo( 'pagelinks', 'pagelinks' );
 		return [
-			'tables' => array_merge( $queryInfo['tables'], [
+			'tables' => [
+				'linktarget',
+				'pagelinks',
 				'p1' => 'page',
 				'p2' => 'page',
 				'page_props'
-			] ),
+			],
 			// The fields we are selecting correspond with fields in the
 			// querycachetwo table so that the results are cachable.
 			'fields' => [
@@ -66,11 +64,12 @@ class SpecialDisambiguationPageLinks extends QueryPage {
 				'p2.page_namespace' => $this->namespaceInfo->getContentNamespaces(),
 				'p2.page_is_redirect != 1'
 			],
-			'join_conds' => array_merge( $queryInfo['joins'], [
-				'p1' => [ 'JOIN', [ "$blNamespace = p1.page_namespace", "$blTitle = p1.page_title" ] ],
+			'join_conds' => [
+				'pagelinks' => [ 'JOIN', [ 'pl_target_id = lt_id' ] ],
+				'p1' => [ 'JOIN', [ 'lt_namespace = p1.page_namespace', 'lt_title = p1.page_title' ] ],
 				'page_props' => [ 'JOIN', [ 'p1.page_id = pp_page' ] ],
 				'p2' => [ 'JOIN', [ 'p2.page_id = pl_from' ] ]
-			] )
+			]
 		];
 	}
 
