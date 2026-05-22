@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"AhmedG612"
+		]
+	},
+	"disambig-desc": "Waxay ku dartaa summadda <code><nowiki>__DISAMBIG__</nowiki></code> si loo calaamadiyo [[Special:DisambiguationPages|bogagga kala soocidda]]",
+	"disambiguationpages": "Bogagga kala soocidda",
+	"disambiguationpages-summary": "Kuwa soo socda waa liiska dhammaan bogagga kala soocidda ee {{SITENAME}}.<br />\nBog waxaa loo tiriyaa bog kala soocid haddii uu ku jiro sumadda <code><nowiki>__DISAMBIG__</nowiki></code> (ama mid la mid ah).",
+	"disambiguationpagelinks": "Bogagga ku xira bogagga kala soocidda",
+	"disambiguationpagelinks-summary": "Bogagga soo socda waxay ka kooban yihiin ugu yaraan hal xiriiriye oo u jeeda bog kala soocid.\nWaxaa laga yaabaa in loo baahdo in loo beddelo xiriiriye u jeeda bog ku habboon.<br />\nBog waxaa loo tiriyaa bog kala soocid haddii uu ku jiro sumadda <code><nowiki>__DISAMBIG__</nowiki></code> (ama mid la mid ah).",
+	"visualeditor-dialog-meta-settings-disambiguation-label": "Kani waa bog kala soocid",
+	"tag-disambiguator-link-added": "Xiriirrada bogagga kala soocidda",
+	"tag-disambiguator-link-added-description": "Wax ka beddelada ku daraya xiriirro u jeeda bogagga kala soocidda",
+	"disambiguator-notification-question": "Ma jeclaan lahayd inaad ka dhigto xiriirkan mid si ka sii gaar ah u tilmaamaya?",
+	"disambiguator-notification-summary": "Waxaad ku xirtay \"[[$1]]\" oo <strong>aan ahayn</strong> bog ka kooban waxyaabaha, balse waa liis ah [https://mediawiki.org/wiki/Special:MyLanguage/Help:Extension:Disambiguator magacyo isku eg oo kala macne ah].",
+	"disambiguator-review-link": "Eeg xiriirka"
+}
