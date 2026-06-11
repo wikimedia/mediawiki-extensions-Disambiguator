@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Run Li"
+			"Run Li",
+			"Ильгиз"
 		]
 	},
+	"disambiguationpages": "Күпмәгънәлекләрне чишү битләре",
+	"disambiguationpagelinks": "Күпмәгънәлекләрне чишү битләренә сылтамасы булган битләр",
 	"tag-disambiguator-link-added": "Күп мәгънәле битләр"
 }
