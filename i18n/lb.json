@@ -7,7 +7,7 @@
 			"Volvox"
 		]
 	},
-	"disambig-desc": "Setzt den Tag <code><nowiki>__DISAMBIG__</nowiki></code> dobäi fir [[Special:DisambiguationPages|Homonymiesäiten]] ze markéieren",
+	"disambig-desc": "Setzt den Tag <code><nowiki>__DISAMBIG__</nowiki></code> dobäi, fir [[Special:DisambiguationPages|Homonymiesäiten]] ze markéieren",
 	"disambiguationpages": "Homonymiesäiten",
 	"disambiguationpages-summary": "Hei ass d'Lëscht vun allen Homonymiesäiten op {{SITENAME}}.<br />\nEng Säit gëtt als Homonymiesäit betruecht, wann se den Tag <code><nowiki>__DISAMBIG__</nowiki></code> (oder en equivalenten Alias) enthält.",
 	"disambiguationpagelinks": "Säiten, déi op Homonymiesäite verlinken",
@@ -16,6 +16,6 @@
 	"tag-disambiguator-link-added": "Homonymielinken",
 	"tag-disambiguator-link-added-description": "Ännerungen, déi Linken op Homonymiesäiten derbäisetzen",
 	"disambiguator-notification-question": "Wéilt Dir dëse Link méi spezifesch maachen?",
-	"disambiguator-notification-summary": "Dir hutt op \"[[$1]]\" verlinkt, wat <strong>keng</strong> Inhaltssäit ass, mee eng Lëscht vun [https://mediawiki.org/wiki/Special:MyLanguage/Help:Extension:Disambiguator Theeme mat änlechen Nimm].",
+	"disambiguator-notification-summary": "Dir hutt op „[[$1]]“ verlinkt, wat <strong>keng</strong> Inhaltssäit ass, mee eng Lëscht vun [https://mediawiki.org/wiki/Special:MyLanguage/Help:Extension:Disambiguator Theeme mat änlechen Nimm].",
 	"disambiguator-review-link": "Link iwwerpréiwen"
 }
