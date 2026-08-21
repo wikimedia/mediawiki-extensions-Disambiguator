@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Luky001",
-			"Teslaton"
+			"Teslaton",
+			"Wizzard"
 		]
 	},
 	"disambig-desc": "Pridáva značku <code><nowiki>__DISAMBIG__</nowiki></code> na označenie [[Special:DisambiguationPages|rozlišovacích stránok]]",
@@ -11,6 +12,8 @@
 	"disambiguationpagelinks": "Stránky odkazujúce na rozlišovacie stránky",
 	"disambiguationpagelinks-summary": "Následujúce stránky obsahujú aspoň jeden odkaz na rozlišovaciu stránku. Odkazy by možno mali smerovať na konkrétnejšiu stránku.<br />Stránka je považovaná za rozlišovaciu ak obsahuje značku <code><nowiki>__DISAMBIG__</nowiki></code> (prípadne jej synonymum).",
 	"visualeditor-dialog-meta-settings-disambiguation-label": "Toto je rozlišovacia stránka",
+	"tag-disambiguator-link-added": "Odkazy na rozlišovacie stránky",
+	"tag-disambiguator-link-added-description": "Úpravy, ktoré pridávajú odkazy na rozlišovacie stránky",
 	"disambiguator-notification-question": "Nechcete tento odkaz skonkrétniť?",
 	"disambiguator-notification-summary": "Odkázali ste na „[[$1]]“, čo <strong>nie je </strong> článok, ale zoznam [https://mediawiki.org/wiki/Special:MyLanguage/Help:Extension:Disambiguator tém s podobným názvom].",
 	"disambiguator-review-link": "Skontrolovať odkaz"
