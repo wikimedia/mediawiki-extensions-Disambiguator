@@ -16,13 +16,10 @@ class Lookup {
 	 * Convenience function for testing whether or not a page is a disambiguation page
 	 *
 	 * @param Title $title object of a page
-	 * @param bool $includeRedirects Whether to consider redirects to disambiguations as
-	 *   disambiguations.
 	 * @return bool
 	 */
-	public function isDisambiguationPage( Title $title, $includeRedirects = true ) {
-		$res = $this->filterDisambiguationPageIds(
-			[ $title->getArticleID() ], $includeRedirects );
+	public function isDisambiguationPage( Title $title ) {
+		$res = $this->filterDisambiguationPageIds( [ $title->getArticleID() ] );
 		return (bool)count( $res );
 	}
 
@@ -30,13 +27,9 @@ class Lookup {
 	 * Convenience function for testing whether or not pages are disambiguation pages
 	 *
 	 * @param int[] $pageIds
-	 * @param bool $includeRedirects Whether to consider redirects to disambiguations as
-	 *   disambiguations.
 	 * @return int[] The page ids corresponding to pages that are disambiguations
 	 */
-	public function filterDisambiguationPageIds(
-		array $pageIds, $includeRedirects = true
-	) {
+	public function filterDisambiguationPageIds( array $pageIds ) {
 		// Don't needlessly check non-existent and special pages
 		$pageIds = array_filter(
 			$pageIds,
@@ -50,27 +43,26 @@ class Lookup {
 			$dbr = $this->dbProvider->getReplicaDatabase();
 
 			$redirects = [];
+			/** @var array<int,int[]> $redirectsMap */
 			$redirectsMap = [];
-			if ( $includeRedirects ) {
-				// resolve redirects
-				$res = $dbr->newSelectQueryBuilder()
-					->select( [ 'page_id', 'rd_from' ] )
-					->from( 'page' )
-					->join( 'redirect', null, [
-						'rd_namespace=page_namespace',
-						'rd_title=page_title',
-						'rd_interwiki' => '',
-					] )
-					->where( [ 'rd_from' => $pageIds ] )
-					->caller( __METHOD__ )
-					->fetchResultSet();
-
-				foreach ( $res as $row ) {
-					$redirects[] = $row->rd_from;
-					// Key is the destination page ID, values are the source page IDs
-					$redirectsMap[$row->page_id][] = $row->rd_from;
-				}
+			// resolve redirects
+			$res = $dbr->newSelectQueryBuilder()
+				->select( [ 'page_id', 'rd_from' ] )
+				->from( 'page' )
+				->join( 'redirect', null, [
+					'rd_namespace=page_namespace',
+					'rd_title=page_title',
+					'rd_interwiki' => '',
+				] )
+				->where( [ 'rd_from' => $pageIds ] )
+				->caller( __METHOD__ )
+				->fetchResultSet();
+			foreach ( $res as $row ) {
+				$redirects[] = $row->rd_from;
+				// Key is the destination page ID, values are the source page IDs
+				$redirectsMap[$row->page_id][] = $row->rd_from;
 			}
+
 			$pageIdsWithRedirects = array_merge( array_keys( $redirectsMap ),
 				array_diff( $pageIds, $redirects ) );
 			$res = $dbr->newSelectQueryBuilder()

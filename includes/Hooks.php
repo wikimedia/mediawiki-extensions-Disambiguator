@@ -203,7 +203,7 @@ class Hooks implements
 			return;
 		}
 
-		$disambigs = $this->lookup->filterDisambiguationPageIds( $pageIds, true );
+		$disambigs = $this->lookup->filterDisambiguationPageIds( $pageIds );
 		$rev = $linksUpdate->getRevisionRecord();
 
 		if ( $disambigs && $rev ) {
