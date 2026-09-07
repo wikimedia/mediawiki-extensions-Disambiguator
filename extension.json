@@ -36,6 +36,9 @@
 				"DisambiguatorLookup",
 				"MainConfig",
 				"PageStore"
+			],
+			"optional_services": [
+				"MobileFrontend.Context"
 			]
 		}
 	},

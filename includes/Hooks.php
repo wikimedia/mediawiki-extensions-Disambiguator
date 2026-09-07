@@ -18,18 +18,17 @@ use MediaWiki\Extension\Disambiguator\Specials\SpecialDisambiguationPageLinks;
 use MediaWiki\Extension\Disambiguator\Specials\SpecialDisambiguationPages;
 use MediaWiki\Hook\EditPage__showEditForm_initialHook;
 use MediaWiki\Hook\GetDoubleUnderscoreIDsHook;
-use MediaWiki\MediaWikiServices;
 use MediaWiki\Output\OutputPage;
 use MediaWiki\Page\PageStore;
 use MediaWiki\Parser\Hook\GetLinkColoursHook;
 use MediaWiki\RecentChanges\Hook\RecentChange_saveHook;
-use MediaWiki\Registration\ExtensionRegistry;
 use MediaWiki\SpecialPage\Hook\WgQueryPagesHook;
 use MediaWiki\Specials\Hook\AncientPagesQueryHook;
 use MediaWiki\Specials\Hook\LonelyPagesQueryHook;
 use MediaWiki\Specials\Hook\RandomPageQueryHook;
 use MediaWiki\Specials\Hook\ShortPagesQueryHook;
 use MediaWiki\Title\Title;
+use MobileContext;
 
 class Hooks implements
 	ListDefinedTagsHook,
@@ -59,6 +58,7 @@ class Hooks implements
 		private readonly Lookup $lookup,
 		Config $options,
 		private readonly PageStore $pageStore,
+		private readonly ?MobileContext $mobileContext,
 	) {
 		$this->showNotifications = $options->get( 'DisambiguatorNotifications' );
 	}
@@ -223,10 +223,7 @@ class Hooks implements
 		}
 
 		// Add modules.
-		$services = MediaWikiServices::getInstance();
-		$isMobileView = ExtensionRegistry::getInstance()->isLoaded( 'MobileFrontend' ) &&
-			$services->getService( 'MobileFrontend.Context' )->shouldDisplayMobileView();
-		if ( !$isMobileView ) {
+		if ( $this->mobileContext?->shouldDisplayMobileView() ) {
 			$out->addModules( 'ext.disambiguator' );
 		}
 	}

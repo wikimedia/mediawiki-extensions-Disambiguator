@@ -7,6 +7,7 @@ $cfg['directory_list'] = array_merge(
 	[
 		'../../extensions/VisualEditor',
 		'../../extensions/Scribunto',
+		'../../extensions/MobileFrontend',
 	]
 );
 
@@ -15,6 +16,14 @@ $cfg['exclude_analysis_directory_list'] = array_merge(
 	[
 		'../../extensions/VisualEditor',
 		'../../extensions/Scribunto',
+		'../../extensions/MobileFrontend',
+	]
+);
+
+$cfg['exclude_file_list'] = array_merge(
+	$cfg['exclude_file_list'],
+	[
+		'../../extensions/VisualEditor/.phan/stubs/MobileContext.php'
 	]
 );
 
