@@ -18,6 +18,7 @@ use MediaWiki\Extension\Disambiguator\Specials\SpecialDisambiguationPageLinks;
 use MediaWiki\Extension\Disambiguator\Specials\SpecialDisambiguationPages;
 use MediaWiki\Hook\EditPage__showEditForm_initialHook;
 use MediaWiki\Hook\GetDoubleUnderscoreIDsHook;
+use MediaWiki\Output\Hook\OutputPageParserOutputHook;
 use MediaWiki\Output\OutputPage;
 use MediaWiki\Page\PageStore;
 use MediaWiki\Parser\Hook\GetLinkColoursHook;
@@ -36,6 +37,7 @@ class Hooks implements
 	RecentChange_saveHook,
 	EditPage__showEditForm_initialHook,
 	GetDoubleUnderscoreIDsHook,
+	OutputPageParserOutputHook,
 	WgQueryPagesHook,
 	AncientPagesQueryHook,
 	LonelyPagesQueryHook,
@@ -63,11 +65,19 @@ class Hooks implements
 		$this->showNotifications = $options->get( 'DisambiguatorNotifications' );
 	}
 
-	/**
-	 * @param array &$doubleUnderscoreIDs
-	 */
+	/** @inheritDoc */
 	public function onGetDoubleUnderscoreIDs( &$doubleUnderscoreIDs ) {
-		$doubleUnderscoreIDs[] = 'disambiguation';
+		// See Disambiguator.i18n.magic.php for how the __DISAMBIG__ magic word (and aliases) are
+		// linked to the page property.
+		$doubleUnderscoreIDs[] = Lookup::DISAMBIGUATION_PROP;
+	}
+
+	/** @inheritDoc */
+	public function onOutputPageParserOutput( $outputPage, $parserOutput ): void {
+		$isDisambiguation = $parserOutput->getPageProperty( Lookup::DISAMBIGUATION_PROP );
+		if ( $isDisambiguation !== null ) {
+			$outputPage->setProperty( Lookup::DISAMBIGUATION_PROP, $isDisambiguation );
+		}
 	}
 
 	/**
@@ -92,7 +102,7 @@ class Hooks implements
 		$joinConds['disambig_props'] = [
 			'LEFT JOIN', [
 				'page_id = disambig_props.pp_page',
-				'disambig_props.pp_propname' => 'disambiguation'
+				'disambig_props.pp_propname' => Lookup::DISAMBIGUATION_PROP,
 			]
 		];
 	}

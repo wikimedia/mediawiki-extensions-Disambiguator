@@ -11,6 +11,7 @@ namespace MediaWiki\Extension\Disambiguator\Specials;
 
 use Exception;
 use MediaWiki\Content\IContentHandlerFactory;
+use MediaWiki\Extension\Disambiguator\Lookup;
 use MediaWiki\Page\LinkBatchFactory;
 use MediaWiki\SpecialPage\QueryPage;
 use MediaWiki\Title\NamespaceInfo;
@@ -60,7 +61,7 @@ class SpecialDisambiguationPageLinks extends QueryPage {
 				'to_title' => 'p1.page_title',
 			],
 			'conds' => [
-				'pp_propname' => 'disambiguation',
+				'pp_propname' => Lookup::DISAMBIGUATION_PROP,
 				'p2.page_namespace' => $this->namespaceInfo->getContentNamespaces(),
 				'p2.page_is_redirect != 1'
 			],

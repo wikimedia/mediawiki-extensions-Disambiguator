@@ -2,10 +2,18 @@
 
 namespace MediaWiki\Extension\Disambiguator;
 
+use MediaWiki\Output\OutputPage;
 use MediaWiki\Title\Title;
 use Wikimedia\Rdbms\IConnectionProvider;
 
 class Lookup {
+
+	/**
+	 * Name if the page property in the page_props table.
+	 *
+	 * @internal Please use {@link isMarkedAsDisambiguationPage} if possible
+	 */
+	public const string DISAMBIGUATION_PROP = 'disambiguation';
 
 	public function __construct(
 		private readonly IConnectionProvider $dbProvider,
@@ -13,14 +21,25 @@ class Lookup {
 	}
 
 	/**
+	 * Convenience function for testing if a page is marked as being a disambiguation page via the
+	 * __DISAMBIG__ magic word.
+	 *
+	 * Warning: Don't call this too early as it won't work before the OutputPageParserOutput hook.
+	 * It's available in hook handlers like OutputPageBeforeHTML, BeforePageDisplay,
+	 * SkinAfterContent, and AfterFinalPageOutput.
+	 */
+	public static function isMarkedAsDisambiguationPage( OutputPage $outputPage ): bool {
+		return $outputPage->getProperty( self::DISAMBIGUATION_PROP ) !== null;
+	}
+
+	/**
 	 * Convenience function for testing whether or not a page is a disambiguation page
 	 *
-	 * @param Title $title object of a page
-	 * @return bool
+	 * Warning: This considers redirects at the cost of being more expensive. Prefer
+	 * {@link isMarkedAsDisambiguationPage} if possible.
 	 */
-	public function isDisambiguationPage( Title $title ) {
-		$res = $this->filterDisambiguationPageIds( [ $title->getArticleID() ] );
-		return (bool)count( $res );
+	public function isDisambiguationPage( Title $title ): bool {
+		return (bool)$this->filterDisambiguationPageIds( [ $title->getArticleID() ] );
 	}
 
 	/**
@@ -68,7 +87,7 @@ class Lookup {
 			$res = $dbr->newSelectQueryBuilder()
 				->select( 'pp_page' )
 				->from( 'page_props' )
-				->where( [ 'pp_page' => $pageIdsWithRedirects, 'pp_propname' => 'disambiguation' ] )
+				->where( [ 'pp_page' => $pageIdsWithRedirects, 'pp_propname' => self::DISAMBIGUATION_PROP ] )
 				->caller( __METHOD__ )
 				->fetchResultSet();
 

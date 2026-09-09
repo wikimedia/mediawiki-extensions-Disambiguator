@@ -9,6 +9,7 @@
 
 namespace MediaWiki\Extension\Disambiguator\Specials;
 
+use MediaWiki\Extension\Disambiguator\Lookup;
 use MediaWiki\Page\LinkBatchFactory;
 use MediaWiki\SpecialPage\QueryPage;
 use MediaWiki\Title\Title;
@@ -49,7 +50,7 @@ class SpecialDisambiguationPages extends QueryPage {
 			],
 			'conds' => [
 				'page_id = pp_page',
-				'pp_propname' => 'disambiguation',
+				'pp_propname' => Lookup::DISAMBIGUATION_PROP,
 			]
 		];
 	}

@@ -17,6 +17,7 @@
 	},
 	"Hooks": {
 		"GetDoubleUnderscoreIDs": "main",
+		"OutputPageParserOutput": "main",
 		"wgQueryPages": "main",
 		"AncientPagesQuery": "main",
 		"LonelyPagesQuery": "main",
