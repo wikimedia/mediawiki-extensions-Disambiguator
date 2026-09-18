@@ -7,7 +7,8 @@
 			"Okras",
 			"Pacha Tchernof",
 			"Radmir Far",
-			"Stjn"
+			"Stjn",
+			"Ильгиз"
 		]
 	},
 	"disambig-desc": "Добавляет тег <code><nowiki>__DISAMBIG__</nowiki></code> для пометки [[Special:DisambiguationPages|страниц разрешения неоднозначностей]]",
@@ -16,7 +17,7 @@
 	"disambiguationpagelinks": "Страницы, ссылающиеся на страницы разрешения неоднозначности",
 	"disambiguationpagelinks-summary": "Следующие страницы содержат по крайней мере одну ссылку на страницу разрешения неоднозначностей.\nИм может потребоваться ссылка на более подходящую страницу.<br>\nСтраница рассматривается как страница разрешения неоднозначностей, если она содержит тег <code><nowiki>__DISAMBIG__</nowiki></code> (или эквивалентные псевдонимы).",
 	"visualeditor-dialog-meta-settings-disambiguation-label": "Это страница разрешения неоднозначностей",
-	"tag-disambiguator-link-added": "Ссылки на неоднозначности",
+	"tag-disambiguator-link-added": "неоднозначные вики-ссылки",
 	"tag-disambiguator-link-added-description": "Правки, добавляющие ссылки на страницы разрешения неоднозначностей",
 	"disambiguator-notification-question": "Хотите сделать эту ссылку более конкретной?",
 	"disambiguator-notification-summary": "Вы добавили ссылку на страницу «[[$1]]», которая является <strong>не статьёй</strong>, [https://mediawiki.org/wiki/Special:MyLanguage/Help:Extension:Disambiguator а списком тем с похожими названиями].",
