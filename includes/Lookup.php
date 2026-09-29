@@ -9,7 +9,7 @@ use Wikimedia\Rdbms\IConnectionProvider;
 class Lookup {
 
 	/**
-	 * Name if the page property in the page_props table.
+	 * Name of the page property in the page_props table.
 	 *
 	 * @internal Please use {@link isMarkedAsDisambiguationPage} if possible
 	 */
@@ -57,51 +57,33 @@ class Lookup {
 			}
 		);
 
-		$output = [];
-		if ( $pageIds ) {
-			$dbr = $this->dbProvider->getReplicaDatabase();
-
-			$redirects = [];
-			/** @var array<int,int[]> $redirectsMap */
-			$redirectsMap = [];
-			// resolve redirects
-			$res = $dbr->newSelectQueryBuilder()
-				->select( [ 'page_id', 'rd_from' ] )
-				->from( 'page' )
-				->join( 'redirect', null, [
-					'rd_namespace=page_namespace',
-					'rd_title=page_title',
-					'rd_interwiki' => '',
-				] )
-				->where( [ 'rd_from' => $pageIds ] )
-				->caller( __METHOD__ )
-				->fetchResultSet();
-			foreach ( $res as $row ) {
-				$redirects[] = $row->rd_from;
-				// Key is the destination page ID, values are the source page IDs
-				$redirectsMap[$row->page_id][] = $row->rd_from;
-			}
-
-			$pageIdsWithRedirects = array_merge( array_keys( $redirectsMap ),
-				array_diff( $pageIds, $redirects ) );
-			$res = $dbr->newSelectQueryBuilder()
-				->select( 'pp_page' )
-				->from( 'page_props' )
-				->where( [ 'pp_page' => $pageIdsWithRedirects, 'pp_propname' => self::DISAMBIGUATION_PROP ] )
-				->caller( __METHOD__ )
-				->fetchResultSet();
-
-			foreach ( $res as $row ) {
-				$disambiguationPageId = $row->pp_page;
-				if ( array_key_exists( $disambiguationPageId, $redirectsMap ) ) {
-					$output = array_merge( $output, $redirectsMap[$disambiguationPageId] );
-				}
-				if ( in_array( $disambiguationPageId, $pageIds ) ) {
-					$output[] = $disambiguationPageId;
-				}
-			}
+		if ( !$pageIds ) {
+			return [];
 		}
 
-		return $output;
+		$dbr = $this->dbProvider->getReplicaDatabase();
+
+		// resolve redirects as well
+		return $dbr->newSelectQueryBuilder()
+			->select( 'page.page_id' )
+			->from( 'page' )
+			// JOIN with redirect to check if any given page ids are redirects
+			->leftJoin( 'redirect', null, [
+				'rd_from = page.page_id',
+				'rd_interwiki' => '',
+			] )
+			// JOIN with page to find page ids of redirect targets
+			->leftJoin( 'page', 'redirect_target', [
+				'redirect_target.page_namespace = rd_namespace',
+				'redirect_target.page_title = rd_title'
+			] )
+			// JOIN with page_props on page id of the redirect target or the page itself
+			->join( 'page_props', null, [
+				'pp_page = COALESCE(redirect_target.page_id, page.page_id)',
+				'pp_propname' => self::DISAMBIGUATION_PROP
+			] )
+			->where( [ 'page.page_id' => $pageIds ] )
+			->caller( __METHOD__ )
+			->fetchFieldValues();
 	}
 }
