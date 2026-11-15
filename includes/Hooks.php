@@ -233,7 +233,7 @@ class Hooks implements
 		}
 
 		// Add modules.
-		if ( $this->mobileContext?->shouldDisplayMobileView() ) {
+		if ( !$this->mobileContext?->shouldDisplayMobileView() ) {
 			$out->addModules( 'ext.disambiguator' );
 		}
 	}
