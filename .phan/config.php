@@ -23,6 +23,7 @@ $cfg['exclude_analysis_directory_list'] = array_merge(
 $cfg['exclude_file_list'] = array_merge(
 	$cfg['exclude_file_list'],
 	[
+		'../../extensions/VisualEditor/.phan/stubs/Disambiguator.php',
 		'../../extensions/VisualEditor/.phan/stubs/MobileContext.php'
 	]
 );
